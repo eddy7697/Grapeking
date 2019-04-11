@@ -66,12 +66,12 @@
         import { CountUp } from '/js/plugins/countup/countUp.min.js';
 
         window.onload = function() {
-            var countUpYear = new CountUp('count-year', 1987, {
+            var countUpYear = new CountUp('count-year', 1994, {
                 useGrouping: false
             });
-            var countUpProd = new CountUp('count-prod', 108);
-            var countUpMem = new CountUp('count-mem', 9435);
-            var countUpReturn = new CountUp('count-return', 307);
+            var countUpProd = new CountUp('count-prod', 100);
+            var countUpMem = new CountUp('count-mem', 93);
+            var countUpReturn = new CountUp('count-return', 2006);
 
             countUpYear.start();
             countUpProd.start();
@@ -133,288 +133,297 @@
 
 @section('content')
 
+    {{-- <div class="">
+        <img src="/img/banner.jpg" width="100%" alt="">
+    </div> --}}
+
     {{-- banner --}}
-    @if (false)
+    @if (true)
     <div class="swiper-container" data-aos="fade-in">
         <div class="swiper-wrapper">
-            @foreach (SiteMetaView::album() as $item)
-                <div class="swiper-slide" style="background-image: url('{{$item->url}}')">
+            @php
+                $album = array([
+                    'url' => '/img/banner.jpg',
+                    'title' => 'test',
+                    'content' => 'test'
+                ]);
+            @endphp
+            @foreach ($album as $item)
+                <div class="swiper-slide" style="background-image: url('{{$item['url']}}')">
                     <div class="slide-item">
-                        <h2>{{$item->title}}</h2>
+                        <img src="/img/banner-text-1.png" alt="">
+                        <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
+                        {{-- <h2>{{$item['title']}}</h2>
                         <div class="slide-info">
-                            {!!$item->content!!}
+                            {!!$item['content']!!}
                         </div>
-                        <a class="slide-btn" href="{{$item->link}}">{{$item->button}}</a>
+                        <a class="slide-btn" href="{{$item->link}}">{{$item->button}}</a> --}}
                     </div>
                 </div>
             @endforeach
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
+        {{-- <div class="swiper-pagination"></div> --}}
     </div>
     @endif
-    
-    @if (false)
-        {{-- Count down --}}
-    <div class="container-fluid index-count-down" data-aos="fade-in">
-        <div class="row count-down-row">
-            <div class="col-sm-6 col-md-3">
-                <div class="count-down-box">
-                    <div class="type-icon drop"></div>
-                    <div class="flex-column">
-                        <div class="number" id="count-year">
-                            0
-                        </div>
-                        <div class="text">
-                            成立于
-                        </div>
-                    </div>
+
+    <div class="container-fluid factory-list">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 factory-item food-safety">
+                <div class="factory-item-info">
+                    <p>食安中心</p>
+                    <p>Food safety center</p>
                 </div>
+                <div class="border-bar"></div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="count-down-box">
-                    <div class="type-icon box"></div>
-                    <div class="flex-column">
-                        <div class="number" id="count-prod">
-                            0
-                        </div>
-                        <div class="text">
-                            产品数量
-                        </div>
-                    </div>
+            <div class="col-sm-6 col-md-3 factory-item bioengineering">
+                <div class="factory-item-info">
+                    <p>生物工程中心</p>
+                    <p>Bioengineering Center</p>
                 </div>
+                <div class="border-bar"></div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="count-down-box">
-                    <div class="type-icon mem"></div>
-                    <div class="flex-column">
-                        <div class="number" id="count-mem">
-                            0
-                        </div>
-                        <div class="text">
-                            客户累积
-                        </div>
-                    </div>
+            <div class="col-sm-6 col-md-3 factory-item innovation">
+                <div class="factory-item-info">
+                    <p>创新研发中心</p>
+                    <p>Innovation R&D Center</p>
                 </div>
+                <div class="border-bar"></div>
             </div>
-            <div class="col-sm-6 col-md-3">
-                <div class="count-down-box">
-                    <div class="type-icon back"></div>
-                    <div class="flex-column">
-                        <div class="number" id="count-return">
-                            0
-                        </div>
-                        <div class="text">
-                            客户回单率
-                        </div>
-                    </div>
+            <div class="col-sm-6 col-md-3 factory-item factory">
+                <div class="factory-item-info">
+                    <p>世界级工厂</p>
+                    <p>World class factory</p>
                 </div>
+                <div class="border-bar"></div>
             </div>
         </div>
     </div>
-    @endif
-    
-    @if (false)
-        {{-- Product --}}
-    <div class="index-banner-divider product" data-aos="fade-in">
-        <h2>产品中心</h2>
-    </div>
-    <div class="container product-list">
+
+    <div class="container-fluid index-info about">
         <div class="row">
-            @php
-                $dummyData = array(
-                    [
-                        'featureImage' => '/img/product-image.jpg',
-                        'title' => '污泥浓度MLSS监控仪',
-                        'type' => 'MC-700'
-                    ],
-                    [
-                        'featureImage' => '/img/product-image-2.jpg',
-                        'title' => '化学药液浓度剂',
-                        'type' => 'LQ-5z'
-                    ],
-                    [
-                        'featureImage' => '/img/product-image.jpg',
-                        'title' => '携带型水质测定器',
-                        'type' => '10-X'
-                    ]
-                );
-                
-            @endphp
-            @foreach ($dummyData as $item)
-                <div class="col-md-4 product-content">
-                    <div class="product-box">
-                        <a href="">
-                            <div class="product-feature-image" style="background-image: url('{{$item['featureImage']}}');"></div>
-                            <div class="product-info">
-                                <h3 class="product-title">{{$item['title']}}</h3>
-                                <h4 class="product-type">型式：{{$item['type']}}</h4>
-                                <p>近红外线变频调光式，不受外部光线变化影响。</p> 
-                                <p>特殊耐污防水检测组件，确保长期使用稳定性。</p> 
-                                <p>4~20mA输出信号，上下限警报各a/b接点。</p> 
-                                <br>
-                                <p>测定范围： 0~20000 mg/l</p>
+            <div class="col-md-10 mx-auto index-info-text-section">
+                <h2>我们提供的专业服务</h2>
+                <hr>
+                <p>上海葡萄王企业有限公司，位于交通便利的上海市松江工业区，距离市区30公里，</p>
+                <p>附近尚有沪杭高速道路及嘉金高速道路，优越的地理位置为中国及全世界的客户提供了便捷服务。</p>
+                <p>主体厂房占地10,000平方米，拥有符合GMP认证的10万级、30万级生产环境，以高规格进口自动化设备与严密的质量管理，</p>   
+                <p>为各类食品及保健食品的生产提供优良的质量保障，帮助您在大健康市场更强壮稳健。</p>
+            </div>
+            <div class="col-md-10 mx-auto cate-type">
+                <div class="row">
+                    <div class="cate-type-item">
+                        <div class="info" style="background-image: url('/img/about-1.jpg')">
+                            <div class="text">
+                                <p>口服液</p>
+                                <p>(玻璃瓶装)</p>
                             </div>
-                        </a>
-                        <a class="product-link" href="">加入询价车</a>
+                        </div>
+                    </div>
+                    <div class="cate-type-item">
+                        <div class="info" style="background-image: url('/img/about-2.jpg')">
+                            <div class="text">
+                                <p>片剂/锭剂</p>
+                                <p>(瓶装)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cate-type-item">
+                        <div class="info" style="background-image: url('/img/about-3.jpg')">
+                            <div class="text">
+                                <p>粉剂</p>
+                                <p>(颗粒)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cate-type-item">
+                        <div class="info" style="background-image: url('/img/about-4.jpg')">
+                            <div class="text">
+                                <p>咖啡胶囊</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cate-type-item">
+                        <div class="info" style="background-image: url('/img/about-5.jpg')">
+                            <div class="text">
+                                <p>铝箔包</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            @endforeach
+                
+            </div>
+        </div>
+        
+        <div class="row">
             <div class="col-md-12 btn-section">
                 <a href="" class="learn-more-btn">查看更多产品</a>
             </div>
+        </div> 
+    </div>
+    
+    @if (true)
+    {{-- Count down --}}
+    <div class="container-fluid index-count-down" data-aos="fade-in">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row count-down-row">
+                    <div class="col-md-12">
+                        <h2>您最紧密的合作伙伴</h2>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-box">
+                            {{-- <div class="type-icon drop"></div> --}}
+                            <div class="flex-column">
+                                <div class="number" id="count-year">
+                                    0
+                                </div>
+                                <div class="text">
+                                    成立于上海市松江区
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-box">
+                            {{-- <div class="type-icon box"></div> --}}
+                            <div class="flex-column">
+                                <div class="number" id="count-prod">
+                                    0
+                                </div>
+                                <div class="text">
+                                    全场员工人数超过
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-box">
+                            {{-- <div class="type-icon mem"></div> --}}
+                            <div class="flex-column">
+                                <div class="number" id="count-mem">
+                                    0
+                                </div>
+                                <div class="text">
+                                    累积获奖肯定
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="count-down-box">
+                            {{-- <div class="type-icon back"></div> --}}
+                            <div class="flex-column">
+                                <div class="number" id="count-return">
+                                    0
+                                </div>
+                                <div class="text">
+                                    取得SFDA食品卫生许可证
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     @endif
-    
-    @if (false)
-       {{-- News --}}
-    <div class="index-banner-divider news" data-aos="fade-in">
-        <h2>新闻中心</h2>
-    </div>
-    <div class="container new-tabs" data-aos="fade-in">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">全部文章</a>
-            </li>
-            @foreach (CategoryView::post() as $item)
-                <li class="nav-item">
-                    <a class="nav-link" id="{{$item->categoryGuid}}-tab" data-toggle="tab" href="#{{$item->categoryGuid}}" role="tab" aria-controls="{{$item->categoryGuid}}" aria-selected="false">{{$item->categoryTitle}}</a>
-                </li>
-            @endforeach
-        </ul>
-    </div>
-    <div class="container new-list">
+
+    <div class="container-fluid index-info about">
         <div class="row">
-            <div class="col-md-12">
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="card-columns">
-                            @foreach (PostView::allasc(15) as $item)
-                                <a href="" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                    <div class="card">
-                                        <img class="card-img-top" src="{{$item->featureImage}}" alt="{{$item->postTitle}}">
-                                        <div class="card-body">
-                                            <h4 class="card-title">{{$item->postTitle}}</h4>
-                                            <p><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{Carbon::parse($item->created_at)->format('Y.m.d')}}</p>
-                                            <div class="card-info">
-                                                <p class="card-text">{{mb_strimwidth(preg_replace('#<[^>]+>#', ' ', $item->content), 0, 300, "...")}}</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>                        
-                            @endforeach
-                        </div>
-                    </div>
-                    @foreach (CategoryView::post() as $value)
-                        <div class="tab-pane fade" id="{{$value->categoryGuid}}" role="tabpanel" aria-labelledby="{{$value->categoryGuid}}-tab">
-                            <div class="card-columns">
-                                @foreach (PostView::getByCategory($value->categoryGuid, 15) as $item)
-                                    <a href="" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                        <div class="card">
-                                            <img class="card-img-top" src="{{$item->featureImage}}" alt="{{$item->postTitle}}">
-                                            <div class="card-body">
-                                                <h4 class="card-title">{{$item->postTitle}}</h4>
-                                                <p><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;&nbsp;{{Carbon::parse($item->created_at)->format('Y.m.d')}}</p>
-                                                <div class="card-info">
-                                                    <p class="card-text">{{mb_strimwidth(preg_replace('#<[^>]+>#', ' ', $item->content), 0, 300, "...")}}</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>                        
-                                @endforeach
+            <div class="col-md-12 mx-auto index-info-text-section">
+                <h2>我们的专业研发</h2>
+                <hr>
+                <p>上海葡萄王除在生产制造的OEM与ODM中取得耀眼成绩之外，</p>
+                <p>在专业研发上更设有食安中心、生物工程中心、创新研发中心，</p>
+                <p>辅以原有的多年专业的生产与实验室设备、人才、技术，</p>
+                <p>已陆续迈向世界级工厂，在屡获嘉奖与各项认证的同时，</p>
+                <p>我们也期待将技术、专业与严谨带给合作伙伴，并且共同为世界打造科技、健康、希望。</p>
+            </div>
+            <div class="col-md-11 mx-auto">
+                @php
+                    $abouts = array(
+                        [
+                            'featureImage' => '/img/about-section-1.jpg',
+                            'title' => '生物工程中心',
+                            'content' => '生物中心成立于1991年台湾桃园，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，故积极与学术界及研究机构合作，进行素材研发、功能验证及制程改良，
+以建立公司核心技术。另申请并执行经济部技术处及工业局之生技相关科专计划达九件，国科会、农委会与教育部之产学计划约20件，目前已拥有美国一件、中国六件
+及台湾三十五件关于樟芝、香杉芝、乳酸菌、抗生素、猴头菇、紫丁香蘑、蝉花之专利权。'
+                        ],
+                        [
+                            'featureImage' => '/img/about-section-2.jpg',
+                            'title' => '创新研发中心',
+                            'content' => '龙潭生物科技研究所於2018年底新成立，结合原有生物中心近30年的研发经验，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，
+积极与国内学术界及研究机构合作，进行素材研发丶功能验证及制程改良，以建立公司核心技术。
+另申请并执行经济部技术处及工业局之生技相关科专计画达九件，国科会丶农委会与教育部之产学计画约40件，目前已拥有美国丶中国丶日本丶加拿大及台湾
+关於樟芝丶香杉芝丶乳酸菌丶抗生素丶猴头菇丶紫丁香蘑及蝉花共 55 件专利权。'
+                        ],
+                        [
+                            'featureImage' => '/img/about-section-3.jpg',
+                            'title' => '食安中心',
+                            'content' => '葡萄王设有符合国际标准『ISO/IEC 17025 TAF认证实验室』，为公司产品提供最严密的把关。目前自主检验包括：一般物性、化性与食安因子相关检测项目，
+检测方式除经TAF(财团法人全国认证基金会)之要求外，并参照台湾行政院卫生福利部与经济部标准检验局订定之方法或国际间认可之检验方法(如AOAC)等。'
+                        ]
+                    );
+                @endphp
+                <div class="row">
+                    @foreach ($abouts as $item)
+                        <div class="col-md-4 about-section-item">
+                            <div class="section-item">
+                                <div class="featureImage" style="background-image: url('{{$item['featureImage']}}')"></div>
+                                <h3>{{$item['title']}}</h3>
+                                <div class="text">
+                                    {{mb_substr($item['content'],0,100,"utf-8")}}...
+                                </div>
+                                <div class="btn-section">
+                                    <a href="" class="learn-more-btn">了解更多</a>
+                                </div>
                             </div>
                         </div>
                     @endforeach
                 </div>
             </div>
-            <div class="col-md-12 btn-section">
-                <a href="" class="learn-more-btn">查看更多历史消息</a>
-            </div>
         </div>
-    </div> 
-    @endif
-    
-    @if (false)
-        {{-- Witness --}}
-    <div class="index-banner-divider witness">
-        <h2>我们的客户</h2>
     </div>
-    <div class="container witness-list" data-aos="fade-up">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="witness-container">
+    
+    @php
+        $albumPath = public_path('img/device');
 
-                    <div class="witness-item">
-                        <div class="witness-image">
-                            <img src="/img/partner1.jpg" alt="">
-                        </div>
-                        <div class="withess-info">
-                            统一企业股份有限公司
-                            <br>
-                            <span>Uni-President Enterprises Corporation</span>
-                        </div>
+        $devices = preg_grep('~\.(jpeg|jpg|png)$~', scandir($albumPath));
+        
+    @endphp
+    <div class="device-album">
+        @foreach ($devices as $item)
+            <img src="/img/device/{{$item}}" alt="">
+        @endforeach
+    </div>
+
+    <div class="container index-info about">
+        <div class="row">
+            <div class="col-md-12 mx-auto index-info-text-section">
+                <h2>我们的安全品质</h2>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="/img/site-logo/license.png" style="max-width: 100%;" alt="">
                     </div>
-                    
-                    <div class="witness-item">
-                        <div class="witness-image">
-                            <img src="/img/partner2.png" alt="">
-                        </div>
-                        <div class="withess-info">
-                            金车股份有限公司
-                            <br>
-                            <span>King Car Industrial Co., Ltd</span>
-                        </div>
-                    </div>
-                        
-                    <div class="witness-item">
-                        <div class="witness-image">
-                            <img src="/img/partner3.jpg" alt="">
-                        </div>
-                        <div class="withess-info">
-                            黑松股份有限公司
-                            <br>
-                            <span>HeySong Corporation</span>
-                        </div>
-                    </div>
-                        
-                    <div class="witness-item">
-                        <div class="witness-image">
-                            <img src="/img/partner4.jpg" alt="">
-                        </div>
-                        <div class="withess-info">
-                            好市多股份有限公司
-                            <br>
-                            <span>Costco Wholesale Corporation</span>
-                        </div>
-                    </div>
-                        
-                    <div class="witness-item">
-                        <div class="witness-image">
-                            <img src="/img/partner5.png" alt="">
-                        </div>
-                        <div class="withess-info">
-                            鼎泰丰小吃店股份有限公司
-                            <br>
-                            <span>Din Tai Fung</span>
-                        </div>
-                    </div>
-                        
-                    <div class="witness-item">
-                        <div class="witness-image">
-                            <img src="/img/partner6.png" alt="">
-                        </div>
-                        <div class="withess-info">
-                            东京牛角股份有限公司
-                            <br>
-                            <span>REINS International</span>
-                        </div>
+                    <div class="col-md-8" style="text-align: left; line-height: 4.7rem;">
+                        <p>葡萄王生技拥有独立的保健食品及药品生产线，所有产线均以安全与质量兼顾为主要考虑。对于药品的要求葡萄王生技一路秉持着cGMP 制药品管的精神，于整个生产流程中随时监控维持，层层把关，确保药品质量的安全性及有效性，葡萄王更于2014年获得国际制药最高标准PIC/S GMP 认证，对质量如此的坚持，即是期望能供给顾客高质量的产品。</p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
-    @endif
     
-
+    <a data-fancybox class="fancybox-btn" href="https://www.youtube.com/watch?v=6LNIFuG204s">
+        <div class="vdieo-present-section">
+            <div class="info">
+                <h2>VIDEO</h2>
+                <h4>葡萄王生技股份有限公司介紹影片</h4>
+                <img src="/img/site-logo/play-icon.png" alt="">
+            </div>
+        </div>
+    </a>
+    
 @endsection

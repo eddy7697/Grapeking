@@ -17,6 +17,7 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="/js/plugins/AOS/aos.css">
 <link rel="stylesheet" href="/css/animate.css">
+<link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
 
 <!-- Styles -->
 <style>

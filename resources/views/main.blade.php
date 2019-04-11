@@ -44,6 +44,8 @@
 
     <script src="/js/plugins/AOS/aos.js" charset="utf-8"></script>
 
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <script type="text/javascript">
         AOS.init();
 
@@ -75,6 +77,16 @@
         });
 
         $(document).ready(function () {
+            $('.device-album').slick({
+                dots: false,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 6,
+                centerMode: false,
+                variableWidth: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
             $('.loading-bar').hide()
         });
         
