@@ -411,7 +411,7 @@
     <div class="device-album">
         @foreach ($devices as $item)
             <a data-fancybox="devices" href="/img/device/{{$item}}">
-                <img src="/img/device/{{$item}}" alt="">
+                <img width="100%" src="/img/device/{{$item}}" alt="">
             </a>
         @endforeach
     </div>
