@@ -25,4 +25,7 @@
         display: block;
         font-size: 50pt;
     }
+    .fancybox-navigation {
+        position: initial;
+    }
 </style>

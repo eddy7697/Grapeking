@@ -150,9 +150,18 @@
             @endphp
             @foreach ($album as $item)
                 <div class="swiper-slide" style="background-image: url('{{$item['url']}}')">
-                    <div class="slide-item">
-                        <img src="/img/banner-text-1.png" alt="">
-                        <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
+                    <div class="slide-item">                        
+                        <div class="flex-column" data-aos="fade-right">
+                            <div>
+                                <img src="/img/banner-text-1.png" alt="">
+                            </div>
+                            <div>
+                                <img src="/img/banner-text-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="type-icon mem" data-aos="fade-up">
+                            <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
+                        </div>
                         {{-- <h2>{{$item['title']}}</h2>
                         <div class="slide-info">
                             {!!$item['content']!!}
@@ -168,34 +177,38 @@
     @endif
 
     <div class="container-fluid factory-list">
-        <div class="row">
+        <div class="row">            
             <div class="col-sm-6 col-md-3 factory-item food-safety">
+                <div class="border-bar"></div>
                 <div class="factory-item-info">
                     <p>食安中心</p>
                     <p>Food safety center</p>
                 </div>
-                <div class="border-bar"></div>
+                <a href=""></a>
             </div>
             <div class="col-sm-6 col-md-3 factory-item bioengineering">
+                <div class="border-bar"></div>                
                 <div class="factory-item-info">
                     <p>生物工程中心</p>
                     <p>Bioengineering Center</p>
                 </div>
-                <div class="border-bar"></div>
+                <a href=""></a>
             </div>
             <div class="col-sm-6 col-md-3 factory-item innovation">
+                <div class="border-bar"></div>
                 <div class="factory-item-info">
                     <p>创新研发中心</p>
                     <p>Innovation R&D Center</p>
-                </div>
-                <div class="border-bar"></div>
+                </div>                
+                <a href=""></a>
             </div>
-            <div class="col-sm-6 col-md-3 factory-item factory">
+            <div class="col-sm-6 col-md-3 factory-item factory">                
+                <div class="border-bar"></div>
                 <div class="factory-item-info">
                     <p>世界级工厂</p>
                     <p>World class factory</p>
                 </div>
-                <div class="border-bar"></div>
+                <a href=""></a>
             </div>
         </div>
     </div>
@@ -207,8 +220,6 @@
                 <hr>
                 <p>上海葡萄王企业有限公司，位于交通便利的上海市松江工业区，距离市区30公里，</p>
                 <p>附近尚有沪杭高速道路及嘉金高速道路，优越的地理位置为中国及全世界的客户提供了便捷服务。</p>
-                <p>主体厂房占地10,000平方米，拥有符合GMP认证的10万级、30万级生产环境，以高规格进口自动化设备与严密的质量管理，</p>   
-                <p>为各类食品及保健食品的生产提供优良的质量保障，帮助您在大健康市场更强壮稳健。</p>
             </div>
             <div class="col-md-10 mx-auto cate-type">
                 <div class="row">
@@ -219,6 +230,7 @@
                                 <p>(玻璃瓶装)</p>
                             </div>
                         </div>
+                        <a href=""></a>
                     </div>
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-2.jpg')">
@@ -227,6 +239,7 @@
                                 <p>(瓶装)</p>
                             </div>
                         </div>
+                        <a href=""></a>
                     </div>
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-3.jpg')">
@@ -235,6 +248,7 @@
                                 <p>(颗粒)</p>
                             </div>
                         </div>
+                        <a href=""></a>
                     </div>
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-4.jpg')">
@@ -242,6 +256,7 @@
                                 <p>咖啡胶囊</p>
                             </div>
                         </div>
+                        <a href=""></a>
                     </div>
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-5.jpg')">
@@ -249,6 +264,7 @@
                                 <p>铝箔包</p>
                             </div>
                         </div>
+                        <a href=""></a>
                     </div>
                 </div>
                 
@@ -335,10 +351,7 @@
                 <h2>我们的专业研发</h2>
                 <hr>
                 <p>上海葡萄王除在生产制造的OEM与ODM中取得耀眼成绩之外，</p>
-                <p>在专业研发上更设有食安中心、生物工程中心、创新研发中心，</p>
-                <p>辅以原有的多年专业的生产与实验室设备、人才、技术，</p>
-                <p>已陆续迈向世界级工厂，在屡获嘉奖与各项认证的同时，</p>
-                <p>我们也期待将技术、专业与严谨带给合作伙伴，并且共同为世界打造科技、健康、希望。</p>
+                <p>在专业研发上更设有食安中心、生物工程中心、创新研发中心联手提供专业研发。</p>
             </div>
             <div class="col-md-11 mx-auto">
                 @php
@@ -378,7 +391,9 @@
                                 <div class="btn-section">
                                     <a href="" class="learn-more-btn">了解更多</a>
                                 </div>
+                                <a class="cover-link" href=""></a>
                             </div>
+                            
                         </div>
                     @endforeach
                 </div>
@@ -388,13 +403,16 @@
     
     @php
         $albumPath = public_path('img/device');
+        $licensePath = public_path('img/license');
 
         $devices = preg_grep('~\.(jpeg|jpg|png)$~', scandir($albumPath));
-        
+        $licenses = preg_grep('~\.(jpeg|jpg|png)$~', scandir($licensePath));
     @endphp
     <div class="device-album">
         @foreach ($devices as $item)
-            <img src="/img/device/{{$item}}" alt="">
+            <a data-fancybox="devices" href="/img/device/{{$item}}">
+                <img src="/img/device/{{$item}}" alt="">
+            </a>
         @endforeach
     </div>
 
@@ -404,11 +422,20 @@
                 <h2>我们的安全品质</h2>
                 <hr>
                 <div class="row">
-                    <div class="col-md-4">
-                        <img src="/img/site-logo/license.png" style="max-width: 100%;" alt="">
+                    <div class="col-md-12">
+                        <p>葡萄王生技拥有独立的保健食品及药品生产线，所有产线均以安全与质量兼顾为主要考虑。</p>
+                        <p>对于药品的要求葡萄王生技一路秉持着cGMP 制药品管的精神，于整个生产流程中随时监控维持，</p>
+                        <p>层层把关，确保药品质量的安全性及有效性，葡萄王更于2014年获得国际制药最高标准PIC/S GMP 认证，</p>
+                        <p>对质量如此的坚持，即是期望能供给顾客高质量的产品。</p>
                     </div>
-                    <div class="col-md-8" style="text-align: left; line-height: 4.7rem;">
-                        <p>葡萄王生技拥有独立的保健食品及药品生产线，所有产线均以安全与质量兼顾为主要考虑。对于药品的要求葡萄王生技一路秉持着cGMP 制药品管的精神，于整个生产流程中随时监控维持，层层把关，确保药品质量的安全性及有效性，葡萄王更于2014年获得国际制药最高标准PIC/S GMP 认证，对质量如此的坚持，即是期望能供给顾客高质量的产品。</p>
+                    <div class="col-md-10 mx-auto">
+                        <div class="row">
+                            @foreach ($licenses as $item)
+                                <div class="col-md-2">
+                                    <img src="/img/license/{{$item}}" width="100%" alt="">
+                                </div>
+                            @endforeach
+                        </div>                       
                     </div>
                 </div>
                 

@@ -80,14 +80,18 @@
             $('.device-album').slick({
                 dots: false,
                 infinite: true,
-                speed: 300,
-                slidesToShow: 6,
+                speed: 1000,
+                slidesToShow: 5,
                 centerMode: false,
-                variableWidth: true,
+                cssEase: 'ease-in-out',
                 autoplay: true,
                 autoplaySpeed: 2000,
             });
             $('.loading-bar').hide()
+        });
+
+        $('.search-icon').on('click', function () {
+            $('.search-input-group').toggleClass('hide');
         });
         
     </script>

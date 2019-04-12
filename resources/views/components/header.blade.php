@@ -23,16 +23,23 @@
                 <div class="site-func-container">
                     <div class="search-bar">
                         <form action="" id="search-form">
-                            <i class="fa fa-search search-icon" aria-hidden="true"></i>
-                            <input type="text" class="search-input" placeholder="请输入关键字..." name="keyword">
-                            <i class="fa fa-times-circle-o close-icon" aria-hidden="true"></i>
+                            <img class="search-icon" src="/img/icon/search.svg" alt="search">
+                            <div class="search-input-group hide">
+                                <input type="text" class="search-input" placeholder="请输入关键字..." name="keyword">
+                                <img class="close-icon" src="/img/icon/close.svg" alt="close">
+                            </div>
                         </form>
                     </div>
                     <div class="mail-btn">
-                        <a href="mailto:test@test.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <a href="mailto:test@test.com"><img src="/img/icon/mail.svg" style="width: 30px; transform: translateY(-1px);" alt=""></a>
                     </div>
                     <div class="dropdown locale-drop-select">
-                        <a href="#" data-toggle="dropdown"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;<span style="color: rgba(255, 255, 255, .8)">语系切换({{$language}})&nbsp;&nbsp;<i class="fa fa-caret-down" aria-hidden="true"></i></span></a>    
+                        <a href="#" data-toggle="dropdown">
+                            <img src="/img/icon/earth.svg" style="width: 22px; transform: translateY(-2px);" alt="">&nbsp;&nbsp;
+                            <span style="color: rgba(255, 255, 255, .8)">语系切换({{$language}})&nbsp;&nbsp;
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                        </a>    
                         <div class="dropdown-menu">
                             @foreach (Config::get('languages') as $lang => $language)
                                 @if ($lang != App::getLocale())

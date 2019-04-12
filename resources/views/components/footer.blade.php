@@ -8,14 +8,14 @@
     }
 @endphp
 
-<section class="site-footer" data-aos="fade-up">
+<section class="site-footer">
     <div class="container-fluid site-footer-content">
         {{-- footer-section --}}
-        <div class="col-md-12 footer-section">
+        <div class="col-md-11 mx-auto footer-section">
 
             {{-- footer-info --}}
             <div class="row footer-info">
-                <div class="col-md-4 site-info">
+                <div class="col-md-4 mx-auto site-info">
                     <div class="footer-logo">
                         <img src="/img/site-logo/logo_footer.png" alt="">
                     </div>
@@ -27,13 +27,14 @@
                         <li>电邮：gki@grapeking.com.cn</li>
                     </ul>
                 </div>
-                <div class="col-md-4 icp">
+                <div class="col-md-3 mx-auto icp">
                     <div class="icp-card">
-                        <img class="icp-icon" src="/img/site-logo/icp.png" alt="">
+                        <img class="icp-icon" src="/img/site-logo/icp.png" alt=""><br>
                         <span>沪ICP备13010123号-1</span>
+                        <a href="http://www.miit.gov.cn/"></a>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mx-auto">
                     <div class="row">
                         <div class="col-md-6 site-map">
                             <h5>关于上海葡萄王</h5>
@@ -85,10 +86,10 @@
 
     </div>
 </section>
-<section class="site-copyright"  data-aos="fade-up">
+<section class="site-copyright">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-11 mx-auto">
+            <div class="col-md-10 mx-auto">
                 <div class="row">
                     <div class="col-md-6 info" style="">
                         Copyright &copy; Shanghai Grape King Enterprises Corp.
