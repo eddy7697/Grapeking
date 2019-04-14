@@ -81,6 +81,12 @@
                     countUpReturn.start();
                 }
             });
+
+            $('.scrollDown').on('click', function () {
+                $("html, body").animate({
+                    scrollTop: $('.swiper-wrapper').height() - $('.site-header-container').height() + 1
+                }, 2000);
+            });
         }
     </script>
     <script>
@@ -171,6 +177,12 @@
                             {!!$item['content']!!}
                         </div>
                         <a class="slide-btn" href="{{$item->link}}">{{$item->button}}</a> --}}
+                    </div>
+                    <div class="scrollDown">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <span class="text">Scroll down</span>
                     </div>
                 </div>
             @endforeach
