@@ -447,7 +447,7 @@
                 margin: 30px auto;
                 text-align: center;
                 font-size: 1.25rem;
-                font-weight: 300;
+                font-weight: 600;
                 padding-bottom: 40px;
                 
                 p {
@@ -1079,7 +1079,7 @@
         }
         &::before {
             content: '';
-            background-color: rgba($color: #000, $alpha: 0.7);
+            background-color: rgba($color: #000, $alpha: 0.4);
             display: block;
             position: absolute;
             top: 0;

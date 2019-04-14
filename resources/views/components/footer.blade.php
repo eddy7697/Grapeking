@@ -29,9 +29,9 @@
                 </div>
                 <div class="col-md-3 mx-auto icp">
                     <div class="icp-card">
-                        <img class="icp-icon" src="/img/site-logo/icp.png" alt=""><br>
+                        <img class="icp-icon" src="/img/site-logo/icp.png" alt="" style="margin-bottom: 10px;"><br>
                         <span>沪ICP备13010123号-1</span>
-                        <a href="http://www.miit.gov.cn/"></a>
+                        <a href="http://www.miit.gov.cn/" target="_blank"></a>
                     </div>
                 </div>
                 <div class="col-md-4 mx-auto">

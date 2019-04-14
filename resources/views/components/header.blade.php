@@ -31,7 +31,7 @@
                         </form>
                     </div>
                     <div class="mail-btn">
-                        <a href="mailto:test@test.com"><img src="/img/icon/mail.svg" style="width: 30px; transform: translateY(-1px);" alt=""></a>
+                        <a href="mailto:test@test.com"><img src="/img/icon/email.svg" style="width: 30px; transform: translateY(-1px);" alt=""></a>
                     </div>
                     <div class="dropdown locale-drop-select">
                         <a href="#" data-toggle="dropdown">

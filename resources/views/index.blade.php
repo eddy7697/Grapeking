@@ -73,10 +73,14 @@
             var countUpMem = new CountUp('count-mem', 93);
             var countUpReturn = new CountUp('count-return', 2006);
 
-            countUpYear.start();
-            countUpProd.start();
-            countUpMem.start();
-            countUpReturn.start();
+            $(window).scroll(function(){
+                if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 200) {
+                    countUpYear.start();
+                    countUpProd.start();
+                    countUpMem.start();
+                    countUpReturn.start();
+                }
+            });
         }
     </script>
     <script>
@@ -151,15 +155,15 @@
             @foreach ($album as $item)
                 <div class="swiper-slide" style="background-image: url('{{$item['url']}}')">
                     <div class="slide-item">                        
-                        <div class="flex-column" data-aos="fade-right">
-                            <div>
+                        <div class="flex-column" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1500">
+                            <div style="text-align: left">
                                 <img src="/img/banner-text-1.png" alt="">
                             </div>
-                            <div>
+                            <div style="text-align: left">
                                 <img src="/img/banner-text-2.png" alt="">
                             </div>
                         </div>
-                        <div class="type-icon mem" data-aos="fade-up">
+                        <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
                             <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
                         </div>
                         {{-- <h2>{{$item['title']}}</h2>
@@ -213,7 +217,7 @@
         </div>
     </div>
 
-    <div class="container-fluid index-info about">
+    <div class="container-fluid index-info about-pro">
         <div class="row">
             <div class="col-md-10 mx-auto index-info-text-section">
                 <h2>我们提供的专业服务</h2>
@@ -273,7 +277,7 @@
         
         <div class="row">
             <div class="col-md-12 btn-section">
-                <a href="" class="learn-more-btn">查看更多产品</a>
+                <a href="" class="learn-more-btn">了解更多</a>
             </div>
         </div> 
     </div>
@@ -422,7 +426,7 @@
                 <h2>我们的安全品质</h2>
                 <hr>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" style="margin-bottom: 30px;">
                         <p>葡萄王生技拥有独立的保健食品及药品生产线，所有产线均以安全与质量兼顾为主要考虑。</p>
                         <p>对于药品的要求葡萄王生技一路秉持着cGMP 制药品管的精神，于整个生产流程中随时监控维持，</p>
                         <p>层层把关，确保药品质量的安全性及有效性，葡萄王更于2014年获得国际制药最高标准PIC/S GMP 认证，</p>
