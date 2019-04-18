@@ -4,17 +4,30 @@
 @endsection
 
 @section('custom-style')
+<style>
+.sub-page-banner {
+    background-image: url('/img/banner.jpg');
+}
+</style>
 @endsection
 
 @section('content')
     <div class="sub-page-banner">
-        <h2>關於科爾克</h2>
-    </div>
-    <div class="container mg-site-thumbnail">
-        <div class="col-md-12">
-            <a href="/">首頁</a>
-            &nbsp;&nbsp;>&nbsp;&nbsp;
-            關於易耕
+        <div class="site-thumbnail-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 mx-auto">
+                        <div class="site-thumbnail-container">
+                            <ul class="site-thumbnail">
+                                <li>首頁</li>
+                                <li>關於上海葡萄王</li>
+                                <li>關於我們</li>
+                            </ul>
+                            <h2>關於我們</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="container">
