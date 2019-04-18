@@ -12,42 +12,46 @@
 <section class="site-header">
     <div class="container-fluid">
         <div class="row top-bar">
-            <div class="col-md-6 short-cut">
-                <ul>
-                    <li><a href="">葡众企业</a></li>
-                    <li><a href="">台湾葡萄王</a></li>
-                    <li><a href="">健康活力能量馆</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6 site-func">
-                <div class="site-func-container">
-                    <div class="search-bar">
-                        <form action="" id="search-form">
-                            <img class="search-icon" src="/img/icon/search.svg" alt="search">
-                            <div class="search-input-group hide">
-                                <input type="text" class="search-input" placeholder="请输入关键字..." name="keyword">
-                                <img class="close-icon" src="/img/icon/close.svg" alt="close">
+            <div class="col-md-9 mx-auto">
+                <div class="row">
+                    <div class="col-md-6 short-cut">
+                        <ul>
+                            <li><a href="">葡众企业</a></li>
+                            <li><a href="">台湾葡萄王</a></li>
+                            <li><a href="">健康活力能量馆</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 site-func">
+                        <div class="site-func-container">
+                            <div class="search-bar">
+                                <form action="" id="search-form">
+                                    <img class="search-icon" src="/img/icon/search.svg" alt="search">
+                                    <div class="search-input-group hide">
+                                        <input type="text" class="search-input" placeholder="请输入关键字..." name="keyword">
+                                        <img class="close-icon" src="/img/icon/close.svg" alt="close">
+                                    </div>
+                                </form>
                             </div>
-                        </form>
-                    </div>
-                    <div class="mail-btn">
-                        <a href="mailto:test@test.com"><img src="/img/icon/email.svg" style="width: 30px; transform: translateY(-1px);" alt=""></a>
-                    </div>
-                    <div class="dropdown locale-drop-select">
-                        <a href="#" data-toggle="dropdown">
-                            <img src="/img/icon/earth.svg" style="width: 22px; transform: translateY(-2px);" alt="">&nbsp;&nbsp;
-                            <span style="color: rgba(255, 255, 255, .8)">语系切换({{$language}})&nbsp;&nbsp;
-                                <i class="fa fa-caret-down" aria-hidden="true"></i>
-                            </span>
-                        </a>    
-                        <div class="dropdown-menu">
-                            @foreach (Config::get('languages') as $lang => $language)
-                                @if ($lang != App::getLocale())
-                                    <a class="dropdown-item" style="color: #aaa; font-weight: light; margin-top: 5px; text-decoration: none; padding: 5px 10px;" href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
-                                @else
-                                    <a class="dropdown-item" style="color: #004471; font-weight: bolder; margin-top: 5px; text-decoration: none; padding: 5px 10px;" href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
-                                @endif
-                            @endforeach
+                            <div class="mail-btn">
+                                <a href="mailto:test@test.com"><img src="/img/icon/email.svg" style="width: 22px; transform: translateY(-1px);" alt=""></a>
+                            </div>
+                            <div class="dropdown locale-drop-select">
+                                <a href="#" data-toggle="dropdown">
+                                    <img src="/img/icon/earth.svg" style="width: 20px; transform: translateY(-2px);" alt="">&nbsp;&nbsp;
+                                    <span >语系切换({{$language}})&nbsp;&nbsp;
+                                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                    </span>
+                                </a>    
+                                <div class="dropdown-menu">
+                                    @foreach (Config::get('languages') as $lang => $language)
+                                        @if ($lang != App::getLocale())
+                                            <a class="dropdown-item" style="color: #aaa; font-weight: light; margin-top: 5px; text-decoration: none; padding: 5px 10px;" href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
+                                        @else
+                                            <a class="dropdown-item" style="color: #004471; font-weight: bolder; margin-top: 5px; text-decoration: none; padding: 5px 10px;" href="{{ route('lang.switch', $lang) }}">{{$language}}</a>
+                                        @endif
+                                    @endforeach
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -57,7 +61,7 @@
     </div>
     <div class="container-fluid">
         <div class="row site-header-container">
-            <div class="col-md-11 mx-auto">
+            <div class="col-md-9 mx-auto">
                 <div class="site-logo">
                     <a href="/"><img src="/img/site-logo/logo_header.png" alt=""></a>
                 </div>                

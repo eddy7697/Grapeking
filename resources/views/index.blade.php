@@ -229,15 +229,15 @@
         </div>
     </div>
 
-    <div class="container-fluid index-info about-pro">
+    <div class="container index-info about-pro">
         <div class="row">
-            <div class="col-md-10 mx-auto index-info-text-section">
+            <div class="col-md-12 index-info-text-section">
                 <h2>我们提供的专业服务</h2>
                 <hr>
                 <p>上海葡萄王企业有限公司，位于交通便利的上海市松江工业区，距离市区30公里，</p>
                 <p>附近尚有沪杭高速道路及嘉金高速道路，优越的地理位置为中国及全世界的客户提供了便捷服务。</p>
             </div>
-            <div class="col-md-10 mx-auto cate-type">
+            <div class="col-md-11 mx-auto cate-type">
                 <div class="row">
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-1.jpg')">
@@ -298,7 +298,7 @@
     {{-- Count down --}}
     <div class="container-fluid index-count-down" data-aos="fade-in">
         <div class="row">
-            <div class="col-md-10 mx-auto">
+            <div class="col-md-7 mx-auto">
                 <div class="row count-down-row">
                     <div class="col-md-12">
                         <h2>您最紧密的合作伙伴</h2>
@@ -361,9 +361,9 @@
     </div>
     @endif
 
-    <div class="container-fluid index-info about">
+    <div class="container index-info about">
         <div class="row">
-            <div class="col-md-12 mx-auto index-info-text-section">
+            <div class="col-md-11 mx-auto index-info-text-section">
                 <h2>我们的专业研发</h2>
                 <hr>
                 <p>上海葡萄王除在生产制造的OEM与ODM中取得耀眼成绩之外，</p>
@@ -464,7 +464,7 @@
             <div class="info">
                 <h2>VIDEO</h2>
                 <h4>葡萄王生技股份有限公司介紹影片</h4>
-                <img src="/img/site-logo/play-icon.png" alt="">
+                <img class="play-btn" src="/img/site-logo/play-icon.png" alt="">
             </div>
         </div>
     </a>
