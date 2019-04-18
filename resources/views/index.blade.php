@@ -160,17 +160,17 @@
             @endphp
             @foreach ($album as $item)
                 <div class="swiper-slide" style="background-image: url('{{$item['url']}}')">
-                    <div class="slide-item">                        
-                        <div class="flex-column" data-aos="fade-right" data-aos-easing="ease-out" data-aos-duration="1500">
+                    <div class="slide-item">     
+                        <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
+                            <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
+                        </div>                   
+                        <div class="flex-column" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="1500">
                             <div style="text-align: left">
                                 <img src="/img/banner-text-1.png" alt="">
                             </div>
                             <div style="text-align: left">
                                 <img src="/img/banner-text-2.png" alt="">
                             </div>
-                        </div>
-                        <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
-                            <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
                         </div>
                         {{-- <h2>{{$item['title']}}</h2>
                         <div class="slide-info">
