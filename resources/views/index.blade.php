@@ -153,7 +153,7 @@
         <div class="swiper-wrapper">
             @php
                 $album = array([
-                    'url' => '/img/banner.jpg',
+                    'url' => '/img/banner-2.jpg',
                     'title' => 'test',
                     'content' => 'test'
                 ]);
