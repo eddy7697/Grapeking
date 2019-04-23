@@ -15,7 +15,7 @@
 
             {{-- footer-info --}}
             <div class="row footer-info">
-                <div class="col-md-4 mx-auto site-info">
+                <div class="col-md-5 site-info">
                     <div class="row">
                         <div class="col-md-11 offset-md-1">
                             <div class="footer-logo">
@@ -30,20 +30,19 @@
                             </ul>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="col-md-2 mx-auto icp">
+                {{-- <div class="col-md-2 mx-auto icp">
                     <div class="icp-card">
                         <img class="icp-icon" src="/img/site-logo/icp.png" alt="" style="margin-bottom: 10px;"><br>
                         <span>沪ICP备13010123号-1</span>
                         <a href="http://www.miit.gov.cn/" target="_blank"></a>
                     </div>
-                </div>
-                <div class="col-md-4 mx-auto">
+                </div> --}}
+                <div class="col-md-5 offset-md-2">
                     <div class="row">
-                        <div class="col-md-6 offset-md-1 site-map">
-                            <h5>关于上海葡萄王</h5>
+                        <div class="col-md-5 offset-md-1 site-map">                            
                             <ul>
+                                <h5>关于上海葡萄王</h5>
                                 <li>
                                     <a href="">企业愿景</a>
                                 </li>
@@ -61,9 +60,9 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-5 site-map">
-                            <h5>专业研发</h5>
+                        <div class="col-md-5 site-map">                            
                             <ul>
+                                <h5>专业研发</h5>
                                 <li>
                                     <a href="">食安中心</a>
                                 </li>
@@ -96,10 +95,15 @@
         <div class="row">
             <div class="col-md-10 mx-auto">
                 <div class="row">
-                    <div class="col-md-6 info" style="">
+                    <div class="col-md-5 info" style="">
                         Copyright &copy; Shanghai Grape King Enterprises Corp.
                     </div>
-                    <div class="col-md-6 info" style="text-align: right">
+                    <div class="col-md-2 icp">
+                        <img class="icp-icon" src="/img/gongan.png" alt="" style="display: inline-block">
+                        <span style="display: inline-block">沪ICP备13010123号-1</span>
+                        <a href="http://www.miit.gov.cn/" target="_blank"></a>
+                    </div>
+                    <div class="col-md-5 info" style="text-align: right">
                         <a href="">隐私权政策</a>&nbsp;|&nbsp;<a href="">使用条款</a>
                     </div> 
                 </div>

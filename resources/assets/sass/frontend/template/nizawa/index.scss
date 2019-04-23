@@ -1229,7 +1229,7 @@
 }
 
 .site-footer {
-
+    background-color: $custom_main;
     min-height: 300px;
 
 
@@ -1243,7 +1243,7 @@
             .footer-info {
 
                 a {
-                    color: #666;
+                    color: #FFF;
                 }
                 .site-info {
                     padding: 20px;
@@ -1259,8 +1259,8 @@
                         }
                     }
                     ul.contact-info {
-                        padding: 10px 20px 20px 20px;
-                        color: #999;
+                        padding: 10px 20px 20px 10px;
+                        color: #FFF;
 
                         li {
                             line-height: 30px;
@@ -1279,7 +1279,7 @@
 
                     &::before {
                         position: absolute;
-                        content: '';
+                        content: none;
                         height: 60%;
                         width: 2px;
                         top: 50%;
@@ -1289,7 +1289,7 @@
                     }
                     &::after {
                         position: absolute;
-                        content: '';
+                        content: none;
                         height: 60%;
                         width: 2px;
                         top: 50%;
@@ -1313,21 +1313,23 @@
                         font-size: 24px;
                         font-weight: bold;
                         margin-bottom: 0.8rem;
+                        color: #FFF;
                     }
                     ul {
+                        float: right;
                         li {
                             margin-left: 20px;
                             line-height: 2.5rem;
                             
                             a {
-                                color: #999;
+                                color: #FFF;
                                 font-size: 15px;
                             }
                             &::before {
                                 position: absolute;
                                 top: 50%;
                                 left: -15px;
-                                color: #E70034;
+                                color: #FFF;
                                 -webkit-transform: translate(-50%, -50%);
                                 transform: translate(-50%, -50%) rotate(45deg);
                                 content: '\25E5';
@@ -1343,7 +1345,7 @@
 }
 
 .site-copyright {
-    background-color: $custom_main;
+    background-color: #FFF;
     font-size: 12px;
 
     &::before {
@@ -1355,15 +1357,15 @@
         -ms-transform: translateX(-50%);
         -o-transform: translateX(-50%);
         transform: translateX(-50%);
-        content: "";
+        content: none;
         width: 0;
         height: 0;
         border-style: solid;
         border-width: 0 142.5px 35px;
-        border-color: transparent transparent #e50032;
+        border-color: transparent transparent $custom_main;
     }
     &::after {
-        content: '^';
+        content: none;
         position: absolute;
         top: -30px;
         left: 50%;
@@ -1375,12 +1377,17 @@
         color: white;
     }
 
+    .icp {
+        text-align: center;
+        padding: 15px 0;
+        color: #666;
+    }
     .info {
-        padding: 40px 0;
-        color: #fff;
+        padding: 15px 20px;
+        color: #666;
 
         a {
-            color: #fff;
+            color: #666;
             text-decoration: none;
         }
     }
