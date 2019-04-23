@@ -209,7 +209,7 @@
             
             img {
                 width: 100%;
-                max-width: 470px;
+                max-width: 420px;
             }
         }
         
@@ -1251,6 +1251,7 @@
 
                     .footer-logo {
                         width: 100%;
+                        // max-width: 420px;
                         text-align: center;
 
                         img {
@@ -1279,7 +1280,7 @@
                     &::before {
                         position: absolute;
                         content: '';
-                        height: 90%;
+                        height: 60%;
                         width: 2px;
                         top: 50%;
                         left: 0;
@@ -1289,7 +1290,7 @@
                     &::after {
                         position: absolute;
                         content: '';
-                        height: 90%;
+                        height: 60%;
                         width: 2px;
                         top: 50%;
                         right: 0;
@@ -1306,6 +1307,7 @@
                 }
                 .site-map {
                     padding: 30px;
+                    margin-top: 10px;
 
                     h5 {
                         font-size: 24px;
@@ -1342,7 +1344,7 @@
 
 .site-copyright {
     background-color: $custom_main;
-    font-size: 15px;
+    font-size: 12px;
 
     &::before {
         position: absolute;
@@ -1374,7 +1376,7 @@
     }
 
     .info {
-        padding: 30px 0;
+        padding: 40px 0;
         color: #fff;
 
         a {

@@ -16,18 +16,23 @@
             {{-- footer-info --}}
             <div class="row footer-info">
                 <div class="col-md-4 mx-auto site-info">
-                    <div class="footer-logo">
-                        <img src="/img/site-logo/logo_footer.png" alt="">
+                    <div class="row">
+                        <div class="col-md-11 offset-md-1">
+                            <div class="footer-logo">
+                                <img src="/img/site-logo/logo_footer.png" alt="">
+                            </div>
+                            <ul class="contact-info">
+                                <li>地址：中国 上海市松江区车新公路518号</li>
+                                <li>电话：+86-21-5760-9598</li>
+                                <li>传真：+86-21-5760-9698</li>
+                                <li>网址：www.grapeking.com.cn</li>
+                                <li>电邮：gki@grapeking.com.cn</li>
+                            </ul>
+                        </div>
                     </div>
-                    <ul class="contact-info">
-                        <li>地址：中国 上海市松江区车新公路518号</li>
-                        <li>电话：+86-21-5760-9598</li>
-                        <li>传真：+86-21-5760-9698</li>
-                        <li>网址：www.grapeking.com.cn</li>
-                        <li>电邮：gki@grapeking.com.cn</li>
-                    </ul>
+                    
                 </div>
-                <div class="col-md-3 mx-auto icp">
+                <div class="col-md-2 mx-auto icp">
                     <div class="icp-card">
                         <img class="icp-icon" src="/img/site-logo/icp.png" alt="" style="margin-bottom: 10px;"><br>
                         <span>沪ICP备13010123号-1</span>
@@ -36,7 +41,7 @@
                 </div>
                 <div class="col-md-4 mx-auto">
                     <div class="row">
-                        <div class="col-md-6 site-map">
+                        <div class="col-md-6 offset-md-1 site-map">
                             <h5>关于上海葡萄王</h5>
                             <ul>
                                 <li>
@@ -56,7 +61,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-6 site-map">
+                        <div class="col-md-5 site-map">
                             <h5>专业研发</h5>
                             <ul>
                                 <li>
