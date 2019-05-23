@@ -18,6 +18,8 @@ Route::get('/maintenance', function ()
  Route::group(['prefix' => 'about'], function()
  {
     Route::get('/', 'Frontend\PageController@about')->name('about');
+    Route::get('/course', 'Frontend\PageController@course')->name('course');
+    Route::get('/founder', 'Frontend\PageController@founder')->name('founder');
     Route::get('/privacy', 'Frontend\PageController@privacy')->name('privacy');
     Route::get('/remind', 'Frontend\PageController@remind')->name('remind');
     Route::get('/notice', 'Frontend\PageController@notice')->name('notice');

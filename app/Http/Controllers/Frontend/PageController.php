@@ -114,4 +114,16 @@ class PageController extends Controller
         return view('frontend.partners.index', [
         ]);
     }
+
+    public function course()
+    {
+        return view('frontend.about.course', [
+        ]);
+    }
+
+    public function founder()
+    {
+        return view('frontend.about.founder', [
+        ]);
+    }
 }

@@ -10,9 +10,9 @@
 
 
 <section class="site-header">
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.85);">
         <div class="row top-bar">
-            <div class="col-md-9 mx-auto">
+            <div class="col-md-12 mx-auto">
                 <div class="row">
                     <div class="col-md-6 short-cut">
                         <ul>
@@ -59,9 +59,9 @@
         </div>
         
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.85);">
         <div class="row site-header-container">
-            <div class="col-md-9 mx-auto">
+            <div class="col-md-12 mx-auto">
                 <div class="site-logo">
                     <a href="/"><img src="/img/site-logo/logo_header.png" alt=""></a>
                 </div>                
