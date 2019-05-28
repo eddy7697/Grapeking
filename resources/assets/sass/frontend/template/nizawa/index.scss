@@ -1373,6 +1373,36 @@
 
                 }
             }
+            ul.about-location-tab {
+                margin-top: 30px;
+                border: none;
+
+                li.nav-item {
+                    width: 25%;
+                    text-align: center;
+
+                    a.nav-link {
+                        color: #aaa;
+                        display : inline-block;
+                        overflow : hidden;
+                        text-overflow : ellipsis;
+                        white-space : nowrap;
+                        width : 100%;
+                        transition: all .2s ease-out;
+
+                        &.active, &:hover {
+                            border: none;
+                            color: #666;
+
+                            span {
+                                padding-bottom: 3px;
+                                transition: all .2s ease-out;
+                                border-bottom: $main-color solid 2px;
+                            }
+                        }
+                    }
+                }
+            }
             .founder-info {
                 height: 400px;
 

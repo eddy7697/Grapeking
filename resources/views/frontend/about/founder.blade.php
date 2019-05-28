@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-9 about-content">
                 <div class="about-text signature">
-                    <h3 style="margin: 100px 0 50px">{{ trans('string.about17') }}</h3>
+                    <h3 style="margin: 150px 0 50px; font-weight: 700">{{ trans('string.about17') }}</h3>
                     <img class="about-image pull-right" src="/img/about/founder/signature.jpg" alt="">
                 </div>
                 <div style="clear: both"></div>
