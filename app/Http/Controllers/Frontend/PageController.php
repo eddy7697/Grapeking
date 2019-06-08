@@ -126,4 +126,16 @@ class PageController extends Controller
         return view('frontend.about.founder', [
         ]);
     }
+
+    public function certification()
+    {
+        return view('frontend.about.certification', [
+        ]);
+    }
+
+    public function location()
+    {
+        return view('frontend.about.location', [
+        ]);
+    }
 }
