@@ -10,7 +10,7 @@
 
 
 <section class="site-header">
-    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.85);">
+    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 1);">
         <div class="row top-bar">
             <div class="col-md-12 mx-auto">
                 <div class="row">
@@ -66,10 +66,10 @@
                     <a href="/"><img src="/img/site-logo/logo_header.png" alt=""></a>
                 </div>                
                 <ul class="site-menu">
-                    <li><a href="" class="dropdown">关于上海葡萄王</a></li>
-                    <li><a href="" class="dropdown">业务体系</a></li>
-                    <li><a href="" class="dropdown">专业研发</a></li>
-                    <li><a href="" class="dropdown">社会责任</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="about">关于上海葡萄王</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="product">业务体系</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="industry">专业研发</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="support">社会责任</a></li>
                     <li><a href="" class="dropdown active">人才招聘</a></li>
                 </ul>
             </div>
@@ -90,4 +90,187 @@
         <li><a href="">社会责任</a></li>
         <li><a href="" class="active">人才招聘</a></li>
     </ul>
+</section>
+
+
+{{-- Mega menu --}}
+<div class="site-mega-menu-overlay"></div>
+<section class="site-mega-menu" id="site-mega-menu">
+    <div class="container mega-nav">
+
+        {{-- about --}}
+        <div class="row mega-nav-item" id="about">
+            <div class="col-md-2 left-col">
+                <div class="menu-header">
+                    <h3>{{ trans('string.about') }}</h3>
+                    <hr>
+                    @unless (App::getLocale() == 'en')
+                        <p>About KRK</p>    
+                    @endunless
+                    
+                </div>
+            </div>
+            <div class="col-md-10 right-col">
+                <ul class="site-mega-menu-container">
+                    <li class="site-mega-menu-item">
+                        <a href="/about" class="site-mega-menu-link">
+                            <img src="/img/menu/about.jpg" alt="{{ trans('string.company_profile') }}">
+                            <p class="header-job-txt">{{ trans('string.company_profile') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/about/responsibility" class="site-mega-menu-link">
+                            <img src="/img/menu/res.jpg" alt="{{ trans('string.responsibility') }}">
+                            <p class="header-job-txt">{{ trans('string.responsibility') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/about/career" class="site-mega-menu-link">
+                            <img src="/img/menu/hr.jpg" alt="{{ trans('string.recruiting') }}">
+                            <p class="header-job-txt">{{ trans('string.recruiting') }}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {{-- product --}}
+        <div class="row mega-nav-item" id="product">
+            <div class="col-md-2 left-col">
+                <div class="menu-header">
+                    <h3>{{ trans('string.product_center') }}</h3>
+                    <hr>
+                    @unless (App::getLocale() == 'en')
+                        <p>Product center</p>    
+                    @endunless
+                    
+                </div>
+            </div>
+            <div class="col-md-10 right-col">
+                <ul class="site-mega-menu-container">
+                    <li class="site-mega-menu-item">
+                        <a href="/product" class="site-mega-menu-link">
+                            <img src="/img/menu/about.jpg" alt="{{ trans('string.product_center') }}">
+                            <p class="header-job-txt">{{ trans('string.product_center') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/label" class="site-mega-menu-link">
+                            <img src="/img/menu/res.jpg" alt="{{ trans('string.label_center') }}">
+                            <p class="header-job-txt">{{ trans('string.label_center') }}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        {{-- 服务支持 --}}
+        <div class="row mega-nav-item" id="support">
+            <div class="col-md-2 left-col">
+                <div class="menu-header">
+                    <h3>{{ trans('string.support') }}</h3>
+                    <hr>
+                    @unless (App::getLocale() == 'en')
+                    <p>Support</p>    
+                    @endunless
+                    
+                </div>
+            </div>
+            <div class="col-md-10 right-col">
+                <ul class="site-mega-menu-container">
+                    <li class="site-mega-menu-item">
+                        <a href="/partners" class="site-mega-menu-link">
+                            <img src="/img/menu/location.jpg" alt="{{ trans('string.legal_reseller') }}">
+                            <p class="header-job-txt">{{ trans('string.legal_reseller') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/service" class="site-mega-menu-link">
+                            <img src="/img/menu/service.jpg" alt="{{trans('string.service')}}">
+                            <p class="header-job-txt">{{trans('string.service')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/qna" class="site-mega-menu-link">
+                            <img src="/img/menu/qna.jpg" alt="{{trans('string.faq')}}">
+                            <p class="header-job-txt">{{trans('string.faq')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/download" class="site-mega-menu-link">
+                            <img src="/img/menu/download.jpg" alt="{{trans('string.download')}}">
+                            <p class="header-job-txt">{{trans('string.download')}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {{-- 产业应用 --}}
+        <div class="row mega-nav-item" id="industry">
+            <div class="col-md-2 left-col">
+                <div class="menu-header">
+                    <h3>{{ trans('string.industrial_application') }}</h3>
+                    <hr>
+                    @unless (App::getLocale() == 'en')
+                    <p>Industrial application</p>    
+                    @endunless
+                    
+                    <a href="/industry" class="link-mask"></a>
+                </div>
+            </div>
+            <div class="col-md-10 right-col">
+                <ul class="site-mega-menu-container">
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/water" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-1.jpg" alt="{{trans('string.indu1')}}">
+                            <p class="header-job-txt">{{trans('string.indu1')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/electronics" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-2.jpg" alt="{{trans('string.indu2')}}">
+                            <p class="header-job-txt">{{trans('string.indu2')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/life" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-3.jpg" alt="{{trans('string.indu3')}}">
+                            <p class="header-job-txt">{{trans('string.indu3')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/industrial" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-4.jpg" alt="{{trans('string.indu4')}}">
+                            <p class="header-job-txt">{{trans('string.indu4')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/fishery" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-5.jpg" alt="{{trans('string.indu5')}}">
+                            <p class="header-job-txt">{{trans('string.indu5')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/food" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-6.jpg" alt="{{trans('string.indu6')}}">
+                            <p class="header-job-txt">{{trans('string.indu6')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/cosmeceutical" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-7.jpg" alt="{{trans('string.indu7')}}">
+                            <p class="header-job-txt">{{trans('string.indu7')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/industry/industrialEngineering" class="site-mega-menu-link">
+                            <img src="/img/about/album/about-8.jpg" alt="{{trans('string.indu8')}}">
+                            <p class="header-job-txt">{{trans('string.indu8')}}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </section>
