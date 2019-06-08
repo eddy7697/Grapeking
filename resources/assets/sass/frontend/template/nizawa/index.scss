@@ -1875,7 +1875,26 @@
                 line-height: 30px;
             }
         }
+        #location-tab-content {
+            margin-top: 50px;
+
+            .location-contact-btn {
+                text-decoration: none;
+                color: $main-color;
+                border: $main-color solid thin;
+                border-radius: 100px;
+                padding: 20px 120px;
+                transition: all .2s ease-out;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: #FFF;
+                }
+            }
+        }
     }
+
+    
 }
 
 .site-footer {

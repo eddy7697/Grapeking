@@ -114,20 +114,32 @@
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
                         <a href="/about" class="site-mega-menu-link">
-                            <img src="/img/menu/about.jpg" alt="{{ trans('string.company_profile') }}">
-                            <p class="header-job-txt">{{ trans('string.company_profile') }}</p>
+                            <img src="/img/menu/about.jpg" alt="{{ trans('string.about_us') }}">
+                            <p class="header-job-txt">{{ trans('string.about_us') }}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/about/responsibility" class="site-mega-menu-link">
-                            <img src="/img/menu/res.jpg" alt="{{ trans('string.responsibility') }}">
-                            <p class="header-job-txt">{{ trans('string.responsibility') }}</p>
+                        <a href="/about/course" class="site-mega-menu-link">
+                            <img src="/img/menu/res.jpg" alt="{{ trans('string.about_1') }}">
+                            <p class="header-job-txt">{{ trans('string.about_1') }}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/about/career" class="site-mega-menu-link">
-                            <img src="/img/menu/hr.jpg" alt="{{ trans('string.recruiting') }}">
-                            <p class="header-job-txt">{{ trans('string.recruiting') }}</p>
+                        <a href="/about/founder" class="site-mega-menu-link">
+                            <img src="/img/menu/hr.jpg" alt="{{ trans('string.about_2') }}">
+                            <p class="header-job-txt">{{ trans('string.about_2') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/about/certification" class="site-mega-menu-link">
+                            <img src="/img/menu/download.jpg" alt="{{ trans('string.about_3') }}">
+                            <p class="header-job-txt">{{ trans('string.about_3') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/about/location" class="site-mega-menu-link">
+                            <img src="/img/menu/location.jpg" alt="{{ trans('string.about_4') }}">
+                            <p class="header-job-txt">{{ trans('string.about_4') }}</p>
                         </a>
                     </li>
                 </ul>

@@ -43,7 +43,11 @@ return [
     'not_validate' => 'Login must be verified.',
     'send_valid_letter' => 'Send verification letter',
 
-    'company_tw' => 'Taiwan Grape King Biotechnology Co., Ltd.',
+    'company_tw' => 'Taiwan Grape King Biotechnology Co., Ltd.',    
+    'about_1' => 'Development path',
+    'about_2' => 'About the founder',
+    'about_3' => 'Global certification',
+    'about_4' => 'Global layout',
     'about1' => '<p>Founded in 1969, Grape King Biotech has undergone three innovations, including: the establishment of the first local energy drink “Combete Oral Liquid” swept the market in 1991; the establishment of the Bioengineering Center in 1991, spanning the health food sector; 2010 Organizational change and brand reengineering. Over the years, we have gradually developed our own smile curve. We not only have the largest fermentation capacity and leading technology in Taiwan, but also the PIC/S GMP pharmaceutical factory. We also have ISO22000 and ISO17025 international quality certification to ensure food safety. The most important thing is the long-standing local brand advantage, and the products are all over the country. The advantages of such a one-stop are all difficult for the industry to match. "Technology, Health, Hope" has always been the general indicator of the spirit of the grape king. We will also use this as the basis of "health experts, take care of the whole family" as the mission to provide the society with a richer life and a common hope. s future.</p>',
     'about2' => 'Company Profile',
     'about3' => 'location',
