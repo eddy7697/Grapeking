@@ -42,27 +42,27 @@
                     <div class="row">
                         <div class="col-md-5 offset-md-1 site-map">                            
                             <ul>
-                                <h5>关于上海葡萄王</h5>
+                                <h5>{{ trans('string.about') }}</h5>
                                 <li>
-                                    <a href="">企业愿景</a>
+                                    <a href="/about">{{ trans('string.about_us') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">发展历程</a>
+                                    <a href="/about/course">{{ trans('string.about_1') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">关于创办人</a>
+                                    <a href="/about/founder">{{ trans('string.about_2') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">安心认证</a>
+                                    <a href="/about/certification">{{ trans('string.about_3') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">公司据点</a>
+                                    <a href="/about/location">{{ trans('string.about_4') }}</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-5 site-map">                            
                             <ul>
-                                <h5>专业研发</h5>
+                                <h5>{{ trans('string.research') }}</h5>
                                 <li>
                                     <a href="">食安中心</a>
                                 </li>

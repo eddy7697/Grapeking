@@ -15,9 +15,9 @@
                 <div class="row">
                     <div class="col-md-6 short-cut">
                         <ul>
-                            <li><a href="">葡众企业</a></li>
-                            <li><a href="">台湾葡萄王</a></li>
-                            <li><a href="">健康活力能量馆</a></li>
+                            <li><a href="">{{ trans('string.pro_partner') }}</a></li>
+                            <li><a href="">{{ trans('string.company_tw_short') }}</a></li>
+                            <li><a href="">{{ trans('string.grapekingmuseum') }}</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 site-func">
@@ -65,11 +65,11 @@
                     <a href="/"><img src="/img/site-logo/logo_header.png" alt=""></a>
                 </div>                
                 <ul class="site-menu">
-                    <li><a class="dropdown mega-btn" data-menu-target="about">关于上海葡萄王</a></li>
-                    <li><a class="dropdown mega-btn" data-menu-target="product">业务体系</a></li>
-                    <li><a class="dropdown">专业研发</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="about">{{ trans('string.about') }}</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="product">{{ trans('string.sales') }}</a></li>
+                    <li><a>{{ trans('string.research') }}</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="support">{{ trans('string.responsibility') }}</a></li>
-                    <li><a href="/about/careers">人才招聘</a></li>
+                    <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
                 </ul>
             </div>
         </div>
@@ -83,11 +83,11 @@
 </section>
 <section class="mobile-site-menu hide">
     <ul class="menu-item">
-        <li><a href="">关于上海葡萄王</a></li>
-        <li><a href="">业务体系</a></li>
-        <li><a href="">专业研发</a></li>
-        <li><a href="">社会责任</a></li>
-        <li><a href="/about/careers">人才招聘</a></li>
+        <li><a href="">{{ trans('string.about') }}</a></li>
+        <li><a href="">{{ trans('string.sales') }}</a></li>
+        <li><a href="">{{ trans('string.research') }}</a></li>
+        <li><a href="">{{ trans('string.responsibility') }}</a></li>
+        <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
     </ul>
 </section>
 
@@ -190,20 +190,20 @@
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
                         <a href="/partners" class="site-mega-menu-link">
-                            <img src="/img/menu/location.jpg" alt="员工关系">
-                            <p class="header-job-txt">员工关系</p>
+                            <img src="/img/menu/location.jpg" alt="{{trans('string.employee_relatioon')}}">
+                            <p class="header-job-txt">{{trans('string.employee_relatioon')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/service" class="site-mega-menu-link">
-                            <img src="/img/menu/service.jpg" alt="食品安全">
-                            <p class="header-job-txt">食品安全</p>
+                            <img src="/img/menu/service.jpg" alt="{{trans('string.food_safty')}}">
+                            <p class="header-job-txt">{{trans('string.food_safty')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/qna" class="site-mega-menu-link">
-                            <img src="/img/menu/qna.jpg" alt="研发创新">
-                            <p class="header-job-txt">研发创新</p>
+                            <img src="/img/menu/qna.jpg" alt="{{trans('string.innovating')}}">
+                            <p class="header-job-txt">{{trans('string.innovating')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">

@@ -6,6 +6,15 @@ return [
     'aboutDesc' => '优秀的产品与专业的销售和技术团队 努力为您做到最好',
     'about_us' => '关于我们',
 
+    'grapekingmuseum' => '健康活力能量馆',
+    'company_tw_short' => '台湾葡萄王',
+    'pro_partner' => '葡众企业',
+    'innovating' => '研发创新',
+    'food_safty' => '食品安全',
+    'employee_relatioon' => '员工关系',
+    'sales' => '业务体系',
+    'research' => '专业研发',
+
     'send_success' => '感谢您的来信，我们会尽快回复您',
 
     'search' => '搜索',
@@ -166,7 +175,7 @@ return [
 
     'content_construction' => '内容建置中',
 
-    'recruiting' => '人才招募',
+    'recruiting' => '人才招聘',
     'job_list' => '热门职缺',
     'recruiting_banner' => '我们正在招募各种优秀人才，欢迎您加入葡萄王国际',
     'recurit_department' => '职缺单位',

@@ -6,6 +6,15 @@ return [
     'aboutDesc' => 'Excellent product and professional sales and technical team strive to do your best',
     'about_us' => 'About Us',
 
+    'grapekingmuseum' => 'Grape King Museum',
+    'company_tw_short' => 'Taiwan Grape King',
+    'pro_partner' => 'Pro Partner',
+    'innovating' => 'Innovating',
+    'food_safty' => 'Food safty',
+    'employee_relatioon' => 'Employee Relations',
+    'sales' => 'Sales',
+    'research' => 'Research',
+
     'send_success' => 'Thank you for your letter, we will reply you as soon as possible.',
 
     'search' => 'Search',
