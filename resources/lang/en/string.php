@@ -176,8 +176,8 @@ return [
     'monthly_salary' => 'Monthly salary',
 
     'label_banner_desc' => 'You can check the brand related products on this page and complete the inquiry form through the interface.',
-    'product_banner_desc' => 'Nizawa offers the most complete series of measuring instrumentation as well as accessories for the measurement and monitoring of water and food safety.',
-    'news_banner_desc' => 'The most current news form Nizawa at one glance.',
+    'product_banner_desc' => 'Grape King offers the most complete series of measuring instrumentation as well as accessories for the measurement and monitoring of water and food safety.',
+    'news_banner_desc' => 'The most current news form Grape King at one glance.',
     'service_overview_banner_desc' => 'Outstanding Products. Expert Support.',
     'faq_banner_desc' => "We're here to help.",
     'download_banner_desc' => 'Many materials, user aids and information are ready for you to view or download on these pages.',

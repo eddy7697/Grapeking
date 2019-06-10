@@ -5,7 +5,7 @@ return [
     'deer_2' => 'Mr./Miss, Hello.',
     'cart_sn' => 'Your inquiry number',
     'cart_date' => 'Inquiry date',
-    'company_name' => 'NIZAWA INTERNATIONAL HI-TECH CORP',
+    'company_name' => 'Grape King INTERNATIONAL HI-TECH CORP',
     'thank' => 'Thank you for your patronage!',
     'contact_phone' => 'Customer service contact number',
     'range' => 'Monday to Friday',
