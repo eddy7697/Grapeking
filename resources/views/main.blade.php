@@ -19,6 +19,13 @@
         <img src="/img/icon/loading-spinner.svg">
     </div>
 
+    {{-- Contact link --}}
+    <div class="contact-side-link">
+        <a href="/contact">
+            <img src="/img/contact-icon.png" alt="">
+        </a>
+    </div>
+
     {{-- Header --}}
     @include('components.header')
 

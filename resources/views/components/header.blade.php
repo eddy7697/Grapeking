@@ -8,7 +8,6 @@
     }
 @endphp
 
-
 <section class="site-header">
     <div class="container-fluid" style="background-color: rgba(255, 255, 255, 1);">
         <div class="row top-bar">
@@ -69,8 +68,8 @@
                     <li><a class="dropdown mega-btn" data-menu-target="about">关于上海葡萄王</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="product">业务体系</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="industry">专业研发</a></li>
-                    <li><a class="dropdown mega-btn" data-menu-target="support">社会责任</a></li>
-                    <li><a href="" class="dropdown active">人才招聘</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="support">{{ trans('string.responsibility') }}</a></li>
+                    <li><a href="/about/careers">人才招聘</a></li>
                 </ul>
             </div>
         </div>
@@ -88,7 +87,7 @@
         <li><a href="">业务体系</a></li>
         <li><a href="">专业研发</a></li>
         <li><a href="">社会责任</a></li>
-        <li><a href="" class="active">人才招聘</a></li>
+        <li><a href="/about/careers">人才招聘</a></li>
     </ul>
 </section>
 
@@ -180,10 +179,10 @@
         <div class="row mega-nav-item" id="support">
             <div class="col-md-2 left-col">
                 <div class="menu-header">
-                    <h3>{{ trans('string.support') }}</h3>
+                    <h3>{{ trans('string.responsibility') }}</h3>
                     <hr>
                     @unless (App::getLocale() == 'en')
-                    <p>Support</p>    
+                    <p>CSR</p>    
                     @endunless
                     
                 </div>
@@ -192,20 +191,20 @@
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
                         <a href="/partners" class="site-mega-menu-link">
-                            <img src="/img/menu/location.jpg" alt="{{ trans('string.legal_reseller') }}">
-                            <p class="header-job-txt">{{ trans('string.legal_reseller') }}</p>
+                            <img src="/img/menu/location.jpg" alt="员工关系">
+                            <p class="header-job-txt">员工关系</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/service" class="site-mega-menu-link">
-                            <img src="/img/menu/service.jpg" alt="{{trans('string.service')}}">
-                            <p class="header-job-txt">{{trans('string.service')}}</p>
+                            <img src="/img/menu/service.jpg" alt="食品安全">
+                            <p class="header-job-txt">食品安全</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/qna" class="site-mega-menu-link">
-                            <img src="/img/menu/qna.jpg" alt="{{trans('string.faq')}}">
-                            <p class="header-job-txt">{{trans('string.faq')}}</p>
+                            <img src="/img/menu/qna.jpg" alt="研发创新">
+                            <p class="header-job-txt">研发创新</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">

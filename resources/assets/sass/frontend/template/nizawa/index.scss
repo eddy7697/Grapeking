@@ -74,6 +74,21 @@
     }
 }
 
+.contact-side-link {
+    position: fixed;
+    width: 100px;
+    bottom: 35%;
+    right: 0px;
+    z-index: 10;
+   
+    a {
+        text-decoration: none;
+
+        img {
+            width: 100%;
+        }
+    }
+}
 
 .site-header {
     position: fixed;
@@ -1501,8 +1516,89 @@
             padding-left: 10px;
             margin: 60px 0;
         }
+        .hilight-title {
+            text-align: center;
+            font-weight: 700;
+            color: $main-color;
+        }
+        .hilight-info-box {
+            margin: 75px 0;
+
+            .info-divider {
+                position: absolute;
+                border-top: #E70034 solid thin;
+                top: 50%;
+                left: 0;
+                right: 0;
+                height: 0px;
+            }
+            .info-text {
+                background-color: #fff;
+                width: fit-content;
+                margin: 0 auto;
+                padding: 35px;
+
+                p {
+                    margin: 0.5rem 0;
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    right: 0;
+                    height: 100%;
+                    top: 0;
+                    padding-left: 150px;
+                    border-right: #aaa solid thin;
+                    border-bottom: #aaa solid thin;
+                }
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    height: 100%;
+                    top: 0;
+                    padding-left: 150px;
+                    border-left: #aaa solid thin;
+                    border-top: #aaa solid thin;
+                }
+            }
+        }
         p.title {
             color: $main-color;
+        }
+        .careers-notice {
+            margin: 50px auto;
+            width: fit-content;
+
+            li {
+                margin-left: 30px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-size: 15px;
+
+                &::before {
+                    content: '*';
+                    font-size: 30px;
+                    position: absolute;
+                    top: -5px;
+                    left: -18px;
+                    color: red;
+                }
+            }
+        }
+        .careers-tip {
+            margin: 75px 0;
+            text-align: center;
+            color: #aaa;
+        }
+        .side-info {
+            margin: 0 auto;
+            width: fit-content;
+            font-size: 15px;
+
+            li {
+                
+            }
         }
         .about-text {
             font-size: 15px;

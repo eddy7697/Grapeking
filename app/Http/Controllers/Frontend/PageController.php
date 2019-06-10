@@ -138,4 +138,9 @@ class PageController extends Controller
         return view('frontend.about.location', [
         ]);
     }
+
+    public function careers()
+    {
+        return view('frontend.about.careers');
+    }
 }
