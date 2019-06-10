@@ -104,7 +104,7 @@
                     <h3>{{ trans('string.about') }}</h3>
                     <hr>
                     @unless (App::getLocale() == 'en')
-                        <p>About KRK</p>    
+                        <p>About Grape King</p>    
                     @endunless
                     
                 </div>
