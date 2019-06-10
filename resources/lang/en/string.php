@@ -35,7 +35,7 @@ return [
     'other_product' => 'Other related products',
 
     'legal_reseller' => 'Legal reseller',
-    'reseller_banner_desc' => 'Welcome to find KRK authorized dealers around the world through the industry.',
+    'reseller_banner_desc' => 'Welcome to find Grape King authorized dealers around the world through the industry.',
 
     'forget_password' => 'Forget password',
     'forget_password_q' => 'Forgot your password?',

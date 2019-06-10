@@ -106,7 +106,6 @@
                     @unless (App::getLocale() == 'en')
                         <p>About Grape King</p>    
                     @endunless
-                    
                 </div>
             </div>
             <div class="col-md-10 right-col">
