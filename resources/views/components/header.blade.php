@@ -67,7 +67,7 @@
                 <ul class="site-menu">
                     <li><a class="dropdown mega-btn" data-menu-target="about">关于上海葡萄王</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="product">业务体系</a></li>
-                    <li><a class="dropdown mega-btn" data-menu-target="industry">专业研发</a></li>
+                    <li><a class="dropdown">专业研发</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="support">{{ trans('string.responsibility') }}</a></li>
                     <li><a href="/about/careers">人才招聘</a></li>
                 </ul>
