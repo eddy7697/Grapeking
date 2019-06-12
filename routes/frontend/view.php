@@ -15,8 +15,8 @@ Route::get('/maintenance', function ()
 /**
  * about
  */
- Route::group(['prefix' => 'about'], function()
- {
+Route::group(['prefix' => 'about'], function()
+{
     Route::get('/', 'Frontend\PageController@about')->name('about');
     Route::get('/course', 'Frontend\PageController@course')->name('course');
     Route::get('/founder', 'Frontend\PageController@founder')->name('founder');
@@ -26,7 +26,18 @@ Route::get('/maintenance', function ()
     Route::get('/privacy', 'Frontend\PageController@privacy')->name('privacy');
     Route::get('/remind', 'Frontend\PageController@remind')->name('remind');
     Route::get('/notice', 'Frontend\PageController@notice')->name('notice');
- });
+});
+
+/**
+ * research
+ */
+Route::group(['prefix' => 'research'], function()
+{
+    Route::get('/bioengineering', 'Frontend\PageController@bioengineering')->name('bioengineering');
+    Route::get('/factory', 'Frontend\PageController@factory')->name('factory');
+    Route::get('/innovation', 'Frontend\PageController@innovation')->name('innovation');
+    Route::get('/paper', 'Frontend\PageController@paper')->name('paper');
+});
 
 /**
  * PRODUCT

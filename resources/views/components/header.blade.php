@@ -67,7 +67,7 @@
                 <ul class="site-menu">
                     <li><a class="dropdown mega-btn" data-menu-target="about">{{ trans('string.about') }}</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="product">{{ trans('string.sales') }}</a></li>
-                    <li><a>{{ trans('string.research') }}</a></li>
+                    <li><a class="dropdown mega-btn" data-menu-target="research">{{ trans('string.research') }}</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="support">{{ trans('string.responsibility') }}</a></li>
                     <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
                 </ul>
@@ -168,6 +168,48 @@
                         <a href="/label" class="site-mega-menu-link">
                             <img src="/img/menu/res.jpg" alt="{{ trans('string.label_center') }}">
                             <p class="header-job-txt">{{ trans('string.label_center') }}</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        {{-- 專業研發 --}}
+        <div class="row mega-nav-item" id="research">
+            <div class="col-md-2 left-col">
+                <div class="menu-header">
+                    <h3>{{ trans('string.research') }}</h3>
+                    <hr>
+                    @unless (App::getLocale() == 'en')
+                        <p>Research</p>    
+                    @endunless
+                    
+                </div>
+            </div>
+            <div class="col-md-10 right-col">
+                <ul class="site-mega-menu-container">
+                    <li class="site-mega-menu-item">
+                        <a href="/research/bioengineering" class="site-mega-menu-link">
+                            <img src="/img/research/menu-1.jpg" alt="生物工程中心">
+                            <p class="header-job-txt">生物工程中心</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/research/innovation" class="site-mega-menu-link">
+                            <img src="/img/research/menu-2.jpg" alt="創新研發中心">
+                            <p class="header-job-txt">創新研發中心</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/research/factory" class="site-mega-menu-link">
+                            <img src="/img/research/menu-3.jpg" alt="世界級工廠">
+                            <p class="header-job-txt">世界級工廠</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/research/paper" class="site-mega-menu-link">
+                            <img src="/img/research/menu-4.jpg" alt="專利及文獻發表">
+                            <p class="header-job-txt">專利及文獻發表</p>
                         </a>
                     </li>
                 </ul>

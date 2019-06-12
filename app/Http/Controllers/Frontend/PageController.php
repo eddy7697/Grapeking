@@ -143,4 +143,24 @@ class PageController extends Controller
     {
         return view('frontend.about.careers');
     }
+
+    public function bioengineering()
+    {
+        return view('frontend.research.bioengineering');
+    }
+
+    public function factory()
+    {
+        return view('frontend.research.factory');
+    }
+
+    public function innovation()
+    {
+        return view('frontend.research.innovation');
+    }
+
+    public function paper()
+    {
+        return view('frontend.research.paper');
+    }
 }
