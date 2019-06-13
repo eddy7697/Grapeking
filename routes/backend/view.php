@@ -116,6 +116,75 @@ Route::get('/product/edit/{guid}', function ($guid) {
     ]);
 });
 
+/*****************
+    patent
+*****************/
+Route::group(['prefix' => 'patent'], function ()
+{
+    Route::get('/add', function ()
+    {
+        return view('backend.patent.addPatent', [
+            'mode' => 'add',
+            'type' => 'patent',
+            'panelTitle' => '新增專利',
+            'mode' => 'add'
+        ]);
+    });
+
+    Route::get('/list', function ()
+    {
+        return view('backend.patent.patentList', [
+            'panelTitle' => '專利列表',
+            'type' => 'patent',
+            'mode' => 'add'
+        ]);
+    });
+
+    Route::get('/edit/{id}', function ($id)
+    {
+        return view('backend.patent.addPatent', [
+            'panelTitle' => '編輯專利',
+            'type' => 'patent',
+            'id' => $id,
+            'mode' => 'edit'
+        ]);
+    });
+});
+
+/*****************
+    paper
+*****************/
+Route::group(['prefix' => 'paper'], function ()
+{
+    Route::get('/add', function ()
+    {
+        return view('backend.patent.addPatent', [
+            'mode' => 'add',
+            'panelTitle' => '新增文獻',
+            'type' => 'paper',
+            'mode' => 'add'
+        ]);
+    });
+
+    Route::get('/list', function ()
+    {
+        return view('backend.patent.patentList', [
+            'panelTitle' => '文獻列表',
+            'type' => 'paper',
+            'mode' => 'add'
+        ]);
+    });
+
+    Route::get('/edit/{id}', function ($id)
+    {
+        return view('backend.patent.addPatent', [
+            'panelTitle' => '編輯文獻',
+            'type' => 'paper',
+            'id' => $id,
+            'mode' => 'edit'
+        ]);
+    });
+});
 
 /*****************
     BUSINESS

@@ -262,6 +262,7 @@
                     }
                     &.dropdown {
                         padding-right: 30px;
+                        cursor: pointer;
 
                         &::before {
                             position: absolute;
@@ -429,7 +430,7 @@
     right: 0;
     height: 80px;
     display: none;
-    background-color: #174357;
+    background-color: $main-color;
     z-index: 3;
     box-shadow: 2px 2px 12px -2px rgba($color: #000000, $alpha: 0.5);
 
@@ -898,7 +899,7 @@
                         @extend %force-center;
                         opacity: 0;
                         position: absolute;
-                        background-color: rgba($color: #174357, $alpha: 0.6);
+                        background-color: rgba($color: $main-color, $alpha: 0.6);
                         color: rgba($color: #fff, $alpha: 0.75);
                         top: 0;
                         left: 0;
@@ -1500,10 +1501,44 @@
         }
         
     }
+    ul.about-tab {
+        background-color: #DCDDDD;
+
+        li.nav-item {
+            
+            a.nav-link {
+                color: #666;
+                border: none;
+                background: transparent;
+                margin-left: 26px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                &.active {
+                    color: $main-color;
+                }
+            }
+        }
+    }
     // about
     .about-content {
         margin-bottom: 50px;
 
+        
+        .location-contact-btn {
+            display: inline-block;
+            text-decoration: none;
+            color: $main-color;
+            border: $main-color solid thin;
+            border-radius: 100px;
+            padding: 20px 120px;
+            transition: all .2s ease-out;
+
+            &:hover {
+                background-color: $main-color;
+                color: #FFF;
+            }
+        }
         .about-logo {
             margin: 50px auto;
             display: inherit;
@@ -1973,21 +2008,41 @@
         }
         #location-tab-content {
             margin-top: 50px;
+        }
+        .material-card {
+            margin: 20px 3.75%;
+            width: 28.333%;
+            text-align: center;
+            padding: 30px;
+            float: left;
+            color: #FFF;
+            border-radius: 20px;
 
-            .location-contact-btn {
-                text-decoration: none;
-                color: $main-color;
-                border: $main-color solid thin;
-                border-radius: 100px;
-                padding: 20px 120px;
-                transition: all .2s ease-out;
+            a {
+                color: #FFF;
+            }
+            h4 {
+                margin: 20px 0;
+            }
+            .material-img {
+                margin: 20px 0;
+            }
+            .material-info {
+                margin: 20px 0;
+            }
+            .material-link {
+                display: inline-block;
+                margin-top: 30px;
+            }
 
-                &:hover {
-                    background-color: $main-color;
-                    color: #FFF;
-                }
+            &.first {
+                margin-left: 0;
+            }
+            &.last {
+                margin-right: 0;
             }
         }
+
     }
 
     

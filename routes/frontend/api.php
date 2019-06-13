@@ -78,3 +78,11 @@ Route::post('/send-form', 'MailController@sendForm')->name('sendForm');
  */
 Route::post('/hppe-callback', 'Backend\OrderController@hppeOrder');
 Route::get('/esun_callback', 'Backend\OrderController@esunCheckOrder');
+
+/**
+ * CustomField
+ */
+Route::group(['prefix' => 'custom'], function ()
+{
+    Route::post('/get/{type}', 'Frontend\CustomController@getCustom');
+});

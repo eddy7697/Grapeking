@@ -188,3 +188,20 @@ Route::post('/admin/remind/update', 'Backend\MetaController@updateRemind');
 Route::get('/admin/other/get', 'Backend\MetaController@getOther');
 Route::post('/admin/other/create', 'Backend\MetaController@createOther');
 Route::post('/admin/other/update', 'Backend\MetaController@updateOther');
+
+Route::group(['prefix' => 'admin'], function ()
+{
+
+    /**
+     * Custom field
+     */
+    Route::group(['prefix' => 'custom'], function ()
+    {
+        Route::post('/add', 'Backend\CustomController@addCustomField');
+        Route::post('/get/{type}', 'Backend\CustomController@getCustomFieldByType');
+        Route::get('/getByid/{id}', 'Backend\CustomController@getCustomFieldById');
+        Route::post('/update/{id}', 'Backend\CustomController@updateCustomField');
+        Route::post('/delete/{id}', 'Backend\CustomController@deleteCustomField');
+    });
+
+});

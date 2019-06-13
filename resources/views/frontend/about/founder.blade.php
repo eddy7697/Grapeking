@@ -14,9 +14,9 @@
 @section('content')
     <div class="sub-page-banner">
         <div class="site-thumbnail-section">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-md-9 mx-auto">
+                    <div class="col-md-9">
                         <div class="site-thumbnail-container">
                             <ul class="site-thumbnail">
                                 <li>{{ trans('string.home') }}</li>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="about-section-title" style="margin-top: 0">{{ trans('string.about23') }}</h3>
+                <h3 class="about-section-title" style="margin-top: 50px;">{{ trans('string.about23') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-8">

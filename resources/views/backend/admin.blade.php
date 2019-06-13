@@ -70,11 +70,14 @@
 												<li><a href="/cyberholic-system/meta/other">其他資訊管理</a></li>
 											</ul>
 										</li>
+										@if (false)
 										<li class=""><a><i class="fa fa-users"></i> 會員管理系統 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="display: none;">
 												<li><a href="/cyberholic-system/account/list">會員資料列表</a></li>
 											</ul>
 										</li>
+										@endif
+										
 										<li class=""><a><i class="fa fa-pencil-square-o"></i> 最新消息管理系統 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="display: none;">
 												<li><a href="/cyberholic-system/post/add">新增最新消息</a></li>
@@ -87,13 +90,16 @@
 												<li><a href="/cyberholic-system/media/manager?type=Images">媒體庫</a></li>
 											</ul>
 										</li>
+										@if (false)
 										<li><a><i class="fa fa-shopping-cart"></i> 電商管理系統 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="">
 												<li><a href="/cyberholic-system/product/add">新增銷售商品</a></li>
 												<li><a href="/cyberholic-system/product/list">商品列表</a></li>
 												<li><a href="/cyberholic-system/product/category">商品類別管理</a></li>
 											</ul>
-										</li>
+										</li>	
+										@endif
+										
 										@if (false)
 											<li class=""><a><i class="fa fa-briefcase"></i> 商務邏輯管理 <span class="fa fa-chevron-down"></span></a>
 												<ul class="nav child_menu" style="display: none;">
@@ -102,7 +108,8 @@
 													<li><a href="/cyberholic-system/business/coupon">優惠券管理</a></li>
 												</ul>
 											</li>
-										@endif										
+										@endif	
+										@if (false)
 										<li class=""><a><i class="fa fa-shopping-basket"></i> 訂單管理系統 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="display: none;">
 												<li><a href="/cyberholic-system/order/list">訂單資料查詢</a></li>
@@ -111,7 +118,20 @@
 												@endif
 											</ul>
 										</li>
+										@endif									
 										
+										<li class=""><a><i class="fa fa-product-hunt" aria-hidden="true"></i> 專利管理 <span class="fa fa-chevron-down"></span></a>
+											<ul class="nav child_menu" style="display: none;">
+												<li><a href="/cyberholic-system/patent/add">新增專利</a></li>
+												<li><a href="/cyberholic-system/patent/list">專利列表</a></li>
+											</ul>
+										</li>
+										<li class=""><a><i class="fa fa-book" aria-hidden="true"></i> 文獻管理 <span class="fa fa-chevron-down"></span></a>
+											<ul class="nav child_menu" style="display: none;">
+												<li><a href="/cyberholic-system/paper/add">新增文獻</a></li>
+												<li><a href="/cyberholic-system/paper/list">文獻列表</a></li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 			

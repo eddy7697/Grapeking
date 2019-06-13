@@ -66,6 +66,10 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
     .js('resources/assets/js/components/views/backend/business/coupon-setup/coupon-setup.js', 'public/js/backend')
     .js('resources/assets/js/components/views/backend/business/gift-order/gift-order.js', 'public/js/backend');
 
+ // Post view
+ mix.js('resources/assets/js/components/views/backend/patent/add-patent/add-patent.js', 'public/js/backend')
+    .js('resources/assets/js/components/views/backend/patent/patent-list/patent-list.js', 'public/js/backend');
+    
  /**
   * Order view
   */
@@ -91,6 +95,8 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
     .js('resources/assets/js/components/views/frontend/product-methods/product-methods.js', 'public/js')
     .js('resources/assets/js/components/views/frontend/checkout/checkout.js', 'public/js')
     .js('resources/assets/js/components/views/frontend/partner/partner.js', 'public/js')
+    .js('resources/assets/js/components/views/frontend/document-list/paper-list.js', 'public/js')
+    .js('resources/assets/js/components/views/frontend/document-list/patent-list.js', 'public/js')
     .js('resources/assets/js/components/views/frontend/cart-panel/cart-panel.js', 'public/js');
 
 

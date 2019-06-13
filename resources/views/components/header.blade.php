@@ -202,13 +202,13 @@
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/research/factory" class="site-mega-menu-link">
-                            <img src="/img/research/menu-3.jpg" alt="世界級工廠">
+                            <img src="/img/research/menu-4.jpg" alt="世界級工廠">
                             <p class="header-job-txt">世界級工廠</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/research/paper" class="site-mega-menu-link">
-                            <img src="/img/research/menu-4.jpg" alt="專利及文獻發表">
+                            <img src="/img/research/menu-3.jpg" alt="專利及文獻發表">
                             <p class="header-job-txt">專利及文獻發表</p>
                         </a>
                     </li>
