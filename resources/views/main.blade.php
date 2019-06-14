@@ -39,6 +39,8 @@
     @include('components.footer')
 
     <!-- Scripts -->
+    <script src="{{ asset('js/plugins/moment/moment-with-locales.min.js') }}"></script>
+    
     <script src="/js/frontend.js"></script>
 
     <script src="/js/plugins/popper/popper.min.js"></script>

@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 606);
+/******/ 	return __webpack_require__(__webpack_require__.s = 608);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -175,18 +175,18 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 
-/***/ 606:
+/***/ 608:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(607);
+module.exports = __webpack_require__(609);
 
 
 /***/ }),
 
-/***/ 607:
+/***/ 609:
 /***/ (function(module, exports, __webpack_require__) {
 
-Vue.component('partner', __webpack_require__(608));
+Vue.component('partner', __webpack_require__(610));
 
 var app = new Vue({
     el: '#partner'
@@ -194,15 +194,15 @@ var app = new Vue({
 
 /***/ }),
 
-/***/ 608:
+/***/ 610:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 var normalizeComponent = __webpack_require__(5)
 /* script */
-var __vue_script__ = __webpack_require__(609)
+var __vue_script__ = __webpack_require__(611)
 /* template */
-var __vue_template__ = __webpack_require__(610)
+var __vue_template__ = __webpack_require__(612)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -242,7 +242,7 @@ module.exports = Component.exports
 
 /***/ }),
 
-/***/ 609:
+/***/ 611:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -411,7 +411,7 @@ $('.loading-bar').fadeOut('100');
 
 /***/ }),
 
-/***/ 610:
+/***/ 612:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {

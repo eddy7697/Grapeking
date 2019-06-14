@@ -257,8 +257,9 @@
                     transition: all .2s ease;
 
                     &.active, &:hover {
-                        background-color: #fff;
-                        color: #333;
+                        // background-color: #fff;
+                        color: $main-color;
+                        // text-shadow: 2px 2px 12px rgba($color: #000000, $alpha: 0.5);
                     }
                     &.dropdown {
                         padding-right: 30px;
