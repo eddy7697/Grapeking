@@ -2,7 +2,7 @@
 
 @section('custom-script')
     <script src="{{ asset('js/plugins/jquery.fancytree/dist/jquery.fancytree-all.min.js') }}"></script>
-    <script type="text/javascript">
+    {{-- <script type="text/javascript">
         $(function () {
             $('#refresh-captcha').on('click', function (e) {
                 e.preventDefault();
@@ -16,7 +16,8 @@
                     $('#captcha').attr('src', '/captcha?q=' + res.data);
                 });
         }
-    </script>
+    </script> --}}
+    <script src="/js/contact-form.js"></script>
 @endsection
 
 @section('custom-style')
@@ -65,8 +66,9 @@
             <h3 class="about-section-title">{{ trans('string.about4') }}</h3>
             <div class="about-text">
                 <div class="row">
-                    <div class="col-md-9 mx-auto site-contact-container">
-                        <form action="">
+                    <div class="col-md-9 mx-auto site-contact-container" id="contact-form">
+                        <contact-form></contact-form>
+                        {{-- <form action="">
                             <div class="col-md-11 mx-auto contact-form-header">
                                 <h1>联系我们</h1>
                                 <hr>
@@ -147,7 +149,7 @@
                                     <button class="submit-btn" type="submit">提交信息</button>
                                 </div>
                             </div>
-                        </form>
+                        </form> --}}
                     </div>
                 </div>
             </div>

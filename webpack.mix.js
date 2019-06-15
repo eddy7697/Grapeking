@@ -97,6 +97,7 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
     .js('resources/assets/js/components/views/frontend/partner/partner.js', 'public/js')
     .js('resources/assets/js/components/views/frontend/document-list/paper-list.js', 'public/js')
     .js('resources/assets/js/components/views/frontend/document-list/patent-list.js', 'public/js')
+    .js('resources/assets/js/components/views/frontend/contact-form/contact-form.js', 'public/js')
     .js('resources/assets/js/components/views/frontend/cart-panel/cart-panel.js', 'public/js');
 
 

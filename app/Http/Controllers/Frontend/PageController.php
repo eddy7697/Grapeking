@@ -163,4 +163,50 @@ class PageController extends Controller
     {
         return view('frontend.research.paper');
     }
+
+    /**
+     * csr
+     */
+    public function relation()
+    {
+        return view('frontend.csr.relation');
+    }
+
+    public function foodSafty()
+    {
+        return view('frontend.csr.foodSafty');
+    }
+
+    public function creation()
+    {
+        return view('frontend.csr.creation');
+    }
+
+    public function green()
+    {
+        return view('frontend.csr.green');
+    }
+
+    public function download()
+    {
+        return view('frontend.csr.download');
+    }
+
+    /**
+     * business
+     */
+    public function production()
+    {
+        return view('frontend.business.production');
+    }
+
+    public function lump_sum()
+    {
+        return view('frontend.business.lump_sum');
+    }
+
+    public function catalog()
+    {
+        return view('frontend.business.catalog');
+    }
 }

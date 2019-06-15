@@ -25,9 +25,9 @@
                             <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
                             <li>{{ trans('string.research') }}</li>
                             <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
-                            <li>{{ trans('text.patent_and_literature') }}</li>
+                            <li>{{ trans('string.patent_and_literature') }}</li>
                         </ul>
-                        <h2>{{ trans('text.patent_and_literature') }}</h2>
+                        <h2>{{ trans('string.patent_and_literature') }}</h2>
                     </div>
                 </div>
             </div>
@@ -40,12 +40,12 @@
             <ul class="nav nav-tabs about-tab" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="patent-list-tab" data-toggle="tab" href="#patent-list" role="tab" aria-controls="patent-list" aria-selected="true">
-                        {{ trans('text.patent') }}
+                        {{ trans('string.patent') }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="paper-list-tab" data-toggle="tab" href="#paper-list" role="tab" aria-controls="paper-list" aria-selected="false">
-                        {{ trans('text.literature_publication') }}
+                        {{ trans('string.literature_publication') }}
                     </a>
                 </li>
             </ul>
@@ -53,11 +53,11 @@
         <div class="col-md-9 about-content">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="patent-list" role="tabpanel" aria-labelledby="patent-list-tab">
-                    <h3 class="about-section-title">{{ trans('text.patent') }}</h3>
+                    <h3 class="about-section-title">{{ trans('string.patent') }}</h3>
                     <document-list type="patent"></document-list>
                 </div>
                 <div class="tab-pane fade" id="paper-list" role="tabpanel" aria-labelledby="paper-list-tab">
-                    <h3 class="about-section-title">{{ trans('text.literature_publication') }}</h3>
+                    <h3 class="about-section-title">{{ trans('string.literature_publication') }}</h3>
                     <document-list type="paper"></document-list>
                 </div>
             </div>

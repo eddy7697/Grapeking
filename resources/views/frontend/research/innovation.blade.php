@@ -23,9 +23,9 @@
                             <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
                             <li>{{ trans('string.research') }}</li>
                             <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
-                            <li>{{ trans('text.innovation_rnd_center') }}</li>
+                            <li>{{ trans('string.innovation_rnd_center') }}</li>
                         </ul>
-                        <h2>{{ trans('text.innovation_rnd_center') }}</h2>
+                        <h2>{{ trans('string.innovation_rnd_center') }}</h2>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content">
-            <h3 class="about-section-title">{{ trans('text.professional_rnd_lineup') }}</h3>
+            <h3 class="about-section-title">{{ trans('string.professional_rnd_lineup') }}</h3>
             <div class="about-text">
                 <p>
                     上海葡萄王企业有限公司，位于交通便利的上海市松江工业区，距离市区30公里，附近尚有沪杭高速道路及嘉金高速道路，优越的地理位置为中国及全世界的客户提供了便捷服务。主体厂房占地10,000平方米，拥有符合GMP认证的10万级、30万级生产环境，以高规格进口自动化设备与严密的质量管理，为各类食品及保健食品的生产提2供优良的质量保障，帮助您在大健康市场更强壮稳健。
@@ -46,7 +46,7 @@
             </div>
             <img class="about-image" src="/img/research/research-1.jpg" alt="">
 
-            <h3 class="about-section-title">{{ trans('text.leading_rnd_technology') }}</h3>
+            <h3 class="about-section-title">{{ trans('string.leading_rnd_technology') }}</h3>
             <div class="about-text">
                 <p>
                     配合生物中心之独有菇菌类发酵技术，拥有全台最大酦酵产能281吨，领先同业十年，利用数十项专利制程技术，再结合独有素材与外购原料，研开发独特配方，除经典产品：灵芝王、樟芝王、益菌王之外，新产品研发如：人蔘蚬B、晶透雪亮饮、田七玛卡王也广受大众喜爱。
@@ -59,7 +59,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="about-section-title">{{ trans('text.leading_rnd_technology') }}</h3>
+                    <h3 class="about-section-title">{{ trans('string.leading_rnd_technology') }}</h3>
                     <div class="about-text">
                         <p>
                             研发独有剂型并代理多项特色原料，实时掌握欧、美、亚保健食品市场最新脉动，剂型包含：生技原料、胶囊/软胶囊、铝箔袋装、颗粒/粉末造粒玻璃瓶液剂、PKL无菌包等，针对客户需求设计最新商品及配方，备受美国、日本、新加坡、马来西亚多国客户肯定，其中有一支产品在泰国更是第一支由官方认证的乳酸菌商品。
@@ -68,7 +68,7 @@
                     <img class="about-image" src="/img/research/research-3.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="about-section-title">{{ trans('text.leading_rnd_technology') }}</h3>
+                    <h3 class="about-section-title">{{ trans('string.leading_rnd_technology') }}</h3>
                     <div class="about-text">
                         <p>
                             葡萄王生技符合ISO22000食品安全卫生管理系统认证，导入食品安全管制系统HACCP管理，严格确保生产流程、作业环境质量，并由TAF国际的认证之ISO17025食品安全国际标准实验室监控产品质量。通过严格质量管控标准，层层把关，确保产品稳定制造与质量卫生安全，健康有保障！

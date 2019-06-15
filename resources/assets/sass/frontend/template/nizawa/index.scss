@@ -1398,7 +1398,7 @@
                     padding: 10px 50px;
                     color: #FFF;
                     font-size: 1.05rem;
-                    background-color: #1B445A;
+                    background-color: $main-color;
                     border: none;
                     font-weight: bolder;
                     cursor: pointer;
@@ -1525,7 +1525,17 @@
     .about-content {
         margin-bottom: 50px;
 
-        
+        .material-list {
+            .item {
+                display: inline-block;
+                width: 19.5%;
+                padding: 20px;
+
+                .img {
+                    width: 100%;
+                }
+            }
+        }
         .location-contact-btn {
             display: inline-block;
             text-decoration: none;
@@ -1636,6 +1646,76 @@
                 
             }
         }
+        .about-session-info {
+            border: #bbb solid thin;
+
+            .session-image {
+                width: 100%;
+                background-position: center;
+                background-size: cover;
+                padding-bottom: 70%;
+
+                .session-mask {
+                    @extend %force-center;
+                    position: absolute;
+                    text-align: center;
+                    color: #fff;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    transition: all .2s ease-out;
+
+                    p {
+                        font-size: 24px;
+                        font-weight: 700;
+                        margin: 0;
+                        text-shadow: 2px 2px 12px rgba($color: #000000, $alpha: .5);
+                    }
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+            .session-text {
+                font-size: 15px;
+                padding: 15px;
+                line-height: 30px;
+
+            }
+        }
+        .production_material {
+            color: #FFF;
+            font-size: 15px;
+
+            .prod_box {
+                width: 100%;
+                padding-bottom: 100%;
+                background-color: #C9CACA;
+                transition: all .2s ease-out;
+
+                .prod_box_inner {
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 100%;
+
+                    img {
+                        width: 40%;
+                        margin-bottom: 10px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }                
+                &:hover {
+                    background-color: $main-color;
+                }
+            }
+        }
         .about-text {
             font-size: 15px;
             line-height: 30px;
@@ -1652,6 +1732,9 @@
                 margin-top: 30px;
                 border: none;
 
+                &.center {
+                    @extend %force-center;
+                }
                 li.nav-item {
                     width: 25%;
                     text-align: center;
@@ -2009,6 +2092,46 @@
         }
         #location-tab-content {
             margin-top: 50px;
+        }
+        .spec-section {
+            color: #FFF;
+            border-radius: 20px;
+            background-color: $main-color;
+            margin: 35px 0 0 0;
+
+            .title {
+                @extend %force-center;
+                border-right: #FFF 2px solid;
+                
+                h4 {
+                    font-weight: 700;
+                }
+            }
+            p {
+                margin: 1rem 0;
+            }
+
+        }
+        .license-img-item {
+            padding: 10px;
+
+            a {
+                width: 100%;
+                padding-bottom: 141%;
+                display: inline-block;
+                border: #ccc solid thin;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: auto;
+                    height: auto;
+                }
+            }
         }
         .material-card {
             margin: 20px 3.75%;

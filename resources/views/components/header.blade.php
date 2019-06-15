@@ -144,14 +144,14 @@
             </div>
         </div>
 
-        {{-- product --}}
+        {{-- business --}}
         <div class="row mega-nav-item" id="product">
             <div class="col-md-2 left-col">
                 <div class="menu-header">
-                    <h3>{{ trans('string.product_center') }}</h3>
+                    <h3>{{ trans('string.business') }}</h3>
                     <hr>
                     @unless (App::getLocale() == 'en')
-                        <p>Product center</p>    
+                        <p>Business</p>    
                     @endunless
                     
                 </div>
@@ -159,15 +159,21 @@
             <div class="col-md-10 right-col">
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
-                        <a href="/product" class="site-mega-menu-link">
-                            <img src="/img/menu/about.jpg" alt="{{ trans('string.product_center') }}">
-                            <p class="header-job-txt">{{ trans('string.product_center') }}</p>
+                        <a href="/business/production" class="site-mega-menu-link">
+                            <img src="/img/menu/production.jpg" alt="{{ trans('string.production') }}">
+                            <p class="header-job-txt">{{ trans('string.production') }}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/label" class="site-mega-menu-link">
-                            <img src="/img/menu/res.jpg" alt="{{ trans('string.label_center') }}">
-                            <p class="header-job-txt">{{ trans('string.label_center') }}</p>
+                        <a href="/business/lump_sum" class="site-mega-menu-link">
+                            <img src="/img/menu/lump_sum.jpg" alt="{{ trans('string.lump_sum') }}">
+                            <p class="header-job-txt">{{ trans('string.lump_sum') }}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/business/catalog" class="site-mega-menu-link">
+                            <img src="/img/menu/catalog.jpg" alt="{{ trans('string.catalog') }}">
+                            <p class="header-job-txt">{{ trans('string.catalog') }}</p>
                         </a>
                     </li>
                 </ul>
@@ -231,27 +237,33 @@
             <div class="col-md-10 right-col">
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
-                        <a href="/partners" class="site-mega-menu-link">
-                            <img src="/img/menu/location.jpg" alt="{{trans('string.employee_relatioon')}}">
-                            <p class="header-job-txt">{{trans('string.employee_relatioon')}}</p>
+                        <a href="/csr/relation" class="site-mega-menu-link">
+                            <img src="/img/menu/relations.jpg" alt="{{trans('string.relations')}}">
+                            <p class="header-job-txt">{{trans('string.relations')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/service" class="site-mega-menu-link">
-                            <img src="/img/menu/service.jpg" alt="{{trans('string.food_safty')}}">
-                            <p class="header-job-txt">{{trans('string.food_safty')}}</p>
+                        <a href="/csr/foodSafty" class="site-mega-menu-link">
+                            <img src="/img/menu/food-safty.jpg" alt="{{trans('string.foodSafty')}}">
+                            <p class="header-job-txt">{{trans('string.foodSafty')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/qna" class="site-mega-menu-link">
-                            <img src="/img/menu/qna.jpg" alt="{{trans('string.innovating')}}">
-                            <p class="header-job-txt">{{trans('string.innovating')}}</p>
+                        <a href="/csr/creation" class="site-mega-menu-link">
+                            <img src="/img/menu/creation.jpg" alt="{{trans('string.creation')}}">
+                            <p class="header-job-txt">{{trans('string.creation')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/download" class="site-mega-menu-link">
-                            <img src="/img/menu/download.jpg" alt="{{trans('string.download')}}">
-                            <p class="header-job-txt">{{trans('string.download')}}</p>
+                        <a href="/csr/green" class="site-mega-menu-link">
+                            <img src="/img/menu/green.jpg" alt="{{trans('string.green')}}">
+                            <p class="header-job-txt">{{trans('string.green')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
+                        <a href="/csr/download" class="site-mega-menu-link">
+                            <img src="/img/menu/download.jpg" alt="{{trans('string.download_paper')}}">
+                            <p class="header-job-txt">{{trans('string.download_paper')}}</p>
                         </a>
                     </li>
                 </ul>

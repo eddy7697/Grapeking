@@ -40,6 +40,28 @@ Route::group(['prefix' => 'research'], function()
 });
 
 /**
+ * csr
+ */
+Route::group(['prefix' => 'csr'], function()
+{
+    Route::get('/relation', 'Frontend\PageController@relation')->name('relation');
+    Route::get('/foodSafty', 'Frontend\PageController@foodSafty')->name('foodSafty');
+    Route::get('/creation', 'Frontend\PageController@creation')->name('creation');
+    Route::get('/green', 'Frontend\PageController@green')->name('green');
+    Route::get('/download', 'Frontend\PageController@download')->name('download');
+});
+
+/**
+ * business
+ */
+Route::group(['prefix' => 'business'], function()
+{
+    Route::get('/production', 'Frontend\PageController@production')->name('production');
+    Route::get('/lump_sum', 'Frontend\PageController@lump_sum')->name('lump_sum');
+    Route::get('/catalog', 'Frontend\PageController@catalog')->name('catalog');
+});
+
+/**
  * PRODUCT
  */
 // Route::get('/product-detail/{guid}', 'Frontend\ProductController@getByGuid');
