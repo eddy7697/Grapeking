@@ -64,19 +64,19 @@
                             <ul>
                                 <h5>{{ trans('string.research') }}</h5>
                                 <li>
-                                    <a href="">食安中心</a>
+                                    <a href="">{{ trans('string.food_safty_center') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">生物工程中心</a>
+                                    <a href="">{{ trans('string.bioengineering_center') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">创新研发中心</a>
+                                    <a href="">{{ trans('string.innovation_rnd_center') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">专利及文献发表</a>
+                                    <a href="">{{ trans('string.patent_and_literature') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">世界级工厂</a>
+                                    <a href="">{{ trans('string.world_class_factory') }}</a>
                                 </li>
                             </ul>
                         </div>

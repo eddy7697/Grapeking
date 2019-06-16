@@ -75,22 +75,6 @@
         </div>
     </div>    
 </section>
-<section class="mobile-site-header">
-    <div id="menu-btn" class="menu-btn"></div>
-    <img class="header-logo" src="/img/site-logo/logo_footer.png" alt="">
-    <img src="/img/icon/burger-open.svg" style="display: none">
-    <img src="/img/icon/burger-close.svg" style="display: none">
-</section>
-<section class="mobile-site-menu hide">
-    <ul class="menu-item">
-        <li><a href="">{{ trans('string.about') }}</a></li>
-        <li><a href="">{{ trans('string.sales') }}</a></li>
-        <li><a href="">{{ trans('string.research') }}</a></li>
-        <li><a href="">{{ trans('string.responsibility') }}</a></li>
-        <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
-    </ul>
-</section>
-
 
 {{-- Mega menu --}}
 <div class="site-mega-menu-overlay"></div>
@@ -196,26 +180,26 @@
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
                         <a href="/research/bioengineering" class="site-mega-menu-link">
-                            <img src="/img/research/menu-1.jpg" alt="生物工程中心">
-                            <p class="header-job-txt">生物工程中心</p>
+                            <img src="/img/research/menu-1.jpg" alt="{{trans('string.bioengineering_center')}}">
+                            <p class="header-job-txt">{{trans('string.bioengineering_center')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/research/innovation" class="site-mega-menu-link">
-                            <img src="/img/research/menu-2.jpg" alt="創新研發中心">
-                            <p class="header-job-txt">創新研發中心</p>
+                            <img src="/img/research/menu-2.jpg" alt="{{trans('string.innovation_rnd_center')}}">
+                            <p class="header-job-txt">{{trans('string.innovation_rnd_center')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/research/factory" class="site-mega-menu-link">
-                            <img src="/img/research/menu-4.jpg" alt="世界級工廠">
-                            <p class="header-job-txt">世界級工廠</p>
+                            <img src="/img/research/menu-4.jpg" alt="{{trans('string.world_class_factory')}}">
+                            <p class="header-job-txt">{{trans('string.world_class_factory')}}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/research/paper" class="site-mega-menu-link">
-                            <img src="/img/research/menu-3.jpg" alt="專利及文獻發表">
-                            <p class="header-job-txt">專利及文獻發表</p>
+                            <img src="/img/research/menu-3.jpg" alt="{{trans('string.patent_and_literature')}}">
+                            <p class="header-job-txt">{{trans('string.patent_and_literature')}}</p>
                         </a>
                     </li>
                 </ul>
@@ -270,71 +254,51 @@
             </div>
         </div>
 
-        {{-- 产业应用 --}}
-        <div class="row mega-nav-item" id="industry">
-            <div class="col-md-2 left-col">
-                <div class="menu-header">
-                    <h3>{{ trans('string.industrial_application') }}</h3>
-                    <hr>
-                    @unless (App::getLocale() == 'en')
-                    <p>Industrial application</p>    
-                    @endunless
-                    
-                    <a href="/industry" class="link-mask"></a>
-                </div>
-            </div>
-            <div class="col-md-10 right-col">
-                <ul class="site-mega-menu-container">
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/water" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-1.jpg" alt="{{trans('string.indu1')}}">
-                            <p class="header-job-txt">{{trans('string.indu1')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/electronics" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-2.jpg" alt="{{trans('string.indu2')}}">
-                            <p class="header-job-txt">{{trans('string.indu2')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/life" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-3.jpg" alt="{{trans('string.indu3')}}">
-                            <p class="header-job-txt">{{trans('string.indu3')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/industrial" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-4.jpg" alt="{{trans('string.indu4')}}">
-                            <p class="header-job-txt">{{trans('string.indu4')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/fishery" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-5.jpg" alt="{{trans('string.indu5')}}">
-                            <p class="header-job-txt">{{trans('string.indu5')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/food" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-6.jpg" alt="{{trans('string.indu6')}}">
-                            <p class="header-job-txt">{{trans('string.indu6')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/cosmeceutical" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-7.jpg" alt="{{trans('string.indu7')}}">
-                            <p class="header-job-txt">{{trans('string.indu7')}}</p>
-                        </a>
-                    </li>
-                    <li class="site-mega-menu-item">
-                        <a href="/industry/industrialEngineering" class="site-mega-menu-link">
-                            <img src="/img/about/album/about-8.jpg" alt="{{trans('string.indu8')}}">
-                            <p class="header-job-txt">{{trans('string.indu8')}}</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
     </div>
+</section>
+
+{{-- Mobile side menu --}}
+<section class="mobile-site-header">
+    <div id="menu-btn" class="menu-btn"></div>
+    <img class="header-logo" src="/img/site-logo/logo_footer.png" alt="">
+    <img src="/img/icon/burger-open.svg" style="display: none">
+    <img src="/img/icon/burger-close.svg" style="display: none">
+</section>
+<section class="mobile-site-menu hide">
+    <ul class="menu-item">
+        <li><a class="menu-item-dropdown">{{ trans('string.about') }}</a>
+            <ul>
+                <li><a href="/about">{{ trans('string.about_us') }}</a></li>
+                <li><a href="/about/course">{{ trans('string.about_1') }}</a></li>
+                <li><a href="/about/founder">{{ trans('string.about_2') }}</a></li>
+                <li><a href="/about/certification">{{ trans('string.about_3') }}</a></li>
+                <li><a href="/about/location">{{ trans('string.about_4') }}</a></li>
+            </ul>
+        </li>
+        <li><a class="menu-item-dropdown">{{ trans('string.sales') }}</a>
+            <ul>
+                <li><a href="/business/production">{{ trans('string.production') }}</a></li>
+                <li><a href="/business/lump_sum">{{ trans('string.lump_sum') }}</a></li>
+                <li><a href="/business/catalog">{{ trans('string.catalog') }}</a></li>
+            </ul>
+        </li>
+        <li><a class="menu-item-dropdown">{{ trans('string.research') }}</a>
+            <ul>
+                <li><a href="/research/bioengineering">{{trans('string.bioengineering_center')}}</a></li>
+                <li><a href="/research/innovation">{{trans('string.innovation_rnd_center')}}</a></li>
+                <li><a href="/research/factory">{{trans('string.world_class_factory')}}</a></li>
+                <li><a href="/research/paper">{{trans('string.patent_and_literature')}}</a></li>
+            </ul>
+        </li>
+        <li><a class="menu-item-dropdown">{{ trans('string.responsibility') }}</a>
+            <ul>
+                <li><a href="/csr/relation">{{trans('string.relations')}}</a></li>
+                <li><a href="/csr/foodSafty">{{trans('string.foodSafty')}}</a></li>
+                <li><a href="/csr/creation">{{trans('string.creation')}}</a></li>
+                <li><a href="/csr/green">{{trans('string.green')}}</a></li>
+                <li><a href="/csr/download">{{trans('string.download_paper')}}</a></li>
+            </ul>
+        </li>
+        <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
+    </ul>
 </section>

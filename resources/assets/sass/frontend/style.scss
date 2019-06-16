@@ -639,9 +639,16 @@ table.product-comment {
     }
 }
 
+.slick-dots {
+    left: 0;
+    right: 0;
+}
 
 @media screen and (max-width: 991px) {
 }
 
 @media screen and (max-width: 630px) {
+    .scrollDown {
+        display: none;
+    }
 }

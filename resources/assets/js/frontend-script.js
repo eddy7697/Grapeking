@@ -111,8 +111,22 @@ $(function () {
         } else {
             showMenu($(this));
         }
-    }),
+    })
 
+    $('.menu-item-dropdown').on('click', e => {
+        let self = $(e.target)
+        let subMenu = self.parent().find('ul')
+
+        if (self.hasClass('active')) {
+            self.removeClass('active', () => {
+                subMenu.slideUp()
+            })
+        } else {
+            self.addClass('active', () => {
+                subMenu.slideDown()
+            })
+        }
+    })
     
 
     function scrollupBtn() {
@@ -123,28 +137,6 @@ $(function () {
 		}
     }
 
-    function addSingleProduct(guid) {
-
-        $('.add-btn').hide();
-        $('.add-loading').show();
-        $.ajax({
-            url: '/cart/add/single/' + guid,
-            type: 'GET',
-            dataType: 'json',
-        })
-        .done(function(response) {
-            console.log(response);
-            toastr["success"]("成功加入購物車");
-        })
-        .fail(function() {
-            console.log("error");
-        })
-        .always(function() {
-            $('.add-btn').show();
-            $('.add-loading').hide();
-            console.log("complete");
-        });
-    }
 });
 
 

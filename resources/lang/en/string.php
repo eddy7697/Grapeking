@@ -3,6 +3,7 @@
 return [
     'home' => 'Home',
     'about' => 'About Shanghai Grape King',
+    'about_' => 'About Grape King',
     'aboutDesc' => 'Excellent product and professional sales and technical team strive to do your best',
     'about_us' => 'About Us',
 

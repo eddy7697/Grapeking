@@ -2,40 +2,40 @@
     <h3 class="about-section-title">{{ trans('string.about') }}</h3>
     <ul class="main-thumb">
         <li>
-            <a href="#">关于我们</a>
+            <a href="#">{{ trans('string.about_us') }}</a>
             <ul class="sub-thumb">
-                <li><a href="#">关于葡萄王</a></li>
-                <li><a href="#">上海葡萄王企业有限公司</a></li>
-                <li><a href="#">东葡生物科技有限公司</a></li>
-                <li><a href="#">葡众</a></li>
-                <li><a href="#">企业愿景</a></li>
+                <li><a href="#">{{ trans('string.about_') }}</a></li>
+                <li><a href="#">{{ trans('string.about5') }}</a></li>
+                <li><a href="#">{{ trans('string.about7') }}</a></li>
+                <li><a href="#">{{ trans('string.about9') }}</a></li>
+                <li><a href="#">{{ trans('string.about11') }}</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">发展历程</a>
+            <a href="#">{{ trans('string.about13') }}</a>
             <ul class="sub-thumb">
-                <li class="single"><a href="#">关于创办人</a></li>
+                <li class="single"><a href="#">{{ trans('string.about16') }}</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">关于创办人</a>
+            <a href="#">{{ trans('string.about16') }}</a>
             <ul class="sub-thumb">
-                <li><a href="#">关于创办人</a></li>
-                <li><a href="#">以追求健康为宗旨</a></li>
-                <li><a href="#">总裁的骄傲</a></li>
+                <li><a href="#">{{ trans('string.about16') }}</a></li>
+                <li><a href="#">{{ trans('string.about20') }}</a></li>
+                <li><a href="#">{{ trans('string.about18') }}</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">全球认证</a>
+            <a href="#">{{ trans('string.about25') }}</a>
             <ul class="sub-thumb">
-                <li><a href="#">全球认证</a></li>
-                <li><a href="#">食品安全国际标准实验室</a></li>
+                <li><a href="#">{{ trans('string.about25') }}</a></li>
+                <li><a href="#">{{ trans('string.about28') }}</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">全球布局</a>
+            <a href="#">{{ trans('string.about31') }}</a>
             <ul class="sub-thumb">
-                <li class="single"><a href="#">放眼全球、前进世界</a></li>
+                <li class="single"><a href="#">{{ trans('string.about32') }}</a></li>
             </ul>
         </li>
     </ul>

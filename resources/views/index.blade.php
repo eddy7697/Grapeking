@@ -138,6 +138,83 @@
                 // instead of a settings object
             ]
         });
+        $('.license-container').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrow: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrow: true,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrow: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrow: true
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+        
+        $('.about-section-container').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrow: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        arrow: true,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrow: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrow: true
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
     </script>
 @endsection
 
@@ -159,7 +236,7 @@
                 ]);
             @endphp
             @foreach ($album as $item)
-                <div class="swiper-slide" style="background-image: url('{{$item['url']}}')">
+                <div class="swiper-slide" style="background-image: url('{{$item['url']}}'); background-size: cover;">
                     <div class="slide-item">     
                         <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
                             <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
@@ -396,22 +473,27 @@
                     );
                 @endphp
                 <div class="row">
-                    @foreach ($abouts as $item)
-                        <div class="col-md-4 about-section-item">
-                            <div class="section-item">
-                                <div class="featureImage" style="background-image: url('{{$item['featureImage']}}')"></div>
-                                <h3>{{$item['title']}}</h3>
-                                <div class="text">
-                                    {{mb_substr($item['content'],0,100,"utf-8")}}...
+                    <div class="col-md-12 about-section-container">
+                        @foreach ($abouts as $item)
+                            <div style="padding: 10px">
+                                <div class="about-section-item">
+                                    <div class="section-item">
+                                        <div class="featureImage" style="background-image: url('{{$item['featureImage']}}')"></div>
+                                        <h3>{{$item['title']}}</h3>
+                                        <div class="text">
+                                            {{mb_substr($item['content'],0,100,"utf-8")}}...
+                                        </div>
+                                        <div class="btn-section">
+                                            <a href="" class="learn-more-btn">了解更多</a>
+                                        </div>
+                                        <a class="cover-link" href=""></a>
+                                    </div>
                                 </div>
-                                <div class="btn-section">
-                                    <a href="" class="learn-more-btn">了解更多</a>
-                                </div>
-                                <a class="cover-link" href=""></a>
                             </div>
                             
-                        </div>
-                    @endforeach
+                        @endforeach
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -445,13 +527,21 @@
                         <p>对质量如此的坚持，即是期望能供给顾客高质量的产品。</p>
                     </div>
                     <div class="col-md-10 mx-auto">
-                        <div class="row">
+                        <div class="row license-container">
                             @foreach ($licenses as $item)
                                 <div class="col-md-2">
                                     <img src="/img/license/{{$item}}" width="100%" alt="">
                                 </div>
                             @endforeach
-                        </div>                       
+                        </div>    
+                                        
+                    </div>
+                    <div class="col-md-10">
+                        <div class="license-container mobile">
+                            @foreach ($licenses as $item)
+                                <img src="/img/license/{{$item}}" width="100%" alt="">
+                            @endforeach
+                        </div> 
                     </div>
                 </div>
                 
