@@ -1,28 +1,39 @@
 @extends('main')
 
-@section('custom-script')
-    <script src="{{ asset('js/plugins/jquery.fancytree/dist/jquery.fancytree-all.min.js') }}"></script>
-    <script type="text/javascript">
-
-        $(function () {
-            $('.title_notice').css('border-bottom','solid 3px #616161')
-        });
-
-    </script>
+@section('custom-style')
+<style>
+.sub-page-banner {
+    background-image: url('/img/about/certification/banner.jpg');
+}
+</style>
 @endsection
 
 @section('content')
-    <div class="container mg-site-thumbnail">
-        <div class="col-md-12">
-            <a href="/">首頁</a>
-            &nbsp;&nbsp;>&nbsp;&nbsp;
-            購物須知
+
+<div class="sub-page-banner">
+    <div class="site-thumbnail-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="site-thumbnail-container">
+                        <ul class="site-thumbnail">
+                            <li>{{ trans('string.home') }}</li>
+                            <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
+                            <li>{{ trans('string.notice') }}</li>
+                        </ul>
+                        <h2>{{ trans('string.notice') }}</h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container" style="margin-bottom: 30px">
-        <div class="row">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 about-content" style="padding-top: 100px;">
             {!!SiteMetaView::ecNotice()!!}
         </div>
     </div>
+</div>
 
 @endsection
