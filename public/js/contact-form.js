@@ -368,6 +368,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -688,10 +699,10 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-check-input",
-                      attrs: { type: "checkbox", name: "", value: "高效面膜" },
+                      attrs: { type: "checkbox", name: "", value: "胶原蛋白" },
                       domProps: {
                         checked: Array.isArray(_vm.contact.concern)
-                          ? _vm._i(_vm.contact.concern, "高效面膜") > -1
+                          ? _vm._i(_vm.contact.concern, "胶原蛋白") > -1
                           : _vm.contact.concern
                       },
                       on: {
@@ -700,7 +711,7 @@ var render = function() {
                             $$el = $event.target,
                             $$c = $$el.checked ? true : false
                           if (Array.isArray($$a)) {
-                            var $$v = "高效面膜",
+                            var $$v = "胶原蛋白",
                               $$i = _vm._i($$a, $$v)
                             if ($$el.checked) {
                               $$i < 0 &&
@@ -723,7 +734,7 @@ var render = function() {
                         }
                       }
                     }),
-                    _vm._v("高效面膜\n                    ")
+                    _vm._v("胶原蛋白\n                    ")
                   ])
                 ]),
                 _vm._v(" "),
@@ -739,10 +750,10 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-check-input",
-                      attrs: { type: "checkbox", name: "", value: "保健品" },
+                      attrs: { type: "checkbox", name: "", value: "益生菌" },
                       domProps: {
                         checked: Array.isArray(_vm.contact.concern)
-                          ? _vm._i(_vm.contact.concern, "保健品") > -1
+                          ? _vm._i(_vm.contact.concern, "益生菌") > -1
                           : _vm.contact.concern
                       },
                       on: {
@@ -751,7 +762,7 @@ var render = function() {
                             $$el = $event.target,
                             $$c = $$el.checked ? true : false
                           if (Array.isArray($$a)) {
-                            var $$v = "保健品",
+                            var $$v = "益生菌",
                               $$i = _vm._i($$a, $$v)
                             if ($$el.checked) {
                               $$i < 0 &&
@@ -774,7 +785,160 @@ var render = function() {
                         }
                       }
                     }),
-                    _vm._v("保健品\n                    ")
+                    _vm._v("益生菌\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "角豆" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "角豆") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "角豆",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("角豆\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "体重管理" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "体重管理") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "体重管理",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("体重管理\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "保健食品" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "保健食品") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "保健食品",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("保健食品\n                    ")
                   ])
                 ]),
                 _vm._v(" "),
@@ -826,57 +990,6 @@ var render = function() {
                       }
                     }),
                     _vm._v("机能饮品\n                    ")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-check-inline" }, [
-                  _c("label", { staticClass: "form-check-label" }, [
-                    _c("input", {
-                      directives: [
-                        {
-                          name: "model",
-                          rawName: "v-model",
-                          value: _vm.contact.concern,
-                          expression: "contact.concern"
-                        }
-                      ],
-                      staticClass: "form-check-input",
-                      attrs: { type: "checkbox", name: "", value: "胶原蛋白" },
-                      domProps: {
-                        checked: Array.isArray(_vm.contact.concern)
-                          ? _vm._i(_vm.contact.concern, "胶原蛋白") > -1
-                          : _vm.contact.concern
-                      },
-                      on: {
-                        change: function($event) {
-                          var $$a = _vm.contact.concern,
-                            $$el = $event.target,
-                            $$c = $$el.checked ? true : false
-                          if (Array.isArray($$a)) {
-                            var $$v = "胶原蛋白",
-                              $$i = _vm._i($$a, $$v)
-                            if ($$el.checked) {
-                              $$i < 0 &&
-                                _vm.$set(
-                                  _vm.contact,
-                                  "concern",
-                                  $$a.concat([$$v])
-                                )
-                            } else {
-                              $$i > -1 &&
-                                _vm.$set(
-                                  _vm.contact,
-                                  "concern",
-                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
-                                )
-                            }
-                          } else {
-                            _vm.$set(_vm.contact, "concern", $$c)
-                          }
-                        }
-                      }
-                    }),
-                    _vm._v("胶原蛋白\n                    ")
                   ])
                 ]),
                 _vm._v(" "),

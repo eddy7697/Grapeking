@@ -68,12 +68,27 @@
                 <div class="col-md-8 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="高效面膜" v-model="contact.concern">高效面膜
+                            <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">胶原蛋白
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="保健品" v-model="contact.concern">保健品
+                            <input type="checkbox" class="form-check-input" name="" value="益生菌" v-model="contact.concern">益生菌
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="" value="角豆" v-model="contact.concern">角豆
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="" value="体重管理" v-model="contact.concern">体重管理
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" name="" value="保健食品" v-model="contact.concern">保健食品
                         </label>
                     </div>
                     <div class="form-check-inline">
@@ -81,11 +96,7 @@
                             <input type="checkbox" class="form-check-input" name="" value="机能饮品" v-model="contact.concern">机能饮品
                         </label>
                     </div>
-                    <div class="form-check-inline">
-                        <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">胶原蛋白
-                        </label>
-                    </div>
+                    
                     <div class="form-check-inline">
                         <label class="form-check-label" style="width: 240px;">
                             <input type="checkbox" class="form-check-input" name="" value="OTHER" v-model="contact.concern">其他
