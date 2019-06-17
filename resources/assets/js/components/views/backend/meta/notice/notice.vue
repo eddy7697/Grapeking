@@ -90,7 +90,7 @@
                     .then(res => {
                         var result = res.data
                         console.log(res)
-                        if (res) {
+                        if (result) {
                             self.isNoticeExist = true
                             self.pageContent.type = result.type
                             self.pageContent.content = result.content
