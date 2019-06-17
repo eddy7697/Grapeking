@@ -38,7 +38,7 @@ class MailController extends Controller
         // return "1|OK";
 
         // $sendMail = Mail::send('mail.notice', [], function($message) use ($sender) {
-        //     $message->to(['vincent7697@gmail.com', $sender])->subject('[易耕事業 線上商城] 訂單成立通知信');
+        //     $message->to(['vincent7697@gmail.com', $sender])->subject('[上海葡萄王 線上商城] 訂單成立通知信');
         //     $message->from($sender);
         // });
 

@@ -100,8 +100,8 @@
                     </div>
                     <div class="col-md-2 icp">
                         <img class="icp-icon" src="/img/gongan.png" alt="" style="display: inline-block">
-                        <span style="display: inline-block">沪ICP备13010123号-1</span>
-                        <a href="http://www.miit.gov.cn/" target="_blank"></a>
+                        <span style="display: inline-block"><a style="color: #666" href="https://www.beian.org/website/grapeking.com.cn" target="_blank">沪ICP备13010123号-1</a></span>
+                        {{-- <a href="https://www.beian.org/website/grapeking.com.cn" target="_blank"></a> --}}
                     </div>
                     <div class="col-md-5 info" style="text-align: right">
                         <a href="">隐私权政策</a>&nbsp;|&nbsp;<a href="">使用条款</a>

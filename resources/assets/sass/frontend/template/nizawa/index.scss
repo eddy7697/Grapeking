@@ -1358,7 +1358,7 @@
 
     // contct form
     .site-contact-container {
-        border: #ddd 2px solid;
+        // border: #ddd 2px solid;
         border-radius: 10px;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -2445,5 +2445,17 @@
     .site-content .swiper-container .swiper-wrapper .swiper-slide .slide-item {
         transform-origin: -25% 0;
         transform: scale(.3) translate(-50%, -50%);
+    }
+    .site-content .factory-list .factory-item .factory-item-info::before, .site-content .factory-list .factory-item .factory-item-info::after {
+        content: none;
+    }
+    .site-content .factory-list .factory-item .factory-item-info::before, .site-content .factory-list .factory-item .factory-item-info::before {
+        content: none;
+    }
+    .site-content .factory-list .factory-item .border-bar {
+        display: none;
+    }
+    .site-content .factory-list .factory-item .factory-item-info {
+        padding-bottom: 0;
     }
 }

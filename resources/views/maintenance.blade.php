@@ -43,7 +43,7 @@
         </div>
         <br>
         <h4 style="margin-bottom: 16px;">需要幫忙嗎？</h4>
-        <h4><a>請致電：03-9590903</a><br><br><a>或來信：044555@gmail.com</a></h4>
+        <h4><a>請致電：03-9590903</a><br><br><a>或來信：vincent7697@gmail.com</a></h4>
     </div>
 
 

@@ -5,6 +5,10 @@
 			<td>{{$name}}</td>
 		</tr>
 		<tr>
+			<td>性別</td>
+			<td>{{$gender}}</td>
+		</tr>
+		<tr>
 			<td>公司</td>
 			<td>{{$company}}</td>
 		</tr>
@@ -15,6 +19,14 @@
 		<tr>
 			<td>連絡電話</td>
 			<td>{{$phone}}</td>
+		</tr>
+		<tr>
+			<td>地址</td>
+			<td>{{$address}}</td>
+		</tr>
+		<tr>
+			<td>關注產品</td>
+			<td>{{$concern}}</td>
 		</tr>
 		<tr>
 			<td>內容</td>

@@ -448,7 +448,7 @@ CREATE TABLE `site_meta` (
 --
 
 INSERT INTO `site_meta` (`id`, `title`, `keyword`, `description`, `shortcut`, `pageTopContent`, `pageTopLink`, `pageTopButton`, `index_album`, `created_at`, `updated_at`) VALUES
-(1, '易耕事業有限公司', '文具、粉彩、圖書、藝術用品、美術用品', '易耕事業有限公司成立於2006年，至今耕耘長達12年，專營各種文具、樂器、美術用品、書籍等的線上購物同時易耕也是Stockmar、Mercurius、LYRA...各大國際知名品牌的台灣總代理。經營多年以來，易耕了解台灣人文藝術涵養相當豐富，因此將持續用最實惠的價格，提供最專業的用具。', 'http://yigeng.egith.net/photos/1/ivan-bandura-657883-unsplash.jpg', NULL, NULL, NULL, '[{\"title\":\"BG1\",\"url\":\"http://yigeng.egith.net/photos/1/BG2.jpg\",\"link\":null}]', '2018-07-24 13:07:07', '2018-07-25 14:44:22');
+(1, '上海葡萄王有限公司', '文具、粉彩、圖書、藝術用品、美術用品', '上海葡萄王有限公司成立於2006年，至今耕耘長達12年，專營各種文具、樂器、美術用品、書籍等的線上購物同時易耕也是Stockmar、Mercurius、LYRA...各大國際知名品牌的台灣總代理。經營多年以來，易耕了解台灣人文藝術涵養相當豐富，因此將持續用最實惠的價格，提供最專業的用具。', 'http://yigeng.egith.net/photos/1/ivan-bandura-657883-unsplash.jpg', NULL, NULL, NULL, '[{\"title\":\"BG1\",\"url\":\"http://yigeng.egith.net/photos/1/BG2.jpg\",\"link\":null}]', '2018-07-24 13:07:07', '2018-07-25 14:44:22');
 
 -- --------------------------------------------------------
 

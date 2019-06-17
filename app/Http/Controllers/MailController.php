@@ -12,24 +12,24 @@ class MailController extends Controller
     {
         $data = $request->all();
 
-        $validator = Validator::make($data, [
-            'g-recaptcha-response' => 'required|captcha'
-        ]);
+        session_start();
 
-        if ($validator->fails()) {
-            return redirect('/contact')
-                        ->withErrors($validator)
-                        ->withInput();
+        if ($_SESSION['captcha'] !== $request->captcha) {
+            abort(481);
+            return Redirect::back()->withErrors(array('captcha_error' => 'Captcha wrong'));
         }
-
+        
         Mail::send('mail.contact', [
-            'name' => $data['name'],
+            'address' => $data['address'],
             'email' => $data['email'],
             'company' => $data['company'],
             'phone' => $data['phone'],
-            'content' => $data['content']
+            'content' => $data['content'],
+            'concern' => $data['concern'],
+            'gender' => $data['gender'],
+            'name' => $data['name'],
         ], function($message) use ($data) {
-            $message->to([ $data['email'], env('MAIL_USERNAME'), '044555@gmail.com' ])->subject('易耕事業 客戶詢問');
+            $message->to([ $data['email'], env('MAIL_USERNAME'), 'vincent7697@gmail.com' ])->subject('上海葡萄王 客戶詢問');
             $message->from(env('MAIL_USERNAME'), $name = env('APP_NAME'));
         });
 

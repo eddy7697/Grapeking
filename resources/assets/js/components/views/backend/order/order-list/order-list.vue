@@ -305,7 +305,7 @@
                                             {{itemShowed.shippingTarget.ReceiverPort + itemShowed.shippingTarget.ReceiverCity + itemShowed.shippingTarget.ReceiverAddress}}
                                         </span> -->                                        
                                         <div v-if="itemShowed.shippingMethod === 'delivery'" id="ready-to-print" style="border: 1px #ccc dashed; padding: 10px; width: max-content ">
-                                            <!-- <span style="font-size: 12px;">269宜蘭縣冬山鄉香城路15巷6號 (易耕事業有限公司 03-9590903)</span>
+                                            <!-- <span style="font-size: 12px;">269宜蘭縣冬山鄉香城路15巷6號 (上海葡萄王有限公司 03-9590903)</span>
                                             <br> -->
                                             <span style="font-size: 16px;">
                                                 {{`${itemShowed.shippingTarget.ReceiverPort}  ${itemShowed.shippingTarget.ReceiverAddress}`}}

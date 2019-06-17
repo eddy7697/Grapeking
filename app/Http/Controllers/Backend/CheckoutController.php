@@ -346,7 +346,7 @@ class CheckoutController extends Controller
                 ], function($message) use ($sender, $shippingTarget) {
                     $message->to([
                         env('MAIL_USERNAME'),
-                        '044555@gmail.com'
+                        'vincent7697@gmail.com'
                     ])->subject('訂單成立通知 - 來自 '.$shippingTarget['ReceiverName'].' 的訂購');
                     $message->from($sender, $name = env('APP_NAME'));
                 });
@@ -360,7 +360,7 @@ class CheckoutController extends Controller
                     $message->to([
                         $shippingTarget['ReceiverEmail'],
                         $sender,
-                    ])->subject('[易耕事業 線上商城] 訂單成立通知信');
+                    ])->subject('[上海葡萄王 線上商城] 訂單成立通知信');
                     $message->from($sender, $name = env('APP_NAME'));
                 });
             }
@@ -561,7 +561,7 @@ class CheckoutController extends Controller
                         $message->to([
                             $shippingTarget['ReceiverEmail'],
                             $sender,
-                        ])->subject('[易耕事業 線上商城] 訂單成立通知信');
+                        ])->subject('[上海葡萄王 線上商城] 訂單成立通知信');
                         $message->from($sender, $name = env('APP_NAME'));
                     });
                 }

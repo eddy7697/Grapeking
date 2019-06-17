@@ -332,6 +332,42 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -339,19 +375,67 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            captchaUrl: null
+            captchaUrl: null,
+            formSended: false,
+            contact: {
+                concern: [],
+                address: null,
+                company: null,
+                content: null,
+                email: null,
+                gender: null,
+                name: null,
+                phone: null,
+                captcha: null
+            },
+            theOther: null
         };
     },
     created: function created() {
         this.refreshCaptcha();
     },
 
+    computed: {
+        hasOther: function hasOther() {
+            return _.includes(this.contact.concern, 'OTHER');
+        },
+        parsedContact: function parsedContact() {
+            var form = JSON.parse(JSON.stringify(this.contact));
+            if (form.concern.includes('OTHER')) {
+                form.concern.splice(form.concern.indexOf('OTHER'), 1);
+            }
+            var concernStr = JSON.stringify(form.concern).replace(/\[|]/g, '').replace(/","/g, ', ').replace(/"/g, '');
+
+            if (this.theOther) {
+                concernStr += ', ' + this.theOther;
+            }
+
+            form.concern = concernStr;
+            return form;
+        }
+    },
     methods: {
         refreshCaptcha: function refreshCaptcha() {
             var _this = this;
 
             axios.get('/cap_str').then(function (res) {
                 _this.captchaUrl = '/captcha?q=' + res.data;
+            });
+        },
+        sendForm: function sendForm() {
+            var _this2 = this;
+
+            $('.loading-bar').show();
+            axios.post('/send-form', this.parsedContact).then(function (res) {
+                _this2.formSended = true;
+            }).catch(function (err) {
+                var result = err.response;
+
+                if (result.status == 481) {
+                    alert('验证码错误');
+                }
+            }).then(function () {
+                $('.loading-bar').hide();
             });
         }
     }
@@ -366,187 +450,678 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("form", { attrs: { action: "" } }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _vm._m(1),
-    _vm._v(" "),
-    _c("div", { staticClass: "col-md-10 mx-auto contact-form-footer" }, [
-      _vm._m(2),
-      _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
-      _c("div", { staticClass: "captcha-section" }, [
-        _c("strong", [_vm._v("確認碼")]),
-        _vm._v(" "),
-        _c("img", { attrs: { src: _vm.captchaUrl, id: "captcha", alt: "" } }),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { cursor: "pointer" },
-            attrs: { id: "refresh-captcha" },
-            on: { click: _vm.refreshCaptcha }
-          },
-          [_vm._v("更新确认码")]
-        ),
-        _vm._v(" "),
-        _c("input", {
-          staticClass: "form-control captcha",
-          attrs: {
-            type: "text",
-            name: "captcha",
-            placeholder: "請輸入上方的確認碼...",
-            required: "",
-            title: "請輸入驗證碼"
-          }
-        }),
-        _vm._v(" "),
-        _c("button", { staticClass: "submit-btn", attrs: { type: "submit" } }, [
-          _vm._v("提交信息")
+  return _vm.formSended
+    ? _c("div", [
+        _c("h2", { staticStyle: { "text-align": "center" } }, [
+          _vm._v("非常感谢您的来信，我们会尽快联系您。")
         ])
       ])
-    ])
-  ])
+    : _c(
+        "form",
+        {
+          on: {
+            submit: function($event) {
+              $event.preventDefault()
+              return _vm.sendForm($event)
+            }
+          }
+        },
+        [
+          _c("div", { staticClass: "col-md-11 pull-right contact-form-body" }, [
+            _c("div", { staticClass: "row" }, [
+              _vm._m(0),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.contact.name,
+                      expression: "contact.name"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "name", required: "" },
+                  domProps: { value: _vm.contact.name },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.contact, "name", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(1),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.gender,
+                          expression: "contact.gender"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: {
+                        type: "radio",
+                        name: "gender",
+                        value: "男",
+                        required: ""
+                      },
+                      domProps: { checked: _vm._q(_vm.contact.gender, "男") },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.contact, "gender", "男")
+                        }
+                      }
+                    }),
+                    _vm._v("男\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.gender,
+                          expression: "contact.gender"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: {
+                        type: "radio",
+                        name: "gender",
+                        value: "女",
+                        required: ""
+                      },
+                      domProps: { checked: _vm._q(_vm.contact.gender, "女") },
+                      on: {
+                        change: function($event) {
+                          _vm.$set(_vm.contact, "gender", "女")
+                        }
+                      }
+                    }),
+                    _vm._v("女\n                    ")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(2),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.contact.address,
+                      expression: "contact.address"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "address" },
+                  domProps: { value: _vm.contact.address },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.contact, "address", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(3),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.contact.email,
+                      expression: "contact.email"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "email", name: "email", required: "" },
+                  domProps: { value: _vm.contact.email },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.contact, "email", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(4),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.contact.phone,
+                      expression: "contact.phone"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "phone", name: "phone", required: "" },
+                  domProps: { value: _vm.contact.phone },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.contact, "phone", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(5),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("input", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.contact.company,
+                      expression: "contact.company"
+                    }
+                  ],
+                  staticClass: "form-control",
+                  attrs: { type: "text", name: "company", required: "" },
+                  domProps: { value: _vm.contact.company },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.contact, "company", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(6),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "高效面膜" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "高效面膜") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "高效面膜",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("高效面膜\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "保健品" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "保健品") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "保健品",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("保健品\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "机能饮品" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "机能饮品") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "机能饮品",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("机能饮品\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c("label", { staticClass: "form-check-label" }, [
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.contact.concern,
+                          expression: "contact.concern"
+                        }
+                      ],
+                      staticClass: "form-check-input",
+                      attrs: { type: "checkbox", name: "", value: "胶原蛋白" },
+                      domProps: {
+                        checked: Array.isArray(_vm.contact.concern)
+                          ? _vm._i(_vm.contact.concern, "胶原蛋白") > -1
+                          : _vm.contact.concern
+                      },
+                      on: {
+                        change: function($event) {
+                          var $$a = _vm.contact.concern,
+                            $$el = $event.target,
+                            $$c = $$el.checked ? true : false
+                          if (Array.isArray($$a)) {
+                            var $$v = "胶原蛋白",
+                              $$i = _vm._i($$a, $$v)
+                            if ($$el.checked) {
+                              $$i < 0 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.concat([$$v])
+                                )
+                            } else {
+                              $$i > -1 &&
+                                _vm.$set(
+                                  _vm.contact,
+                                  "concern",
+                                  $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                )
+                            }
+                          } else {
+                            _vm.$set(_vm.contact, "concern", $$c)
+                          }
+                        }
+                      }
+                    }),
+                    _vm._v("胶原蛋白\n                    ")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-check-inline" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "form-check-label",
+                      staticStyle: { width: "240px" }
+                    },
+                    [
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.contact.concern,
+                            expression: "contact.concern"
+                          }
+                        ],
+                        staticClass: "form-check-input",
+                        attrs: { type: "checkbox", name: "", value: "OTHER" },
+                        domProps: {
+                          checked: Array.isArray(_vm.contact.concern)
+                            ? _vm._i(_vm.contact.concern, "OTHER") > -1
+                            : _vm.contact.concern
+                        },
+                        on: {
+                          change: function($event) {
+                            var $$a = _vm.contact.concern,
+                              $$el = $event.target,
+                              $$c = $$el.checked ? true : false
+                            if (Array.isArray($$a)) {
+                              var $$v = "OTHER",
+                                $$i = _vm._i($$a, $$v)
+                              if ($$el.checked) {
+                                $$i < 0 &&
+                                  _vm.$set(
+                                    _vm.contact,
+                                    "concern",
+                                    $$a.concat([$$v])
+                                  )
+                              } else {
+                                $$i > -1 &&
+                                  _vm.$set(
+                                    _vm.contact,
+                                    "concern",
+                                    $$a.slice(0, $$i).concat($$a.slice($$i + 1))
+                                  )
+                              }
+                            } else {
+                              _vm.$set(_vm.contact, "concern", $$c)
+                            }
+                          }
+                        }
+                      }),
+                      _vm._v("其他\n                        "),
+                      _c("input", {
+                        directives: [
+                          {
+                            name: "model",
+                            rawName: "v-model",
+                            value: _vm.theOther,
+                            expression: "theOther"
+                          }
+                        ],
+                        staticClass: "form-control",
+                        staticStyle: {
+                          width: "180px",
+                          display: "inline-block"
+                        },
+                        attrs: { type: "text", disabled: !_vm.hasOther },
+                        domProps: { value: _vm.theOther },
+                        on: {
+                          input: function($event) {
+                            if ($event.target.composing) {
+                              return
+                            }
+                            _vm.theOther = $event.target.value
+                          }
+                        }
+                      })
+                    ]
+                  )
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row" }, [
+              _vm._m(7),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-8 column" }, [
+                _c("textarea", {
+                  directives: [
+                    {
+                      name: "model",
+                      rawName: "v-model",
+                      value: _vm.contact.content,
+                      expression: "contact.content"
+                    }
+                  ],
+                  staticClass: "form-control content",
+                  attrs: { name: "content", required: "" },
+                  domProps: { value: _vm.contact.content },
+                  on: {
+                    input: function($event) {
+                      if ($event.target.composing) {
+                        return
+                      }
+                      _vm.$set(_vm.contact, "content", $event.target.value)
+                    }
+                  }
+                })
+              ])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticStyle: { clear: "both" } }),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-10 mx-auto contact-form-footer" }, [
+            _vm._m(8),
+            _vm._v(" "),
+            _vm._m(9),
+            _vm._v(" "),
+            _c("div", { staticClass: "captcha-section" }, [
+              _c("strong", [_vm._v("确认码")]),
+              _vm._v(" "),
+              _c("img", {
+                attrs: { src: _vm.captchaUrl, id: "captcha", alt: "" }
+              }),
+              _vm._v(" "),
+              _c(
+                "a",
+                {
+                  staticStyle: { cursor: "pointer" },
+                  attrs: { id: "refresh-captcha" },
+                  on: { click: _vm.refreshCaptcha }
+                },
+                [_vm._v("更新确认码")]
+              ),
+              _vm._v(" "),
+              _c("input", {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.contact.captcha,
+                    expression: "contact.captcha"
+                  }
+                ],
+                staticClass: "form-control captcha",
+                attrs: {
+                  type: "text",
+                  name: "captcha",
+                  placeholder: "请输入上方的确认码...",
+                  required: "",
+                  title: "请输入验证码"
+                },
+                domProps: { value: _vm.contact.captcha },
+                on: {
+                  input: function($event) {
+                    if ($event.target.composing) {
+                      return
+                    }
+                    _vm.$set(_vm.contact, "captcha", $event.target.value)
+                  }
+                }
+              }),
+              _vm._v(" "),
+              _c(
+                "button",
+                { staticClass: "submit-btn", attrs: { type: "submit" } },
+                [_vm._v("提交信息")]
+              )
+            ])
+          ])
+        ]
+      )
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-11 mx-auto contact-form-header" }, [
-      _c("h1", [_vm._v("联系我们")]),
-      _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v("请详细填写您的信息及疑问，以便我们精准为您回复，非常感谢您。")
-      ])
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("姓名")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-10 mx-auto contact-form-body" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 column important" }, [
-          _c("p", [_vm._v("姓名")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 column" }, [
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "text", name: "name", required: "" }
-          })
-        ])
-      ]),
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("性别")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 column" }, [
+      _c("p", [_vm._v("地址")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("电子邮箱")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("连络电话")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("公司名称")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("关注产品")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-4 column important" }, [
+      _c("p", [_vm._v("询问内容")]),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 column important" }, [
-          _c("p", [_vm._v("性别")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 column" }, [
-          _c("div", { staticClass: "form-check-inline" }, [
-            _c("label", { staticClass: "form-check-label" }, [
-              _c("input", {
-                staticClass: "form-check-input",
-                attrs: {
-                  type: "radio",
-                  name: "gender",
-                  value: "男",
-                  required: ""
-                }
-              }),
-              _vm._v("男\n                    ")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "form-check-inline" }, [
-            _c("label", { staticClass: "form-check-label" }, [
-              _c("input", {
-                staticClass: "form-check-input",
-                attrs: {
-                  type: "radio",
-                  name: "gender",
-                  value: "女",
-                  required: ""
-                }
-              }),
-              _vm._v("女\n                    ")
-            ])
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 column important" }, [
-          _c("p", [_vm._v("电子邮箱")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 column" }, [
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "email", name: "email", required: "" }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 column important" }, [
-          _c("p", [_vm._v("连络电话")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 column" }, [
-          _c("input", {
-            staticClass: "form-control",
-            attrs: { type: "phone", name: "phone", required: "" }
-          })
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 column" }, [
-          _c("p", [_vm._v("问题类型")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 column" }, [
-          _c(
-            "select",
-            { staticClass: "form-control", attrs: { name: "type" } },
-            [
-              _c("option", { attrs: { value: "问题类型 1" } }, [
-                _vm._v("问题类型 1")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "问题类型 2" } }, [
-                _vm._v("问题类型 2")
-              ]),
-              _vm._v(" "),
-              _c("option", { attrs: { value: "问题类型 3" } }, [
-                _vm._v("问题类型 3")
-              ])
-            ]
-          )
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4 column important" }, [
-          _c("p", [_vm._v("询问内容")]),
-          _vm._v(" "),
-          _c("p", { staticClass: "text" }, [
-            _vm._v("提醒您，若您填写得越精准，越有利我们及时回复给您信息。")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-8 column" }, [
-          _c("textarea", {
-            staticClass: "form-control content",
-            attrs: { name: "content", required: "" }
-          })
-        ])
+      _c("p", { staticClass: "text" }, [
+        _vm._v("提醒您，若您填写得越精准，越有利我们及时回复给您信息。")
       ])
     ])
   },

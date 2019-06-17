@@ -15,9 +15,9 @@
                 <div class="row">
                     <div class="col-md-6 short-cut">
                         <ul>
-                            <li><a href="">{{ trans('string.pro_partner') }}</a></li>
-                            <li><a href="">{{ trans('string.company_tw_short') }}</a></li>
-                            <li><a href="">{{ trans('string.grapekingmuseum') }}</a></li>
+                            <li><a href="https://www.pro-partner.com.tw/" target="_blank">{{ trans('string.pro_partner') }}</a></li>
+                            <li><a href="https://www.grapeking.com.tw/tw/home" target="_blank">{{ trans('string.company_tw_short') }}</a></li>
+                            <li><a href="https://www.grapekingmuseum.com.tw/" target="_blank">{{ trans('string.grapekingmuseum') }}</a></li>
                         </ul>
                     </div>
                     <div class="col-md-6 site-func">
