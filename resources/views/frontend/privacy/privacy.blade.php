@@ -3,7 +3,7 @@
 @section('custom-style')
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/certification/banner.jpg');
+    background-image: url('/img/privacy.jpg');
 }
 </style>
 @endsection
