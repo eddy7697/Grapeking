@@ -29,7 +29,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-12 about-content" style="padding-top: 100px;">
+        <div class="col-md-12 about-content" style="padding-top: 100px;    line-height: 36px;">
             {!!SiteMetaView::ecPrivacy()!!}
         </div>
     </div>
