@@ -2405,30 +2405,36 @@
     .site-content {
         overflow-y: hidden;
     }
-    .site-footer .site-footer-content .footer-section .footer-info .site-map ul {
-        float: initial;
-    }
+    
     .site-footer .site-footer-content .footer-section .footer-info .site-map {
+        ul {
+            float: initial;
+        }
         padding: 15px 30px;
     }
+    
     .site-copyright .info {
         text-align: center !important;
     }
+    
     .license-container {
         display: none;
+        &.mobile {
+            display: block;
+        }
     }
-    .license-container.mobile {
-        display: block;
-    }
-    .site-content .index-info .index-info-text-section p {
-        text-align: left;
-    }
-    .site-content .swiper-container .swiper-wrapper .swiper-slide .slide-item {
-        transform-origin: 0 0;
-        transform: scale(.5) translate(-50%, -50%);
-    }
-    .site-content .sub-page-banner {
-        height: 300px;
+    
+    .site-content {
+        .index-info .index-info-text-section p {
+            text-align: left;
+        }
+        .swiper-container .swiper-wrapper .swiper-slide .slide-item {
+            transform-origin: 0 0;
+            transform: scale(0.5) translate(-50%, -50%);
+        }
+        .sub-page-banner {
+            height: 300px;
+        }
     }
 }
 
