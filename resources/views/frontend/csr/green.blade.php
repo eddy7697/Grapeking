@@ -68,7 +68,7 @@
                                 {{ trans('string.green_d_10') }}
                             </p> 
                         </div>
-                        <div class="col-md-5" style="text-align: right">
+                        <div class="col-md-5 mobile-to-left">
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/csr/green-2.jpg" alt="">
                         </div>
                         

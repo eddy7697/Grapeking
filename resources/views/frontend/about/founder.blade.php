@@ -67,7 +67,7 @@
                 </div>
                 <div class="about-text">
                     <div class="row">
-                        <div class="col-md-6" style="text-align: right">
+                        <div class="col-md-6 mobile-to-left">
                             <img class="about-image" style="height: 400px; display: inline" src="/img/about/founder/bottle.png" alt="">
                         </div>
                         <div class="col-md-6">

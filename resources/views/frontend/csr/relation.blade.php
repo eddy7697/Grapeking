@@ -43,7 +43,7 @@
                                 {{ trans('string.relations_d_1') }}
                             </p>     
                         </div>
-                        <div class="col-md-5" style="text-align: right">
+                        <div class="col-md-5 mobile-to-left">
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/csr/relation-1.jpg" alt="">
                         </div>
                     </div>                    

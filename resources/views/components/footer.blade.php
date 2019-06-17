@@ -104,7 +104,7 @@
                         {{-- <a href="https://www.beian.org/website/grapeking.com.cn" target="_blank"></a> --}}
                     </div>
                     <div class="col-md-5 info" style="text-align: right">
-                        <a href="/about/privacy">隐私权政策</a>&nbsp;|&nbsp;<a href="/about/notice">使用条款</a>
+                        <a href="/about/privacy ">隐私权政策</a>&nbsp;|&nbsp;<a href="/about/notice">使用条款</a>
                     </div> 
                 </div>
             </div>

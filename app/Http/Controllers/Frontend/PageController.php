@@ -164,6 +164,11 @@ class PageController extends Controller
         return view('frontend.research.paper');
     }
 
+    public function foodsaftyCenter()
+    {
+        return view('frontend.research.foodsafty_center');
+    }
+
     /**
      * csr
      */

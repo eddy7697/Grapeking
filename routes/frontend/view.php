@@ -37,6 +37,7 @@ Route::group(['prefix' => 'research'], function()
     Route::get('/factory', 'Frontend\PageController@factory')->name('factory');
     Route::get('/innovation', 'Frontend\PageController@innovation')->name('innovation');
     Route::get('/paper', 'Frontend\PageController@paper')->name('paper');
+    Route::get('/foodsafty', 'Frontend\PageController@foodsaftyCenter')->name('foodsafty');
 });
 
 /**

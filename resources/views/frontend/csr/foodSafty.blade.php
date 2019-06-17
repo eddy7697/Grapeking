@@ -57,7 +57,7 @@
                                 {{ trans('string.foodSafty_d_3') }}
                             </p> 
                         </div>
-                        <div class="col-md-6" style="text-align: right">
+                        <div class="col-md-6 mobile-to-left">
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 500px; display: inline-block" src="/img/csr/food-safty-2.png" alt="">
                         </div>
                     </div>                    

@@ -1,6 +1,44 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+$('.material-card-list').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    arrow: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: true,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: true
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: true
+            }
+        }
+    ]
+});
+
+</script>
 @endsection
 
 @section('custom-style')
@@ -50,7 +88,7 @@
                                 {{ trans('string.production_d_2') }}
                             </p>     
                         </div>
-                        <div class="col-md-5" style="text-align: right">
+                        <div class="col-md-5 mobile-to-left">
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/business/package-1.png" alt="">
                         </div>
                     </div>  
@@ -108,7 +146,7 @@
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="text-align: center">
                             <p style="margin-bottom: 50px;">{{ trans('string.production_d_13') }}</p>
-                            <div class="material-card first" style="background-color: #ABCD03">
+                            <div class="material-card mobile-to-hide first" style="background-color: #ABCD03">
                                 <h4>菇类原料</h4>
                                 <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
                                 <p class="material-info">
@@ -116,7 +154,7 @@
                                 </p>
                                 <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </div>
-                            <div class="material-card" style="background-color: #F39800">
+                            <div class="material-card mobile-to-hide" style="background-color: #F39800">
                                 <h4>益生菌</h4>
                                 <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
                                 <p class="material-info">
@@ -124,13 +162,46 @@
                                 </p>
                                 <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </div>
-                            <div class="material-card last" style="background-color: #38A1DB">
+                            <div class="material-card mobile-to-hide last" style="background-color: #38A1DB">
                                 <h4>酵素</h4>
                                 <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
                                 <p class="material-info">
                                     其他可食用之微生物或其酵素及代谢物
                                 </p>
                                 <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="mobile-to-show material-card-list" >
+                                <div>
+                                    <div class="material-card " style="background-color: #ABCD03">
+                                        <h4>菇类原料</h4>
+                                        <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
+                                        <p class="material-info">
+                                            灵芝、姬松茸、樟芝、虫草、云芝等
+                                        </p>
+                                        <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="material-card" style="background-color: #F39800">
+                                        <h4>益生菌</h4>
+                                        <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
+                                        <p class="material-info">
+                                            球菌、杆菌、双叉杆菌、酵母菌、纳豆菌及酪酸菌等
+                                        </p>
+                                        <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="material-card " style="background-color: #38A1DB">
+                                        <h4>酵素</h4>
+                                        <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
+                                        <p class="material-info">
+                                            其他可食用之微生物或其酵素及代谢物
+                                        </p>
+                                        <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                
                             </div>
                             <div class="clearfix"></div>
                             <div class="about-text" style="margin-top: 50px;">

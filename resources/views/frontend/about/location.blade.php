@@ -174,13 +174,14 @@ $(function () {
                     <div class="tab-content" id="location-tab-content">
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="row">
-                                <div class="col-md-5">
+                                <div class="col-md-5 mobile-to-center">
                                     <img src="/img/location-1.png" width="100%" alt="">
                                     <p>&nbsp;</p>
                                     <p>若您對葡萄王有任何疑問，歡迎您聯繫我們</p>
                                     <p>客服專員會以最快速最專業的回覆解決您的問題</p>
-                                    <p>&nbsp;</p>
+                                    <p class="mobile-to-hide">&nbsp;</p>
                                     <a href="/contact" class="location-contact-btn">{{ trans('string.about4') }}</a>
+                                    <p class="mobile-to-show">&nbsp;</p>
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent"></div>

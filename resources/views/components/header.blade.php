@@ -179,6 +179,12 @@
             <div class="col-md-10 right-col">
                 <ul class="site-mega-menu-container">
                     <li class="site-mega-menu-item">
+                        <a href="/research/foodsafty" class="site-mega-menu-link">
+                            <img src="/img/menu/food-safty-research.jpg" alt="{{trans('string.foodSafty')}}">
+                            <p class="header-job-txt">{{trans('string.foodSafty')}}</p>
+                        </a>
+                    </li>
+                    <li class="site-mega-menu-item">
                         <a href="/research/bioengineering" class="site-mega-menu-link">
                             <img src="/img/research/menu-1.jpg" alt="{{trans('string.bioengineering_center')}}">
                             <p class="header-job-txt">{{trans('string.bioengineering_center')}}</p>
@@ -284,6 +290,7 @@
         </li>
         <li><a class="menu-item-dropdown">{{ trans('string.research') }}</a>
             <ul>
+                <li><a href="/research/foodsafty">{{trans('string.foodSafty')}}</a></li>
                 <li><a href="/research/bioengineering">{{trans('string.bioengineering_center')}}</a></li>
                 <li><a href="/research/innovation">{{trans('string.innovation_rnd_center')}}</a></li>
                 <li><a href="/research/factory">{{trans('string.world_class_factory')}}</a></li>

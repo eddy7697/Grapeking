@@ -163,7 +163,7 @@
                         <p>电邮：gki@grapeking.com.cn</p>
                         <hr>
                         <div class="row">
-                            <div class="col-3" style="text-align: right">
+                            <div class="col-3 mobile-to-left">
                                 <img src="/img/phone-icon.png" width="90%" style="margin-top: 13px;" alt="">
                             </div>
                             <div class="col-9">

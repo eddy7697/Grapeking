@@ -1,6 +1,43 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+$('.material-card-list').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    arrow: true,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: true,
+                infinite: true
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: true
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrow: true
+            }
+        }
+    ]
+});
+</script>
 @endsection
 
 @section('custom-style')
@@ -57,7 +94,7 @@
                                 花之专利权。
                             </p>
                         </div>
-                        <div class="col-md-6" style="text-align: right">
+                        <div class="col-md-6 mobile-to-left">
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/bio-1.jpg" alt="">
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">更多专利</a>
                         </div>
@@ -99,7 +136,7 @@
                                 主要素材包括乳酸菌、樟芝、995营养液、灵芝、中华被毛孢等，并利用酦酵技术生产其他不同菇类素材，如：虫草、姬松茸、桑黄、白桦茸、香杉芝、蜜环菌、云芝、舞茸、猴头菇等，再透过独有素材开发，进而商品化，目前保健食品已占公司营业额九成以上。由这些素材延伸的多项产品，如：葡萄王灵芝王、樟芝王菌丝体胶囊、葡萄王益菌王、葡萄王LGG特益菌、卫杰胶囊、康贝儿Plus乳酸菌、健常活益菌胶囊、糖の安欣胶囊、舒敏优灵芝菌丝体胶囊及葡萄王黄金康贝特能量饮料等十项产品荣获健康食品字号。樟芝王、樟芝益、极品灵芝王、卫杰胶囊亦获得国家生技医疗质量奖之殊荣。此外，在2016年，樟芝专利荣获瑞士日内瓦金牌大奖；蝉花于韩国首尔国际发明展亦获得金牌；猴头菇则于台北国际发明奖获得金牌，实属难得。另有保健及美容新素材之开发，如:保护肾脏功能的蝉花菌丝体、富含ErinacineA可诱导神经胶细胞产生NGF(Nervegrowthfactor)之猴头菌丝体、抗气喘之马来西亚国宝虎乳灵芝(Lignosusrhinoceros)以及产生抗皱抗UV成分Ergothionione的紫丁香蘑菌丝体和生产Ectoine的海洋细菌等创新素材。
                             </p> 
                         </div>
-                        <div class="col-md-6" style="text-align: right">
+                        <div class="col-md-6 mobile-to-left">
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/bio-3.jpg" alt="">
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">更多专利</a>
                         </div>
@@ -108,7 +145,7 @@
 
                 {{-- 原料介紹 --}}
                 <h3 class="about-section-title">{{ trans('string.raw_material_introduction') }}</h3>
-                <div class="material-card first" style="background-color: #ABCD03">
+                <div class="material-card mobile-to-hide first" style="background-color: #ABCD03">
                     <h4>菇类原料</h4>
                     <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
                     <p class="material-info">
@@ -116,7 +153,7 @@
                     </p>
                     <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
-                <div class="material-card" style="background-color: #F39800">
+                <div class="material-card mobile-to-hide" style="background-color: #F39800">
                     <h4>益生菌</h4>
                     <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
                     <p class="material-info">
@@ -124,13 +161,47 @@
                     </p>
                     <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
-                <div class="material-card last" style="background-color: #38A1DB">
+                <div class="material-card mobile-to-hide last" style="background-color: #38A1DB">
                     <h4>酵素</h4>
                     <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
                     <p class="material-info">
                         其他可食用之微生物或其酵素及代谢物
                     </p>
                     <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </div>
+
+                <div class="mobile-to-show material-card-list" >
+                    <div>
+                        <div class="material-card " style="background-color: #ABCD03">
+                            <h4>菇类原料</h4>
+                            <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
+                            <p class="material-info">
+                                灵芝、姬松茸、樟芝、虫草、云芝等
+                            </p>
+                            <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="material-card" style="background-color: #F39800">
+                            <h4>益生菌</h4>
+                            <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
+                            <p class="material-info">
+                                球菌、杆菌、双叉杆菌、酵母菌、纳豆菌及酪酸菌等
+                            </p>
+                            <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="material-card " style="background-color: #38A1DB">
+                            <h4>酵素</h4>
+                            <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
+                            <p class="material-info">
+                                其他可食用之微生物或其酵素及代谢物
+                            </p>
+                            <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                   
                 </div>
             </div>
             
