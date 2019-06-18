@@ -64,19 +64,19 @@
                             <ul>
                                 <h5>{{ trans('string.research') }}</h5>
                                 <li>
-                                    <a href="">{{ trans('string.food_safty_center') }}</a>
+                                    <a href="/research/foodsafty">{{ trans('string.food_safty_center') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">{{ trans('string.bioengineering_center') }}</a>
+                                    <a href="/research/bioengineering">{{ trans('string.bioengineering_center') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">{{ trans('string.innovation_rnd_center') }}</a>
+                                    <a href="/research/innovation">{{ trans('string.innovation_rnd_center') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">{{ trans('string.patent_and_literature') }}</a>
+                                    <a href="/research/paper">{{ trans('string.patent_and_literature') }}</a>
                                 </li>
                                 <li>
-                                    <a href="">{{ trans('string.world_class_factory') }}</a>
+                                    <a href="/research/factory">{{ trans('string.world_class_factory') }}</a>
                                 </li>
                             </ul>
                         </div>

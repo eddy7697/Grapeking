@@ -366,7 +366,7 @@
         
         <div class="row">
             <div class="col-md-12 btn-section">
-                <a href="" class="learn-more-btn">了解更多</a>
+                <a href="/business/production" class="learn-more-btn">了解更多</a>
             </div>
         </div> 
     </div>
@@ -452,6 +452,7 @@
                         [
                             'featureImage' => '/img/about-section-1.jpg',
                             'title' => '生物工程中心',
+                            'link' => '/research/bioengineering',
                             'content' => '生物中心成立于1991年台湾桃园，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，故积极与学术界及研究机构合作，进行素材研发、功能验证及制程改良，
 以建立公司核心技术。另申请并执行经济部技术处及工业局之生技相关科专计划达九件，国科会、农委会与教育部之产学计划约20件，目前已拥有美国一件、中国六件
 及台湾三十五件关于樟芝、香杉芝、乳酸菌、抗生素、猴头菇、紫丁香蘑、蝉花之专利权。'
@@ -459,6 +460,7 @@
                         [
                             'featureImage' => '/img/about-section-2.jpg',
                             'title' => '创新研发中心',
+                            'link' => '/research/innovation',
                             'content' => '龙潭生物科技研究所於2018年底新成立，结合原有生物中心近30年的研发经验，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，
 积极与国内学术界及研究机构合作，进行素材研发丶功能验证及制程改良，以建立公司核心技术。
 另申请并执行经济部技术处及工业局之生技相关科专计画达九件，国科会丶农委会与教育部之产学计画约40件，目前已拥有美国丶中国丶日本丶加拿大及台湾
@@ -467,6 +469,7 @@
                         [
                             'featureImage' => '/img/about-section-3.jpg',
                             'title' => '食安中心',
+                            'link' => '/research/foodsafty',
                             'content' => '葡萄王设有符合国际标准『ISO/IEC 17025 TAF认证实验室』，为公司产品提供最严密的把关。目前自主检验包括：一般物性、化性与食安因子相关检测项目，
 检测方式除经TAF(财团法人全国认证基金会)之要求外，并参照台湾行政院卫生福利部与经济部标准检验局订定之方法或国际间认可之检验方法(如AOAC)等。'
                         ]
@@ -484,9 +487,9 @@
                                             {{mb_substr($item['content'],0,100,"utf-8")}}...
                                         </div>
                                         <div class="btn-section">
-                                            <a href="" class="learn-more-btn">了解更多</a>
+                                            <a href="{{$item['link']}}" class="learn-more-btn">了解更多</a>
                                         </div>
-                                        <a class="cover-link" href=""></a>
+                                        <a class="cover-link" href="{{$item['link']}}"></a>
                                     </div>
                                 </div>
                             </div>

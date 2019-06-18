@@ -234,7 +234,7 @@ $('.material-card-list').slick({
 
                 <div class="about-text" style="text-align: center">
                     <p style="margin-top: 50px; font-weight: 700">{{ trans('string.production_d_12') }}</p>
-                    <a class="location-contact-btn" style="margin-top: 20px;" href="">{{ trans('string.catalog_d_17') }}</a>
+                    <a class="location-contact-btn" style="margin-top: 20px;" href="/contact">{{ trans('string.catalog_d_17') }}</a>
                 </div>
                 
 
