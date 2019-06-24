@@ -22,7 +22,7 @@
                     </div>
                     <div class="col-md-6 site-func">
                         <div class="site-func-container">
-                            <div class="search-bar">
+                            {{-- <div class="search-bar">
                                 <form action="" id="search-form">
                                     <img class="search-icon" src="/img/icon/search.svg" alt="search">
                                     <div class="search-input-group hide">
@@ -30,9 +30,9 @@
                                         <img class="close-icon" src="/img/icon/close.svg" alt="close">
                                     </div>
                                 </form>
-                            </div>
+                            </div> --}}
                             <div class="mail-btn">
-                                <a href="mailto:test@test.com"><img src="/img/icon/email.svg" style="width: 22px; transform: translateY(-1px);" alt=""></a>
+                                <a href="mailto:gki@grapeking.com.cn"><img src="/img/icon/email.svg" style="width: 22px; transform: translateY(-1px);" alt=""></a>
                             </div>
                             <div class="dropdown locale-drop-select">
                                 <a href="#" data-toggle="dropdown">
@@ -58,7 +58,7 @@
         </div>
         
     </div>
-    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 0.85);">
+    <div class="container-fluid top-menu" style="background-color: rgba(255, 255, 255, .85);">
         <div class="row site-header-container">
             <div class="col-md-12 mx-auto">
                 <div class="site-logo">

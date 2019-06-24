@@ -127,7 +127,14 @@ $(function () {
             })
         }
     })
-    
+
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 100) {
+            $('.top-menu').css('background-color', 'rgba(255, 255, 255, 1)');
+		} else {
+            $('.top-menu').css('background-color', 'rgba(255, 255, 255, .85)');
+		}
+    })
 
     function scrollupBtn() {
         if ($(window).scrollTop() > 100) {
