@@ -68,7 +68,9 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
 
  // Post view
  mix.js('resources/assets/js/components/views/backend/patent/add-patent/add-patent.js', 'public/js/backend')
-    .js('resources/assets/js/components/views/backend/patent/patent-list/patent-list.js', 'public/js/backend');
+    .js('resources/assets/js/components/views/backend/patent/patent-list/patent-list.js', 'public/js/backend')
+    .js('resources/assets/js/components/views/backend/download/add-download/add-download.js', 'public/js/backend')
+    .js('resources/assets/js/components/views/backend/download/download-list/download-list.js', 'public/js/backend');
     
  /**
   * Order view

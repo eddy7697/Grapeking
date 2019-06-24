@@ -2,28 +2,24 @@
     <div class="row">
         <div class="col-md-8">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-                <el-form-item label="文件名稱" prop="locale">
+                <el-form-item label="報告書名稱" prop="locale">
                     <el-input v-model="ruleForm.locale"></el-input>
                 </el-form-item>
-                <el-form-item label="取得日期" prop="customField1">
-                    <el-date-picker
-                        v-model="ruleForm.customField1"
-                        type="date"
-                        placeholder="選擇日期">
-                    </el-date-picker>
+                <el-form-item label="報告書檔案" prop="customField1">
+                    <el-button type="primary" @click="addFile('customField1', 'Files')">選擇檔案</el-button>
+                    <span>{{ruleForm.customField1}}</span>
                 </el-form-item>
-                <el-form-item label="地區" prop="customField2">
-                    <el-input v-model="ruleForm.customField2"></el-input>
-                </el-form-item>
-                <el-form-item label="文件編號" prop="customField3">
-                    <el-input v-model="ruleForm.customField3"></el-input>
+                <el-form-item label="報告書封面" prop="customField2">
+                    <el-button type="primary" @click="addFile('customField2', 'images')">選擇圖片</el-button>
+                    <br>
+                    <img :src="ruleForm.customField2">
                 </el-form-item>
                 <el-form-item>
                     <el-button type="primary" @click="submitForm('ruleForm')">
                         <span v-if="mode == 'edit'">儲存</span>
                         <span v-else>立即建立</span>
                     </el-button>
-                    <el-button v-if="mode == 'edit'" type="warning" @click="deleteData(id)">刪除文章</el-button>
+                    <el-button v-if="mode == 'edit'" type="warning" @click="deleteData(id)">刪除報告書</el-button>
                     <el-button @click="goList">回列表</el-button>
                     <el-button @click="resetForm('ruleForm')">重置</el-button>
                 </el-form-item>
@@ -62,10 +58,10 @@
                 },
                 rules: {
                     locale: [
-                        { required: true, message: '請輸入文件名稱', trigger: 'blur' }
+                        { required: true, message: '請輸入報告書名稱', trigger: 'blur' }
                     ],
                     customField1: [
-                        { required: true, message: '請輸入取得日期', trigger: 'blur' }
+                        { required: true, message: '請設定報告書檔案來源', trigger: 'blur' }
                     ],
                     customField2: [
                         { required: true, message: '請填寫地區', trigger: 'blur' }
@@ -107,7 +103,7 @@
                     .then(res => {
                         this.$message.success('儲存成功')
                         setTimeout(() => {
-                            // window.location.href = `/cyberholic-system/${this.type}/list`
+                            window.location.href = `/cyberholic-system/${this.type}/list`
                         }, 1000);
                     })
             },
@@ -121,12 +117,13 @@
                         this.ruleForm = res.data
                     })
             },
-            addImage() {
+            addFile(field, type) {
                 let self = this
 
-                window.open('/laravel-filemanager' + '?type=Files', 'FileManager', 'width=900,height=600');
+                
+                window.open('/laravel-filemanager' + `?type=${type}`, 'FileManager', 'width=900,height=600');
                 window.SetUrl = function (url, file_path) {
-                    self.ruleForm.customField4 = file_path
+                    self.ruleForm[field] = file_path
                 };
             },
             goList() {

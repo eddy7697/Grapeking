@@ -21,6 +21,7 @@ use Log;
 use Artisan;
 use Config;
 use Analytics;
+use Imagick;
 use Spatie\Analytics\Period;
 
 class HomeController extends Controller
@@ -192,5 +193,14 @@ class HomeController extends Controller
         
         imagepng($captcha_image);
         imagedestroy($captcha_image);
+    }
+
+    public function previewPdf($path)
+    {
+        // return public_path(base64_decode($path));
+        $im = new imagick(public_path(base64_decode($path)).'[0]');
+        $im->setImageFormat('jpg');
+        header('Content-Type: image/jpeg');
+        echo $im;
     }
 }

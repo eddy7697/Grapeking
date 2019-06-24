@@ -119,7 +119,7 @@ $('.lines-album').slick({
                 </div>
                 <img class="about-image" src="/img/business/factory-1.jpg" alt="">
 
-                <h3 class="about-section-title">{{ trans('string.production') }}</h3>
+                {{-- <h3 class="about-section-title">{{ trans('string.production') }}</h3> --}}
                 <div class="mobile-to-show material-list" style="overflow-x: hidden;">
                     <div class="production_material">
                         <div class="prod_box" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
@@ -207,6 +207,30 @@ $('.lines-album').slick({
                     </div>
                 </div>
 
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" id="material-tab" role="tablist">
+                    <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                    </li>
+                </ul>
+                
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+                    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+                </div>
+
                 <h4 style="margin: 70px 0 40px; text-align: center">{{ trans('string.business_6') }}</h4>
 
                 <div class="about-text">
@@ -241,7 +265,7 @@ $('.lines-album').slick({
                                     </div>                                    
                                 @endforeach
                             </div>  
-                            <div class="mobile-to-show lines-album style="overflow-x: hidden;"">
+                            <div class="mobile-to-show lines-album" style="overflow-x: hidden;">
                                 @foreach ($lines as $item)
                                     <a data-fancybox="lines" href="/img/business/line/{{$item}}">
                                         <img width="100%" src="/img/business/line/{{$item}}" alt="">

@@ -16,6 +16,30 @@ ul {
     }
 }
 
+.pagination-section {
+
+    .pagination {
+        margin: 50px auto 40px;;
+
+        .page-item {
+            margin: 5px;
+
+            a.page-link {
+                color: #666;
+                border-color: #FFF;
+            }
+            &.active {
+
+                a.page-link {
+                    background-color: $main-color;
+                    border-color: $main-color;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1400px;

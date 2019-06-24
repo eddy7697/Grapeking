@@ -187,6 +187,41 @@ Route::group(['prefix' => 'paper'], function ()
 });
 
 /*****************
+    download
+*****************/
+Route::group(['prefix' => 'download'], function ()
+{
+    Route::get('/add', function ()
+    {
+        return view('backend.download.addDownload', [
+            'mode' => 'add',
+            'panelTitle' => '新增報告書',
+            'type' => 'download',
+            'mode' => 'add'
+        ]);
+    });
+
+    Route::get('/list', function ()
+    {
+        return view('backend.download.downloadList', [
+            'panelTitle' => '報告書列表',
+            'type' => 'download',
+            'mode' => 'add'
+        ]);
+    });
+
+    Route::get('/edit/{id}', function ($id)
+    {
+        return view('backend.download.addDownload', [
+            'panelTitle' => '編輯報告書',
+            'type' => 'download',
+            'id' => $id,
+            'mode' => 'edit'
+        ]);
+    });
+});
+
+/*****************
     BUSINESS
 *****************/
 Route::get('/business/bonus', function () {

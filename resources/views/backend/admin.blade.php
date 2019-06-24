@@ -132,6 +132,12 @@
 												<li><a href="/cyberholic-system/paper/list">文獻列表</a></li>
 											</ul>
 										</li>
+										<li class=""><a><i class="fa fa-download" aria-hidden="true"></i> 報告書管理 <span class="fa fa-chevron-down"></span></a>
+											<ul class="nav child_menu" style="display: none;">
+												<li><a href="/cyberholic-system/download/add">新增報告書</a></li>
+												<li><a href="/cyberholic-system/download/list">報告書列表</a></li>
+											</ul>
+										</li>
 									</ul>
 								</div>
 			

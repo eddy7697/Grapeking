@@ -180,6 +180,11 @@ Route::get('/cap_str', 'HomeController@getString');
 Route::get('/partners', 'Frontend\PageController@partners');
 
 /**
+ * Preview
+ */
+Route::get('/preview/pdf/{path}', 'HomeController@previewPdf');
+
+/**
  * test area
  */
 // Route::get('/ga-test', 'HomeController@gaTest');

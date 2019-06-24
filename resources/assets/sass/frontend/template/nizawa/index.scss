@@ -1582,7 +1582,7 @@
             color: $main-color;
             border: $main-color solid thin;
             border-radius: 100px;
-            padding: 15px 100px;
+            padding: 8px 100px;
             transition: all .2s ease-out;
 
             &:hover {
@@ -1885,6 +1885,35 @@
                         }
                     }
                 }
+            }
+        }
+        .report-item {
+            
+            .report-preview {
+                width: 90%;
+                padding-bottom: 145%;
+                background-size: cover;
+                background-position: center;
+
+                .report-mask {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    transition: all .2s ease-out;
+                    background-color: rgba($main-color, $alpha: 0.6);
+                }
+                &:hover {
+                    .report-mask {
+                        opacity: 1;
+                    }
+                }
+            }
+            .report-title {
+                width: 90%; 
+                margin: 20px 0;
             }
         }
         .about-image {

@@ -27,4 +27,8 @@ class FeatureView
         return $product;
     }
 
+    static function download()
+    {
+        return CustomField::where('type', 'download')->paginate(12);   
+    }
 }
