@@ -13,10 +13,14 @@
                 <table class="table table-striped doc-table">
                     <thead>
                         <tr>
-                            <th>专利名称</th>
-                            <th style="text-align: center">全部</th>
-                            <th style="text-align: center">专利编号</th>
-                            <th style="text-align: center">取得日期</th>
+                            <th v-if="type == 'paper'">篇名</th>
+                            <th v-else>专利名称</th>
+                            <th v-if="type == 'paper'" style="text-align: center">期刊名</th>
+                            <th v-else style="text-align: center">全部</th>
+                            <th v-if="type == 'paper'" style="text-align: center">作者</th>
+                            <th v-else style="text-align: center">专利编号</th>
+                            <th v-if="type == 'paper'" style="text-align: center">檔案</th>
+                            <th v-else style="text-align: center">取得日期</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -24,7 +28,10 @@
                             <td>{{item.locale}}</td>
                             <td style="text-align: center">{{item.customField2}}</td>
                             <td style="text-align: center">{{item.customField3}}</td>
-                            <td style="text-align: center">{{parseDateTime(item.customField1)}}</td>
+                            <td v-if="type == 'paper'" style="text-align: center">
+                                <a target="_blank" :href="scope.row.customField4">查看</a>
+                            </td>
+                            <td v-else style="text-align: center">{{parseDateTime(item.customField1)}}</td>
                         </tr>
                     </tbody>
                 </table>
