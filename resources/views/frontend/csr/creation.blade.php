@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-9 about-content">
 
-                <h3 class="about-section-title">{{ trans('string.creation_1') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.creation_1') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6">
@@ -52,7 +52,7 @@
                     </div>                    
                 </div>
 
-                <h3 class="about-section-title">{{ trans('string.creation_2') }}</h3>
+                <h3 class="about-section-title" id="section_2">{{ trans('string.creation_2') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6" style="text-align: left">
@@ -69,7 +69,7 @@
                     </div>                    
                 </div>
 
-                <h3 class="about-section-title">{{ trans('string.creation_3') }}</h3>
+                <h3 class="about-section-title" id="section_3">{{ trans('string.creation_3') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6">
@@ -85,7 +85,7 @@
                     </div>                    
                 </div>
 
-                <h3 class="about-section-title">{{ trans('string.creation_4') }}</h3>
+                <h3 class="about-section-title" id="section_4">{{ trans('string.creation_4') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.creation_d_4') }}

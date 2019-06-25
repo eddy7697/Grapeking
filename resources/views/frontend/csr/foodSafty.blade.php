@@ -35,7 +35,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.foodSafty') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.foodSafty') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.foodSafty_d_1') }}
@@ -43,7 +43,7 @@
                 </div>
                 <img class="about-image" src="/img/csr/food-safty.png" alt="">
 
-                <h3 class="about-section-title">{{ trans('string.relation_2') }}</h3>
+                <h3 class="about-section-title" id="section_2">{{ trans('string.relation_2') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.foodSafty_d_2') }}

@@ -35,7 +35,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content">
-            <h3 class="about-section-title">{{ trans('text.research_f_1') }}</h3>
+            <h3 class="about-section-title" id="section_1">{{ trans('text.research_f_1') }}</h3>
 
             <div class="about-text">
                 <div class="row">

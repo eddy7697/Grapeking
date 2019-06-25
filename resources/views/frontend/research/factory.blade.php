@@ -51,7 +51,7 @@
         <div class="col-md-9 about-content">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <h3 class="about-section-title">{{ trans('string.laboratory_equipment') }}</h3>
+                    <h3 class="about-section-title" id="section_1">{{ trans('string.laboratory_equipment') }}</h3>
                     <div class="row">
                         <div class="col-md-4" style="text-align: center">
                             <img width="100%" src="/img/research/factory/factory-1.jpg" alt="">
@@ -96,7 +96,7 @@
                     </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <h3 class="about-section-title">{{ trans('string.production_equipment') }}</h3>
+                    <h3 class="about-section-title" id="section_2">{{ trans('string.production_equipment') }}</h3>
                 </div>
             </div>
         </div>

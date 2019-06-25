@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-md-9 about-content">
 
-                <h3 class="about-section-title">{{ trans('string.green_1') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.green_1') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.green_d_1') }}
@@ -50,7 +50,7 @@
                 </div>
                 <img class="about-image" src="/img/csr/green-1.jpg" alt="">
 
-                <h3 class="about-section-title">{{ trans('string.green_2') }}</h3>
+                <h3 class="about-section-title" id="section_2">{{ trans('string.green_2') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.green_d_8') }}
@@ -60,7 +60,7 @@
                     </p>
                 </div>
                 
-                <h3 class="about-section-title">{{ trans('string.green_3') }}</h3>
+                <h3 class="about-section-title" id="section_3">{{ trans('string.green_3') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-7">

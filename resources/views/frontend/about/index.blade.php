@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+
 @endsection
 
 @section('custom-style')
@@ -35,17 +36,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.company_profile') }}</h3>
+                <h3 class="about-section-title" id="about_1">{{ trans('string.company_profile') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about1') !!}
                 </div>
                 <img class="about-image" src="/img/about/company-1.jpg" alt="">
-                <h3 class="about-section-title">{{ trans('string.about5') }}</h3>
+                <h3 class="about-section-title" id="about_2">{{ trans('string.about5') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about6') !!}
                 </div>
                 <img class="about-image" src="/img/about/company-2.jpg" alt="">
-                <h3 class="about-section-title">{{ trans('string.about7') }}</h3>
+                <h3 class="about-section-title" id="about_3">{{ trans('string.about7') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-8">
@@ -56,7 +57,7 @@
                         </div>
                     </div>                    
                 </div>
-                <h3 class="about-section-title">{{ trans('string.about9') }}</h3>
+                <h3 class="about-section-title" id="about_4">{{ trans('string.about9') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-4">
@@ -67,7 +68,7 @@
                         </div>
                     </div>                    
                 </div>                
-                <h3 class="about-section-title">{{ trans('string.about11') }}</h3>
+                <h3 class="about-section-title" id="about_5">{{ trans('string.about11') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about12') !!}
                 </div>

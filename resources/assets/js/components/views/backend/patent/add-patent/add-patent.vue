@@ -2,21 +2,35 @@
     <div class="row">
         <div class="col-md-8">
             <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-                <el-form-item label="文件名稱" prop="locale">
+                <el-form-item v-if="type == 'paper'" label="篇名" prop="locale">
                     <el-input v-model="ruleForm.locale"></el-input>
                 </el-form-item>
-                <el-form-item label="取得日期" prop="customField1">
+                <el-form-item v-else label="文件名稱" prop="locale">
+                    <el-input v-model="ruleForm.locale"></el-input>
+                </el-form-item>
+                <el-form-item v-if="type == 'patent'" label="取得日期" prop="customField1">
                     <el-date-picker
                         v-model="ruleForm.customField1"
                         type="date"
                         placeholder="選擇日期">
                     </el-date-picker>
                 </el-form-item>
-                <el-form-item label="地區" prop="customField2">
+                <el-form-item v-if="type == 'paper'" label="期刊名" prop="customField2">
                     <el-input v-model="ruleForm.customField2"></el-input>
                 </el-form-item>
-                <el-form-item label="文件編號" prop="customField3">
+                <el-form-item v-else label="地區" prop="customField2">
+                    <el-input v-model="ruleForm.customField2"></el-input>
+                </el-form-item>
+                <el-form-item v-if="type == 'paper'" label="作者" prop="customField3">
                     <el-input v-model="ruleForm.customField3"></el-input>
+                </el-form-item>
+                <el-form-item v-else label="文件編號" prop="customField3">
+                    <el-input v-model="ruleForm.customField3"></el-input>
+                </el-form-item>
+                <el-form-item v-if="type == 'paper'" label="檔案連結" prop="customField4">
+                    <el-button type="primary" @click="addFile('customField4', 'Files')">選擇檔案</el-button>
+                    <br>
+                    <span>{{ruleForm.customField4}}</span>
                 </el-form-item>
                 <el-form-item>
                     <el-button type="primary" @click="submitForm('ruleForm')">
@@ -59,6 +73,7 @@
                     customField1: null,
                     customField2: null,
                     customField3: null,
+                    customField4: null
                 },
                 rules: {
                     locale: [
@@ -120,6 +135,15 @@
 
                         this.ruleForm = res.data
                     })
+            },
+            addFile(field, type) {
+                let self = this
+
+                
+                window.open('/laravel-filemanager' + `?type=${type}`, 'FileManager', 'width=900,height=600');
+                window.SetUrl = function (url, file_path) {
+                    self.ruleForm[field] = file_path
+                };
             },
             addImage() {
                 let self = this

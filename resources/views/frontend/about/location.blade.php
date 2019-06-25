@@ -137,7 +137,7 @@ $(function () {
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.about32') }}</h3>
+                <h3 class="about-section-title" id="about_1">{{ trans('string.about32') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about33') !!}
                 </div>

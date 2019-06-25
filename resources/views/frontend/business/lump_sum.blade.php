@@ -73,14 +73,14 @@ $('.material-card-list').slick({
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.professional') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.professional') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.production_d_1') }}
                     </p>                    
                 </div>
                 <hr style="margin-top: 50px;">
-                <h3 class="about-section-title">{{ trans('string.foundry') }}</h3>
+                <h3 class="about-section-title" id="section_2">{{ trans('string.foundry') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-7">
@@ -223,7 +223,7 @@ $('.material-card-list').slick({
                     </div>
                 </div>
                 <hr style="margin-top: 50px;">
-                <h3 class="about-section-title">{{ trans('string.foundry_flow') }}</h3>
+                <h3 class="about-section-title" id="section_3">{{ trans('string.foundry_flow') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.production_d_11') }}

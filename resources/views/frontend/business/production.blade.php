@@ -113,7 +113,7 @@ $('.lines-album').slick({
         <div class="row">
             <div class="col-md-9 about-content">
 
-                <h3 class="about-section-title">{{ trans('string.production') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.production') }}</h3>
                 <div class="about-text">
                     <p>{{ trans('string.business_10') }}</p>                 
                 </div>

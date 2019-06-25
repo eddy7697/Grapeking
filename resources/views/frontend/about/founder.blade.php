@@ -35,12 +35,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <div class="about-text signature">
+                <div class="about-text signature" id="about_1">
                     <h3 style="margin: 150px 0 50px; font-weight: 700">{{ trans('string.about17') }}</h3>
                     <img class="about-image pull-right" src="/img/about/founder/signature.jpg" alt="">
                 </div>
                 <div style="clear: both"></div>
-                <h3 class="about-section-title" style="margin-top: 0">{{ trans('string.about18') }}</h3>
+                <h3 class="about-section-title" id="about_3" style="margin-top: 0">{{ trans('string.about18') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-3">
@@ -61,7 +61,7 @@
                     </div>
                     
                 </div>
-                <h3 class="about-section-title">{{ trans('string.about20') }}</h3>
+                <h3 class="about-section-title" id="about_2">{{ trans('string.about20') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about21') !!}
                 </div>

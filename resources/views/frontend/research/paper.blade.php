@@ -53,11 +53,11 @@
         <div class="col-md-9 about-content">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="patent-list" role="tabpanel" aria-labelledby="patent-list-tab">
-                    <h3 class="about-section-title">{{ trans('string.patent') }}</h3>
+                    <h3 class="about-section-title" id="section_1">{{ trans('string.patent') }}</h3>
                     <document-list type="patent"></document-list>
                 </div>
                 <div class="tab-pane fade" id="paper-list" role="tabpanel" aria-labelledby="paper-list-tab">
-                    <h3 class="about-section-title">{{ trans('string.literature_publication') }}</h3>
+                    <h3 class="about-section-title" id="section_2">{{ trans('string.literature_publication') }}</h3>
                     <document-list type="paper"></document-list>
                 </div>
             </div>

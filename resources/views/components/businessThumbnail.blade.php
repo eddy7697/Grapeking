@@ -2,26 +2,26 @@
     <h3 class="about-section-title">{{ trans('string.business') }}</h3>
     <ul class="main-thumb">
         <li>
-            <a href="#">{{ trans('string.production') }}</a>
+            <a href="/business/production">{{ trans('string.production') }}</a>
             <ul class="sub-thumb">
-                <li class="single"><a href="#">{{ trans('string.production') }}</a></li>
+                <li class="single"><a href="/business/production#section_1">{{ trans('string.production') }}</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">{{ trans('string.lump_sum') }}</a>
+            <a href="/business/lump_sum">{{ trans('string.lump_sum') }}</a>
             <ul class="sub-thumb">
-                <li><a href="#">{{ trans('string.professional') }}</a></li>
-                <li><a href="#">{{ trans('string.foundry') }}</a></li>
-                <li><a href="#">{{ trans('string.pro_foundry') }}</a></li>
-                <li><a href="#">{{ trans('string.foundry_flow') }}</a></li>
+                <li><a href="/business/lump_sum#section_1">{{ trans('string.professional') }}</a></li>
+                <li><a href="/business/lump_sum#section_2">{{ trans('string.foundry') }}</a></li>
+                <li><a href="/business/lump_sum#section_3">{{ trans('string.pro_foundry') }}</a></li>
+                <li><a href="/business/lump_sum#section_4">{{ trans('string.foundry_flow') }}</a></li>
             </ul>
         </li>
         <li>
-            <a href="#">{{ trans('string.catalog') }}</a>
+            <a href="/business/catalog">{{ trans('string.catalog') }}</a>
             <ul class="sub-thumb">
-                <li><a href="#">{{ trans('string.p_slogan') }}</a></li>
-                <li><a href="#">{{ trans('string.product_item') }}</a></li>                
-                <li><a href="#">{{ trans('string.training_team') }}</a></li>
+                <li><a href="/business/catalog#section_1">{{ trans('string.p_slogan') }}</a></li>
+                <li><a href="/business/catalog#section_2">{{ trans('string.product_item') }}</a></li>                
+                <li><a href="/business/catalog#section_3">{{ trans('string.training_team') }}</a></li>
             </ul>
         </li>
     </ul>

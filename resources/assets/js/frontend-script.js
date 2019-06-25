@@ -144,6 +144,32 @@ $(function () {
 		}
     }
 
+    if (location.hash) {
+        $(document).ready(function () {
+            goSection(location.hash);    
+        });
+    }
+
+    function goSection(target) {
+        var target = $(target);
+        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+
+        $body.animate({
+            scrollTop: target.offset().top - 200
+        }, 600);
+    }
+
+    $('.sub-thumb li a').on('click', function (e) {
+        e.preventDefault();
+        
+        if ($(this)[0].pathname == window.location.pathname) {
+            goSection($(this).prop("hash"))
+        } else {
+            window.location.href = $(this)[0].href
+        }
+        
+    });
+
 });
 
 

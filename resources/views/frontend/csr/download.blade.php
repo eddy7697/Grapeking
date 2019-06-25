@@ -35,7 +35,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content">
-            <h3 class="about-section-title">{{ trans('string.download_paper') }}</h3>
+            <h3 class="about-section-title" id="section_1">{{ trans('string.download_paper') }}</h3>
             {{-- {{json_encode(FeatureView::download())}} --}}
             <div class="row">
                 @foreach (FeatureView::download() as $item)

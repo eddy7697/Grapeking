@@ -72,7 +72,7 @@ $('.material-card-list').slick({
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.bioengineering_center') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.bioengineering_center') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6">
@@ -101,7 +101,7 @@ $('.material-card-list').slick({
                     </div>                    
                 </div>
 
-                <h3 class="about-section-title">{{ trans('string.professional_equipment') }}</h3>
+                <h3 class="about-section-title" id="section_2">{{ trans('string.professional_equipment') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6" style="text-align: left">
@@ -128,7 +128,7 @@ $('.material-card-list').slick({
                     </div>                    
                 </div>
 
-                <h3 class="about-section-title">{{ trans('string.repeated_success') }}</h3>
+                <h3 class="about-section-title" id="section_3">{{ trans('string.repeated_success') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6">
@@ -144,7 +144,7 @@ $('.material-card-list').slick({
                 </div>
 
                 {{-- 原料介紹 --}}
-                <h3 class="about-section-title">{{ trans('string.raw_material_introduction') }}</h3>
+                <h3 class="about-section-title" id="section_4">{{ trans('string.raw_material_introduction') }}</h3>
                 <div class="material-card mobile-to-hide first" style="background-color: #ABCD03">
                     <h4>菇类原料</h4>
                     <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    

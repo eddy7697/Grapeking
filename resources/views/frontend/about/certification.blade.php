@@ -72,12 +72,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.about26') }}</h3>
+                <h3 class="about-section-title" id="about_1">{{ trans('string.about26') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about27') !!}
                 </div>
                 <img class="about-image" src="/img/about/certification/pic1.jpg" alt="">
-                <h3 class="about-section-title">{{ trans('string.about28') }}</h3>
+                <h3 class="about-section-title" id="about_2">{{ trans('string.about28') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about29') !!}
                     <div class="row mobile-to-hide">

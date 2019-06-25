@@ -14,10 +14,17 @@
                 :data="pageData.data"
                 style="width: 100%">
                 <el-table-column
+                    v-if="type == 'paper'"
                     prop="locale"
                     label="文件名稱">
                 </el-table-column>
                 <el-table-column
+                    v-else
+                    prop="locale"
+                    label="文件名稱">
+                </el-table-column>
+                <el-table-column
+                    v-if="type == 'patent'"
                     prop="customField1"
                     label="取得日期">
                     <template slot-scope="scope">
@@ -27,12 +34,34 @@
                     </template>
                 </el-table-column>
                 <el-table-column
+                    v-if="type == 'paper'"
+                    prop="customField2"
+                    label="期刊名">
+                </el-table-column>
+                <el-table-column
+                    v-else
                     prop="customField2"
                     label="地區">
                 </el-table-column>
                 <el-table-column
+                    v-if="type == 'paper'"
+                    prop="customField3"
+                    label="作者">
+                </el-table-column>
+                <el-table-column
+                    v-else
                     prop="customField3"
                     label="文件編號">
+                </el-table-column>
+                <el-table-column
+                    v-if="type == 'paper'"
+                    prop="customField4"
+                    label="檔案連結">
+                    <template slot-scope="scope">
+                        <div>
+                            <a target="_blank" :href="scope.row.customField4">{{scope.row.customField4}}</a>
+                        </div>
+                    </template>
                 </el-table-column>
                 <el-table-column
                     prop="created_at"

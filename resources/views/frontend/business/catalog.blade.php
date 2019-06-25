@@ -46,7 +46,7 @@ $('.material-card').height(finalHeight);
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title">{{ trans('string.p_slogan') }}</h3>
+                <h3 class="about-section-title" id="section_1">{{ trans('string.p_slogan') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.catalog_d_1') }}
@@ -55,7 +55,7 @@ $('.material-card').height(finalHeight);
                 <img class="about-image" src="/img/business/product-1.jpg" alt="">
 
 
-                <h3 class="about-section-title">{{ trans('string.raw_material_introduction') }}</h3>
+                <h3 class="about-section-title" id="section_2">{{ trans('string.raw_material_introduction') }}</h3>
                 <div class="material-card first" style="background-color: #ABCD03">
                     <img class="material-img" src="/img/business/product-btn-1.png" alt="">                    
                     <h4>
@@ -109,7 +109,7 @@ $('.material-card').height(finalHeight);
                     </div>
                 </div>
 
-                <h3 class="about-section-title">{{ trans('string.product_item') }}</h3>
+                <h3 class="about-section-title" id="section_3">{{ trans('string.product_item') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.catalog_d_11') }}
