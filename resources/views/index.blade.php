@@ -274,7 +274,7 @@
             <div class="col-sm-6 col-md-3 factory-item food-safety">
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>食安中心</p>
+                    <p>{{ trans('string.food_safty_center') }}</p>
                     <p>Food safety center</p>
                 </div>
                 <a href="/research/foodsafty"></a>
@@ -282,7 +282,7 @@
             <div class="col-sm-6 col-md-3 factory-item bioengineering">
                 <div class="border-bar"></div>                
                 <div class="factory-item-info">
-                    <p>生物工程中心</p>
+                    <p>{{ trans('string.bioengineering_center') }}</p>
                     <p>Bioengineering Center</p>
                 </div>
                 <a href="/research/bioengineering"></a>
@@ -290,7 +290,7 @@
             <div class="col-sm-6 col-md-3 factory-item innovation">
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>创新研发中心</p>
+                    <p>{{ trans('string.innovation_rnd_center') }}</p>
                     <p>Innovation R&D Center</p>
                 </div>                
                 <a href="/research/innovation"></a>
@@ -298,7 +298,7 @@
             <div class="col-sm-6 col-md-3 factory-item factory">                
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>世界级工厂</p>
+                    <p>{{ trans('string.world_class_factory') }}</p>
                     <p>World class factory</p>
                 </div>
                 <a href="/research/factory"></a>
@@ -309,7 +309,7 @@
     <div class="container index-info about-pro">
         <div class="row">
             <div class="col-md-12 index-info-text-section">
-                <h2>我们提供的专业服务</h2>
+                <h2>{{ trans('text.index_d_1') }}</h2>
                 <hr>
                 <p>上海葡萄王企业有限公司，位于交通便利的上海市松江工业区，距离市区30公里，</p>
                 <p>附近尚有沪杭高速道路及嘉金高速道路，优越的地理位置为中国及全世界的客户提供了便捷服务。</p>
@@ -319,8 +319,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-1.jpg')">
                             <div class="text">
-                                <p>口服液</p>
-                                <p>(玻璃瓶装)</p>
+                                <p>{{ trans('string.business_1') }}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -328,8 +327,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-2.jpg')">
                             <div class="text">
-                                <p>片剂/锭剂</p>
-                                <p>(瓶装)</p>
+                                <p>{{ trans('string.business_2') }}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -337,8 +335,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-3.jpg')">
                             <div class="text">
-                                <p>粉剂</p>
-                                <p>(颗粒)</p>
+                                <p>{{ trans('string.business_3') }}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -346,7 +343,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-4.jpg')">
                             <div class="text">
-                                <p>咖啡胶囊</p>
+                                <p>{{ trans('string.business_4') }}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -354,7 +351,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('/img/about-5.jpg')">
                             <div class="text">
-                                <p>铝箔包</p>
+                                <p>{{ trans('string.business_5') }}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -366,7 +363,7 @@
         
         <div class="row">
             <div class="col-md-12 btn-section">
-                <a href="/business/production" class="learn-more-btn">了解更多</a>
+                <a href="/business/production" class="learn-more-btn">{{ trans('string.learn_more') }}</a>
             </div>
         </div> 
     </div>
@@ -451,7 +448,7 @@
                     $abouts = array(
                         [
                             'featureImage' => '/img/about-section-1.jpg',
-                            'title' => '生物工程中心',
+                            'title' => trans('string.bioengineering_center'),
                             'link' => '/research/bioengineering',
                             'content' => '生物中心成立于1991年台湾桃园，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，故积极与学术界及研究机构合作，进行素材研发、功能验证及制程改良，
 以建立公司核心技术。另申请并执行经济部技术处及工业局之生技相关科专计划达九件，国科会、农委会与教育部之产学计划约20件，目前已拥有美国一件、中国六件
@@ -459,7 +456,7 @@
                         ],
                         [
                             'featureImage' => '/img/about-section-2.jpg',
-                            'title' => '创新研发中心',
+                            'title' => trans('string.innovation_rnd_center'),
                             'link' => '/research/innovation',
                             'content' => '龙潭生物科技研究所於2018年底新成立，结合原有生物中心近30年的研发经验，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，
 积极与国内学术界及研究机构合作，进行素材研发丶功能验证及制程改良，以建立公司核心技术。
@@ -468,7 +465,7 @@
                         ],
                         [
                             'featureImage' => '/img/about-section-3.jpg',
-                            'title' => '食安中心',
+                            'title' => trans('string.food_safty_center'),
                             'link' => '/research/foodsafty',
                             'content' => '葡萄王设有符合国际标准『ISO/IEC 17025 TAF认证实验室』，为公司产品提供最严密的把关。目前自主检验包括：一般物性、化性与食安因子相关检测项目，
 检测方式除经TAF(财团法人全国认证基金会)之要求外，并参照台湾行政院卫生福利部与经济部标准检验局订定之方法或国际间认可之检验方法(如AOAC)等。'

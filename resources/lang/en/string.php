@@ -367,4 +367,11 @@ return [
     'catalog_d_15' => 'International affirmation',
     'catalog_d_16' => 'If you have any questions about Grape King, you are welcome to contact us, the Customer Service Specialist will solve your problem with the fastest and most professional response. ',
     'catalog_d_17' => 'Contact us',
+    
+    'research_f_1' => 'test process',
+
+    'research_f_d_1' => 'The grape king biotechnology has ISO22000 food safety management system, HACCP food safety control system, FSSC22000, NSFGMP and other international certifications, according to international standards, from the relevant raw materials, processing, manufacturing, packaging, sales, each Strict management and control, to achieve food safety, peace of mind, and create the core of the grape king value. ',
+    'research_f_d_2' => 'Product liability has always been the most important part of the grape king biotechnology. We are based on quality and hygiene requirements, and we maintain the most rigorous management in all aspects and have obtained many quality system approvals. We have set four food safety policies to “continue to innovate, pursue excellence, implement social responsibility, and ensure customer peace of mind”. We hope that we can improve our customers by developing more quality products and matching the annual quality targets set in the factory. The confidence of the grape king biotechnology products. ',
+    'research_f_d_3' => "All the raw materials purchased by Grape King must comply with the company's procurement specifications, so that suppliers can provide better raw materials, which will improve the quality of the grape king biotechnology products, and also make consumers more secure, so Can create a win-win situation (suppliers, grape king biotechnology, consumers). ",
+
 ];

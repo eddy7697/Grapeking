@@ -35,13 +35,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content">
-            <h3 class="about-section-title" id="section_1">{{ trans('text.research_f_1') }}</h3>
+            <h3 class="about-section-title" id="section_1">{{ trans('string.research_f_1') }}</h3>
 
             <div class="about-text">
                 <div class="row">
                     <div class="col-md-6">
                         <p>
-                            {{ trans('text.research_f_d_1') }}
+                            {{ trans('string.research_f_d_1') }}
                         </p> 
                     </div>
                     <div class="col-md-6 mobile-to-left">
@@ -51,10 +51,10 @@
             </div>
 
             <div class="about-text" style="margin:50px 0 30px;">
-                {{ trans('text.research_f_d_2') }}
+                {{ trans('string.research_f_d_2') }}
             </div>
 
-            <img class="about-image" src="/img/research/foodsafty-2.png" alt="{{ trans('text.research_f_d_2') }}">
+            <img class="about-image" src="/img/research/foodsafty-2.png" alt="{{ trans('string.research_f_d_2') }}">
 
             <div class="about-text" style="margin-top: 50px;">
                 <div class="row">
@@ -63,7 +63,7 @@
                     </div>
                     <div class="col-md-7 force-center">
                         <p>
-                            {{ trans('text.research_f_d_1') }}
+                            {{ trans('string.research_f_d_1') }}
                         </p> 
                     </div>
                 </div>                    
