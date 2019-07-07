@@ -109,7 +109,7 @@
                     }
                 })
                 .done(function() {
-                    window.location = '/cyberholic-system/page/list';
+                    // window.location = '/cyberholic-system/page/list';
                     console.log("success");
                 })
                 .fail(function() {

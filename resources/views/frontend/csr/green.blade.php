@@ -35,8 +35,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-
-                <h3 class="about-section-title" id="section_1">{{ trans('string.green_1') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(10)!!}
+                @else
+                {!!PageView::show(9)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.green_1') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.green_d_1') }}
@@ -128,7 +132,7 @@
                     <div class="col-md-8 session-text">
                         <p>{{ trans('string.green_d_13') }}</p>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
             

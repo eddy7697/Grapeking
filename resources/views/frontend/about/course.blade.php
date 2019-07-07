@@ -53,7 +53,7 @@
         <div class="vdieo-present-section">
             <div class="info">
                 <h2>VIDEO</h2>
-                <h4>{{ trans('text.index_d_15') }}</h4>
+                <h4>{{ trans('string.index_d_15') }}</h4>
                 <img class="play-btn" src="/img/site-logo/play-icon.png" alt="">
             </div>
         </div>

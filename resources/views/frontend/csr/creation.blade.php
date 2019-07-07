@@ -35,8 +35,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-
-                <h3 class="about-section-title" id="section_1">{{ trans('string.creation_1') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(8)!!}
+                @else
+                {!!PageView::show(7)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.creation_1') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6">
@@ -110,7 +114,7 @@
                     <div class="item">
                         <img class="img" src="/img/csr/invo-material-5.svg" alt="">
                     </div>
-                </div>
+                </div> --}}
 
             </div>
             

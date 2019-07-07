@@ -63,11 +63,11 @@
 													<li><a href="/cyberholic-system/page/add">新增頁面</a></li>
 												@endif
 												<li><a href="/cyberholic-system/page/list">頁面列表</a></li>
-												<li><a href="/cyberholic-system/page/block">區塊列表</a></li>
-												<li><a href="/cyberholic-system/meta/notice">購物須知管理</a></li>
+												{{-- <li><a href="/cyberholic-system/page/block">區塊列表</a></li> --}}
+												<li><a href="/cyberholic-system/meta/notice">使用條款管理</a></li>
 												<li><a href="/cyberholic-system/meta/privacy">隱私權政策管理</a></li>
-												<li><a href="/cyberholic-system/meta/remind">安心購物宣言管理</a></li>
-												<li><a href="/cyberholic-system/meta/other">其他資訊管理</a></li>
+												{{-- <li><a href="/cyberholic-system/meta/remind">安心購物宣言管理</a></li>
+												<li><a href="/cyberholic-system/meta/other">其他資訊管理</a></li> --}}
 											</ul>
 										</li>
 										@if (false)
@@ -77,14 +77,16 @@
 											</ul>
 										</li>
 										@endif
-										
+										@if (false)
 										<li class=""><a><i class="fa fa-pencil-square-o"></i> 最新消息管理系統 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="display: none;">
 												<li><a href="/cyberholic-system/post/add">新增最新消息</a></li>
 												<li><a href="/cyberholic-system/post/list">最新消息列表</a></li>
 												<li><a href="/cyberholic-system/post/category">最新消息類別管理</a></li>
 											</ul>
-										</li>
+										</li>	
+										@endif
+										
 										<li><a><i class="fa fa-picture-o"></i> 媒體與檔案 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="">
 												<li><a href="/cyberholic-system/media/manager?type=Images">媒體庫</a></li>

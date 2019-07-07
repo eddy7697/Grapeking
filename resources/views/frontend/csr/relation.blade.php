@@ -35,7 +35,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="section_1">{{ trans('string.relations') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(4)!!}
+                @else
+                {!!PageView::show(3)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.relations') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-7">
@@ -63,7 +68,7 @@
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">{{ trans('string.join_us') }}</a>
                         </div>
                     </div>                    
-                </div>
+                </div> --}}
 
             </div>
             

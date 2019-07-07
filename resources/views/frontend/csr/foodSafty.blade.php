@@ -35,7 +35,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="section_1">{{ trans('string.foodSafty') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(6)!!}
+                @else
+                {!!PageView::show(5)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.foodSafty') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.foodSafty_d_1') }}
@@ -61,7 +66,7 @@
                             <img class="about-image" style="margin: 0; width: 100%; max-width: 500px; display: inline-block" src="/img/csr/food-safty-2.png" alt="">
                         </div>
                     </div>                    
-                </div>
+                </div> --}}
 
             </div>
             

@@ -309,9 +309,9 @@
     <div class="container index-info about-pro">
         <div class="row">
             <div class="col-md-12 index-info-text-section">
-                <h2>{{ trans('text.index_d_1') }}</h2>
+                <h2>{{ trans('string.index_d_1') }}</h2>
                 <hr>
-                {!! trans('text.index_d_11') !!}
+                {!! trans('string.index_d_11') !!}
             </div>
             <div class="col-md-11 mx-auto cate-type">
                 <div class="row">
@@ -374,7 +374,7 @@
             <div class="col-md-7 mx-auto">
                 <div class="row count-down-row">
                     <div class="col-md-12">
-                        <h2>{{ trans('text.index_d_2') }}</h2>
+                        <h2>{{ trans('string.index_d_2') }}</h2>
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <div class="count-down-box">
@@ -384,7 +384,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    {{ trans('text.index_d_3') }}
+                                    {{ trans('string.index_d_3') }}
                                 </div>
                             </div>
                         </div>
@@ -397,7 +397,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    {{ trans('text.index_d_4') }}
+                                    {{ trans('string.index_d_4') }}
                                 </div>
                             </div>
                         </div>
@@ -410,7 +410,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    {{ trans('text.index_d_5') }}
+                                    {{ trans('string.index_d_5') }}
                                 </div>
                             </div>
                         </div>
@@ -423,7 +423,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    {{ trans('text.index_d_6') }}
+                                    {{ trans('string.index_d_6') }}
                                 </div>
                             </div>
                         </div>
@@ -437,9 +437,9 @@
     <div class="container index-info about">
         <div class="row">
             <div class="col-md-11 mx-auto index-info-text-section">
-                <h2>{{ trans('text.index_d_7') }}</h2>
+                <h2>{{ trans('string.index_d_7') }}</h2>
                 <hr>
-                {!! trans('text.index_d_12') !!}
+                {!! trans('string.index_d_12') !!}
             </div>
             <div class="col-md-11 mx-auto">
                 @php
@@ -448,19 +448,19 @@
                             'featureImage' => '/img/about-section-1.jpg',
                             'title' => trans('string.bioengineering_center'),
                             'link' => '/research/bioengineering',
-                            'content' => trans('text.index_d_8')
+                            'content' => trans('string.index_d_8')
                         ],
                         [
                             'featureImage' => '/img/about-section-2.jpg',
                             'title' => trans('string.innovation_rnd_center'),
                             'link' => '/research/innovation',
-                            'content' => trans('text.index_d_9')
+                            'content' => trans('string.index_d_9')
                         ],
                         [
                             'featureImage' => '/img/about-section-3.jpg',
                             'title' => trans('string.food_safty_center'),
                             'link' => '/research/foodsafty',
-                            'content' => trans('text.index_d_10')
+                            'content' => trans('string.index_d_10')
                         ]
                     );
                 @endphp
@@ -509,11 +509,11 @@
     <div class="container index-info about">
         <div class="row">
             <div class="col-md-12 mx-auto index-info-text-section">
-                <h2>{{ trans('text.index_d_13') }}</h2>
+                <h2>{{ trans('string.index_d_13') }}</h2>
                 <hr>
                 <div class="row">
                     <div class="col-md-12" style="margin-bottom: 30px;">
-                        {!! trans('text.index_d_14') !!}
+                        {!! trans('string.index_d_14') !!}
                     </div>
                     <div class="col-md-10 mx-auto">
                         <div class="row license-container">
@@ -542,7 +542,7 @@
         <div class="vdieo-present-section">
             <div class="info">
                 <h2>VIDEO</h2>
-                <h4>{{ trans('text.index_d_15') }}</h4>
+                <h4>{{ trans('string.index_d_15') }}</h4>
                 <img class="play-btn" src="/img/site-logo/play-icon.png" alt="">
             </div>
         </div>

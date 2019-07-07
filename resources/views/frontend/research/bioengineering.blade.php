@@ -72,7 +72,12 @@ $('.material-card-list').slick({
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="section_1">{{ trans('string.bioengineering_center') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(1)!!}
+                @else
+                {!!PageView::show(2)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.bioengineering_center') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6">
@@ -141,7 +146,7 @@ $('.material-card-list').slick({
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">更多专利</a>
                         </div>
                     </div>                    
-                </div>
+                </div> --}}
 
                 {{-- 原料介紹 --}}
                 <h3 class="about-section-title" id="section_4">{{ trans('string.raw_material_introduction') }}</h3>
