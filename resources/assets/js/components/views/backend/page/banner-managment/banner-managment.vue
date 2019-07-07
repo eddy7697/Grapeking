@@ -22,7 +22,7 @@
                         <textarea name="pic-title" id="pic-title" v-model="picTitle" class="form-control" style="resize: vertical"></textarea>
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>
                         <label for="picContent">圖片資訊內容</label>
                     </td>
@@ -41,7 +41,7 @@
                     <td>
                         <input id="pic-link" type="text" class="form-control" v-model="picBtnTitle">
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td>
                         <label for="pic-link">圖片連結</label>
@@ -78,7 +78,7 @@
                         </div>
                         <div class="panel-body">
                             <img width="100%" v-bind:src="item.url">
-                            <textarea v-model="item.content" class="form-control" style="resize: vertical"></textarea>
+                            <!-- <textarea v-model="item.content" class="form-control" style="resize: vertical"></textarea> -->
                         </div>
                         <div class="panel-footer">
                             <div class="form-control">
