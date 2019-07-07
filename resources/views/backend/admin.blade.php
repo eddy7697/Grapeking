@@ -46,7 +46,7 @@
 									<ul class="nav side-menu" style="">
 										<li><a><i class="fa fa-tachometer"></i> 主控板 <span class="fa fa-chevron-down"></span></a>
 											<ul class="nav child_menu" style="">
-												<li><a href="/cyberholic-system/admin">後臺首頁</a></li>
+												{{-- <li><a href="/cyberholic-system/admin">後臺首頁</a></li> --}}
 												<li><a href="/cyberholic-system/admin/list">後台使用者列表</a></li>
 												<li><a href="/cyberholic-system/admin/reset">重設密碼</a></li>
 											</ul>

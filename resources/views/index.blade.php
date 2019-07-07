@@ -229,14 +229,15 @@
     <div class="swiper-container" data-aos="fade-in">
         <div class="swiper-wrapper">
             @php
-                $album = array([
-                    'url' => '/img/banner-2.jpg',
-                    'title' => 'test',
-                    'content' => 'test'
-                ]);
+                $album = SiteMetaView::album();
+                // $album = array([
+                //     'url' => '/img/banner-2.jpg',
+                //     'title' => 'test',
+                //     'content' => 'test'
+                // ]);
             @endphp
             @foreach ($album as $item)
-                <div class="swiper-slide" style="background-image: url('{{$item['url']}}'); background-size: cover;">
+                <div class="swiper-slide" style="background-image: url('{{$item->url}}'); background-size: cover;">
                     <div class="slide-item">     
                         <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
                             <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">

@@ -171,6 +171,7 @@
                     }
                 })
                 .done(function() {
+                    toastr.success('編輯網站資訊成功')
                     self.getMeta();
                 })
                 .fail(function() {
@@ -207,6 +208,7 @@
                     }
                 })
                 .done(function() {
+                    toastr.success('編輯網站資訊成功')
                     self.getMeta();
                 })
                 .fail(function() {

@@ -75,10 +75,16 @@
                             @endif
                         </div>
                         <div>
-                            {!! NoCaptcha::renderJs() !!}
+                            <div class="captcha-section">
+                                <strong>确认码</strong>
+                                <img src="/admin/captcha" id="admin-captcha" alt="">
+                                <a style="cursor: pointer" id="refresh-captcha" onclick="refreshCaptcha()">更新确认码</a>
+                                <input style="width: 50%; margin: auto; margin-top: 20px;" type="text" class="form-control captcha"  name="captcha" placeholder="请输入上方的确认码..." required title="请输入验证码">
+                            </div>
+                            {{-- {!! NoCaptcha::renderJs() !!}
                             <div class="checkbox">
                                 {!! NoCaptcha::display() !!}
-                            </div>
+                            </div> --}}
                             @if ($errors->has('g-recaptcha-response'))
                                 <span class="help-block">
                                     <strong>登入必須通過驗證</strong>
@@ -105,7 +111,7 @@
                             <br />
 
                             <div>
-                                <img src="/img/LanuchCenter_v2.png" width="100%" alt="碩果數位有限公司" title="碩果數位有限公司">
+                                <img src="/img/site-logo/logo_header.png" width="100%" alt="碩果數位有限公司" title="碩果數位有限公司">
                             </div>
                         </div>
                     </form>
@@ -115,6 +121,17 @@
             </div>
         </div>
     </div>
+    <script src="/js/app.js"></script>
+    <script>
+    function refreshCaptcha() {
+        axios.get('/cap_str')
+            .then(res => {
+                console.log($('#admin-captcha').attr('src'));
+                $('#admin-captcha').attr('src', '/admin/captcha?Q=' + res.data)
+                // this.captchaUrl = `/captcha?q=${res.data}`
+            });
+    }
+    </script>
 </body>
 
 </html>

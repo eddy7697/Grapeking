@@ -45,7 +45,15 @@
                 <div class="about-text">
                     {!! trans('string.about6') !!}
                 </div>
-                <img class="about-image" src="/img/about/company-2.jpg" alt="">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="about-image" src="/img/about/company-2.jpg" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <img class="about-image" style="height: 250px;" src="/img/about/site-logo.png" alt="">
+                    </div>
+                </div>
+                
                 <h3 class="about-section-title" id="about_3">{{ trans('string.about7') }}</h3>
                 <div class="about-text">
                     <div class="row">

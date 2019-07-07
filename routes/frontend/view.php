@@ -172,6 +172,7 @@ Route::get('/importScout', 'Frontend\SearchController@importScout');
  * Captcha
  */
 Route::get('/captcha', 'HomeController@captcha');
+Route::get('/admin/captcha', 'HomeController@adminCaptcha');
 Route::get('/cap_str', 'HomeController@getString');
 
 /**
