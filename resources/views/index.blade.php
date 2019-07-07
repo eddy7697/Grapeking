@@ -311,8 +311,7 @@
             <div class="col-md-12 index-info-text-section">
                 <h2>{{ trans('text.index_d_1') }}</h2>
                 <hr>
-                <p>上海葡萄王企业有限公司，位于交通便利的上海市松江工业区，距离市区30公里，</p>
-                <p>附近尚有沪杭高速道路及嘉金高速道路，优越的地理位置为中国及全世界的客户提供了便捷服务。</p>
+                {!! trans('text.index_d_11') !!}
             </div>
             <div class="col-md-11 mx-auto cate-type">
                 <div class="row">
@@ -375,7 +374,7 @@
             <div class="col-md-7 mx-auto">
                 <div class="row count-down-row">
                     <div class="col-md-12">
-                        <h2>您最紧密的合作伙伴</h2>
+                        <h2>{{ trans('text.index_d_2') }}</h2>
                     </div>
                     <div class="col-sm-6 col-md-3">
                         <div class="count-down-box">
@@ -385,7 +384,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    成立于上海市松江区
+                                    {{ trans('text.index_d_3') }}
                                 </div>
                             </div>
                         </div>
@@ -398,7 +397,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    全场员工人数超过
+                                    {{ trans('text.index_d_4') }}
                                 </div>
                             </div>
                         </div>
@@ -411,7 +410,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    累积获奖肯定
+                                    {{ trans('text.index_d_5') }}
                                 </div>
                             </div>
                         </div>
@@ -424,7 +423,7 @@
                                     0
                                 </div>
                                 <div class="text">
-                                    取得SFDA食品卫生许可证
+                                    {{ trans('text.index_d_6') }}
                                 </div>
                             </div>
                         </div>
@@ -438,10 +437,9 @@
     <div class="container index-info about">
         <div class="row">
             <div class="col-md-11 mx-auto index-info-text-section">
-                <h2>我们的专业研发</h2>
+                <h2>{{ trans('text.index_d_7') }}</h2>
                 <hr>
-                <p>上海葡萄王除在生产制造的OEM与ODM中取得耀眼成绩之外，</p>
-                <p>在专业研发上更设有食安中心、生物工程中心、创新研发中心联手提供专业研发。</p>
+                {!! trans('text.index_d_12') !!}
             </div>
             <div class="col-md-11 mx-auto">
                 @php
@@ -450,25 +448,19 @@
                             'featureImage' => '/img/about-section-1.jpg',
                             'title' => trans('string.bioengineering_center'),
                             'link' => '/research/bioengineering',
-                            'content' => '生物中心成立于1991年台湾桃园，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，故积极与学术界及研究机构合作，进行素材研发、功能验证及制程改良，
-以建立公司核心技术。另申请并执行经济部技术处及工业局之生技相关科专计划达九件，国科会、农委会与教育部之产学计划约20件，目前已拥有美国一件、中国六件
-及台湾三十五件关于樟芝、香杉芝、乳酸菌、抗生素、猴头菇、紫丁香蘑、蝉花之专利权。'
+                            'content' => trans('text.index_d_8')
                         ],
                         [
                             'featureImage' => '/img/about-section-2.jpg',
                             'title' => trans('string.innovation_rnd_center'),
                             'link' => '/research/innovation',
-                            'content' => '龙潭生物科技研究所於2018年底新成立，结合原有生物中心近30年的研发经验，兼具创新素材研发及生产功能，研发方面主要为自有素材(关键零组件)之开发及应用，
-积极与国内学术界及研究机构合作，进行素材研发丶功能验证及制程改良，以建立公司核心技术。
-另申请并执行经济部技术处及工业局之生技相关科专计画达九件，国科会丶农委会与教育部之产学计画约40件，目前已拥有美国丶中国丶日本丶加拿大及台湾
-关於樟芝丶香杉芝丶乳酸菌丶抗生素丶猴头菇丶紫丁香蘑及蝉花共 55 件专利权。'
+                            'content' => trans('text.index_d_9')
                         ],
                         [
                             'featureImage' => '/img/about-section-3.jpg',
                             'title' => trans('string.food_safty_center'),
                             'link' => '/research/foodsafty',
-                            'content' => '葡萄王设有符合国际标准『ISO/IEC 17025 TAF认证实验室』，为公司产品提供最严密的把关。目前自主检验包括：一般物性、化性与食安因子相关检测项目，
-检测方式除经TAF(财团法人全国认证基金会)之要求外，并参照台湾行政院卫生福利部与经济部标准检验局订定之方法或国际间认可之检验方法(如AOAC)等。'
+                            'content' => trans('text.index_d_10')
                         ]
                     );
                 @endphp
@@ -517,14 +509,11 @@
     <div class="container index-info about">
         <div class="row">
             <div class="col-md-12 mx-auto index-info-text-section">
-                <h2>我们的安全品质</h2>
+                <h2>{{ trans('text.index_d_13') }}</h2>
                 <hr>
                 <div class="row">
                     <div class="col-md-12" style="margin-bottom: 30px;">
-                        <p>葡萄王生技拥有独立的保健食品及药品生产线，所有产线均以安全与质量兼顾为主要考虑。</p>
-                        <p>对于药品的要求葡萄王生技一路秉持着cGMP 制药品管的精神，于整个生产流程中随时监控维持，</p>
-                        <p>层层把关，确保药品质量的安全性及有效性，葡萄王更于2014年获得国际制药最高标准PIC/S GMP 认证，</p>
-                        <p>对质量如此的坚持，即是期望能供给顾客高质量的产品。</p>
+                        {!! trans('text.index_d_14') !!}
                     </div>
                     <div class="col-md-10 mx-auto">
                         <div class="row license-container">
@@ -553,7 +542,7 @@
         <div class="vdieo-present-section">
             <div class="info">
                 <h2>VIDEO</h2>
-                <h4>葡萄王生技股份有限公司介紹影片</h4>
+                <h4>{{ trans('text.index_d_15') }}</h4>
                 <img class="play-btn" src="/img/site-logo/play-icon.png" alt="">
             </div>
         </div>

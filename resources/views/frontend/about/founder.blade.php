@@ -48,7 +48,7 @@
                                 <img src="/img/about/founder/person.jpg" alt="">
                                 <div class="mask">
                                     <div class="info">
-                                        創辦人暨總裁 曾水照 先生
+                                        {{ trans('text.founder_d_1') }}
                                         <br>
                                         (1935.04.14 - 2014.12.01)
                                     </div>
@@ -84,7 +84,7 @@
                             <a data-fancybox="gallery" href="/img/about/founder/pic.jpg" class="link-image"  style="background-image: url('/img/about/founder/pic.jpg');">
                                 <div class="mask">
                                     <div class="info">
-                                        棒球队受奖与总裁合影
+                                        {{ trans('text.founder_d_2') }}
                                     </div>
                                 </div>
                             </a>
@@ -93,7 +93,7 @@
                             <a data-fancybox="gallery" href="/img/about/founder/pic2.jpg" class="link-image" style="background-image: url('/img/about/founder/pic2.jpg');">
                                 <div class="mask">
                                     <div class="info">
-                                        总裁(前排左)与葡众六大顾问合影
+                                        {{ trans('text.founder_d_3') }}
                                     </div>
                                 </div>
                             </a>
@@ -102,7 +102,7 @@
                             <a data-fancybox="gallery" href="/img/about/founder/pic3.jpg" class="link-image" style="background-image: url('/img/about/founder/pic3.jpg');">
                                 <div class="mask">
                                     <div class="info">
-                                        康贝特经销商大会
+                                        {{ trans('text.founder_d_4') }}
                                     </div>
                                 </div>
                             </a>
@@ -120,7 +120,7 @@
                                 <img style="max-width: 400px;" src="/img/about/founder/pic4.png" alt="">
                                 <div class="mask">
                                     <div class="info">
-                                        康贝特广告
+                                        {{ trans('text.founder_d_5') }}
                                     </div>
                                 </div>
                             </a>
