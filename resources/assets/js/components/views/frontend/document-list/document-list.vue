@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <form v-on:submit.prevent="searchDoc">
                 <div class="search-input-group">
-                    <input type="text" v-model="listVo.keyword" placeholder="输入关键字搜索">
+                    <input type="text" v-model="listVo.keyword" :placeholder="i18n.search_keyword">
                     <i class="fa fa-search" aria-hidden="true"></i>
                 </div>
             </form>
@@ -13,14 +13,14 @@
                 <table class="table table-striped doc-table">
                     <thead>
                         <tr>
-                            <th v-if="type == 'paper'">篇名</th>
-                            <th v-else>专利名称</th>
-                            <th v-if="type == 'paper'" style="text-align: center">期刊名</th>
-                            <th v-else style="text-align: center">全部</th>
-                            <th v-if="type == 'paper'" style="text-align: center">作者</th>
-                            <th v-else style="text-align: center">专利编号</th>
-                            <th v-if="type == 'paper'" style="text-align: center">檔案</th>
-                            <th v-else style="text-align: center">取得日期</th>
+                            <th v-if="type == 'paper'">{{i18n.col_1}}</th>
+                            <th v-else>{{i18n.col_2}}</th>
+                            <th v-if="type == 'paper'" style="text-align: center">{{i18n.col_3}}</th>
+                            <th v-else style="text-align: center">{{i18n.col_4}}</th>
+                            <th v-if="type == 'paper'" style="text-align: center">{{i18n.col_5}}</th>
+                            <th v-else style="text-align: center">{{i18n.col_6}}</th>
+                            <th v-if="type == 'paper'" width="80" style="text-align: center">{{i18n.col_7}}</th>
+                            <th v-else style="text-align: center">{{i18n.col_8}}</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -29,7 +29,7 @@
                             <td style="text-align: center">{{item.customField2}}</td>
                             <td style="text-align: center">{{item.customField3}}</td>
                             <td v-if="type == 'paper'" style="text-align: center">
-                                <a target="_blank" :href="item.customField4">查看</a>
+                                <a target="_blank" :href="item.customField4">{{i18n.document_file_check}}</a>
                             </td>
                             <td v-else style="text-align: center">{{parseDateTime(item.customField1)}}</td>
                         </tr>
@@ -40,8 +40,8 @@
         <div class="col-md-12">
             <nav aria-label="Page navigation example">
                 <ul class="pagination doc-pagination">
-                    <li class="page-item" v-if="pageData.current_page !== 1"><a class="page-link hidden-xs" @click="gotoPage(1)" >第一页</a></li>
-                    <li class="page-item" v-if="pageData.current_page !== 1"><a class="page-link hidden-xs" @click="gotoPage(pageData.current_page - 1)" >上一页</a></li>
+                    <li class="page-item" v-if="pageData.current_page !== 1"><a class="page-link hidden-xs" @click="gotoPage(1)" >{{i18n.first_page}}</a></li>
+                    <li class="page-item" v-if="pageData.current_page !== 1"><a class="page-link hidden-xs" @click="gotoPage(pageData.current_page - 1)" >{{i18n.prev_page}}</a></li>
                     <li class="page-item" v-if="breakPoint < this.pageData.current_page">
                         <a class="page-link" 
                         @click="gotoPage(1)" >
@@ -75,8 +75,8 @@
                         {{pageData.last_page}}
                         </a>
                     </li>
-                    <li class="page-item" v-if="pageData.current_page !== pageData.last_page"><a class="page-link hidden-xs" @click="gotoPage(pageData.current_page + 1)" >下一页</a></li>
-                    <li class="page-item" v-if="pageData.current_page !== pageData.last_page"><a class="page-link hidden-xs" @click="gotoPage(pageData.last_page)" >最后一页</a></li>
+                    <li class="page-item" v-if="pageData.current_page !== pageData.last_page"><a class="page-link hidden-xs" @click="gotoPage(pageData.current_page + 1)" >{{i18n.next_page}}</a></li>
+                    <li class="page-item" v-if="pageData.current_page !== pageData.last_page"><a class="page-link hidden-xs" @click="gotoPage(pageData.last_page)" >{{i18n.last_page}}</a></li>
                 </ul>
             </nav>
             
@@ -91,7 +91,9 @@
         },
         props: ['type'],
         data () {
+            let i18n = JSON.parse(document.getElementById('i18n-text').value)
             return {
+                i18n: i18n,
                 listVo: {
                     keyword: null
                 },
@@ -111,8 +113,19 @@
         },
         methods: {
             getData() {
+                let vo = {
+                    flag: 'id',
+                    order: 'desc'
+                }
+
+                if (this.type == 'patent') {
+                    vo = {
+                        flag: 'customField1',
+                        order: 'desc'
+                    }
+                }
                 $('.loading-bar').show()
-                axios.post(this.urlPath, this.listVo)
+                axios.post(this.urlPath, vo)
                     .then(res => {
                         this.eachPage = []
 

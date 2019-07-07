@@ -11,8 +11,10 @@ class CustomController extends Controller
     /**
      * getCustom
      */
-    public function getCustom($type)
+    public function getCustom($type, Request $request)
     {
-        return CustomField::where('type', $type)->paginate(15);
+        return CustomField::where('type', $type)
+                            ->orderBy($request->flag, $request->order)
+                            ->paginate(15);
     }
 }
