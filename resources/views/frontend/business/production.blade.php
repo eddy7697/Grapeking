@@ -2,6 +2,58 @@
 
 @section('custom-script')
 <script>
+    var albumArr = [
+        '.lines-album',
+        '.specs-album',
+        '.results-album',
+        '.facts_-album',
+        '.specs_-album',
+        '.facts__-album',
+        '.specs__-album',
+        '.facts___-album',
+        '.specs___-album',
+        '.facts____-album',
+        '.specs____-album'
+    ];
+
+    albumArr.forEach(elm => {
+        
+        $(elm).slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            arrow: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrow: true,
+                        infinite: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrow: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrow: true
+                    }
+                }
+            ]
+        });
+    });
 $('.material-list').slick({
     dots: true,
     infinite: true,
@@ -38,41 +90,6 @@ $('.material-list').slick({
     ]
 });
 
-$('.lines-album').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    arrow: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrow: true,
-                infinite: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrow: true
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrow: true
-            }
-        }
-    ]
-});
 
 function showPanel(target) {
     $(target).tab('show');

@@ -32,7 +32,7 @@
                     </div>                                    
                 @endforeach
             </div>  
-            <div class="mobile-to-show facts-album" style="overflow-x: hidden;">
+            <div class="mobile-to-show facts___-album" style="overflow-x: hidden;">
                 @foreach ($facts as $item)
                     <a data-fancybox="facts" href="/img/business/fact_3/{{$item}}">
                         <img width="100%" src="/img/business/fact_3/{{$item}}" alt="">
@@ -50,7 +50,7 @@
                     </div>                                    
                 @endforeach
             </div>    
-            <div class="mobile-to-show specs-album" style="overflow-x: hidden;">
+            <div class="mobile-to-show specs___-album" style="overflow-x: hidden;">
                 @foreach ($specs as $item)
                     <a data-fancybox="specs" href="/img/business/spec_3/{{$item}}">
                         <img width="100%" src="/img/business/spec_3/{{$item}}" alt="">
@@ -68,7 +68,7 @@
                     </div>                                    
                 @endforeach
             </div>  
-            <div class="mobile-to-show results-album" style="overflow-x: hidden;">
+            <div class="mobile-to-show results___-album" style="overflow-x: hidden;">
                 @foreach ($results as $item)
                     <a data-fancybox="results" href="/img/business/result/{{$item}}">
                         <img width="100%" src="/img/business/result/{{$item}}" alt="">
