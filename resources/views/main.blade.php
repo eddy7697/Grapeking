@@ -38,7 +38,7 @@
     {{-- Footer --}}
     @include('components.footer')
 
-    <textarea id="i18n-text" cols="30" rows="10">{{ json_encode(trans('string')) }}</textarea>
+    <textarea style="display: none;" id="i18n-text" cols="30" rows="10">{{ json_encode(trans('string')) }}</textarea>
     <!-- Scripts -->
     <script src="{{ asset('js/plugins/moment/moment-with-locales.min.js') }}"></script>
     
