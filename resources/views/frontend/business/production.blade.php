@@ -38,7 +38,6 @@ $('.material-list').slick({
     ]
 });
 
-
 $('.lines-album').slick({
     dots: true,
     infinite: true,
@@ -74,6 +73,10 @@ $('.lines-album').slick({
         }
     ]
 });
+
+function showPanel(target) {
+    $(target).tab('show');
+}
 </script>
 @endsection
 
@@ -122,7 +125,7 @@ $('.lines-album').slick({
                 {{-- <h3 class="about-section-title">{{ trans('string.production') }}</h3> --}}
                 <div class="mobile-to-show material-list" style="overflow-x: hidden;">
                     <div class="production_material">
-                        <div class="prod_box" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box" onclick="showPanel('#material_1')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto" >
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-1.png" alt="">
                                 <p>{{ trans('string.business_1') }}</p>
@@ -130,7 +133,7 @@ $('.lines-album').slick({
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box" onclick="showPanel('#material_2')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-2.png" alt="">
                                 <p>{{ trans('string.business_2') }}</p>
@@ -138,7 +141,7 @@ $('.lines-album').slick({
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box" onclick="showPanel('#material_3')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-3.png" alt="">
                                 <p>{{ trans('string.business_3') }}</p>
@@ -146,7 +149,7 @@ $('.lines-album').slick({
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box" onclick="showPanel('#material_4')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-4.png" alt="">
                                 <p>{{ trans('string.business_4') }}</p>
@@ -154,7 +157,7 @@ $('.lines-album').slick({
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box" onclick="showPanel('#material_1=5')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-5.png" alt="">
                                 <p>{{ trans('string.business_5') }}</p>
@@ -165,7 +168,7 @@ $('.lines-album').slick({
                 <div class="about-text mobile-to-hide">
                     <div class="row">
                         <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box">
+                            <div class="prod_box" onclick="showPanel('#material_1')">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-1.png" alt="">
                                     <p>{{ trans('string.business_1') }}</p>
@@ -173,7 +176,7 @@ $('.lines-album').slick({
                             </div>                            
                         </div>
                         <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box">
+                            <div class="prod_box" onclick="showPanel('#material_2')">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-2.png" alt="">
                                     <p>{{ trans('string.business_2') }}</p>
@@ -181,7 +184,7 @@ $('.lines-album').slick({
                             </div>                            
                         </div>
                         <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box">
+                            <div class="prod_box" onclick="showPanel('#material_3')">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-3.png" alt="">
                                     <p>{{ trans('string.business_3') }}</p>
@@ -189,7 +192,7 @@ $('.lines-album').slick({
                             </div>                            
                         </div>
                         <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box">
+                            <div class="prod_box" onclick="showPanel('#material_4')">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-4.png" alt="">
                                     <p>{{ trans('string.business_4') }}</p>
@@ -197,7 +200,7 @@ $('.lines-album').slick({
                             </div>                            
                         </div>
                         <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box">
+                            <div class="prod_box" onclick="showPanel('#material_5')">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-5.png" alt="">
                                     <p>{{ trans('string.business_5') }}</p>
@@ -208,109 +211,43 @@ $('.lines-album').slick({
                 </div>
 
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs" id="material-tab" role="tablist">
+                <ul class="nav nav-tabs" id="material-tab" role="tablist" style="display: none">
                     <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                    <a class="nav-link active" id="material_1" data-toggle="tab" href="#material_panel_1" role="tab" aria-controls="material_panel_1" aria-selected="true">material_panel_1</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                    <a class="nav-link" id="material_2" data-toggle="tab" href="#material_panel_2" role="tab" aria-controls="material_panel_2" aria-selected="false">material_panel_2</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+                    <a class="nav-link" id="material_3" data-toggle="tab" href="#material_panel_3" role="tab" aria-controls="material_panel_3" aria-selected="false">material_panel_3</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+                    <a class="nav-link" id="material_4" data-toggle="tab" href="#material_panel_4" role="tab" aria-controls="material_panel_4" aria-selected="false">material_panel_4</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" id="material_5" data-toggle="tab" href="#material_panel_5" role="tab" aria-controls="material_panel_5" aria-selected="false">material_panel_5</a>
                     </li>
                 </ul>
                 
-                <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
-                    <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                    <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
-                    <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
-                </div>
-
-                <h4 style="margin: 70px 0 40px; text-align: center">{{ trans('string.business_6') }}</h4>
-
-                <div class="about-text">
-                    <ul class="nav nav-tabs about-location-tab center" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span>{{ trans('string.business_7') }}</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span>{{ trans('string.business_8') }}</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false"><span>{{ trans('string.business_9') }}</span></a>
-                        </li>
-                    </ul>
-                    @php
-                        $linePath = public_path('img/business/line');
-                        $specPath = public_path('img/business/spec');
-                        $resultPath = public_path('img/business/result');
-
-                        $lines = preg_grep('~\.(jpeg|jpg|JPG|png)$~', scandir($linePath));
-                        $specs = preg_grep('~\.(jpeg|jpg|JPG|png)$~', scandir($specPath));
-                        $results = preg_grep('~\.(jpeg|jpg|JPG|png)$~', scandir($resultPath));
-                    @endphp
-                    <div class="tab-content" id="location-tab-content">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row mobile-to-hide" style="margin: 50px 0;">
-                                @foreach ($lines as $item)
-                                    <div class="col-md-4" style="margin-bottom: 20px;">
-                                        <a data-fancybox="lines" href="/img/business/line/{{$item}}">
-                                            <img width="100%" src="/img/business/line/{{$item}}" alt="">
-                                        </a>
-                                    </div>                                    
-                                @endforeach
-                            </div>  
-                            <div class="mobile-to-show lines-album" style="overflow-x: hidden;">
-                                @foreach ($lines as $item)
-                                    <a data-fancybox="lines" href="/img/business/line/{{$item}}">
-                                        <img width="100%" src="/img/business/line/{{$item}}" alt="">
-                                    </a>                                  
-                                @endforeach
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row" style="margin: 50px 0;">
-                                @foreach ($specs as $item)
-                                    <div class="col-md-4" style="margin-bottom: 20px;">
-                                        <a data-fancybox="specs" href="/img/business/spec/{{$item}}">
-                                            <img width="100%" src="/img/business/spec/{{$item}}" alt="">
-                                        </a>
-                                    </div>                                    
-                                @endforeach
-                            </div>    
-                            <div class="mobile-to-show specs-album" style="overflow-x: hidden;">
-                                @foreach ($specs as $item)
-                                    <a data-fancybox="specs" href="/img/business/spec/{{$item}}">
-                                        <img width="100%" src="/img/business/spec/{{$item}}" alt="">
-                                    </a>                                  
-                                @endforeach
-                            </div>                          
-                        </div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                            <div class="row" style="margin: 50px 0;">
-                                @foreach ($results as $item)
-                                    <div class="col-md-4" style="margin-bottom: 20px;">
-                                        <a data-fancybox="results" href="/img/business/result/{{$item}}">
-                                            <img width="100%" src="/img/business/result/{{$item}}" alt="">
-                                        </a>
-                                    </div>                                    
-                                @endforeach
-                            </div>  
-                            <div class="mobile-to-show results-album" style="overflow-x: hidden;">
-                                @foreach ($results as $item)
-                                    <a data-fancybox="results" href="/img/business/result/{{$item}}">
-                                        <img width="100%" src="/img/business/result/{{$item}}" alt="">
-                                    </a>                                  
-                                @endforeach
-                            </div>
-                        </div>
+                    <div class="tab-pane fade show active" id="material_panel_1" role="tabpanel" aria-labelledby="material_1">
+                        @include('components.material_1')
+                    </div>
+                    <div class="tab-pane fade" id="material_panel_2" role="tabpanel" aria-labelledby="material_2">
+                        @include('components.material_2')
+                    </div>
+                    <div class="tab-pane fade" id="material_panel_3" role="tabpanel" aria-labelledby="material_3">
+                        @include('components.material_3')
+                    </div>
+                    <div class="tab-pane fade" id="material_panel_4" role="tabpanel" aria-labelledby="material_4">
+                        @include('components.material_4')
+                    </div>
+                    <div class="tab-pane fade" id="material_panel_5" role="tabpanel" aria-labelledby="material_5">
+                        @include('components.material_5')
                     </div>
                 </div>
+
+                
 
             </div>
             
