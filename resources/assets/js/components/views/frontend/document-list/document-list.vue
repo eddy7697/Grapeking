@@ -29,7 +29,7 @@
                             <td style="text-align: center">{{item.customField2}}</td>
                             <td style="text-align: center">{{item.customField3}}</td>
                             <td v-if="type == 'paper'" style="text-align: center">
-                                <a target="_blank" :href="scope.row.customField4">查看</a>
+                                <a target="_blank" :href="item.customField4">查看</a>
                             </td>
                             <td v-else style="text-align: center">{{parseDateTime(item.customField1)}}</td>
                         </tr>
