@@ -239,9 +239,9 @@
             @foreach ($album as $item)
                 <div class="swiper-slide" style="background-image: url('{{$item->url}}'); background-size: cover;">
                     <div class="slide-item">     
-                        <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
+                        {{-- <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
                             <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
-                        </div>                   
+                        </div>                    --}}
                         {{-- <div class="flex-column" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="1500">
                             <div style="text-align: left">
                                 <img src="/img/banner-text-1.png" alt="">
