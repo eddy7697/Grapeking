@@ -154,7 +154,7 @@
             <div class="about-text">
                 <div class="row">
                     <div class="col-md-3">
-                        <img class="about-image" style="width: 80%;" src="/img/hori-logo.png" alt="">
+                        <img class="about-image mobile-to-hide" style="width: 80%;" src="/img/hori-logo.png" alt="">
                         <p>我们非常重视您的意见与建议，如果您对葡萄王生技有任何疑问或反馈，请与我们联络，我们随时准备聆听您的声音。</p>
                         <hr>
                         <p>地址：上海市松江区车墩镇车新公路518号</p>

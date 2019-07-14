@@ -6,7 +6,7 @@
 @section('custom-style')
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/certification/banner.jpg');
+    background-image: url('/img/about/careers.jpg');
 }
 </style>
 @endsection
@@ -44,17 +44,17 @@
                 <img class="about-image" src="/img/careers-picture_1.jpg" alt="">
                 <h4 class="hilight-title">{{ trans('string.career_d_4') }}</h4>
                 <ul class="careers-notice">
-                    <li>{{ trans('string.career_d_5') }}</li>
-                    <li>{{ trans('string.career_d_6') }}</li>
-                    <li>{{ trans('string.career_d_7') }}</li>
-                    <li>{{ trans('string.career_d_8') }}</li>
-                    <li>{{ trans('string.career_d_9') }}</li>
-                    <li>{{ trans('string.career_d_10') }}</li>
-                    <li>{{ trans('string.career_d_11') }}</li>
-                    <li>{{ trans('string.career_d_12') }}</li>
+                    <li>{!! trans('string.career_d_5') !!}</li>
+                    <li>{!! trans('string.career_d_6') !!}</li>
+                    <li>{!! trans('string.career_d_7') !!}</li>
+                    <li>{!! trans('string.career_d_8') !!}</li>
+                    <li>{!! trans('string.career_d_9') !!}</li>
+                    <li>{!! trans('string.career_d_10') !!}</li>
+                    <li>{!! trans('string.career_d_11') !!}</li>
+                    <li>{!! trans('string.career_d_12') !!}</li>
                 </ul>
                 <h4 class="hilight-title">{{ trans('string.career_d_13') }}</h4>
-                <p class="careers-tip">{{ trans('string.career_d_14') }}</p>
+                <p class="careers-tip">{!! trans('string.career_d_14') !!}</p>
                 <img class="about-image" src="/img/careers-picture_2.png" alt="">
             </div>
             <div class="col-md-3 about-content">

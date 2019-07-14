@@ -151,59 +151,59 @@ $('.material-card-list').slick({
                 {{-- 原料介紹 --}}
                 <h3 class="about-section-title" id="section_4">{{ trans('string.raw_material_introduction') }}</h3>
                 <div class="material-card mobile-to-hide first" style="background-color: #ABCD03">
-                    <h4>菇类原料</h4>
+                    <h4>{{ trans('text.material_1') }}</h4>
                     <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
                     <p class="material-info">
-                        灵芝、姬松茸、樟芝、虫草、云芝等
+                        {{ trans('text.material_d_1') }}
                     </p>
-                    <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
                 <div class="material-card mobile-to-hide" style="background-color: #F39800">
-                    <h4>益生菌</h4>
+                    <h4>{{ trans('text.material_2') }}</h4>
                     <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
                     <p class="material-info">
-                        球菌、杆菌、双叉杆菌、酵母菌、纳豆菌及酪酸菌等
+                        {{ trans('text.material_d_2') }}
                     </p>
-                    <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
                 <div class="material-card mobile-to-hide last" style="background-color: #38A1DB">
-                    <h4>酵素</h4>
+                    <h4>{{ trans('text.material_3') }}</h4>
                     <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
                     <p class="material-info">
-                        其他可食用之微生物或其酵素及代谢物
+                        {{ trans('text.material_d_3') }}
                     </p>
-                    <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                 </div>
 
                 <div class="mobile-to-show material-card-list" >
                     <div>
                         <div class="material-card " style="background-color: #ABCD03">
-                            <h4>菇类原料</h4>
+                            <h4>{{ trans('text.material_1') }}</h4>
                             <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
                             <p class="material-info">
-                                灵芝、姬松茸、樟芝、虫草、云芝等
+                                {{ trans('text.material_d_1') }}
                             </p>
-                            <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div>
                         <div class="material-card" style="background-color: #F39800">
-                            <h4>益生菌</h4>
+                            <h4>{{ trans('text.material_2') }}</h4>
                             <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
                             <p class="material-info">
-                                球菌、杆菌、双叉杆菌、酵母菌、纳豆菌及酪酸菌等
+                                {{ trans('text.material_d_2') }}
                             </p>
-                            <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                         </div>
                     </div>
                     <div>
                         <div class="material-card " style="background-color: #38A1DB">
-                            <h4>酵素</h4>
+                            <h4>{{ trans('text.material_3') }}</h4>
                             <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
                             <p class="material-info">
-                                其他可食用之微生物或其酵素及代谢物
+                                {{ trans('text.material_d_3') }}
                             </p>
-                            <a class="material-link" href="">查看原料&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                            <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                         </div>
                     </div>
                    

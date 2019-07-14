@@ -419,11 +419,11 @@ return [
     'career_d_7' => '面试人员请携带足以证明身分之政见，于进入本公司前于警卫室确认身分数据。',
     'career_d_8' => '本公司提供笔电、投影与网络设备，面试人员若有需要，请提早于面试前通知本公司招募承办人员以利准备。',
     'career_d_9' => '若有陪同面试眷属，请眷属于警卫室等待，避免影响面试流程。',
-    'career_d_10' => '请务必透过『<a href="#">智联招聘网站</a>』进行履历投递，经审核资格后，将主动通知面试。',
+    'career_d_10' => '请务必透过『<a href="https://company.zhaopin.com/CZ178566810.htm">智联招聘网站</a>』进行履历投递，经审核资格后，将主动通知面试。',
     'career_d_11' => '请于面试前详细确认面试地点，避免发生错误。',
     'career_d_12' => '主动投递履历本公司大约需十个工作天进行初步筛选机制，请耐心等待，造成不便敬请见谅！',
     'career_d_13' => '职缺专区',
-    'career_d_14' => '请务必透过『<a href="#">智联招聘网站</a>』进行履历表投递，经审核资格后，将主动通知面试。',
+    'career_d_14' => '请务必透过『<a href="https://company.zhaopin.com/CZ178566810.htm">智联招聘网站</a>』进行履历表投递，经审核资格后，将主动通知面试。',
     
     
     'contact_inf_1' => '地址：上海市松江区车墩镇车新公路518号',
@@ -433,9 +433,27 @@ return [
     'contact_inf_5' => '联系专线',
     'contact_inf_6' => '021-5760-9598',
 
+    'contact_inf__1' => '地址：324 桃園市平鎮區金陵路2段402號',
+    'contact_inf__2' => '传真：+86-21-5760-9698',
+    'contact_inf__3' => '网址：www.grapeking.com.cn',
+    'contact_inf__4' => '电邮：gki@grapeking.com.cn',
+
+    'contact_inf___1' => '地址：東莞松山湖高新技術產業開發區創新科技園9號樓204、205室',
+    'contact_inf___2' => '传真：+86-21-5760-9698',
+    'contact_inf___3' => '网址：www.grapeking.com.cn',
+    'contact_inf___4' => '电邮：gki@grapeking.com.cn',
+
+    'contact_inf____1' => '地址：台北市內湖區金莊路18號3樓',
+    'contact_inf____2' => '传真：+86-21-5760-9698',
+    'contact_inf____3' => '网址：www.grapeking.com.cn',
+    'contact_inf____4' => '电邮：gki@grapeking.com.cn',
+
     'founder_d_1' => '創辦人暨總裁 曾水照 先生',
     'founder_d_2' => '棒球队受奖与总裁合影',
     'founder_d_3' => '总裁(前排左)与葡众六大顾问合影',
     'founder_d_4' => '康贝特经销商大会',
     'founder_d_5' => '康贝特广告',
+
+    'location_n_1' => '若您對葡萄王有任何疑問，歡迎您聯繫我們',
+    'location_n_2' => '客服專員會以最快速最專業的回覆解決您的問題',
 ];

@@ -1,6 +1,17 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+    var cards = $('.info-text');
+    var finalHeight = 0;
+    
+    for (let i = 0; i < cards.length; i++) {
+        if ($(cards[i]).height() > finalHeight) {
+            finalHeight = $(cards[i]).height();
+        }
+    }
+    $('.info-text').height(finalHeight);
+</script>
 @endsection
 
 @section('custom-style')
@@ -55,19 +66,25 @@
             <div class="row">
                 <div class="col-md-6">
                     <h3 class="about-section-title" id="section_3">{{ trans('string.leading_rnd_technology') }}</h3>
-                    <div class="about-text">
-                        <p>
-                            {{trans('text.invo_d_4')}}
-                        </p>                  
+                    <div class="about-text ">
+                        <div class="info-text">
+                            <p>
+                                {{trans('text.invo_d_4')}}
+                            </p>  
+                        </div>
+                                        
                     </div>
                     <img class="about-image" src="/img/research/research-3.jpg" alt="">
                 </div>
                 <div class="col-md-6">
                     <h3 class="about-section-title" id="section_4">{{ trans('string.leading_rnd_technology') }}</h3>
-                    <div class="about-text">
-                        <p>
-                            {{trans('text.invo_d_5')}}
-                        </p>                  
+                    <div class="about-text ">
+                        <div class="info-text">
+                            <p>
+                                {{trans('text.invo_d_5')}}
+                            </p>  
+                        </div>
+                                        
                     </div>
                     <img class="about-image" src="/img/research/research-4.jpg" alt="">
                 </div>

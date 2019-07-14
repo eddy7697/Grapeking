@@ -216,6 +216,17 @@
             ]
         });
     </script>
+    <script>
+        var cards = $('.info-text');
+        var finalHeight = 0;
+        
+        for (let i = 0; i < cards.length; i++) {
+            if ($(cards[i]).height() > finalHeight) {
+                finalHeight = $(cards[i]).height();
+            }
+        }
+        $('.info-text').height(finalHeight);
+    </script>
 @endsection
 
 @section('content')
@@ -474,7 +485,9 @@
                                         <div class="featureImage" style="background-image: url('{{$item['featureImage']}}')"></div>
                                         <h3>{{$item['title']}}</h3>
                                         <div class="text">
-                                            {{mb_substr($item['content'],0,100,"utf-8")}}...
+                                            <div class="info-text">
+                                                {{mb_substr($item['content'],0,100,"utf-8")}}...
+                                            </div>
                                         </div>
                                         <div class="btn-section">
                                             <a href="{{$item['link']}}" class="learn-more-btn">了解更多</a>
@@ -539,7 +552,7 @@
         </div>
     </div>
     
-    <a data-fancybox class="fancybox-btn" href="https://www.youtube.com/watch?v=6LNIFuG204s">
+    <a data-fancybox class="fancybox-btn" href="https://www.youtube.com/watch?v=KAFJLVrKwJQ">
         <div class="vdieo-present-section">
             <div class="info">
                 <h2>VIDEO</h2>
