@@ -1756,7 +1756,7 @@
                         margin: 0;
                     }
                 }                
-                &:hover {
+                &:hover, &.active {
                     background-color: $main-color;
                 }
             }

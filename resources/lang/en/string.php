@@ -325,7 +325,7 @@ return [
     'green_d_15' => 'Waste management',
     'green_d_16' => 'green product',
 
-    'business' => 'business system',
+    'business' => 'Business system',
     'production' => 'Production service',
     'lump_sum' => 'Tunnel Service',
     'professional' => 'Professional service',

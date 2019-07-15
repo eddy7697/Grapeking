@@ -91,9 +91,17 @@ $('.material-list').slick({
 });
 
 
-function showPanel(target) {
-    $(target).tab('show');
-}
+// function showPanel(target) {
+//     console.log(arguments)
+//     $(target).tab('show');
+// }
+
+$('.material_box').on('click', function (e) {
+    $('.material_box').removeClass('active');
+    $(this).addClass('active');
+    $($(this).attr('data-material')).tab('show');
+    // console.log($(this).attr('data-material')) 
+});
 </script>
 @endsection
 
@@ -142,7 +150,7 @@ function showPanel(target) {
                 {{-- <h3 class="about-section-title">{{ trans('string.production') }}</h3> --}}
                 <div class="mobile-to-show material-list" style="overflow-x: hidden;">
                     <div class="production_material">
-                        <div class="prod_box" onclick="showPanel('#material_1')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto" >
+                        <div class="prod_box material_box active" data-material="#material_1" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto" >
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-1.png" alt="">
                                 <p>{{ trans('string.business_1') }}</p>
@@ -150,7 +158,7 @@ function showPanel(target) {
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" onclick="showPanel('#material_2')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box material_box" data-material="#material_2" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-2.png" alt="">
                                 <p>{{ trans('string.business_2') }}</p>
@@ -158,7 +166,7 @@ function showPanel(target) {
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" onclick="showPanel('#material_3')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box material_box" data-material="#material_3" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-3.png" alt="">
                                 <p>{{ trans('string.business_3') }}</p>
@@ -166,7 +174,7 @@ function showPanel(target) {
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" onclick="showPanel('#material_4')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box material_box" data-material="#material_4" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-4.png" alt="">
                                 <p>{{ trans('string.business_4') }}</p>
@@ -174,7 +182,7 @@ function showPanel(target) {
                         </div>                            
                     </div>
                     <div class="production_material">
-                        <div class="prod_box" onclick="showPanel('#material_1=5')" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
+                        <div class="prod_box material_box" data-material="#material_5" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto">
                             <div class="prod_box_inner">
                                 <img style="display: inline-block;" src="/img/business/factory-icon-5.png" alt="">
                                 <p>{{ trans('string.business_5') }}</p>
@@ -184,40 +192,40 @@ function showPanel(target) {
                 </div>
                 <div class="about-text mobile-to-hide">
                     <div class="row">
-                        <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box" onclick="showPanel('#material_1')">
+                        <div class="col-md-2 mx-auto production_material tabs">
+                            <div class="prod_box material_box active" data-material="#material_1">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-1.png" alt="">
                                     <p>{{ trans('string.business_1') }}</p>
                                 </div>                                
                             </div>                            
                         </div>
-                        <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box" onclick="showPanel('#material_2')">
+                        <div class="col-md-2 mx-auto production_material tabs">
+                            <div class="prod_box material_box" data-material="#material_2">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-2.png" alt="">
                                     <p>{{ trans('string.business_2') }}</p>
                                 </div>                                
                             </div>                            
                         </div>
-                        <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box" onclick="showPanel('#material_3')">
+                        <div class="col-md-2 mx-auto production_material tabs">
+                            <div class="prod_box material_box" data-material="#material_3">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-3.png" alt="">
                                     <p>{{ trans('string.business_3') }}</p>
                                 </div>                                
                             </div>                            
                         </div>
-                        <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box" onclick="showPanel('#material_4')">
+                        <div class="col-md-2 mx-auto production_material tabs">
+                            <div class="prod_box material_box" data-material="#material_4">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-4.png" alt="">
                                     <p>{{ trans('string.business_4') }}</p>
                                 </div>                                
                             </div>                            
                         </div>
-                        <div class="col-md-2 mx-auto production_material">
-                            <div class="prod_box" onclick="showPanel('#material_5')">
+                        <div class="col-md-2 mx-auto production_material tabs">
+                            <div class="prod_box material_box" data-material="#material_5">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-5.png" alt="">
                                     <p>{{ trans('string.business_5') }}</p>
