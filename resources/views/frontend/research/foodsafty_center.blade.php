@@ -45,7 +45,7 @@
                         </p> 
                     </div>
                     <div class="col-md-6 mobile-to-left">
-                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/foodsafty-1.png" alt="">
+                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/CSR/CSR_{{App::getLocale()}}_1.jpg" alt="">
                     </div>
                 </div>                    
             </div>
@@ -54,12 +54,12 @@
                 {{ trans('string.research_f_d_2') }}
             </div>
 
-            <img class="about-image" src="/img/research/foodsafty-2.png" alt="{{ trans('string.research_f_d_2') }}">
+            <img class="about-image" src="/img/research/CSR/CSR_{{App::getLocale()}}_3.jpg" alt="{{ trans('string.research_f_d_2') }}">
 
             <div class="about-text" style="margin-top: 50px;">
                 <div class="row">
                     <div class="col-md-5" style="text-align: left">
-                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/foodsafty-3.png" alt="">
+                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/CSR/CSR_{{App::getLocale()}}_2.jpg" alt="">
                     </div>
                     <div class="col-md-7 force-center">
                         <p>
