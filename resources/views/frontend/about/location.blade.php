@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('custom-script')
-<script src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+<script src="https://api.map.baidu.com/getscript?key=&v=1.1&services=true"></script>
 <script>
 $(function () {
 
@@ -115,31 +115,31 @@ $(function () {
     
     //创建地图函数：
     function createMap(){
-        var map = new BMap.Map("dituContent_tw");//在百度地图容器中创建一个地图
+        var map_tw = new BMap.Map("dituContent_tw");//在百度地图容器中创建一个地图
         var point = new BMap.Point(121.235748,24.93725);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
+        map_tw.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map_tw = map_tw;//将map变量存储在全局
     }
     
     //地图事件设置函数：
     function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
+        map_tw.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map_tw.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map_tw.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map_tw.enableKeyboard();//启用键盘上下左右键移动地图
     }
     
     //地图控件添加函数：
     function addMapControl(){
         //向地图中添加缩放控件
 	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
+	map_tw.addControl(ctrl_nav);
         //向地图中添加缩略图控件
 	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
+	map_tw.addControl(ctrl_ove);
         //向地图中添加比例尺控件
 	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
+	map_tw.addControl(ctrl_sca);
     }
     
     //标注点数组
@@ -157,7 +157,7 @@ $(function () {
 			var iw = createInfoWindow(i);
 			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
 			marker.setLabel(label);
-            map.addOverlay(marker);
+            map_tw.addOverlay(marker);
             label.setStyle({
                         borderColor:"#808080",
                         color:"#333",
@@ -212,36 +212,35 @@ $(function () {
     
     //创建地图函数：
     function createMap(){
-        var map = new BMap.Map("dituContent_dongpu");//在百度地图容器中创建一个地图
-        var point = new BMap.Point(113.937271,23.007819);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
+        var map_dong = new BMap.Map("dituContent_dongpu");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(113.93728,23.008368);//定义一个中心点坐标
+        map_dong.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map_dong = map_dong;//将map变量存储在全局
     }
     
     //地图事件设置函数：
     function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
+        map_dong.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map_dong.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map_dong.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map_dong.enableKeyboard();//启用键盘上下左右键移动地图
     }
     
     //地图控件添加函数：
     function addMapControl(){
         //向地图中添加缩放控件
 	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
+	map_dong.addControl(ctrl_nav);
         //向地图中添加缩略图控件
 	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
+	map_dong.addControl(ctrl_ove);
         //向地图中添加比例尺控件
 	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
+	map_dong.addControl(ctrl_sca);
     }
     
     //标注点数组
-    var markerArr = [{title:"我的标记",content:"我的备注",point:"121.235721|24.93743",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
-		 ,{title:"东葡生物科技有限公司",content:"我的备注",point:"113.93728|23.008368",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"东葡生物科技有限公司",content:"我的备注",point:"113.93728|23.008368",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){
@@ -255,7 +254,7 @@ $(function () {
 			var iw = createInfoWindow(i);
 			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
 			marker.setLabel(label);
-            map.addOverlay(marker);
+            map_dong.addOverlay(marker);
             label.setStyle({
                         borderColor:"#808080",
                         color:"#333",
@@ -293,7 +292,7 @@ $(function () {
     }
     //创建一个Icon
     function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        var icon = new BMap.Icon("https://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
     
@@ -310,31 +309,31 @@ $(function () {
     
     //创建地图函数：
     function createMap(){
-        var map = new BMap.Map("dituContent_fam");//在百度地图容器中创建一个地图
+        var map_fm = new BMap.Map("dituContent_fam");//在百度地图容器中创建一个地图
         var point = new BMap.Point(121.598242,25.064642);//定义一个中心点坐标
-        map.centerAndZoom(point,17);//设定地图的中心点和坐标并将地图显示在地图容器中
-        window.map = map;//将map变量存储在全局
+        map_fm.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map_fm = map_fm;//将map变量存储在全局
     }
     
     //地图事件设置函数：
     function setMapEvent(){
-        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
-        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
-        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
-        map.enableKeyboard();//启用键盘上下左右键移动地图
+        map_fm.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map_fm.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map_fm.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map_fm.enableKeyboard();//启用键盘上下左右键移动地图
     }
     
     //地图控件添加函数：
     function addMapControl(){
         //向地图中添加缩放控件
-	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
-	map.addControl(ctrl_nav);
-        //向地图中添加缩略图控件
-	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
-	map.addControl(ctrl_ove);
-        //向地图中添加比例尺控件
-	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
-	map.addControl(ctrl_sca);
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map_fm.addControl(ctrl_nav);
+            //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map_fm.addControl(ctrl_ove);
+            //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map_fm.addControl(ctrl_sca);
     }
     
     //标注点数组
@@ -352,7 +351,7 @@ $(function () {
 			var iw = createInfoWindow(i);
 			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
 			marker.setLabel(label);
-            map.addOverlay(marker);
+            map_fm.addOverlay(marker);
             label.setStyle({
                         borderColor:"#808080",
                         color:"#333",
@@ -390,7 +389,7 @@ $(function () {
     }
     //创建一个Icon
     function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        var icon = new BMap.Icon("https://api.map.baidu.com/lbsapi/creatmap/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
     

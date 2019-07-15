@@ -152,7 +152,7 @@ $('.material-card-list').slick({
                                 <p class="material-info">
                                     {{ trans('text.material_d_1') }}
                                 </p>
-                                <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/1.Mushroom.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </div>
                             <div class="material-card mobile-to-hide" style="background-color: #F39800">
                                 <h4>{{ trans('text.material_2') }}</h4>
@@ -160,7 +160,7 @@ $('.material-card-list').slick({
                                 <p class="material-info">
                                     {{ trans('text.material_d_2') }}
                                 </p>
-                                <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/2.Probiotic.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                             </div>
                             <div class="material-card mobile-to-hide last" style="background-color: #38A1DB">
                                 <h4>{{ trans('text.material_3') }}</h4>
@@ -178,7 +178,7 @@ $('.material-card-list').slick({
                                         <p class="material-info">
                                             {{ trans('text.material_d_1') }}
                                         </p>
-                                        <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                        <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/1.Mushroom.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                                 <div>
@@ -188,7 +188,7 @@ $('.material-card-list').slick({
                                         <p class="material-info">
                                             {{ trans('text.material_d_2') }}
                                         </p>
-                                        <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                                        <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/2.Probiotic.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                                 <div>
