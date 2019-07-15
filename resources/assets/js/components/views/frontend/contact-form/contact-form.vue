@@ -34,7 +34,7 @@
                     <p>地址</p>
                 </div>
                 <div class="col-md-9 column">
-                    <input class="form-control" type="text" name="address" v-model="contact.address">
+                    <input class="form-control width-limit" type="text" name="address" v-model="contact.address">
                 </div>
             </div>
             <div class="row">
@@ -117,8 +117,8 @@
         </div>
         <div style="clear: both"></div>
         <div class="col-md-10 mx-auto contact-form-footer">
-            <p class="info">我们不会将您输入的任何个人信息用于回答查找以外的目的，您亦可<a href="">点击这里</a>查看更多关于天壬提供的隐私权保护政策。</p>
-            <p class="info">* 请您务必将天壬的电子邮箱地址或域名设置为可接收的电子邮箱，以免错过我们的回复，您亦可直接与我们联系，<a href="">(点击这里查看联系信息)</a>。</p>
+            <p class="info" style="text-align: center">我们不会将您输入的任何个人信息用于回答查找以外的目的，您亦可<a href="">点击这里</a>查看更多关于天壬提供的隐私权保护政策。</p>
+            <p class="info" style="text-align: center">* 请您务必将天壬的电子邮箱地址或域名设置为可接收的电子邮箱，以免错过我们的回复，您亦可直接与我们联系，<a href="">(点击这里查看联系信息)</a>。</p>
             <div class="captcha-section">
                 <strong>确认码</strong>
                 <img :src="captchaUrl" id="captcha" alt="">

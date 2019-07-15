@@ -188,7 +188,7 @@
                         
                     </div>
                     <div class="col-md-12" style="margin-top: 30px;">
-                        <div style="position: absolute; border-top: #000 solid 1px; top: 50%; left: 15px; right: 15px;"></div>
+                        <div style="position: absolute; border-top: #E70034 solid 1px; top: 50%; left: 15px; right: 15px;"></div>
                         <div style="background: white; margin: 20px auto; width: fit-content; padding: 0 20px">
                             或是您可以留下您的联络资讯，我们的服务代表将会尽速与您联系
                         </div>
