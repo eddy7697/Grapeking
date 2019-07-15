@@ -326,7 +326,7 @@ return [
     'green_d_16' => 'green product',
 
     'business' => 'business system',
-    'production' => 'production service',
+    'production' => 'Production service',
     'lump_sum' => 'Tunnel Service',
     'professional' => 'Professional service',
     'foundry' => 'Accurate foundry process',
