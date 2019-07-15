@@ -3,20 +3,20 @@
         <h2 style="text-align: center">非常感谢您的来信，我们会尽快联系您。</h2>
     </div>
     <form v-else v-on:submit.prevent="sendForm">
-        <div class="col-md-11 pull-right contact-form-body">
+        <div class="col-md-12 contact-form-body">
             <div class="row">
                 <div class="col-md-3 column important">
                     <p>姓名</p>
                 </div>
-                <div class="col-md-12 column">
-                    <input class="form-control" type="text" name="name" v-model="contact.name" required>
+                <div class="col-md-9 column">
+                    <input class="form-control width-limit" type="text" name="name" v-model="contact.name" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 column important">
                     <p>性别</p>
                 </div>
-                <div class="col-md-12 column">
+                <div class="col-md-9 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="radio" class="form-check-input" name="gender" v-model="contact.gender" value="男" required>男
@@ -33,7 +33,7 @@
                 <div class="col-md-3 column">
                     <p>地址</p>
                 </div>
-                <div class="col-md-12 column">
+                <div class="col-md-9 column">
                     <input class="form-control" type="text" name="address" v-model="contact.address">
                 </div>
             </div>
@@ -41,31 +41,31 @@
                 <div class="col-md-3 column important">
                     <p>电子邮箱</p>
                 </div>
-                <div class="col-md-12 column">
-                    <input class="form-control" type="email" name="email" v-model="contact.email" required>
+                <div class="col-md-9 column">
+                    <input class="form-control width-limit" type="email" name="email" v-model="contact.email" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 column important">
                     <p>连络电话</p>
                 </div>
-                <div class="col-md-12 column">
-                    <input class="form-control" type="phone" name="phone" v-model="contact.phone" required>
+                <div class="col-md-9 column">
+                    <input class="form-control width-limit" type="phone" name="phone" v-model="contact.phone" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 column important">
                     <p>公司名称</p>
                 </div>
-                <div class="col-md-12 column">
-                    <input class="form-control" type="text" name="company" v-model="contact.company" required>
+                <div class="col-md-9 column">
+                    <input class="form-control width-limit" type="text" name="company" v-model="contact.company" required>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 column important">
                     <p>关注产品</p>
                 </div>
-                <div class="col-md-12 column">
+                <div class="col-md-9 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">胶原蛋白
@@ -110,7 +110,7 @@
                     <p>询问内容</p>
                     <p class="text">提醒您，若您填写得越精准，越有利我们及时回复给您信息。</p>
                 </div>
-                <div class="col-md-12 column">
+                <div class="col-md-9 column">
                     <textarea name="content" class="form-control content" v-model="contact.content" required></textarea>
                 </div>
             </div>
@@ -201,3 +201,8 @@
         }
     }
 </script>
+<style lang="scss">
+.width-limit {
+    max-width: 350px;
+}
+</style>
