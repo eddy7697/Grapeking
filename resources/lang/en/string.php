@@ -276,6 +276,8 @@ return [
     'world_class_factory' => 'World class factory',
     'production_equipment' => 'Production equipment',
     'laboratory_equipment' => 'Laboratory equipment',
+    'market_trends' => 'Monitoring the Latest Market Trends',
+    'international_quality_standards' => 'Strict Controls and Compliance to International Quality Standards',
 
     'join_us' => 'Join us! ',
     'go_center' => 'Go to the Grape King Biotech Research Institute',

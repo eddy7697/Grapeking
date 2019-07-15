@@ -276,6 +276,8 @@ return [
     'world_class_factory' => '世界级工厂',
     'production_equipment' => '生产设备',
     'laboratory_equipment' => '实验室设备',
+    'market_trends' => '掌握最新市場脈動',
+    'international_quality_standards' => '國際品質嚴格把關',
 
     'join_us' => '加入我们！',
     'go_center' => '前往生物科技研究所',

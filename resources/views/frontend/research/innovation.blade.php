@@ -65,7 +65,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <h3 class="about-section-title" id="section_3">{{ trans('string.leading_rnd_technology') }}</h3>
+                    <h3 class="about-section-title" id="section_3">{{ trans('string.market_trends') }}</h3>
                     <div class="about-text ">
                         <div class="info-text">
                             <p>
@@ -77,7 +77,7 @@
                     <img class="about-image" src="/img/research/research-3.jpg" alt="">
                 </div>
                 <div class="col-md-6">
-                    <h3 class="about-section-title" id="section_4">{{ trans('string.leading_rnd_technology') }}</h3>
+                    <h3 class="about-section-title" id="section_4">{{ trans('string.international_quality_standards') }}</h3>
                     <div class="about-text ">
                         <div class="info-text">
                             <p>
