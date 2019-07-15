@@ -38,6 +38,17 @@ $('.material-card-list').slick({
     ]
 });
 </script>
+<script>
+    var cards = $('.material-card');
+    var finalHeight = 0;
+    
+    for (let i = 0; i < cards.length; i++) {
+        if ($(cards[i]).height() > finalHeight) {
+            finalHeight = $(cards[i]).height();
+        }
+    }
+    $('.material-card').height(finalHeight);
+</script>
 @endsection
 
 @section('custom-style')
