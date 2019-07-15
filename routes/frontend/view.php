@@ -210,3 +210,22 @@ Route::get('/preview/pdf/{path}', 'HomeController@previewPdf');
 // Route::post('/test-post', 'HomeController@testPost');
 // Route::get('/test-action', 'HomeController@testAction');
 // Route::get('/truncate', 'HomeController@truncate');
+Route::get('/grapeking_sh', function ()
+{
+    return view('components.map.grapeking_sh'); 
+});
+
+Route::get('/grapeking_tw', function ()
+{
+    return view('components.map.grapeking_tw'); 
+});
+
+Route::get('/grapeking_fm', function ()
+{
+    return view('components.map.grapeking_fm'); 
+});
+
+Route::get('/grapeking_donpu', function ()
+{
+    return view('components.map.grapeking_donpu'); 
+});
