@@ -36,6 +36,10 @@
                     </template>
                 </el-table-column>
                 <el-table-column
+                    prop="customField3"
+                    label="報告書語系">
+                </el-table-column>
+                <el-table-column
                     prop="created_at"
                     label="操作"
                     width="70">

@@ -5,6 +5,12 @@
                 <el-form-item label="報告書名稱" prop="locale">
                     <el-input v-model="ruleForm.locale"></el-input>
                 </el-form-item>
+                <el-form-item label="報告書語系" prop="customField3">
+                    <el-radio-group v-model="ruleForm.customField3" size="small">
+                        <el-radio label="zh-CN" border>簡體中文</el-radio>
+                        <el-radio label="en" border >英文</el-radio>
+                    </el-radio-group>
+                </el-form-item>
                 <el-form-item label="報告書檔案" prop="customField1">
                     <el-button type="primary" @click="addFile('customField1', 'Files')">選擇檔案</el-button>
                     <span>{{ruleForm.customField1}}</span>
@@ -67,7 +73,7 @@
                         { required: true, message: '請填寫地區', trigger: 'blur' }
                     ],
                     customField3: [
-                        { required: true, message: '請輸入文件編號', trigger: 'blur' }
+                        { required: true, message: '請設定報告書語系', trigger: 'blur' }
                     ],
                 },
                 ckConfig: {
@@ -127,7 +133,7 @@
                 };
             },
             goList() {
-                window.location.href = '/cyberholic-system/patent/list'
+                window.location.href = `/cyberholic-system/${this.type}/list`
             },
             deleteData(id) {
                 this.$confirm('此操作將永久刪除該筆資料, 是否繼續?', '提示', {

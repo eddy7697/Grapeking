@@ -4,6 +4,7 @@ namespace App\Services;
 
 use App\CustomField;
 use App\Product;
+use App;
 
 /**
  *
@@ -29,6 +30,6 @@ class FeatureView
 
     static function download()
     {
-        return CustomField::where('type', 'download')->paginate(12);   
+        return CustomField::where('type', 'download')->where('customField3', App::getLocale())->paginate(12);   
     }
 }
