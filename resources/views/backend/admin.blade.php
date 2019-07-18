@@ -30,8 +30,8 @@
 						<div class="left_col scroll-view">
 							<div class="navbar nav_title" style="border: 0;">
 								<a href="/cyberholic-system/admin" class="site_title">
-									<img src="/img/LanuchCenter_v1.png" class="default" width="95%" alt="">
-									<img src="/img/LanuchCenter_icon.png" class="mini" alt="">
+									<img src="/img/site-logo/logo_footer.png" class="default" width="95%" alt="">
+									<img src="/img/site-logo/logo-icon.png" class="mini" alt="">
 								</a>
 							</div>
 
