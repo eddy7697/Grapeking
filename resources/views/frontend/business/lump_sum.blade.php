@@ -229,7 +229,7 @@ $('.material-card-list').slick({
                         {{ trans('string.production_d_11') }}
                     </p>                    
                 </div>
-                <img class="about-image" src="/img/business/package-6.jpg" alt="">
+                <img class="about-image" src="/img/business/package-{{App::getLocale()}}.jpg" alt="">
                 <hr style="margin-top: 50px;">
 
                 <div class="about-text" style="text-align: center">
