@@ -25,3 +25,4 @@ yarn-error.log
 /public/js/patent-list.js
 /public/js/contact-form.js
 /public/js/document-list.js
+/.well-known
