@@ -532,7 +532,7 @@
                     <div class="col-md-10 mx-auto">
                         <div class="row license-container">
                             @foreach ($licenses as $item)
-                                <div class="col-md-2">
+                                <div>
                                     <img src="/img/license/{{$item}}" width="100%" alt="">
                                 </div>
                             @endforeach
