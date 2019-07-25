@@ -4,17 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="生健康,葡萄王,上海葡萄王,上海生技,上海代工,中国代工,专业代工,生技OEM,生技ODM,中国葡萄王,葡萄王专利">
-    <meta name="description"
-        content="「上海葡萄王企业有限公司」为葡萄王生技股份有限公司百分之百转投资之子公司。1994年成立于上海市松江区，1997年正式营运。上海葡萄王自成立以来，不仅开发、拓展自有品牌，持续结合母公司的资源及技术能力，也积极进行食品、保健品的OEM和ODM业务。不但可完整提供研发设计、原料制成、生产工程、质量控管的各项客制化服务，也可依客户需求生产和开发差异性商品，使客户更拥有市场优势及竞争力。自2015年开始进行营运策略的调整，将发展目标调整以代工业务为主，使得2015年的营收大幅成长72%，2017年总营收更超过2014年11倍，一条龙式的专业代工服务，使上海葡萄王拥有多家代工客户，包含：保养品牌TST庭秘密、尚赫，跃升为葡萄王最新的成长引擎。">
-
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="cB4WALxX91qLsyhnFevKrfElT6uM8ioMZi5c5m60">
-
+    <meta name="keywords" content="{{SiteMetaView::keyword()}}">
+    <meta name="description" content="{{SiteMetaView::description()}}">
 
     <title>上海葡萄王企业有限公司</title>
 
-    <link rel="shortcut icon" href="/photos/shares/logo-icon.png">
+    <link rel="shortcut icon" href="{{ SiteMetaView::shortcut() }}">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="/js/plugins/b4/css/bootstrap.min.css">
