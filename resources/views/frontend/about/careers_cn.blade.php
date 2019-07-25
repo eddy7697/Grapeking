@@ -7,7 +7,7 @@
     <meta name="keywords" content="{{SiteMetaView::keyword()}}">
     <meta name="description" content="{{SiteMetaView::description()}}">
 
-    <title>上海葡萄王企业有限公司</title>
+    <title>{{ SiteMetaView::title() }}</title>
 
     <link rel="shortcut icon" href="{{ SiteMetaView::shortcut() }}">
 
