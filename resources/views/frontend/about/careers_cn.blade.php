@@ -384,8 +384,7 @@
                             <div class="site-thumbnail-container">
                                 <ul class="site-thumbnail">
                                     <li>首页</li>
-                                    <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;
-                                    </li>
+                                    <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
                                     <li>人才招聘</li>
                                 </ul>
                                 <h2>人才招聘</h2>
@@ -421,7 +420,7 @@
                         <li>主动投递履历本公司大约需十个工作天进行初步筛选机制，请耐心等待，造成不便敬请见谅！</li>
                     </ul>
                     <h4 class="hilight-title" data-aos="fade-up">职缺专区</h4>
-                    <p class="careers-tip" data-aos="fade-up">我们广征优秀人才，<br>诚挚邀请您以『<a href="https://company.zhaopin.com/CZ178566810.htm">智联招聘网站</a>』进行履历投递，谢谢您！</p>
+                    <p class="careers-tip" data-aos="fade-up">我们广征优秀人才，诚挚邀请您以『<a href="https://company.zhaopin.com/CZ178566810.htm">智联招聘网站</a>』进行履历投递，谢谢您！</p>
                     <img class="about-image" src="/img/careers-picture_2.png" alt="" data-aos="fade-up">
                 </div>
                 <div class="col-md-3 about-content">
