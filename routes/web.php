@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Log;
 
 
 // Auth::routes();
-require_once "Auth.php";
+// require_once "Auth.php";
 
 // backend's route
 Route::group(['prefix' => 'cyberholic-system', 'middleware' => 'auth', 'middleware' => 'role'], function()

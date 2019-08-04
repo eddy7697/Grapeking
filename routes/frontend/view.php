@@ -105,26 +105,26 @@ Route::get('/blog/{path}', function ($path)
 /**
  * MEMBER
  */
-Route::get('/login', 'Frontend\PageController@login');
-Route::get('/register', 'Frontend\PageController@register');
-Route::get('/forget-password', function ()
-{
-    return view('frontend.authentication.forgetPassword', [
-        'isThumbShow' => false,
-    ]);
-});
-Route::get('/reset-password/{token}', 'Frontend\UserController@resetPasswordPage');
+// Route::get('/login', 'Frontend\PageController@login');
+// Route::get('/register', 'Frontend\PageController@register');
+// Route::get('/forget-password', function ()
+// {
+//     return view('frontend.authentication.forgetPassword', [
+//         'isThumbShow' => false,
+//     ]);
+// });
+// Route::get('/reset-password/{token}', 'Frontend\UserController@resetPasswordPage');
 
 /**
  * DASHBOARD
  */
-Route::group(['prefix' => 'user', 'middleware' => 'checkUser'], function()
-{
-    Route::get('/', 'Frontend\DashboardController@index');
-    Route::get('/address', 'Frontend\DashboardController@address');
-    Route::get('/information', 'Frontend\DashboardController@information');
-    Route::post('/modifyInformation', 'Frontend\DashboardController@modifyInformation');
-});
+// Route::group(['prefix' => 'user', 'middleware' => 'checkUser'], function()
+// {
+//     Route::get('/', 'Frontend\DashboardController@index');
+//     Route::get('/address', 'Frontend\DashboardController@address');
+//     Route::get('/information', 'Frontend\DashboardController@information');
+//     Route::post('/modifyInformation', 'Frontend\DashboardController@modifyInformation');
+// });
 
 /**
  * BUSINESS LOGIC
