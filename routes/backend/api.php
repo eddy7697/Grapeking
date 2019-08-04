@@ -128,8 +128,8 @@ Route::get('/admin/product/sub/low_qty', 'Backend\ProductController@getSubLowQty
  */
 Route::post('/admin/page/add', 'Backend\PageController@createPage');
 Route::get('/admin/page/get', 'Backend\PageController@getPages');
-Route::get('/admin/page/get/{guid}', 'Backend\PageController@getPage');
-Route::post('/admin/page/update/{guid}', 'Backend\PageController@updatePage');
+Route::get('/admin/page/get/{id}', 'Backend\PageController@getPage');
+Route::post('/admin/page/update/{id}', 'Backend\PageController@updatePage');
 
 /**
  * Category

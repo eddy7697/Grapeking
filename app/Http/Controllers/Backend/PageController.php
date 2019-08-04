@@ -35,17 +35,17 @@ class PageController extends Controller
         return Page::paginate(150);
     }
 
-    public function getPage($guid)
+    public function getPage($id)
     {
-        return Page::where('guid', $guid)->first();
+        return Page::where('id', $id)->first();
     }
 
-    public function updatePage(Request $request, $guid)
+    public function updatePage(Request $request, $id)
     {
         $data = $request->all();
 
         try {
-            Page::where('guid', $guid)->update($data);
+            Page::where('id', $id)->update($data);
 
             $status = 200;
             $message = 'Update Page success.';

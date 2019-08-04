@@ -1,12 +1,45 @@
 <template>
     <div class="row">
-        <div class="col-md-7">
+        <div class="col-md-3">
+            <el-tabs v-model="activeName" type="card">
+                <el-tab-pane label="簡體中文" name="first">
+                    <el-tree
+                        :data="pageTree"
+                        :props="defaultProps"
+                        default-expand-all
+                        :expand-on-click-node="false"
+                        @node-click="getPageData" />
+                </el-tab-pane>
+                <el-tab-pane label="英文" name="second">
+                    <el-tree
+                        :data="pageTreeEn"
+                        :props="defaultProps"
+                        default-expand-all
+                        :expand-on-click-node="false"
+                        @node-click="getPageData" />
+                </el-tab-pane>
+            </el-tabs>
+            
+        </div>
+        <div class="col-md-9">
             <!-- <ul class="nav nav-tabs">
                 <li class="active"><a data-toggle="tab" href="#home">繁體中文</a></li>
                 <li><a data-toggle="tab" href="#menu1">英文</a></li>
             </ul> -->
-
-            <div class="tab-content">
+            <div v-if="pageData.id">
+                <ckeditor
+                    class="ch-product-description"
+                    :config="ckConfig"
+                    v-model="pageData.content">
+                </ckeditor>
+                <div style="text-align: center">
+                    <el-button type="primary" @click="savePage">儲存頁面</el-button>
+                </div>
+            </div>
+            <div v-else style="text-align: center; padding-top:50px;">
+                <h1>請選擇頁面</h1>
+            </div>
+            <div class="tab-content" v-if="false">
                 <div id="home" class="tab-pane fade in active">
                     <table class="table field-table">
                         <thead>
@@ -36,12 +69,184 @@
 </template>
 
 <script>
+    import Ckeditor from 'vue-ckeditor2'
+    import ElementUI from 'element-ui'
+    import 'element-ui/lib/theme-chalk/index.css'
+    import lang from 'element-ui/lib/locale/lang/zh-TW'
+    import locale from 'element-ui/lib/locale'    
+
+    Vue.use(ElementUI)
+    locale.use(lang)
     $('.loading-bar').fadeOut('100');
     export default {
         data() {
             return {
-                pageContent: []
+                activeName: 'first',
+                pageContent: [],
+                pageData: {
+                    title: null,
+                    content: null,
+                    locale: 'en',
+                    featureImage: null,
+                    id: null
+                },
+                ckConfig: {
+                    height: 400,
+                    allowedContent: true,
+                    filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+                    filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=' + $('meta[name="csrf-token"]').attr('content'),
+                    filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
+                    filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token=' + $('meta[name="csrf-token"]').attr('content')
+                },
+                token: $('meta[name="csrf-token"]').attr('content'),
+                pageTree: [
+                    {
+                        label: '關於上海葡萄王',
+                        children: [
+                            {
+                                label: '關於我們',
+                                id: 11
+                            },{
+                                label: '發展歷程',
+                                id: 13
+                            },{
+                                label: '關於創辦人',
+                                id: 15
+                            },{
+                                label: '全球認證',
+                                id: 17
+                            },
+                        ]
+                    },
+                    {
+                        label: '業務體系',
+                        children: [
+                            {
+                                label: '生產服務',
+                                id: 19
+                            },{
+                                label: '統包服務',
+                                id: 21
+                            },
+                        ]
+                    },
+                    {
+                        label: '專業研發',
+                        children: [
+                            {
+                                label: '食安中心',
+                                id: 23
+                            },{
+                                label: '生物科技研究所',
+                                id: 2
+                            },{
+                                label: '創新研發中心',
+                                id: 25
+                            },{
+                                label: '世界級工廠',
+                                id: 27
+                            },
+                        ]
+                    },
+                    {
+                        label: '社會責任',
+                        children: [
+                            {
+                                label: '員工關係',
+                                id: 3
+                            },{
+                                label: '食品安全',
+                                id: 5
+                            },{
+                                label: '研發創新',
+                                id: 7
+                            },{
+                                label: '綠色環境',
+                                id: 9
+                            },
+                        ]
+                    },
+                    {
+                        label: '人才招聘',
+                        id: 29
+                    },
+                ],
+                pageTreeEn: [
+                    {
+                        label: '關於上海葡萄王',
+                        children: [
+                            {
+                                label: '關於我們',
+                                id: 12
+                            },{
+                                label: '發展歷程',
+                                id: 14
+                            },{
+                                label: '關於創辦人',
+                                id: 16
+                            },{
+                                label: '全球認證',
+                                id: 18
+                            },
+                        ]
+                    },
+                    {
+                        label: '業務體系',
+                        children: [
+                            {
+                                label: '生產服務',
+                                id: 20
+                            },{
+                                label: '統包服務',
+                                id: 22
+                            },
+                        ]
+                    },
+                    {
+                        label: '專業研發',
+                        children: [
+                            {
+                                label: '食安中心',
+                                id: 24
+                            },{
+                                label: '生物科技研究所',
+                                id: 1
+                            },{
+                                label: '創新研發中心',
+                                id: 26
+                            },{
+                                label: '世界級工廠',
+                                id: 28
+                            },
+                        ]
+                    },
+                    {
+                        label: '社會責任',
+                        children: [
+                            {
+                                label: '員工關係',
+                                id: 4
+                            },{
+                                label: '食品安全',
+                                id: 6
+                            },{
+                                label: '研發創新',
+                                id: 8
+                            },{
+                                label: '綠色環境',
+                                id: 10
+                            },
+                        ]
+                    }
+                ],
+                defaultProps: {
+                    children: 'children',
+                    label: 'label'
+                }
             }
+        },
+        components: {
+            Ckeditor
         },
         props: ['type'],
         created: function () {
@@ -50,8 +255,6 @@
         methods: {
             getPages: function () {
                 var self = this;
-
-                console.log(this.type)
 
                 $.ajax({
                     url: '/admin/page/get',
@@ -77,6 +280,48 @@
                     console.log("complete");
                 });
 
+            },
+            getPageData(node) {
+                let id = node.id
+                let isPage = typeof(id) != 'undefined'
+                
+                if (!isPage) {
+                    return
+                }
+
+                $('.loading-bar').show()
+                axios.get(`/admin/page/get/${id}`)
+                    .then(res => {
+                        this.pageData.title = res.data.title;
+                        this.pageData.content = JSON.parse(res.data.content).content;
+                        this.pageData.locale = JSON.parse(res.data.content).locale;
+                        this.pageData.featureImage = res.data.featureImage;
+                        this.pageData.id = res.data.id
+                    }).catch(err => {
+                    }).then(() => {
+                        $('.loading-bar').hide()
+                    })
+            },
+            savePage() {
+                let vo = {
+                    title: this.pageData.title,
+                    content: JSON.stringify({
+                        locale: this.pageData.locale,
+                        content: this.pageData.content
+                    }),
+                    featureImage: this.pageData.featureImage
+                }
+
+                $('.loading-bar').show()
+
+                axios.post(`/admin/page/update/${this.pageData.id}`, vo)
+                    .then(res => {
+                        this.$message.success('儲存頁面成功')
+                    }).catch(err => {
+                        this.$message.error('儲存頁面失敗')
+                    }).then(() => {
+                        $('.loading-bar').hide()
+                    })
             },
             localeFilter(locale) {
                 return _.compact(this.pageContent.map(elm => {

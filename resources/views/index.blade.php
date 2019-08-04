@@ -90,15 +90,18 @@
         }
     </script>
     <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '"></span>';
-        },
-      },
-    });
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+                },
+            },
+            autoplay: {
+                delay: 4000
+            },
+        });
 
         $('.witness-container').slick({
             dots: false,
