@@ -280,6 +280,13 @@ Route::get('/page/add', function ()
         'mode' => 'add',
     ]);
 });
+Route::get('/page/factory', function ()
+{
+    return view('backend.page.factory', [
+        'panelTitle' => '世界級工廠管理',
+        'mode' => 'add',
+    ]);
+});
 Route::get('/page/list', function ()
 {
     return view('backend.page.list', [

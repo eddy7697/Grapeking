@@ -63,6 +63,7 @@
 													<li><a href="/cyberholic-system/page/add">新增頁面</a></li>
 												@endif
 												<li><a href="/cyberholic-system/page/list">頁面列表</a></li>
+												<li><a href="/cyberholic-system/page/factory">世界級工廠管理</a></li>
 												{{-- <li><a href="/cyberholic-system/page/block">區塊列表</a></li> --}}
 												<li><a href="/cyberholic-system/meta/notice">使用條款管理</a></li>
 												<li><a href="/cyberholic-system/meta/privacy">隱私權政策管理</a></li>

@@ -43,7 +43,7 @@
             <div v-else style="text-align: center; padding-top:50px;">
                 <h1>請選擇頁面</h1>
             </div>
-            <div class="tab-content" v-if="true">
+            <div class="tab-content" v-if="false">
                 <div id="home" class="tab-pane fade in active">
                     <table class="table field-table">
                         <thead>

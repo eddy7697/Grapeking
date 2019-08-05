@@ -53,7 +53,13 @@
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <h3 class="about-section-title" id="section_1">{{ trans('string.laboratory_equipment') }}</h3>
                     <div class="row">
-                        <div class="col-md-4" style="text-align: center">
+                        @foreach (PageView::factoryAlbum()->lab as $item)
+                            <div class="col-md-4" style="text-align: center">
+                                <img width="100%" src="{{$item->url}}" alt="">
+                                <p style="margin: 35px 0;">{{$item->label}}</p>
+                            </div>
+                        @endforeach
+                        {{-- <div class="col-md-4" style="text-align: center">
                             <img width="100%" src="/img/research/factory/factory-1.jpg" alt="">
                             <p style="margin: 35px 0;">{{ trans('text.laminar_flow') }}</p>
                         </div>
@@ -92,11 +98,19 @@
                         <div class="col-md-4" style="text-align: center">
                             <img width="100%" src="/img/research/factory/factory-10.jpg" alt="">
                             <p style="margin: 35px 0;">{{ trans('text.hpcpc') }}</p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                     <h3 class="about-section-title" id="section_2">{{ trans('string.production_equipment') }}</h3>
+                    <div class="row">
+                        @foreach (PageView::factoryAlbum()->production as $item)
+                            <div class="col-md-4" style="text-align: center">
+                                <img width="100%" src="{{$item->url}}" alt="">
+                                <p style="margin: 35px 0;">{{$item->label}}</p>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
