@@ -72,7 +72,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="about_1">{{ trans('string.about26') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(18)!!}
+                @else
+                {!!PageView::show(17)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="about_1">{{ trans('string.about26') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about27') !!}
                 </div>
@@ -98,7 +103,7 @@
                     </div>
                     
                     {!! trans('string.about30') !!}
-                </div>
+                </div> --}}
             </div>
             <div class="col-md-3 about-thumbnail">
                 @include('components.aboutThumbnail')

@@ -140,14 +140,17 @@ $('.material_box').on('click', function (e) {
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-
-                <h3 class="about-section-title" id="section_1">{{ trans('string.production') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(20)!!}
+                @else
+                {!!PageView::show(19)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.production') }}</h3>
                 <div class="about-text">
                     <p>{{ trans('string.business_10') }}</p>                 
                 </div>
-                <img class="about-image" src="/img/business/factory-1.jpg" alt="">
+                <img class="about-image" src="/img/business/factory-1.jpg" alt=""> --}}
 
-                {{-- <h3 class="about-section-title">{{ trans('string.production') }}</h3> --}}
                 <div class="mobile-to-show material-list" style="overflow-x: hidden;">
                     <div class="production_material">
                         <div class="prod_box material_box active" data-material="#material_1" style="width: 50%; padding-bottom: 50%; margin: 0 auto 30px auto" >
@@ -235,7 +238,6 @@ $('.material_box').on('click', function (e) {
                     </div>
                 </div>
 
-                <!-- Nav tabs -->
                 <ul class="nav nav-tabs" id="material-tab" role="tablist" style="display: none">
                     <li class="nav-item">
                     <a class="nav-link active" id="material_1" data-toggle="tab" href="#material_panel_1" role="tab" aria-controls="material_panel_1" aria-selected="true">material_panel_1</a>

@@ -73,7 +73,12 @@ $('.material-card-list').slick({
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="section_1">{{ trans('string.professional') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(22)!!}
+                @else
+                {!!PageView::show(21)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.professional') }}</h3>
                 <div class="about-text">
                     <p>
                         {{ trans('string.production_d_1') }}
@@ -236,7 +241,7 @@ $('.material-card-list').slick({
                     <p style="margin-top: 50px; font-weight: 700">{{ trans('string.production_d_12') }}</p>
                     <a class="location-contact-btn" style="margin-top: 20px;" href="/contact">{{ trans('string.catalog_d_17') }}</a>
                 </div>
-                
+                 --}}
 
 
             </div>

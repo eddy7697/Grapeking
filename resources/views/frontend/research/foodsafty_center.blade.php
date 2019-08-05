@@ -35,7 +35,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content">
-            <h3 class="about-section-title" id="section_1">{{ trans('string.research_f_1') }}</h3>
+            @if (App::getLocale() == 'en')
+            {!!PageView::show(24)!!}
+            @else
+            {!!PageView::show(23)!!}
+            @endif
+            {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.research_f_1') }}</h3>
 
             <div class="about-text">
                 <div class="row">
@@ -67,7 +72,7 @@
                         </p> 
                     </div>
                 </div>                    
-            </div>
+            </div> --}}
         </div>
         <div class="col-md-3 about-thumbnail">
             @include('components.researchThumbnail')

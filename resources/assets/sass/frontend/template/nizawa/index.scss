@@ -1809,7 +1809,7 @@
             .founder-info {
                 height: 400px;
 
-                a.link-image {
+                .link-image {
                     background-position: center;
                     background-size: cover;
                     display: inline-block;
@@ -1848,13 +1848,13 @@
                             opacity: 1;
 
                             .info {
-                                padding: 15px 0;
+                                padding: 15px;
                             }
                         }
                     }
                 }
             }
-            a.link-image {
+            .link-image {
                 display: inline-block;
                 text-decoration: none;
                 color: #fff;

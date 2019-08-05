@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use Ixudra\Curl\Facades\Curl;
 use App\Post;
+use App\Page;
 use App\Category;
 use Illuminate\Support\Facades\Log;
 
@@ -38,12 +39,12 @@ require_once "frontend/api.php";
 
 Route::get('/test_prod', function ()
 {
-    $post = Post::all();
+    $post = Page::all();
 
     foreach ($post as $key => $value) {
-        Post::where('id', $value->id)
+        Page::where('id', $value->id)
                 ->update([
-                    'featureImage' => 'https://picsum.photos/800/600/?image='.rand(1, 500),
+                    'guid' => str_random(6),
                 ]);
     }
 

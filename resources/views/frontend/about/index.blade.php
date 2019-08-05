@@ -36,7 +36,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="about_1">{{ trans('string.company_profile') }}</h3>
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(12)!!}
+                @else
+                {!!PageView::show(11)!!}
+                @endif
+                {{-- <h3 class="about-section-title" id="about_1">{{ trans('string.company_profile') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about1') !!}
                 </div>
@@ -80,7 +85,7 @@
                 <div class="about-text">
                     {!! trans('string.about12') !!}
                 </div>
-                <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt="">
+                <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt=""> --}}
             </div>
             <div class="col-md-3 about-thumbnail">
                 @include('components.aboutThumbnail')

@@ -46,7 +46,12 @@
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content">
-            <h3 class="about-section-title" id="section_1">{{ trans('string.professional_rnd_lineup') }}</h3>
+            @if (App::getLocale() == 'en')
+            {!!PageView::show(26)!!}
+            @else
+            {!!PageView::show(25)!!}
+            @endif
+            {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.professional_rnd_lineup') }}</h3>
             <div class="about-text">
                 <p>{{trans('text.invo_d_1')}}</p>                  
             </div>
@@ -88,7 +93,7 @@
                     </div>
                     <img class="about-image" src="/img/research/research-4.jpg" alt="">
                 </div>
-            </div>
+            </div> --}}
         </div>
         
         {{-- side thumd --}}

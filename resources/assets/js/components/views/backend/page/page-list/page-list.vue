@@ -4,9 +4,11 @@
             <el-tabs v-model="activeName" type="card">
                 <el-tab-pane label="簡體中文" name="first">
                     <el-tree
+                        :setCurrentKey="10"
                         :data="pageTree"
                         :props="defaultProps"
                         default-expand-all
+                        :highlight-current="true"
                         :expand-on-click-node="false"
                         @node-click="getPageData" />
                 </el-tab-pane>
@@ -15,6 +17,7 @@
                         :data="pageTreeEn"
                         :props="defaultProps"
                         default-expand-all
+                        :highlight-current="true"
                         :expand-on-click-node="false"
                         @node-click="getPageData" />
                 </el-tab-pane>
@@ -27,6 +30,7 @@
                 <li><a data-toggle="tab" href="#menu1">英文</a></li>
             </ul> -->
             <div v-if="pageData.id">
+                <h2>{{pageData.title}}</h2>
                 <ckeditor
                     class="ch-product-description"
                     :config="ckConfig"
@@ -39,7 +43,7 @@
             <div v-else style="text-align: center; padding-top:50px;">
                 <h1>請選擇頁面</h1>
             </div>
-            <div class="tab-content" v-if="false">
+            <div class="tab-content" v-if="true">
                 <div id="home" class="tab-pane fade in active">
                     <table class="table field-table">
                         <thead>
@@ -142,10 +146,7 @@
                             },{
                                 label: '創新研發中心',
                                 id: 25
-                            },{
-                                label: '世界級工廠',
-                                id: 27
-                            },
+                            }
                         ]
                     },
                     {
@@ -153,6 +154,7 @@
                         children: [
                             {
                                 label: '員工關係',
+                                
                                 id: 3
                             },{
                                 label: '食品安全',
@@ -214,10 +216,7 @@
                             },{
                                 label: '創新研發中心',
                                 id: 26
-                            },{
-                                label: '世界級工廠',
-                                id: 28
-                            },
+                            }
                         ]
                     },
                     {
@@ -286,6 +285,11 @@
                 let isPage = typeof(id) != 'undefined'
                 
                 if (!isPage) {
+                    this.pageData.title = null;
+                    this.pageData.content = null;
+                    this.pageData.locale = 'en';
+                    this.pageData.featureImage = null;
+                    this.pageData.id = null
                     return
                 }
 

@@ -35,7 +35,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 about-content">
-                <div class="about-text signature" id="about_1">
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(16)!!}
+                @else
+                {!!PageView::show(15)!!}
+                @endif
+                {{-- <div class="about-text signature" id="about_1">
                     <h3 style="margin: 150px 0 50px; font-weight: 700">{{ trans('string.about17') }}</h3>
                     <img class="about-image pull-right" src="/img/about/founder/signature.jpg" alt="">
                 </div>
@@ -44,7 +49,7 @@
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-3">
-                            <a data-fancybox="gallery" href="/img/about/founder/person.jpg" class="link-image">
+                            <div data-fancybox="gallery" href="/img/about/founder/person.jpg" class="link-image">
                                 <img src="/img/about/founder/person.jpg" alt="">
                                 <div class="mask">
                                     <div class="info">
@@ -53,7 +58,7 @@
                                         (1935.04.14 - 2014.12.01)
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div> 
                         <div class="col-md-9">
                             {!! trans('string.about19') !!}
@@ -81,31 +86,31 @@
                 <div class="about-text" style="margin-top: 50px;" >
                     <div class="row">
                         <div class="col-md-7 founder-info">
-                            <a data-fancybox="gallery" href="/img/about/founder/pic.jpg" class="link-image"  style="background-image: url('/img/about/founder/pic.jpg');">
+                            <div data-fancybox="gallery" href="/img/about/founder/pic.jpg" class="link-image"  style="background-image: url('/img/about/founder/pic.jpg');">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_2') }}
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="col-md-5 founder-info">
-                            <a data-fancybox="gallery" href="/img/about/founder/pic2.jpg" class="link-image" style="background-image: url('/img/about/founder/pic2.jpg');">
+                            <div data-fancybox="gallery" href="/img/about/founder/pic2.jpg" class="link-image" style="background-image: url('/img/about/founder/pic2.jpg');">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_3') }}
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="col-md-12 founder-info">
-                            <a data-fancybox="gallery" href="/img/about/founder/pic3.jpg" class="link-image" style="background-image: url('/img/about/founder/pic3.jpg');">
+                            <div data-fancybox="gallery" href="/img/about/founder/pic3.jpg" class="link-image" style="background-image: url('/img/about/founder/pic3.jpg');">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_4') }}
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,18 +121,18 @@
                             {!! trans('string.about24') !!}
                         </div>
                         <div class="col-md-4">
-                            <a data-fancybox="gallery" href="/img/about/founder/pic4.png" class="link-image">
+                            <div data-fancybox="gallery" href="/img/about/founder/pic4.png" class="link-image">
                                 <img style="max-width: 400px;" src="/img/about/founder/pic4.png" alt="">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_5') }}
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div> 
                     </div>
                     
-                </div>
+                </div> --}}
             </div>
             <div class="col-md-3 about-thumbnail">
                 @include('components.aboutThumbnail')
