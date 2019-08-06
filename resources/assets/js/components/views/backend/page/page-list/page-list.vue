@@ -146,6 +146,9 @@
                             },{
                                 label: '創新研發中心',
                                 id: 25
+                            },{
+                                label: '世界級工廠',
+                                url: '/cyberholic-system/page/factory'
                             }
                         ]
                     },
@@ -216,6 +219,9 @@
                             },{
                                 label: '創新研發中心',
                                 id: 26
+                            },{
+                                label: '世界級工廠',
+                                url: '/cyberholic-system/page/factory'
                             }
                         ]
                     },
@@ -283,6 +289,10 @@
             getPageData(node) {
                 let id = node.id
                 let isPage = typeof(id) != 'undefined'
+
+                if (node.url) {
+                    window.location.href = node.url
+                }
                 
                 if (!isPage) {
                     this.pageData.title = null;
