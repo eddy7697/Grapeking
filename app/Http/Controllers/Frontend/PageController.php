@@ -141,7 +141,9 @@ class PageController extends Controller
 
     public function careers()
     {
-        return view('frontend.about.careers_cn');
+        // return view('frontend.about.careers');
+        return view('frontend.about.careers_new');
+        // return view('frontend.about.careers_cn');
     }
 
     public function bioengineering()
