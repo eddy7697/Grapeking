@@ -2526,7 +2526,7 @@
 }
 
 .content {
-    background: #f0f0f0;
+    background: #fff;
 
     article {
         h4 {
@@ -2706,20 +2706,26 @@
                         background: linear-gradient(to bottom,$main-color 0,#ca163a 100%);
                         padding-top: 50px;
                         padding-bottom: 40px;
-                        padding-left: 10rem;
+                        padding-left: 50px;
+                        padding-right: 20px;
                         -ms-flex-preferred-size: calc(100% - 563px);
                         flex-basis: calc(100% - 563px);
                         max-width: calc(100% - 563px);
                         width: calc(100% - 563px);
-
+                        
+                        .career-notice {
+                            width: fit-content;
+                            margin: 0 auto;
+                        }
                         h4 {
-                            font-size: 30px;
+                            text-align: left;
+                            font-size: 24px;
                             line-height: 40px;
-                            margin-bottom: 34px;
+                            margin-bottom: 14px;
                         }
                         .group {
                             position: relative;
-                            padding-top: 30px;
+                            padding-top: 18px;
                             color: #FFF;
 
                             &::before {
@@ -2727,7 +2733,7 @@
                                 position: absolute;
                                 top: 0;
                                 left: 0;
-                                width: 80%;
+                                width: 100%;
                                 height: 1px;
                                 background: #fff;
                             }
@@ -2741,9 +2747,11 @@
                                 list-style: none;
 
                                 li {
-                                    font-size: 16px;
-                                    line-height: 40px;
+                                    font-size: 14px;
+                                    line-height: 28px;
                                     letter-spacing: 1.5px;
+                                    list-style: disc;
+                                    margin-left: 24px;
                                 }
                             }
                         }
@@ -2752,11 +2760,12 @@
                         position: relative;
                         padding-top: 30px;
                         padding-bottom: 30px;
-                        -ms-flex-preferred-size: 500px;
-                        flex-basis: 500px;
-                        max-width: 500px;
-                        width: 500px;
+                        -ms-flex-preferred-size: 420px;
+                        flex-basis: 420px;
+                        max-width: 420px;
+                        width: 420px;
                         color: #fff;
+                        padding: 20px;
 
                         .dec {
                             position: absolute;
@@ -2774,9 +2783,10 @@
                         }
                         .group {
                             position: relative;
-                            padding-left: 145px;
-                            padding-right: 20px;
+                            padding-left: 76px;
+                            padding-right: 0px;
                             top: 50%;
+                            text-align: center;
                             -webkit-transform: translateY(-50%);
                             -moz-transform: translateY(-50%);
                             -ms-transform: translateY(-50%);
@@ -2796,6 +2806,71 @@
                                     letter-spacing: 1.5px;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    article.faq {
+        padding-top: 87px;
+        padding-bottom: 90px;
+        margin-bottom: 0;
+
+        .container {
+
+            .panel-group {
+                margin-bottom: 20px;
+                padding-top: 35px;
+
+                .panel {
+                    margin-bottom: 20px;
+                    background-color: #eee;
+
+                    position: relative;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -ms-flex-direction: column;
+                    flex-direction: column;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    background-clip: border-box;
+                    border-radius: .25rem;
+
+                    .panel-heading {
+                        border: none;
+                        background-color: transparent;
+                        padding: .75rem 1.25rem;
+                        margin-bottom: 0;
+                        color: inherit;
+
+                        a {
+                            text-decoration: none;
+                        }
+                        h5 {
+                            padding: 5px 0 5px 34px;
+                            font-size: 24px;
+                            color: #666;
+                            margin-bottom: 0;
+
+                            &::before {
+                                position: absolute;
+                                content: "-";
+                                font-size: 55px;
+                                top: 36%;
+                                left: 0;
+                                color: $main-color;
+                                -webkit-transform: translateY(-50%);
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                    .panel-collapse {
+                        .panel-body {
+                            flex: 1 1 auto;
+                            padding: 1.25rem;
+                            padding-left: 58px;
+                            color: #999;
                         }
                     }
                 }

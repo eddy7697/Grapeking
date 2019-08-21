@@ -35,7 +35,7 @@
             <div class="container">
                 <h3 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">菁英招募</h3>
                 <p class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">葡萄王诚挚欢迎您的加入 <br>
-                    80分的专业+100分的态度=葡萄王人才方程序</p>
+                    80分的专业+100分的态度=葡萄王人才方进程</p>
                 <ul class="wow fade-in-top list-unstyled row center-xs"
                     style="visibility: visible; animation-name: fade-in-top;">
                     <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#process">招募甄选流程</a> </li>
@@ -56,18 +56,19 @@
                     </div>
                 </div>
         
-                <div class="container info">
+                <div class="container info" data-aos="fade-down" data-aos-duration="1500">
                     <h4 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">招募甄选流程</h4>
         
-                    <div class="pic"><img alt="招募甄选流程" class="wow fade-in-bottom" src="/img/about/process.png"
-                            style="visibility: visible; animation-name: fade-in-bottom;">
-                        <div class="wow fade-in-left  left" style="visibility: visible; animation-name: fade-in-left;">
+                    <div class="pic" style="max-width: 768px; width: 100%"> 
+                        <img alt="招募甄选流程" class="wow fade-in-bottom" src="/img/about/process.svg"
+                            style="visibility: visible; animation-name: fade-in-bottom; width: 100%">
+                        {{-- <div class="wow fade-in-left  left" style="visibility: visible; animation-name: fade-in-left;">
                             <span>大约十个工作天</span></div>
         
                         <div class="wow fade-in-right  right" style="visibility: visible; animation-name: fade-in-right;">
                             <span>没通过<br>
                                 感谢您的应征，欢迎再次<br>
-                                投递您的履历，谢谢！</span></div>
+                                投递您的履历，谢谢！</span></div> --}}
                     </div>
                 </div>
             </div>        
@@ -79,36 +80,79 @@
                     <div class="box wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">
                         <div class="row">
                             <div class="col-xs-12 col-lg-8 column left">
-                                <h4 style="color: #fff;">招募甄选说明</h4>
-        
-                                <div class="group"><label>面试注意事项：</label>
-        
-                                    <ul class="list-unstyled">
-                                        <li>不论应征任何职务，面试请穿着正式服装。</li>
-                                        <li>请务必准时面试，不论临时有事无法前来或中途有事需延后面试，请务必事先通知本公司招募承办人员。</li>
-                                        <li>面试人员请携带足以证明身分之证件，于进入本公司前于警卫室确认身分数据。</li>
-                                        <li>本公司提供笔电、投影与网络设备，面试人员若有需要，请提早于面试前通知本公司招募承办人员以利准备。</li>
-                                        <li>若有陪同面试眷属，请眷属于警卫室等待，避免影响面试流程。</li>
-                                        <li>请务必透过『104人力网站』或『本公司菁英招募网站』进行履历表投递，经审核资格后，将主动通知面试。</li>
-                                        <li>本公司面试地点区分为中坜、平镇、龙潭或台北，请于面试前详细确认面试地点，避免发生错误。</li>
-                                        <li>主动投递履历本公司大约需十个工作天进行初步筛选机制，请耐心等待，造成不便敬请见谅！</li>
-                                    </ul>
+                                <div class="career-notice">
+                                    <h4 style="color: #fff;">招募甄选说明</h4>
+    
+                                    <div class="group">
+            
+                                        <ul class="list-unstyled">
+                                            <li>不论应征任何职务，面试请穿着正式服装。</li>
+                                            <li>请务必准时面试，不论临时有事无法前来或中途有事需延后面试，请务必事先通知本公司招募承办人员。</li>
+                                            <li>面试人员请携带足以证明身分之证件，于进入本公司前于警卫室确认身分数据。</li>
+                                            <li>本公司提供笔电、投影与网络设备，面试人员若有需要，请提早于面试前通知本公司招募承办人员以利准备。</li>
+                                            <li>若有陪同面试眷属，请眷属于警卫室等待，避免影响面试流程。</li>
+                                            <li>请务必透过『<a href="https://company.zhaopin.com/CZ178566810.htm" target="_blank">智联招聘网站</a>』进行履历表投递，经审核资格后，将主动通知面试。</li>
+                                            <li>本公司面试地点区分为中坜、平镇、龙潭或台北，请于面试前详细确认面试地点，避免发生错误。</li>
+                                            <li>主动投递履历本公司大约需十个工作天进行初步筛选机制，请耐心等待，造成不便敬请见谅！</li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                
                             </div>
         
                             <div class="col-xs-12 col-lg-4 column right">
                                 <div class="dec"><img alt="description" src="/img/about/description-right.png"></div>
         
                                 <div class="group">
-                                    <label style="font-size: 36px;">點擊前往<br>投遞履歷</label>
-        
+                                    <label style="font-size: 24px;">点击前往<br>投递履历</label>
+                                    <p style="font-size: 14px">本公司应聘履历登录透过「智联招聘网站」进行</p>
+                                    <img src="/img/about/door.png" alt="">
                                 </div>
+                                <a href="https://company.zhaopin.com/CZ178566810.htm" class="link-mask" target="_blank"></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         
+        </article>
+
+        <article class="faq" id="faq" data-aos="fade-up" data-aos-duration="1500">
+            <div class="container">
+                <h4 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">面试常见问题</h4>
+                <div class="article">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel wow fade-in-bottom active"
+                            style="visibility: visible; animation-name: fade-in-bottom;">
+                            <div class="panel-heading" id="heading1"> <a data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse1" aria-expanded="true" class="">
+                                    <h5>请问我投递履历大约多久可收到消息？</h5>
+                                </a> </div>
+                            <div id="collapse1" class="panel-collapse collapse in" aria-expanded="true" style="">
+                                <div class="panel-body">
+                                    <div class="article">
+                                        <p>本公司于收到履历后，将进行履历合适性之筛选，并将主动与合适的应征者联系并安排面试。若您于投递履历后一个月内仍未收到任何通知，则建议您可主动询问本公司人资单位承办人员，谢谢！
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel wow fade-in-bottom" style="visibility: visible; animation-name: fade-in-bottom;">
+                            <div class="panel-heading" id="heading2"> <a data-toggle="collapse" data-parent="#accordion"
+                                    href="#collapse2" aria-expanded="false" class="collapsed">
+                                    <h5>请问如果我没有接到面试通知，是否可直接到现场面试？</h5>
+                                </a> </div>
+                            <div id="collapse2" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                <div class="panel-body">
+                                    <div class="article">
+                                        <p>不好意思，因需事先审视履历之合适性与协调主管工作行程进行面谈，担心浪费您宝贵时间，故目前并无开放直接至本公司进行面谈之方式，谢谢！</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
     </div>
 @endsection
