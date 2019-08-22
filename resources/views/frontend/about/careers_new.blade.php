@@ -1,6 +1,17 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+$(function () {
+    $('.scrollto').on('click', function () {
+        var target = $(this).attr('scroll-target')
+
+        $('html,body').animate({
+            scrollTop: $(target).offset().top - $('.site-header').height()
+        }, 800);
+    });
+});
+</script>
 @endsection
 
 @section('custom-style')
@@ -38,10 +49,10 @@
                     80分的专业+100分的态度=葡萄王人才方进程</p>
                 <ul class="wow fade-in-top list-unstyled row center-xs"
                     style="visibility: visible; animation-name: fade-in-top;">
-                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#process">招募甄选流程</a> </li>
-                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#description">招募征选说明</a> </li>
+                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" scroll-target="#process" href="#process">招募甄选流程</a> </li>
+                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" scroll-target="#description" href="#description">招募征选说明</a> </li>
                     <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="https://company.zhaopin.com/CZ178566810.htm">焦点职缺项目</a> </li>
-                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#faq">面试常见问题</a> </li>
+                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" scroll-target="#faq" href="#faq">面试常见问题</a> </li>
                 </ul>
             </div>
         </article>
@@ -56,12 +67,19 @@
                     </div>
                 </div>
         
-                <div class="container info" data-aos="fade-down" data-aos-duration="1500">
+                <div class="container info">
                     <h4 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">招募甄选流程</h4>
         
-                    <div class="pic" style="max-width: 768px; width: 100%"> 
-                        <img alt="招募甄选流程" class="wow fade-in-bottom" src="/img/about/process.svg"
-                            style="visibility: visible; animation-name: fade-in-bottom; width: 100%">
+                    <div class="pic" style="max-width: 768px; width: 100%" alt="招募甄选流程"> 
+                        <div class="process-flow">
+                            <img class="process-img left-side" src="/img/about/process/left-side.png" alt="" data-aos="fade-down" data-aos-duration="1500">
+                            <img class="process-img right-side-1" src="/img/about/process/right-side-1.png" alt="" data-aos="fade-right" data-aos-duration="1500">
+                            <img class="process-img right-side-2" src="/img/about/process/right-side-2.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+                            <img class="process-img success" src="/img/about/process/bottom-success.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="process-img main" src="/img/about/process/main.png" alt="" data-aos="fade-in" data-aos-duration="1500">
+                        </div>
+                        {{-- <img alt="招募甄选流程" class="wow fade-in-bottom" src="/img/about/process.svg"
+                            style="visibility: visible; animation-name: fade-in-bottom; width: 100%"> --}}
                         {{-- <div class="wow fade-in-left  left" style="visibility: visible; animation-name: fade-in-left;">
                             <span>大约十个工作天</span></div>
         
@@ -74,10 +92,10 @@
             </div>        
         </article>
 
-        <article class="description" id="description" data-aos="fade-right" data-aos-duration="1500" style="background: linear-gradient(rgba(255,255,255,0), #FFF, #FFF, #FFF, #FFF)">
+        <article class="description" id="description" style="background: linear-gradient(rgba(255,255,255,0), #FFF, #FFF, #FFF, #FFF)">
             <div class="row">
                 <div class="col-xs">
-                    <div class="box wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">
+                    <div class="box wow slideInLeft" data-aos="fade-right" data-aos-duration="1500">
                         <div class="row">
                             <div class="col-xs-12 col-lg-8 column left">
                                 <div class="career-notice">
@@ -101,12 +119,16 @@
                             </div>
         
                             <div class="col-xs-12 col-lg-4 column right">
-                                <div class="dec"><img alt="description" src="/img/about/description-right.png"></div>
+                                <div class="dec">
+                                    <img class="bg-layer" alt="description" src="/img/about/description-right.png">
+                                    <img class="click-btn" src="/img/about/clicl-text.svg" alt="">
+                                    <img class="click-mask" src="/img/about/click-mask.png" alt="">
+                                </div>
         
                                 <div class="group">
-                                    <label style="font-size: 24px;">点击前往<br>投递履历</label>
-                                    <p style="font-size: 14px">本公司应聘履历登录透过「智联招聘网站」进行</p>
-                                    <img src="/img/about/door.png" alt="">
+                                    {{-- <label style="font-size: 24px;">点击前往<br>投递履历</label>
+                                    <p style="font-size: 14px">本公司应聘履历登录透过「智联招聘网站」进行</p> --}}
+                                    <img src="/img/about/link-text.svg" alt="">
                                 </div>
                                 <a href="https://company.zhaopin.com/CZ178566810.htm" class="link-mask" target="_blank"></a>
                             </div>

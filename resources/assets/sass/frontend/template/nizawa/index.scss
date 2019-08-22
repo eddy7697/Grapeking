@@ -2633,6 +2633,7 @@
                     min-height: 100%;
                     max-height: none;
                 }
+                
             }
         }
         .info {
@@ -2653,6 +2654,42 @@
                 left: 50%;
                 transform: translateX(-50%);
 
+                .process-flow {
+                    position: relative;
+                    width: 100%;
+                    padding-bottom: 100%;
+
+                    .process-img {
+                        position: absolute;
+
+                        &.main {
+                            top: 5%;
+                            left: 50%;
+                            width: 45%;
+                            transform: translateX(-50%);
+                        }
+                        &.left-side {
+                            top: 5%;
+                            height: 47%;
+                            left: 19%;
+                        }
+                        &.success {
+                            bottom: 7%;
+                            width: 55.5%;
+                            left: 8.3%;
+                        }
+                        &.right-side-1 {
+                            right: 1%;
+                            width: 27%;
+                            top: 31.5%;
+                        }
+                        &.right-side-2 {
+                            right: 11.5%;
+                            width: 15%;
+                            bottom: 35.5%;
+                        }
+                    }
+                }
                 img {
                     display: block;
                     margin: 0 auto;
@@ -2761,6 +2798,17 @@
                                     letter-spacing: 1.5px;
                                     list-style: disc;
                                     margin-left: 24px;
+
+                                    a {
+                                        color: #FFF;
+                                        font-weight: 900;
+                                        font-size: 18px;
+                                        text-decoration: none;
+
+                                        &:hover {
+                                            color: #ccc;
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -2776,6 +2824,14 @@
                         color: #fff;
                         padding: 20px;
 
+                        &:hover {
+
+                            .dec {
+                                img.click-mask {
+                                    transform: scale(1.2);
+                                }
+                            }
+                        }
                         .dec {
                             position: absolute;
                             left: 0;
@@ -2783,12 +2839,27 @@
                             width: 100%;
                             height: 100%;
 
-                            img {
+                            img.bg-layer {
                                 width: 100%;
                                 height: 100%;
                                 image-rendering: -webkit-optimize-contrast;
                                 max-width: 100%;
                             }
+                            img.click-btn {
+                                position: absolute;
+                                bottom: 9.8%;
+                                right: 0;
+                                width: 25%;
+                            }
+                            img.click-mask {
+                                position: absolute;
+                                bottom: 9.8%;
+                                right: 0.05%;
+                                width: 25%;
+                                transform-origin: right bottom;
+                                transition: .2s all ease-out;
+                            }
+                            
                         }
                         .group {
                             position: relative;

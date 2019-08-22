@@ -83,6 +83,7 @@ var LiveReloadPlugin = require('webpack-livereload-plugin');
     .js('resources/assets/js/components/views/backend/page/banner-managment/banner-managment.js', 'public/js/backend')
     .js('resources/assets/js/components/views/backend/page/page-list/page-list.js', 'public/js/backend')
     .js('resources/assets/js/components/views/backend/page/add-page/add-page.js', 'public/js/backend')
+    .js('resources/assets/js/components/views/backend/page/page-builder/page-builder.js', 'public/js/backend')
     .js('resources/assets/js/components/views/backend/page/factory-manage/factory-manage.js', 'public/js/backend');
 
  // meta

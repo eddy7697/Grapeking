@@ -343,7 +343,7 @@
                 }))
             },
             editLink: function (item) {
-                return "/cyberholic-system/page/edit/" + item.guid;
+                return "/cyberholic-system/page/edit/" + item.id;
             }
         }
     }
