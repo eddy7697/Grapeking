@@ -40,7 +40,7 @@
                     style="visibility: visible; animation-name: fade-in-top;">
                     <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#process">招募甄选流程</a> </li>
                     <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#description">招募征选说明</a> </li>
-                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#job">焦点职缺项目</a> </li>
+                    <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="https://company.zhaopin.com/CZ178566810.htm">焦点职缺项目</a> </li>
                     <li class="col-xs-6 col-sm-3"> <a class="scrollto" href="#faq">面试常见问题</a> </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@
                 <div class="bg">
                     <div class="pic">
                         <div class="jqimgFill imgLiquid_bgSize imgLiquid_ready"
-                            style="background-image: url(&quot;/img/about/bg-process.jpg&quot;); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+                            style="background-image: url(&quot;/img/about/bg-process.jpg&quot;); background-size: cover; background-position: center center !important; background-repeat: no-repeat;">
                             <img alt="background" class="wow fade-in-left left animated" src="/img/about/bg-process.jpg"
                                 style="display: none; visibility: visible; animation-name: fade-in-left;"></div>
                     </div>

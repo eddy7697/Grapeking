@@ -2445,6 +2445,15 @@
         margin-top: 80px;
         min-height: 80px;
     }
+    .content article.description .row .box .row .left {
+        -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+    .content article.description .row .box .row .right {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
