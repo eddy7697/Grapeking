@@ -44,7 +44,7 @@
                             <div class="report-preview" style="background-image: url('{{$item->customField2}}')">
                                 <div class="report-mask force-center">
                                     <div>
-                                        <span style="font-weight:700; color: #fff; text-shadow: 2px 2px 12px rgba(0,0,0,.9)">{{$item->locale}}</span>
+                                        <span style="font-weight:700; color: #fff; text-shadow: 2px 2px 12px rgba(0,0,0,.9); text-align: center">{{$item->locale}}</span>
                                         <br>
                                         <br>
                                         <img src="/img/download-btn.png" alt="">

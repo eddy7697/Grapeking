@@ -25,6 +25,7 @@
     "countup.js": "^2.0.4",
     "element-ui": "^2.4.7",
     "gentelella": "^1.4.0",
+    "grapesjs": "^0.15.3",
     "jquery-bar-rating": "^1.2.2",
     "jquery-lazyload": "^1.9.7",
     "jquery-ui": "^1.12.1",

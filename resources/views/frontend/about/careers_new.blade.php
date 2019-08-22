@@ -74,7 +74,7 @@
             </div>        
         </article>
 
-        <article class="description" id="description" data-aos="fade-right" data-aos-duration="1500">
+        <article class="description" id="description" data-aos="fade-right" data-aos-duration="1500" style="background: linear-gradient(rgba(255,255,255,0), #FFF, #FFF, #FFF, #FFF)">
             <div class="row">
                 <div class="col-xs">
                     <div class="box wow slideInLeft" style="visibility: visible; animation-name: slideInLeft;">
