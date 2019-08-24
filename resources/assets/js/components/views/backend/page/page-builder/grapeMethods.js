@@ -1,4 +1,4 @@
-import grapesjs from 'grapesjs'
+// import grapesjs from 'grapesjs'
 import 'grapesjs/dist/css/grapes.min.css';
 
 export default {
@@ -24,15 +24,42 @@ export default {
                         buttons: [{
                             id: 'show-layers',
                             active: true,
-                            label: 'Layers',
+                            label: '<i class="fa fa-bars" aria-hidden="true"></i>',
                             command: 'show-layers',
                             // Once activated disable the possibility to turn it off
                             togglable: false,
                         }, {
                             id: 'show-style',
                             active: true,
-                            label: 'Styles',
+                            label: '<i class="fa fa-paint-brush" aria-hidden="true"></i>',
                             command: 'show-styles',
+                            togglable: false,
+                        }, {
+                            id: 'show-traits',
+                            active: true,
+                            label: '<i class="fa fa-cog" aria-hidden="true"></i>',
+                            command: 'show-traits',
+                            togglable: false,
+                        }, {
+                            id: 'show-blocks',
+                            active: true,
+                            label: '<i class="fa fa-th-large" aria-hidden="true"></i>',
+                            command: 'show-blocks',
+                            togglable: false,
+                        }],
+                    }, {
+                        id: 'panel-devices',
+                        el: '.panel__devices',
+                        buttons: [{
+                            id: 'device-desktop',
+                            label: '<i class="fa fa-desktop" aria-hidden="true"></i>',
+                            command: 'set-device-desktop',
+                            active: true,
+                            togglable: false,
+                          }, {
+                            id: 'device-mobile',
+                            label: '<i class="fa fa-mobile" aria-hidden="true"></i>',
+                            command: 'set-device-mobile',
                             togglable: false,
                         }],
                     }]
@@ -68,11 +95,24 @@ export default {
                         activate: true,
                     }]
                 },
+                assetManager: {
+                    assets: [],
+                },
                 layerManager: {
                     appendTo: '.layers-container'
                 },
                 selectorManager: {
                     appendTo: '.styles-container'
+                },
+                deviceManager: {
+                    devices: [{
+                        name: 'Desktop',
+                        width: '', // default size
+                      }, {
+                        name: 'Mobile',
+                        width: '320px', // this value will be used on canvas width
+                        widthMedia: '480px', // this value will be used in CSS @media
+                    }]
                 },
                 styleManager: {
                     appendTo: '.styles-container',
@@ -119,6 +159,9 @@ export default {
                         }]
                     }]
                 },
+                traitManager: {
+                    appendTo: '.traits-container',
+                },
             });
 
 
@@ -133,18 +176,18 @@ export default {
                     id: 'visibility',
                     active: true, // active by default
                     className: 'btn-toggle-borders',
-                    label: '<u>B</u>',
+                    label: '<i class="fa fa-square-o" aria-hidden="true"></i>',
                     command: 'sw-visibility', // Built-in command
                 }, {
                     id: 'export',
                     className: 'btn-open-export',
-                    label: 'Exp',
+                    label: '<i class="fa fa-code" aria-hidden="true"></i>',
                     command: 'export-template',
                     context: 'export-template', // For grouping context of buttons from the same panel
                 }, {
                     id: 'show-json',
                     className: 'btn-show-json',
-                    label: 'JSON',
+                    label: '<i class="fa fa-slack" aria-hidden="true"></i>',
                     context: 'show-json',
                     command(editor) {
                         editor.Modal.setTitle('Components JSON')
@@ -191,7 +234,38 @@ export default {
                     smEl.style.display = 'none';
                 },
             });
+            editor.Commands.add('show-traits', {
+                getTraitsEl(editor) {
+                  const row = editor.getContainer().closest('.editor-row');
+                  return row.querySelector('.traits-container');
+                },
+                run(editor, sender) {
+                  this.getTraitsEl(editor).style.display = '';
+                },
+                stop(editor, sender) {
+                  this.getTraitsEl(editor).style.display = 'none';
+                },
+            });
+            editor.Commands.add('show-blocks', {
+                getBlocksEl(editor) {
+                  const row = editor.getContainer().closest('.editor-row');
+                  return row.querySelector('.blocks-container');
+                },
+                run(editor, sender) {
+                  this.getBlocksEl(editor).style.display = '';
+                },
+                stop(editor, sender) {
+                  this.getBlocksEl(editor).style.display = 'none';
+                },
+            });
+            editor.Commands.add('set-device-desktop', {
+                run: editor => editor.setDevice('Desktop')
+            });
+            editor.Commands.add('set-device-mobile', {
+                run: editor => editor.setDevice('Mobile')
+            });
 
+            editor.on('change:device', () => console.log('Current device: ', editor.getDevice()));
 
 
 

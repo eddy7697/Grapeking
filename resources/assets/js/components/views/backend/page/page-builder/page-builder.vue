@@ -9,18 +9,30 @@
             </ckeditor> -->
             <div class="panel__top">
                 <div class="panel__basic-actions"></div>
+                <div class="panel__devices"></div>
                 <div class="panel__switcher"></div>
             </div>
             <div class="editor-row">
                 <div class="editor-canvas">
-                    <div id="gjs"></div>
+                    <div id="gjs" v-html="pageContent.content">
+
+                    </div>
                 </div>
                 <div class="panel__right">
                     <div class="layers-container"></div>
                     <div class="styles-container"></div>
+                    <div class="traits-container"></div>
+                    <div class="blocks-container">
+                        <div id="blocks"></div>
+                    </div>
                 </div>
             </div>
-            <div id="blocks"></div>
+            
+
+
+            <!-- <div id="gjs" style="height:0px; overflow:hidden">
+
+            </div> -->
         </div>
 
         <div class="col-md-3">
@@ -252,4 +264,8 @@
 .panel__switcher {
   position: initial;
 }
+.panel__devices {
+  position: initial;
+}
+
 </style>
