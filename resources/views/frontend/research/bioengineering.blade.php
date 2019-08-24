@@ -67,6 +67,7 @@ $('.material-card-list').slick({
     {!!PageView::css(2)!!}
 </style>
 @endif
+
 @endsection
 
 @section('content')
