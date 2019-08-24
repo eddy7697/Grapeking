@@ -1,7 +1,13 @@
 <template>
     <div class="row" v-if="isLoaded">
-        <div class="col-md-12">
+        <div class="col-md-9">
             <input type="text" class="form-control ch-product-title" name="title" value="" placeholder="最新消息標題" v-model="pageContent.title">
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-primary btn-block" @click="testAC">儲存頁面</button>
+        </div>
+        <div class="col-md-12">
+            
             <!-- <ckeditor
                 class="ch-product-description"
                 :config="ckConfig"
@@ -12,11 +18,14 @@
                 <div class="panel__devices"></div>
                 <div class="panel__switcher"></div>
             </div>
-            <div class="editor-row">
+            <div class="editor-row" :style="`height: ${containerHeight}`">
                 <div class="editor-canvas">
-                    <div id="gjs" v-html="pageContent.content">
+                    <div id="gjs">
 
                     </div>
+                    <!-- <div id="gjs" v-html="pageContent.content">
+
+                    </div> -->
                 </div>
                 <div class="panel__right">
                     <div class="layers-container"></div>
@@ -51,22 +60,16 @@
                     </div>
     			</div>
     		</div> -->
-            <div class="panel panel-default">
+            <!-- <div class="panel panel-default">
     			<div class="panel-heading">
     				<h3 class="panel-title">
     					儲存頁面區塊
     				</h3>
     			</div>
-    			<!-- <div class="panel-body">
-                    <select class="form-control" v-model="pageContent.locale">
-                        <option value="en">英文</option>
-                        <option value="zh-TW">繁體中文</option>
-                    </select>
-    			</div> -->
                 <div class="panel-footer">
                     <button class="btn btn-success" type="button" name="button" @click="savePage">儲存頁面</button>
                 </div>
-    		</div>
+    		</div> -->
         </div>
 
     </div>
@@ -82,6 +85,9 @@
         components: {
             Ckeditor
         },
+        mounted() {
+            localStorage.clear()
+        },
         mixins: [grapeMethods],
         data() {
             return {
@@ -91,9 +97,11 @@
                 pageContent: {
                     title: null,
                     content: null,
+                    css: null,
                     locale: 'en',
                     featureImage: null
                 },
+                containerHeight: '700px',
                 ckConfig: {
                     height: 300,
                     allowedContent: true,
@@ -173,6 +181,9 @@
                         self.pageContent.locale = JSON.parse(res.data.content).locale;
                         self.pageContent.featureImage = res.data.featureImage;
 
+                        localStorage[`${this.guid}-html`] = JSON.parse(res.data.content).content ? JSON.parse(res.data.content).content : ""
+                        localStorage[`${this.guid}-css`] = JSON.parse(res.data.content).css ? JSON.parse(res.data.content).css : ""
+
                         self.isLoaded = true;
 
                         this.$nextTick(() => {
@@ -219,11 +230,11 @@
   height: 100%;
 }
 
-.gjs-block {
-    width: auto;
-    height: auto;
-    min-height: auto;
-}
+// .gjs-block {
+//     width: auto;
+//     height: auto;
+//     min-height: auto;
+// }
 
 .panel__top {
   padding: 0;
@@ -241,7 +252,7 @@
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
-  height: 300px;
+//   height: 300px;
 }
 
 .editor-canvas {

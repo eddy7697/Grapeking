@@ -38,12 +38,13 @@
                 </ckeditor>
                 <div style="text-align: center">
                     <el-button type="primary" @click="savePage">儲存頁面</el-button>
+                    <el-button type="info" @click="initPageBuilder(editLink(pageData))">使用頁面編輯器</el-button>
                 </div>
             </div>
             <div v-else style="text-align: center; padding-top:50px;">
                 <h1>請選擇頁面</h1>
             </div>
-            <div class="tab-content" v-if="true">
+            <div class="tab-content" v-if="false">
                 <div id="home" class="tab-pane fade in active">
                     <table class="table field-table">
                         <thead>
@@ -258,6 +259,10 @@
             this.getPages();
         },
         methods: {
+            initPageBuilder(url) {
+                // ${this.pageData.id}
+                window.location.href = url
+            },
             getPages: function () {
                 var self = this;
 

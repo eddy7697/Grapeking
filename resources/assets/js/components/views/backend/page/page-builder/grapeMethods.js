@@ -2,8 +2,37 @@
 import 'grapesjs/dist/css/grapes.min.css';
 
 export default {
-
+    data() {
+        return {
+            editor: undefined,
+        }
+    },
     methods: {
+        testAC() {
+            var pageContent = {
+                title: this.pageContent.title,
+                content: JSON.stringify({
+                    locale: this.pageContent.locale,
+                    css: localStorage[`${this.guid}-css`],
+                    content: localStorage[`${this.guid}-html`]
+                }),
+                featureImage: this.pageContent.featureImage
+            };
+
+            // console.log(pageContent)
+
+            // return
+
+            axios.post(this.isEdit ? '/admin/page/update/' + this.guid : '/admin/page/add', pageContent)
+                .then(res => {
+                    toastr.success('儲存成功')
+
+                    setTimeout(() => {
+                        
+                    }, 1000);
+                    // window.location = '/cyberholic-system/page/list';
+                })
+        },
         builderInitial() {
             const editor = grapesjs.init({
                 // Indicate where to init the editor. You can also pass an HTMLElement
@@ -12,10 +41,16 @@ export default {
                 // As an alternative we could use: `components: '<h1>Hello World Component!</h1>'`,
                 fromElement: true,
                 // Size of the editor
-                height: '300px',
+                height: this.containerHeight,
                 width: 'auto',
                 // Disable the storage manager for the moment
-                storageManager: false,
+                storageManager: {
+                    id: `${this.guid}-`,             // Prefix identifier that will be used on parameters
+                    type: 'local',          // Type of the storage
+                    autosave: true,         // Store data automatically
+                    autoload: true,         // Autoload stored data on init
+                    stepsBeforeSave: 1,     // If autosave enabled, indicates how many changes are necessary before store method is triggered
+                },
                 // Avoid any default panel
                 panels: {
                     defaults: [{
@@ -23,20 +58,20 @@ export default {
                         el: '.panel__switcher',
                         buttons: [{
                             id: 'show-layers',
-                            active: true,
+                            active: false,
                             label: '<i class="fa fa-bars" aria-hidden="true"></i>',
                             command: 'show-layers',
                             // Once activated disable the possibility to turn it off
                             togglable: false,
                         }, {
                             id: 'show-style',
-                            active: true,
+                            active: false,
                             label: '<i class="fa fa-paint-brush" aria-hidden="true"></i>',
                             command: 'show-styles',
                             togglable: false,
                         }, {
                             id: 'show-traits',
-                            active: true,
+                            active: false,
                             label: '<i class="fa fa-cog" aria-hidden="true"></i>',
                             command: 'show-traits',
                             togglable: false,
@@ -63,6 +98,30 @@ export default {
                             togglable: false,
                         }],
                     }]
+                },
+                plugins: ['grapesjs-blocks-bootstrap4'],
+                pluginsOpts: {
+                    'grapesjs-blocks-bootstrap4': {
+                        blocks: {
+                            // ...
+                        },
+                        blockCategories: {
+                            // ...
+                        },
+                        labels: {
+                            // ...
+                        },
+                    }
+                },
+                canvas: {
+                    styles: [
+                        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'
+                    ],
+                    scripts: [
+                        'https://code.jquery.com/jquery-3.3.1.slim.min.js',
+                        'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+                        'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'
+                    ],
                 },
                 blockManager: {
                     appendTo: '#blocks',
@@ -267,7 +326,10 @@ export default {
 
             editor.on('change:device', () => console.log('Current device: ', editor.getDevice()));
 
+            this.editor = editor
 
+        //    editor.runCommand('gjs-get-inlined-html');
+           editor.Commands.get('gjs-get-inlined-html')
 
         },
     },
