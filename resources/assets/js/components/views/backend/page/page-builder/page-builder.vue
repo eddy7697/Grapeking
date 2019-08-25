@@ -30,10 +30,10 @@
                 <div class="panel__right">
                     <div class="layers-container"></div>
                     <div class="styles-container"></div>
-                    <div class="traits-container"></div>
-                    <div class="blocks-container">
+                    <!-- <div class="traits-container"></div> -->
+                    <!-- <div class="blocks-container">
                         <div id="blocks"></div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             

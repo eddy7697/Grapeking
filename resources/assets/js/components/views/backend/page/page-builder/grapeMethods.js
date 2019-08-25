@@ -62,7 +62,7 @@ export default {
                         el: '.panel__switcher',
                         buttons: [{
                             id: 'show-layers',
-                            active: false,
+                            active: true,
                             label: '<i class="fa fa-bars" aria-hidden="true"></i>',
                             command: 'show-layers',
                             // Once activated disable the possibility to turn it off
@@ -73,18 +73,18 @@ export default {
                             label: '<i class="fa fa-paint-brush" aria-hidden="true"></i>',
                             command: 'show-styles',
                             togglable: false,
-                        }, {
-                            id: 'show-traits',
-                            active: false,
-                            label: '<i class="fa fa-cog" aria-hidden="true"></i>',
-                            command: 'show-traits',
-                            togglable: false,
-                        }, {
-                            id: 'show-blocks',
-                            active: true,
-                            label: '<i class="fa fa-th-large" aria-hidden="true"></i>',
-                            command: 'show-blocks',
-                            togglable: false,
+                        // }, {
+                        //     id: 'show-traits',
+                        //     active: false,
+                        //     label: '<i class="fa fa-cog" aria-hidden="true"></i>',
+                        //     command: 'show-traits',
+                        //     togglable: false,
+                        // }, {
+                        //     id: 'show-blocks',
+                        //     active: true,
+                        //     label: '<i class="fa fa-th-large" aria-hidden="true"></i>',
+                        //     command: 'show-blocks',
+                        //     togglable: false,
                         }],
                     }, {
                         id: 'panel-devices',
@@ -222,9 +222,9 @@ export default {
                         }]
                     }]
                 },
-                traitManager: {
-                    appendTo: '.traits-container',
-                },
+                // traitManager: {
+                //     appendTo: '.traits-container',
+                // },
             });
 
 
@@ -297,30 +297,30 @@ export default {
                     smEl.style.display = 'none';
                 },
             });
-            editor.Commands.add('show-traits', {
-                getTraitsEl(editor) {
-                  const row = editor.getContainer().closest('.editor-row');
-                  return row.querySelector('.traits-container');
-                },
-                run(editor, sender) {
-                  this.getTraitsEl(editor).style.display = '';
-                },
-                stop(editor, sender) {
-                  this.getTraitsEl(editor).style.display = 'none';
-                },
-            });
-            editor.Commands.add('show-blocks', {
-                getBlocksEl(editor) {
-                  const row = editor.getContainer().closest('.editor-row');
-                  return row.querySelector('.blocks-container');
-                },
-                run(editor, sender) {
-                  this.getBlocksEl(editor).style.display = '';
-                },
-                stop(editor, sender) {
-                  this.getBlocksEl(editor).style.display = 'none';
-                },
-            });
+            // editor.Commands.add('show-traits', {
+            //     getTraitsEl(editor) {
+            //       const row = editor.getContainer().closest('.editor-row');
+            //       return row.querySelector('.traits-container');
+            //     },
+            //     run(editor, sender) {
+            //       this.getTraitsEl(editor).style.display = '';
+            //     },
+            //     stop(editor, sender) {
+            //       this.getTraitsEl(editor).style.display = 'none';
+            //     },
+            // });
+            // editor.Commands.add('show-blocks', {
+            //     getBlocksEl(editor) {
+            //       const row = editor.getContainer().closest('.editor-row');
+            //       return row.querySelector('.blocks-container');
+            //     },
+            //     run(editor, sender) {
+            //       this.getBlocksEl(editor).style.display = '';
+            //     },
+            //     stop(editor, sender) {
+            //       this.getBlocksEl(editor).style.display = 'none';
+            //     },
+            // });
             editor.Commands.add('set-device-desktop', {
                 run: editor => editor.setDevice('Desktop')
             });
@@ -332,8 +332,10 @@ export default {
 
             this.editor = editor
 
-        //    editor.runCommand('gjs-get-inlined-html');
-           editor.Commands.get('gjs-get-inlined-html')
+            editor.Commands.get('gjs-get-inlined-html')
+            $('.gjs-frame').contents().find("body").css({
+                'font-family': 'Microsoft JhengHei'
+            });
 
         },
     },
