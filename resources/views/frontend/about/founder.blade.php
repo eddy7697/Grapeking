@@ -9,6 +9,15 @@
     background-image: url('/img/about/founder/banner.jpg');
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(16)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(15)!!}
+</style>
+@endif
 @endsection
 
 @section('content')

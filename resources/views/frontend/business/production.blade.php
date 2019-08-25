@@ -114,6 +114,15 @@ $('.material_box').on('click', function (e) {
     /* bottom: 0; */
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(20)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(19)!!}
+</style>
+@endif
 @endsection
 
 @section('content')

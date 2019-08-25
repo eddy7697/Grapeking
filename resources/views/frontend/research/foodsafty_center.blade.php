@@ -9,6 +9,15 @@
     background-image: url('/img/research/foodsafty-banner.jpg');
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(24)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(23)!!}
+</style>
+@endif
 @endsection
 
 @section('content')

@@ -47,6 +47,15 @@ $('.material-card-list').slick({
     background-image: url('/img/business/banner-2.jpg');
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(22)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(21)!!}
+</style>
+@endif
 @endsection
 
 @section('content')

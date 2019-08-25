@@ -46,6 +46,15 @@
     background-image: url('/img/about/certification/banner.jpg');
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(18)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(17)!!}
+</style>
+@endif
 @endsection
 
 @section('content')

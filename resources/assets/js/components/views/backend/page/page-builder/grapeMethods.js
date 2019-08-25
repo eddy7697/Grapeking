@@ -22,7 +22,7 @@ export default {
             // console.log(pageContent)
 
             // return
-
+            $('.loading-bar').show()
             axios.post(this.isEdit ? '/admin/page/update/' + this.guid : '/admin/page/add', pageContent)
                 .then(res => {
                     toastr.success('儲存成功')
@@ -31,6 +31,10 @@ export default {
                         
                     }, 1000);
                     // window.location = '/cyberholic-system/page/list';
+                }).catch(err => {
+                    toastr.error('儲存頁面失敗')
+                }).then(() => {
+                    $('.loading-bar').hide()
                 })
         },
         builderInitial() {

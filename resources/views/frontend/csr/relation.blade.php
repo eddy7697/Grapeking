@@ -9,6 +9,15 @@
     background-image: url('/img/csr/csr-1.jpg');
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(4)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(3)!!}
+</style>
+@endif
 @endsection
 
 @section('content')

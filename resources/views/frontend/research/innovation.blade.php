@@ -20,6 +20,15 @@
     background-image: url('/img/research/banner-2.jpg');
 }
 </style>
+@if (App::getLocale() == 'en')
+<style>
+    {!!PageView::css(26)!!}
+</style>
+@else
+<style>
+    {!!PageView::css(25)!!}
+</style>
+@endif
 @endsection
 
 @section('content')
