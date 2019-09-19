@@ -22,14 +22,14 @@ return [
     'next_page' => 'Next',
     'last_page' => 'Last page',
 
-    'grapekingmuseum' => 'Grape King Museum',
+    'grapekingmuseum' => 'Grape King Health And Vitality Power Center',
     'company_tw_short' => 'Taiwan Grape King',
     'pro_partner' => 'Pro Partner',
     'innovating' => 'Innovating',
     'food_safty' => 'Food safty',
     'employee_relatioon' => 'Employee Relations',
     'sales' => 'Sales',
-    'research' => 'Research',
+    'research' => 'Professional R&D',
 
     'send_success' => 'Thank you for your letter, we will reply you as soon as possible.',
 
