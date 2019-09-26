@@ -3310,4 +3310,30 @@ $font_0: icomoon;
     .site-content .factory-list .factory-item .factory-item-info {
         padding-bottom: 0;
     }
+
+    .mobile-site-header a.header-logo {
+        margin-top: -5px;
+    }
+    .site-content {
+        .sub-page-banner {
+            height: 235px;
+
+            .site-thumbnail-section {
+
+                .site-thumbnail-container {
+                    width: calc(100% + 30px);
+                    margin-left: -15px;
+                    border-radius: 0;
+                    padding: 20px;
+                
+                    h2 {
+                        display: none;
+                    }
+                    ul.site-thumbnail {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
 }

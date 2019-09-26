@@ -66,12 +66,13 @@
         import { CountUp } from '/js/plugins/countup/countUp.min.js';
 
         window.onload = function() {
-            var countUpYear = new CountUp('count-year', 1994, {
+            var countUpYear = new CountUp('count-year', 1969, {
                 useGrouping: false
             });
-            var countUpProd = new CountUp('count-prod', 100);
-            var countUpMem = new CountUp('count-mem', 93);
-            var countUpReturn = new CountUp('count-return', 2006);
+            var countUpProd = new CountUp('count-prod', 32);
+            var countUpMem = new CountUp('count-mem', 83);
+            var countUpReturn = new CountUp('count-return', 70
+            );
 
             $(window).scroll(function(){
                 if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 200) {
@@ -473,7 +474,7 @@
                         ],
                         [
                             'featureImage' => '/img/about-section-3.jpg',
-                            'title' => trans('string.food_safty_center'),
+                            'title' => App::getLocale() == 'en' ? trans('string.innovation_rnd_center') : '食品安全国际标准实验室​',
                             'link' => '/research/foodsafty',
                             'content' => trans('string.index_d_10')
                         ]
