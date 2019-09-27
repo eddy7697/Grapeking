@@ -10,8 +10,6 @@ var s = $("html"),
     t = $(".date input"),
     r = !1;
 
-$(".wp.history").each(function () {
-    n.length - 1;
     i.slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -54,7 +52,6 @@ $(".wp.history").each(function () {
     }), $('a[data-toggle="tab"]').on("shown.bs.tab", function () {
         $(".slider").slick("setPosition")
     })
-})
 $(".slider-nav").on('init', function () {
     $(this).show() 
 });
@@ -69,15 +66,11 @@ $(".slider-nav").on('init', function () {
 </style>
 @if (App::getLocale() == 'en')
 <style>
-    {
-         ! !PageView: :css(14) ! !
-    }
+    {!!PageView::css(14)!!}
 </style>
 @else
 <style>
-    {
-         ! !PageView: :css(13) ! !
-    }
+    {!!PageView::css(13)!!}
 </style>
 @endif
 @endsection
@@ -261,9 +254,9 @@ $(".slider-nav").on('init', function () {
             {{-- <h3 class="about-section-title" id="about_1">{{ trans('string.about13') }}</h3>
             <div class="about-text">
                 {!! trans('string.about14') !!}
-            </div>
+            </div> --}}
             <img class="about-image" src="/img/about/course_pic.jpg" alt="">
-            <div class="about-text">
+            {{-- <div class="about-text">
                 {!! trans('string.about15') !!}
             </div> --}}
         </div>
