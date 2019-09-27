@@ -454,4 +454,13 @@ return [
 
     'location_n_1' => 'If you have any questions about Grape King, you are welcome to contact us.',
     'location_n_2' => 'The customer service specialist will solve your problem with the fastest and most professional response.',
+
+    'timeline_1' => "Founded in Songjiang District, Shanghai.",
+    'timeline_2' => "Shanghai Grape King officially operates.",
+    'timeline_3' => "passed GMP certification and obtained HACCP certification.",
+    'timeline_4' => "Get export food production enterprise certification.",
+    'timeline_5' => "Dr. Zeng Shenglin succeeded as Chairman of the Group.",
+    'timeline_6' => "Won the demonstration plant of the Yangtze River Delta Health Care Zone.",
+    'timeline_7' => "ISO22000 certified.",
+    'timeline_8' => "Shanghai Business Center officially opened.",
 ];

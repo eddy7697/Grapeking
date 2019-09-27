@@ -144,7 +144,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">1994</h4>
                                     <ul>
-                                        <li>成立于上海市松江区​</li>
+                                        <li>{{ trans('string.timeline_1') }}</li>
                                     </ul>
 
                                 </div>
@@ -157,7 +157,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">1997</h4>
                                     <ul>
-                                        <li>上海葡萄王正式营运 ​</li>
+                                        <li>{{ trans('string.timeline_2') }}</li>
                                     </ul>
 
                                 </div>
@@ -170,7 +170,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">2003</h4>
                                     <ul>
-                                        <li>通过GMP认证及取得HACCP认证​</li>
+                                        <li>{{ trans('string.timeline_3') }}</li>
                                     </ul>
 
                                 </div>
@@ -183,7 +183,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">2008</h4>
                                     <ul>
-                                        <li>取得出口食品生产企业认证​</li>
+                                        <li>{{ trans('string.timeline_4') }}</li>
                                     </ul>
 
                                 </div>
@@ -196,7 +196,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">2014</h4>
                                     <ul>
-                                        <li>曾盛麟博士继任集团董事长​</li>
+                                        <li>{{ trans('string.timeline_5') }}</li>
                                     </ul>
 
                                 </div>
@@ -209,7 +209,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">2016</h4>
                                     <ul>
-                                        <li>荣获营养保健长三角区示范工厂​</li>
+                                        <li>{{ trans('string.timeline_6') }}</li>
                                     </ul>
 
                                 </div>
@@ -222,7 +222,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">2017</h4>
                                     <ul>
-                                        <li>通过ISO22000认证​</li>
+                                        <li>{{ trans('string.timeline_7') }}</li>
                                     </ul>
 
                                 </div>
@@ -235,7 +235,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">2019</h4>
                                     <ul>
-                                        <li>上海业务中心正式启用​</li>
+                                        <li>{{ trans('string.timeline_8') }}</li>
                                     </ul>
 
                                 </div>
