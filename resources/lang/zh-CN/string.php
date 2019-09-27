@@ -68,7 +68,7 @@ return [
     'not_validate' => '登录必须通过验证',
     'send_valid_letter' => '寄送验证信',
 
-    'company_tw' => '台湾葡萄王生技股份有限公司',
+    'company_tw' => '葡萄王生技股份有限公司',
     'about_1' => '发展历程',
     'about_2' => '关于创办人',
     'about_3' => '全球认证',
