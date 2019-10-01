@@ -105,7 +105,7 @@ $(".slider-nav").on('init', function () {
             </div>
             <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt="">
             <h3 class="about-section-title" id="about_1">{{ trans('string.about_1') }}</h3>
-            <div class="content" id="timeline-content">
+            <div class="content" id="timeline-content" style="margin-bottom: 50px;">
                 <div class="years">
                     <div class="slider">
                         <div class="dots slider-nav firstIndex">
