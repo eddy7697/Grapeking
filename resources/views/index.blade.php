@@ -66,13 +66,18 @@
         import { CountUp } from '/js/plugins/countup/countUp.min.js';
 
         window.onload = function() {
+            var countOption = {
+                duration: 2,
+                useEasing: true
+            }
             var countUpYear = new CountUp('count-year', 1969, {
-                useGrouping: false
+                useGrouping: false,
+                duration: 5,
+                useEasing: true
             });
-            var countUpProd = new CountUp('count-prod', 32);
-            var countUpMem = new CountUp('count-mem', 83);
-            var countUpReturn = new CountUp('count-return', 70
-            );
+            var countUpProd = new CountUp('count-prod', 32, countOption);
+            var countUpMem = new CountUp('count-mem', 83, countOption);
+            var countUpReturn = new CountUp('count-return', 70, countOption);
 
             $(window).scroll(function(){
                 if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 200) {
