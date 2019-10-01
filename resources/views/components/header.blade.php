@@ -102,8 +102,8 @@
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/about/course" class="site-mega-menu-link">
-                            <img src="/img/menu/res.jpg" alt="{{ trans('string.about_1') }}">
-                            <p class="header-job-txt">{{ trans('string.about_1') }}</p>
+                            <img src="/img/menu/res.jpg" alt="{{ trans('string.about13') }}">
+                            <p class="header-job-txt">{{ trans('string.about13') }}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
