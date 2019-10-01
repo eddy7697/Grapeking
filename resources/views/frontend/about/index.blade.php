@@ -1,21 +1,30 @@
 @extends('main')
 
 @section('custom-script')
+<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
-var sections = ['#about_1', '#about_2', '#about_3', '#about_4'];
 
-$(window).scroll(function () {
-    var offsetSet = []
-    sections.forEach(elm => {
-        
-    });    
-});
+new PerfectScrollbar('.thumb-container');
+// var sections = ['#about_1', '#about_2', '#about_3', '#about_4'];
+
+// $(window).scroll(function () {
+//     var offsetSet = []
+//     sections.forEach(elm => {
+//         offsetSet.push({
+//             elm: elm,
+//             offset: $(elm).offset().top - $(window).scrollTop() - 200
+//         });
+//     });
+
+//     console.log(offsetSet)
+// });
 
 
 </script>
 @endsection
 
 @section('custom-style')
+<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
     background-image: url('/img/about/banner.jpg');

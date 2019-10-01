@@ -9,7 +9,7 @@
 @endphp
 
 <section class="site-header">
-    <div class="container-fluid" style="background-color: rgba(255, 255, 255, 1);">
+    <div class="container-fluid" id="site-header-bar" style="background-color: rgba(255, 255, 255, 1);">
         <div class="row top-bar">
             <div class="col-md-12 mx-auto">
                 <div class="row">
