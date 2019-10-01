@@ -14,7 +14,7 @@
             <a href="/about/course">{{ trans('string.about13') }}</a>
             <ul class="sub-thumb">
                 <li class="single"><a href="/about/course#about_1">{{ trans('string.about13') }}</a></li>
-                <li><a href="/about#about_5">{{ trans('string.about11') }}</a></li>
+                <li><a href="/about/course#about_5">{{ trans('string.about11') }}</a></li>
             </ul>
         </li>
         <li>
