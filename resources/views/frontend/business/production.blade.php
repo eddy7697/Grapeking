@@ -208,7 +208,7 @@ $('.material_box').on('click', function (e) {
                             <div class="prod_box material_box active" data-material="#material_1">
                                 <div class="prod_box_inner">
                                     <img src="/img/business/factory-icon-1.png" alt="">
-                                    <p>{{ trans('string.business_1') }}</p>
+                                    <p>{!! trans('string.business_1') !!}</p>
                                 </div>                                
                             </div>                            
                         </div>

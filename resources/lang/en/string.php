@@ -339,7 +339,7 @@ return [
     'product_item' => 'Product item',
     'training_team' => 'Professional training team',
 
-    'business_1' => 'Oral liquid (glass bottle)',
+    'business_1' => 'Oral liquid<br>(glass bottle)',
     'business_2' => 'Tablet / Lots',
     'business_3' => 'Powder / Granules',
     'business_4' => 'Coffee Capsule',
