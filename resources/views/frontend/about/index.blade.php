@@ -1,7 +1,18 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+var sections = ['#about_1', '#about_2', '#about_3', '#about_4'];
 
+$(window).scroll(function () {
+    var offsetSet = []
+    sections.forEach(elm => {
+        
+    });    
+});
+
+
+</script>
 @endsection
 
 @section('custom-style')

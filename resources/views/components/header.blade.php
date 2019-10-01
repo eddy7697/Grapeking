@@ -171,7 +171,7 @@
                     <h3>{{ trans('string.research') }}</h3>
                     <hr>
                     @unless (App::getLocale() == 'en')
-                        <p>Research</p>    
+                        <p>Professional R&D</p>    
                     @endunless
                     
                 </div>
