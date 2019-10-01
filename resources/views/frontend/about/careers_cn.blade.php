@@ -167,19 +167,19 @@
                         </li>
                         <li class="site-mega-menu-item">
                             <a href="/about/course" class="site-mega-menu-link">
-                                <img src="/img/menu/res.jpg" alt="发展历程">
-                                <p class="header-job-txt">发展历程</p>
+                                <img src="/img/menu/future.jpg" alt="愿景与历程">
+                                <p class="header-job-txt">愿景与历程</p>
                             </a>
                         </li>
                         <li class="site-mega-menu-item">
                             <a href="/about/founder" class="site-mega-menu-link">
-                                <img src="/img/menu/hr.jpg" alt="关于创办人">
+                                <img src="/img/menu/founder.jpg" alt="关于创办人">
                                 <p class="header-job-txt">关于创办人</p>
                             </a>
                         </li>
                         <li class="site-mega-menu-item">
                             <a href="/about/certification" class="site-mega-menu-link">
-                                <img src="/img/menu/download.jpg" alt="全球认证">
+                                <img src="/img/menu/global.jpg" alt="全球认证">
                                 <p class="header-job-txt">全球认证</p>
                             </a>
                         </li>
@@ -299,7 +299,7 @@
                         </li>
                         <li class="site-mega-menu-item">
                             <a href="/csr/creation" class="site-mega-menu-link">
-                                <img src="/img/menu/creation.jpg" alt="研发创新">
+                                <img src="/img/menu/inovation.jpg" alt="研发创新">
                                 <p class="header-job-txt">研发创新</p>
                             </a>
                         </li>

@@ -102,19 +102,19 @@
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/about/course" class="site-mega-menu-link">
-                            <img src="/img/menu/res.jpg" alt="{{ trans('string.about13') }}">
+                            <img src="/img/menu/future.jpg" alt="{{ trans('string.about13') }}">
                             <p class="header-job-txt">{{ trans('string.about13') }}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/about/founder" class="site-mega-menu-link">
-                            <img src="/img/menu/hr.jpg" alt="{{ trans('string.about_2') }}">
+                            <img src="/img/menu/founder.jpg" alt="{{ trans('string.about_2') }}">
                             <p class="header-job-txt">{{ trans('string.about_2') }}</p>
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/about/certification" class="site-mega-menu-link">
-                            <img src="/img/menu/download.jpg" alt="{{ trans('string.about_3') }}">
+                            <img src="/img/menu/global.jpg" alt="{{ trans('string.about_3') }}">
                             <p class="header-job-txt">{{ trans('string.about_3') }}</p>
                         </a>
                     </li>
@@ -240,7 +240,7 @@
                     </li>
                     <li class="site-mega-menu-item">
                         <a href="/csr/creation" class="site-mega-menu-link">
-                            <img src="/img/menu/creation.jpg" alt="{{trans('string.creation')}}">
+                            <img src="/img/menu/inovation.jpg" alt="{{trans('string.creation')}}">
                             <p class="header-job-txt">{{trans('string.creation')}}</p>
                         </a>
                     </li>
