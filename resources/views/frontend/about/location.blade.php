@@ -91,7 +91,7 @@
                                     <p>{{ trans('string.location_n_1') }}</p>
                                     <p>{{ trans('string.location_n_2') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn">{{ trans('string.about4') }}</a>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
                                 </div>
                                 <div class="col-md-7">
@@ -121,7 +121,7 @@
                                     <p>{{ trans('string.location_n_1') }}</p>
                                     <p>{{ trans('string.location_n_2') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn">{{ trans('string.about4') }}</a>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
                                 </div>
                                 <div class="col-md-7">
@@ -151,7 +151,7 @@
                                     <p>{{ trans('string.location_n_1') }}</p>
                                     <p>{{ trans('string.location_n_2') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn">{{ trans('string.about4') }}</a>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
                                 </div>
                                 <div class="col-md-7">
@@ -181,7 +181,7 @@
                                     <p>{{ trans('string.location_n_1') }}</p>
                                     <p>{{ trans('string.location_n_2') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn">{{ trans('string.about4') }}</a>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
                                 </div>
                                 <div class="col-md-7">
