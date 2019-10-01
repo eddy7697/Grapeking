@@ -99,6 +99,11 @@ $(".slider-nav").on('init', function () {
 <div class="container">
     <div class="row">
         <div class="col-md-9 about-content wp history">
+            <h3 class="about-section-title" id="about_5">{{ trans('string.about11') }}</h3>
+            <div class="about-text">
+                {!! trans('string.about12') !!}
+            </div>
+            <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt="">
             <h3 class="about-section-title" id="about_1">{{ trans('string.about_1') }}</h3>
             <div class="content" id="timeline-content">
                 <div class="years">
@@ -255,15 +260,11 @@ $(".slider-nav").on('init', function () {
             <div class="about-text">
                 {!! trans('string.about14') !!}
             </div> --}}
-            <img class="about-image" src="/img/about/course_pic.jpg" alt="">
+            {{-- <img class="about-image" src="/img/about/course_pic.jpg" alt=""> --}}
             {{-- <div class="about-text">
                 {!! trans('string.about15') !!}
             </div> --}}
-            <h3 class="about-section-title" id="about_5">{{ trans('string.about11') }}</h3>
-            <div class="about-text">
-                {!! trans('string.about12') !!}
-            </div>
-            <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt="">
+            
         </div>
         <div class="col-md-3 about-thumbnail">
             @include('components.aboutThumbnail')
