@@ -1,6 +1,33 @@
 @extends('main')
 
 @section('custom-script')
+<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script>
+new PerfectScrollbar('.thumb-container');
+
+$(window).scroll(function () {
+    var windowScrollTop = $(window).scrollTop();
+    var headerHeight = $('#site-header-bar').height() + $('.sub-page-banner').height();
+    var menuHeight = $('.site-header').height();
+    var elmHeight = $(window).scrollTop() < $('.site-footer').offset().top - $(window).height() ? $(window).height() - $('.site-header').height() : $('.site-footer').offset().top - $(window).scrollTop() - $('.site-header').height()
+
+    if (windowScrollTop > headerHeight - 140) {
+        $('.thumb-container').css({
+            'position': 'fixed',
+            'top': (menuHeight - 32) + 'px',
+            'left': $('.about-thumbnail').offset().left + 32,
+            'height': elmHeight
+        });
+    } else {
+        $('.thumb-container').css({
+            'position': 'initial',
+            'top': 'initial',
+            'left': 'initial',
+            'height': 'initial'
+        });
+    }
+});
+</script>
 <script>
     $('.cert-album').slick({
         dots: true,
@@ -41,6 +68,7 @@
 @endsection
 
 @section('custom-style')
+<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
     background-image: url('/img/about/certification/banner.jpg');
