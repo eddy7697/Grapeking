@@ -8,13 +8,13 @@
                 <li><a href="/about#about_2">{{ trans('string.about5') }}</a></li>
                 <li><a href="/about#about_3">{{ trans('string.about7') }}</a></li>
                 <li><a href="/about#about_4">{{ trans('string.about9') }}</a></li>
-                <li><a href="/about#about_5">{{ trans('string.about11') }}</a></li>
             </ul>
         </li>
         <li>
             <a href="/about/course">{{ trans('string.about13') }}</a>
             <ul class="sub-thumb">
                 <li class="single"><a href="/about/course#about_1">{{ trans('string.about13') }}</a></li>
+                <li><a href="/about#about_5">{{ trans('string.about11') }}</a></li>
             </ul>
         </li>
         <li>
