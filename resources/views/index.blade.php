@@ -72,19 +72,23 @@
             }
             var countUpYear = new CountUp('count-year', 1969, {
                 useGrouping: false,
-                duration: 5,
+                duration: 2,
                 useEasing: true
             });
             var countUpProd = new CountUp('count-prod', 32, countOption);
             var countUpMem = new CountUp('count-mem', 83, countOption);
             var countUpReturn = new CountUp('count-return', 70, countOption);
-
+            var counted = false
+            
             $(window).scroll(function(){
-                if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 200) {
-                    countUpYear.start();
-                    countUpProd.start();
-                    countUpMem.start();
-                    countUpReturn.start();
+                if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 400) {
+                    if (!counted) {
+                        countUpYear.start();
+                        countUpProd.start();
+                        countUpMem.start();
+                        countUpReturn.start();
+                        counted = true
+                    }
                 }
             });
 
