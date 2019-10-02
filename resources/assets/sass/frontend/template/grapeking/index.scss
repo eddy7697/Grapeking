@@ -571,7 +571,7 @@ $font_0: icomoon;
 		margin-top: 50px;
 	}
 	.years .slider {
-		padding: 0 30px;
+		padding: 0 40px;
 		.slider-nav {
 			padding-left: 20px;
 			padding-right: 0;
@@ -579,7 +579,7 @@ $font_0: icomoon;
 				width: 20px;
 			}
 			.slick-arrow {
-				top: calc(50% +29px);
+				top: calc(50% + 29px);
 				&.slick-prev {
 					left: -45px;
 				}
@@ -2891,8 +2891,7 @@ $font_0: icomoon;
 
     .mobile-to-center {
         text-align: center;
-    }
-    
+    }    
 }
 
 .content {

@@ -335,7 +335,7 @@
             <li><a class="menu-item-dropdown">关于上海葡萄王</a>
                 <ul>
                     <li><a href="/about">关于我们</a></li>
-                    <li><a href="/about/course">发展历程</a></li>
+                    <li><a href="/about/course">愿景与历程</a></li>
                     <li><a href="/about/founder">关于创办人</a></li>
                     <li><a href="/about/certification">全球认证</a></li>
                     <li><a href="/about/location">全球布局</a></li>

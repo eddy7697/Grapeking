@@ -276,7 +276,7 @@
         <li><a class="menu-item-dropdown">{{ trans('string.about') }}</a>
             <ul>
                 <li><a href="/about">{{ trans('string.about_us') }}</a></li>
-                <li><a href="/about/course">{{ trans('string.about_1') }}</a></li>
+                <li><a href="/about/course">{{ trans('string.about13') }}</a></li>
                 <li><a href="/about/founder">{{ trans('string.about_2') }}</a></li>
                 <li><a href="/about/certification">{{ trans('string.about_3') }}</a></li>
                 <li><a href="/about/location">{{ trans('string.about_4') }}</a></li>

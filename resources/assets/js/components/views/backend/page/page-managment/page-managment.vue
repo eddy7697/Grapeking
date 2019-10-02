@@ -1,58 +1,107 @@
 <template>
     <div class="row">
-        <div class="col-md-6">
-            <table class="table field-table">
-                <tr>
-                    <td><label>網站標題</label></td>
-                </tr>
-                <tr>
-                    <td><input type="text" class="form-control" v-model="siteMeta.title"></td>
-                </tr>
-                <tr>
-                    <td><label>網站關鍵字</label></td>
-                </tr>
-                <tr>
-                    <td><input type="text" class="form-control" v-model="siteMeta.keyword"></td>
-                </tr>
-                <tr>
-                    <td>網站描述</td>
-                </tr>
-                <tr>
-                    <td><textarea class="form-control" v-model="siteMeta.description" style="resize: vertical;"></textarea></td>
-                </tr>
-                <tr>
-                    <td><label>網站縮圖</label></td>
-                </tr>
-                <tr>
-                    <td>
-                        <button class="btn btn-primary" type="button" v-if="(siteMeta.shortcut === null) || (siteMeta.shortcut === '')" @click="addShortCut()">
-                            <i class="fa fa-plus" aria-hidden="true"></i>
-                        </button>
-                        <img width="50%" @click="addShortCut()" v-bind:src="siteMeta.shortcut" v-else>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div v-if="isDirty" class="pull-left">
-                            <button type="button" class="btn btn-primary" v-if="isEdit" @click="editMeta()">儲存設定</button>
-                            <button type="button" class="btn btn-primary" v-else @click="newMeta()">新增設定</button>
-                        </div>
-                        <div v-else class="pull-left">
-                            <button type="button" class="btn btn-primary" v-if="isEdit" disabled>儲存設定</button>
-                            <button type="button" class="btn btn-primary" v-else disabled>新增設定</button>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        <div class="col-md-8">
+            <el-tabs tab-position="top" v-model="activeTab">
+                <el-tab-pane label="網站資訊" name="first">
+                    <table class="table field-table">
+                        <tr>
+                            <td><label>網站標題</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" v-model="siteMeta.title"></td>
+                        </tr>
+                        <tr>
+                            <td><label>網站關鍵字</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="form-control" v-model="siteMeta.keyword"></td>
+                        </tr>
+                        <tr>
+                            <td>網站描述</td>
+                        </tr>
+                        <tr>
+                            <td><textarea class="form-control" v-model="siteMeta.description" style="resize: vertical;"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label>網站縮圖</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btn btn-primary" type="button" v-if="(siteMeta.shortcut === null) || (siteMeta.shortcut === '')" @click="addShortCut()">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                                <img width="50%" @click="addShortCut()" v-bind:src="siteMeta.shortcut" v-else>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div v-if="isDirty" class="pull-left">
+                                    <button type="button" class="btn btn-primary" v-if="isEdit" @click="editMeta()">儲存設定</button>
+                                    <button type="button" class="btn btn-primary" v-else @click="newMeta()">新增設定</button>
+                                </div>
+                                <div v-else class="pull-left">
+                                    <button type="button" class="btn btn-primary" v-if="isEdit" disabled>儲存設定</button>
+                                    <button type="button" class="btn btn-primary" v-else disabled>新增設定</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </el-tab-pane>
+                <el-tab-pane label="歷史沿革管理" name="second">
+                    <el-collapse>
+                        <el-collapse-item v-for="(item, index) in siteMeta.timeline" :key="index" :title="`標題 : ${item.year}`" :name="index">
+                            <div v-html="item.content"></div>
+                            <div style="width: 100%; text-align: right; margin-top: 15px;">
+                                <el-button type="success" @click="editContent(item, index)">編輯</el-button>
+                                <el-button type="danger" @click="removeTimeline(index)">刪除</el-button>
+                            </div>
+                        </el-collapse-item>
+                    </el-collapse>
+                    <el-button type="primary" icon="el-icon-plus" plain style="color: #fff; width: 100%; margin-top: 10px;" @click="addContent">新增內容</el-button>
+                </el-tab-pane>
+            </el-tabs>
+            <el-dialog
+                :title="timelineContentEditStatus ? '編輯內容' : '新增內容'"
+                :visible.sync="dialogVisible"
+                width="500px"
+                :close-on-click-modal="false"
+                :close-on-press-escape="false"
+                :show-close="false"
+                :before-close="handleClose">
+                <el-form label-position="top" label-width="80px" :model="timelineContent">
+                    <el-form-item label="年份">
+                        <el-input v-model="timelineContent.year"></el-input>
+                    </el-form-item>
+                    <el-form-item label="內容">
+                        <el-input v-model="timelineContent.content" type="textarea"></el-input>
+                    </el-form-item>
+                </el-form>
+                <span slot="footer" class="dialog-footer">
+                    <el-button @click="handleClose()">取 消</el-button>
+                    <el-button type="primary" @click="saveContent()">確 定</el-button>
+                </span>
+            </el-dialog>
         </div>
 
     </div>
 </template>
 
 <script>
+    import ElementUI from 'element-ui';
+    import 'element-ui/lib/theme-chalk/index.css';
+    import lang from 'element-ui/lib/locale/lang/zh-TW'
+    import locale from 'element-ui/lib/locale'    
+
+    Vue.use(ElementUI)
+    locale.use(lang)
+
     export default {
         data() {
             return {
+                editIndex: 1,
+                activeTab: 'second',
+                timelineContentEditStatus: false,
+                dialogVisible: false,
                 siteMeta: {
                     title: null,
                     keyword: null,
@@ -61,7 +110,12 @@
                     pageTopContent: null,
                     pageTopLink: null,
                     pageTopButton: null,
-                    index_album: []
+                    index_album: [],
+                    timeline: []
+                },
+                timelineContent: {
+                    year: null,
+                    content: null
                 },
                 picTitle: null,
                 picUrl: null,
@@ -103,6 +157,7 @@
                     self.siteMeta.pageTopButton = result.data.pageTopButton;
                     self.siteMeta.pageTopLink = result.data.pageTopLink;
                     self.siteMeta.index_album = JSON.parse(result.data.index_album);
+                    self.siteMeta.timeline = result.data.timeline ? JSON.parse(result.data.timeline) : [];
 
                     self.isEdit = true;
                     self.isDirty = false;
@@ -146,42 +201,54 @@
                 }
 
             },
-            newMeta: function () {
-                var self = this;
-                var token = this.token;
+            removeTimeline(index) {
+                let check = confirm('請問是否要刪除此時間軸紀錄?')
 
-                $('.loading-bar').fadeIn('fast');
+                if (!check) {
+                    return
+                }
 
-                $.ajax({
-                    url: '/admin/page/meta/set',
-                    type: 'POST',
-                    dataType: 'json',
-                    data: {
-                        title: self.siteMeta.title,
-                        keyword: self.siteMeta.keyword,
-                        description: self.siteMeta.description,
-                        shortcut: self.siteMeta.shortcut,
-                        pageTopLink: self.siteMeta.pageTopLink,
-                        pageTopButton: self.siteMeta.pageTopButton,
-                        pageTopContent: self.siteMeta.pageTopContent,
-                        index_album: JSON.stringify(self.siteMeta.index_album)
-                    },
-                    beforeSend: function(xhr) {
-                        xhr.setRequestHeader('X-CSRF-TOKEN', token);
-                    }
-                })
-                .done(function() {
-                    toastr.success('編輯網站資訊成功')
-                    self.getMeta();
-                })
-                .fail(function() {
-                    // console.log("error");
-                })
-                .always(function() {
-                    $('.loading-bar').fadeOut('fast');
-                    // console.log("complete");
-                });
+                this.siteMeta.timeline.splice(index, 1)
+                this.saveMeta()
+            },
+            addContent() {                
+                this.timelineContentEditStatus = false
+                this.dialogVisible = true
+            },
+            editContent(item, index) {
+                this.editIndex = index
+                this.timelineContent = JSON.parse(JSON.stringify(item))
+                this.timelineContentEditStatus = true
+                this.dialogVisible = true
+            },
+            saveContent() {
+                let content = JSON.parse(JSON.stringify(this.timelineContent))
 
+                if (this.timelineContentEditStatus) {
+                    this.siteMeta.timeline[this.editIndex] = content
+                } else {
+                    this.siteMeta.timeline.push(content)
+                }
+
+                this.$nextTick(() => {
+                    this.saveMeta()
+                    this.handleClose()
+                })
+            },
+            handleClose() {
+                this.clearTimelineObj()
+                this.dialogVisible = false
+            },
+            clearTimelineObj() {
+                this.timelineContent.year = null
+                this.timelineContent.content = null
+            },
+            saveMeta() {
+                if (this.isEdit) {
+                    this.editMeta()
+                } else {
+                    this.newMeta()
+                }
             },
             editMeta: function () {
                 var self = this;
@@ -201,7 +268,8 @@
                         pageTopLink: self.siteMeta.pageTopLink,
                         pageTopButton: self.siteMeta.pageTopButton,
                         pageTopContent: self.siteMeta.pageTopContent,
-                        index_album: JSON.stringify(self.siteMeta.index_album)
+                        index_album: JSON.stringify(self.siteMeta.index_album),
+                        timeline: JSON.stringify(self.siteMeta.timeline)
                     },
                     beforeSend: function(xhr) {
                         xhr.setRequestHeader('X-CSRF-TOKEN', token);
@@ -218,7 +286,54 @@
                     $('.loading-bar').fadeOut('fast');
                     // console.log("complete");
                 });
-            }
+            },
+            newMeta: function () {
+                var self = this;
+                var token = this.token;
+
+                $('.loading-bar').fadeIn('fast');
+
+                $.ajax({
+                    url: '/admin/page/meta/set',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {
+                        title: self.siteMeta.title,
+                        keyword: self.siteMeta.keyword,
+                        description: self.siteMeta.description,
+                        shortcut: self.siteMeta.shortcut,
+                        pageTopLink: self.siteMeta.pageTopLink,
+                        pageTopButton: self.siteMeta.pageTopButton,
+                        pageTopContent: self.siteMeta.pageTopContent,
+                        index_album: JSON.stringify(self.siteMeta.index_album),
+                        timeline: JSON.stringify(self.siteMeta.timeline)
+                    },
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', token);
+                    }
+                })
+                .done(function() {
+                    toastr.success('編輯網站資訊成功')
+                    self.getMeta();
+                })
+                .fail(function() {
+                    // console.log("error");
+                })
+                .always(function() {
+                    $('.loading-bar').fadeOut('fast');
+                    // console.log("complete");
+                });
+
+            },
         }
     }
 </script>
+
+<style lang="scss">
+    .el-collapse-item__header {
+        padding-left: 10px;
+    }
+    .el-collapse-item__content {
+        padding: 10px;
+    }
+</style>

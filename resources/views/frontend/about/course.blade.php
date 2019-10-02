@@ -5,11 +5,23 @@
 <script>
 new PerfectScrollbar('.thumb-container');
 
+updatePosition();
+updateLayout();
+
 $(window).scroll(function () {
+    updatePosition();
+});
+
+$(window).resize(function () {
+    updatePosition();
+    updateLayout();
+});
+
+function updatePosition() {
     var windowScrollTop = $(window).scrollTop();
     var headerHeight = $('#site-header-bar').height() + $('.sub-page-banner').height();
     var menuHeight = $('.site-header').height();
-    var elmHeight = $(window).scrollTop() < $('.site-footer').offset().top - $(window).height() ? $(window).height() - $('.site-header').height() : $('.site-footer').offset().top - $(window).scrollTop() - $('.site-header').height()
+    var elmHeight = $(window).scrollTop() < $('.vdieo-present-section').offset().top - $(window).height() ? $(window).height() - $('.site-header').height() : $('.vdieo-present-section').offset().top - $(window).scrollTop() - $('.site-header').height()
 
     if (windowScrollTop > headerHeight - 140) {
         $('.thumb-container').css({
@@ -26,7 +38,17 @@ $(window).scroll(function () {
             'height': 'initial'
         });
     }
-});
+}
+
+function updateLayout() {
+    var windowWidth = $(window).width();
+
+    if (windowWidth > 768) {
+        $('#course-container').attr('class', 'container');
+    } else if (windowWidth <= 768) {
+        $('#course-container').attr('class', 'container max-xs-size');
+    }
+}
 </script>
 <script>
 var s = $("html"),
@@ -51,17 +73,17 @@ var s = $("html"),
         }, {
             breakpoint: 1200,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 3
             }
         }, {
             breakpoint: 992,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 3
             }
         }, {
             breakpoint: 768,
             settings: {
-                slidesToShow: 2
+                slidesToShow: 3
             }
         }]
     }), i.on("afterChange", function (o, s, e, n) {
@@ -124,7 +146,7 @@ $(".slider-nav").on('init', function () {
         </div>
     </div>
 </div>
-<div class="container">
+<div class="container" id="course-container">
     <div class="row">
         <div class="col-md-9 about-content wp history">
             <h3 class="about-section-title" id="about_5">{{ trans('string.about11') }}</h3>
