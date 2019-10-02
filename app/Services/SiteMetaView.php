@@ -52,6 +52,15 @@ class SiteMetaView
         }
     }
 
+    public static function timeline()
+    {
+        try {
+            return json_decode(SiteMeta::all()->first()['timeline']);
+        } catch (\Exception $e) {
+            return array();
+        }
+    }
+
     public static function pageTopLink()
     {
         try {

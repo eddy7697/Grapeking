@@ -1,5 +1,9 @@
 @extends('main')
 
+@php
+    $timeline = SiteMetaView::timeline();
+@endphp
+
 @section('custom-script')
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
@@ -159,7 +163,13 @@ $(".slider-nav").on('init', function () {
                 <div class="years">
                     <div class="slider">
                         <div class="dots slider-nav firstIndex">
-                            <div class="dot">
+                            @foreach ($timeline as $item)
+                                <div class="dot">
+                                    <p class="year">{{$item->year}}</p>
+                                    <span class="circle"></span>
+                                </div>
+                            @endforeach
+                            {{-- <div class="dot">
                                 <p class="year">1994</p>
                                 <span class="circle"></span>
                             </div>
@@ -190,11 +200,26 @@ $(".slider-nav").on('init', function () {
                             <div class="dot">
                                 <p class="year">2019</p>
                                 <span class="circle"></span>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <div class="slider-for lists">
-                        <div class="list">
+                        @foreach ($timeline as $item)
+                            <div class="list">
+                                <div class="row">
+                                    <div class="col-xs-12 col-lg-7 left">
+                                        <h4 class="year">{{$item->year}}</h4>
+                                        <ul>
+                                            <li>{!! $item->content->{App::getLocale()} !!}</li>
+                                        </ul>
+    
+                                    </div>
+                                    <div class="col-xs-12 col-lg-5 right">
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                        {{-- <div class="list">
                             <div class="row">
                                 <div class="col-xs-12 col-lg-7 left">
                                     <h4 class="year">1994</h4>
@@ -297,7 +322,7 @@ $(".slider-nav").on('init', function () {
                                 <div class="col-xs-12 col-lg-5 right">
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

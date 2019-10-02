@@ -496,14 +496,14 @@
                                 <div class="about-section-item">
                                     <div class="section-item">
                                         <div class="featureImage" style="background-image: url('{{$item['featureImage']}}')"></div>
-                                        <h3>{{$item['title']}}</h3>
+                                        <h3 class="{{App::getLocale() == 'en' ? 'smaller' : ''}}">{{$item['title']}}</h3>
                                         <div class="text">
                                             <div class="info-text">
                                                 {{mb_substr($item['content'],0,100,"utf-8")}}...
                                             </div>
                                         </div>
                                         <div class="btn-section">
-                                            <a href="{{$item['link']}}" class="learn-more-btn">了解更多</a>
+                                            <a href="{{$item['link']}}" class="learn-more-btn">{{ trans('string.learn_more') }}</a>
                                         </div>
                                         <a class="cover-link" href="{{$item['link']}}"></a>
                                     </div>
