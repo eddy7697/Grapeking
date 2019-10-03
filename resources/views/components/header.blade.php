@@ -267,7 +267,11 @@
 <section class="mobile-site-header">
     <div id="menu-btn" class="menu-btn"></div>
     <a class="header-logo" href="/"><img src="/img/site-logo/logo_footer.png" alt=""></a>
-    {{-- <img class="header-logo" src="/img/site-logo/logo_footer.png" alt=""> --}}
+    @if (App::getLocale() == 'en')
+        <a class="toggle-locale-btn" href="{{ route('lang.switch', 'zh-CN') }}">簡</a>    
+    @else
+        <a class="toggle-locale-btn" href="{{ route('lang.switch', 'en') }}">EN</a>    
+    @endif
     <img src="/img/icon/burger-open.svg" style="display: none">
     <img src="/img/icon/burger-close.svg" style="display: none">
 </section>

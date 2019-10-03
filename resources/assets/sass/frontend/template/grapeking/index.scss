@@ -636,6 +636,13 @@ $font_0: icomoon;
 	}
 }
 
+a.toggle-locale-btn {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-59%);
+    color: #fff;
+}
 
 .site-mega-menu-overlay {
     position: fixed;
