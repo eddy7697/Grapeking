@@ -299,7 +299,7 @@
             <div class="col-sm-6 col-md-3 factory-item food-safety">
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>{{ trans('string.food_safty_center') }}</p>
+                    <p>食安中心</p>
                     <p>Food safety center</p>
                 </div>
                 <a href="/research/foodsafty"></a>
@@ -307,7 +307,7 @@
             <div class="col-sm-6 col-md-3 factory-item bioengineering">
                 <div class="border-bar"></div>                
                 <div class="factory-item-info">
-                    <p>{{ trans('string.bioengineering_center') }}</p>
+                    <p>生物科技研究所</p>
                     <p>Bioengineering Center</p>
                 </div>
                 <a href="/research/bioengineering"></a>
@@ -315,7 +315,7 @@
             <div class="col-sm-6 col-md-3 factory-item innovation">
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>{{ trans('string.innovation_rnd_center') }}</p>
+                    <p>创新研发中心</p>
                     <p>Innovation R&D Center</p>
                 </div>                
                 <a href="/research/innovation"></a>
@@ -323,7 +323,7 @@
             <div class="col-sm-6 col-md-3 factory-item factory">                
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>{{ trans('string.world_class_factory') }}</p>
+                    <p>世界级工厂</p>
                     <p>World class factory</p>
                 </div>
                 <a href="/research/factory"></a>
@@ -483,7 +483,7 @@
                         ],
                         [
                             'featureImage' => '/img/about-section-3.jpg',
-                            'title' => App::getLocale() == 'en' ? trans('string.innovation_rnd_center') : '食品安全国际标准实验室​',
+                            'title' => App::getLocale() == 'en' ? 'Food Safety' : '食品安全​',
                             'link' => '/research/foodsafty',
                             'content' => trans('string.index_d_10')
                         ]
