@@ -48,15 +48,27 @@
                     </table>
                 </el-tab-pane>
                 <el-tab-pane label="歷史沿革管理" name="second">
-                    <el-collapse>
+                    <el-button type="success" @click="editMeta" size="small" style="margin-bottom: 15px;">儲存排序</el-button>
+                    <draggable :list="siteMeta.timeline" tag="el-collapse">
                         <el-collapse-item v-for="(item, index) in siteMeta.timeline" :key="index" :title="`標題 : ${item.year}`" :name="index">
-                            <div v-html="item.content"></div>
+                            <table class="padding-table">
+                                <tr>
+                                    <td>簡中</td>
+                                    <td v-html="nl2br(item.content['zh-CN'])"></td>
+                                </tr>
+                                <tr>
+                                    <td>英</td>
+                                    <td v-html="nl2br(item.content['en'])"></td>
+                                </tr>
+
+                            </table>
+                            
                             <div style="width: 100%; text-align: right; margin-top: 15px;">
-                                <el-button type="success" @click="editContent(item, index)">編輯</el-button>
-                                <el-button type="danger" @click="removeTimeline(index)">刪除</el-button>
+                                <el-button size="small" type="success" @click="editContent(item, index)">編輯</el-button>
+                                <el-button size="small" type="danger" @click="removeTimeline(index)">刪除</el-button>
                             </div>
                         </el-collapse-item>
-                    </el-collapse>
+                    </draggable>
                     <el-button type="primary" icon="el-icon-plus" plain style="color: #fff; width: 100%; margin-top: 10px;" @click="addContent">新增內容</el-button>
                 </el-tab-pane>
             </el-tabs>
@@ -72,8 +84,11 @@
                     <el-form-item label="年份">
                         <el-input v-model="timelineContent.year"></el-input>
                     </el-form-item>
-                    <el-form-item label="內容">
-                        <el-input v-model="timelineContent.content" type="textarea"></el-input>
+                    <el-form-item label="內容(簡中)">
+                        <el-input v-model="timelineContent.content['zh-CN']" type="textarea"></el-input>
+                    </el-form-item>
+                    <el-form-item label="內容(英)">
+                        <el-input v-model="timelineContent.content['en']" type="textarea"></el-input>
                     </el-form-item>
                 </el-form>
                 <span slot="footer" class="dialog-footer">
@@ -91,11 +106,15 @@
     import 'element-ui/lib/theme-chalk/index.css';
     import lang from 'element-ui/lib/locale/lang/zh-TW'
     import locale from 'element-ui/lib/locale'    
+    import draggable from 'vuedraggable'
 
     Vue.use(ElementUI)
     locale.use(lang)
 
     export default {
+        components: {
+            draggable
+        },
         data() {
             return {
                 editIndex: 1,
@@ -115,7 +134,10 @@
                 },
                 timelineContent: {
                     year: null,
-                    content: null
+                    content: {
+                        'zh-CN': null,
+                        en: null
+                    }
                 },
                 picTitle: null,
                 picUrl: null,
@@ -241,7 +263,8 @@
             },
             clearTimelineObj() {
                 this.timelineContent.year = null
-                this.timelineContent.content = null
+                this.timelineContent.content['en'] = null
+                this.timelineContent.content['zh-CN'] = null
             },
             saveMeta() {
                 if (this.isEdit) {
@@ -325,6 +348,9 @@
                 });
 
             },
+            nl2br( str ) {
+                return str.replace(/([^>])\n/g, '$1<br/>\n');
+            }
         }
     }
 </script>
@@ -335,5 +361,16 @@
     }
     .el-collapse-item__content {
         padding: 10px;
+    }
+    .padding-table {
+        width: 100%;
+
+        tr {
+            
+            td {
+                border: #ccc solid thin;
+                padding: 10px;
+            }
+        }
     }
 </style>

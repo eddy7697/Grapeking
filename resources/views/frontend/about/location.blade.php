@@ -104,7 +104,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" src="/img/about/grapeking.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/grapeking.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
@@ -134,7 +134,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" src="/img/about/site-logo.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/site-logo.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
@@ -164,7 +164,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" src="/img/about/dong-pu.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/dong-pu.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
@@ -194,7 +194,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" src="/img/about/pu-zun.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/pu-zun.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">

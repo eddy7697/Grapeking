@@ -1118,6 +1118,15 @@ $font_0: icomoon;
                     margin: 15px auto;
                     color: #666;
                     font-size: 24px;
+                    display : inline-block;
+                    overflow : hidden;
+                    text-overflow : ellipsis;
+                    white-space : nowrap;
+                    width : 100%;
+
+                    &.smaller {
+                        font-size: 20px;
+                    }
                 }
                 .text {
                     color: #999;
