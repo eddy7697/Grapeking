@@ -261,7 +261,7 @@ return [
 
     'food_safty_center' => 'Food Center',
     'inspection_process' => 'Test process',
-    'bioengineering_center' => 'Grape King Biotech Research Institute',
+    'bioengineering_center' => 'Biotech Research Institute',
     'professional_equipment' => 'Professional equipment',
     'repeated_success' => 'Frequently seen',
     'raw_material_introduction' => 'Introduction to raw materials',

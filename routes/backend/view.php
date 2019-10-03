@@ -7,11 +7,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 /*****************
     ADMIN
 *****************/
-// Route::get('/admin', function () {
-//     return view('backend.administrator.adminPage', [
-//         'panelTitle' => '主控台'
-//     ]);
-// });
+Route::get('/admin', function () {
+    return redirect('/');
+    return view('backend.administrator.adminPage', [
+        'panelTitle' => '主控台'
+    ]);
+});
 
 // Route::get('/admin/add', function () {
 //     return view('backend.administrator.addAdmin', [
