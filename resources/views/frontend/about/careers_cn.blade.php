@@ -179,8 +179,8 @@
                         </li>
                         <li class="site-mega-menu-item">
                             <a href="/about/certification" class="site-mega-menu-link">
-                                <img src="/img/menu/global.jpg" alt="全球认证">
-                                <p class="header-job-txt">全球认证</p>
+                                <img src="/img/menu/global.jpg" alt="国际级安心认证">
+                                <p class="header-job-txt">国际级安心认证</p>
                             </a>
                         </li>
                         <li class="site-mega-menu-item">
@@ -337,7 +337,7 @@
                     <li><a href="/about">关于我们</a></li>
                     <li><a href="/about/course">愿景与历程</a></li>
                     <li><a href="/about/founder">关于创办人</a></li>
-                    <li><a href="/about/certification">全球认证</a></li>
+                    <li><a href="/about/certification">国际级安心认证</a></li>
                     <li><a href="/about/location">全球布局</a></li>
                 </ul>
             </li>
@@ -487,7 +487,7 @@
                                         <a href="/about/founder">关于创办人</a>
                                     </li>
                                     <li>
-                                        <a href="/about/certification">全球认证</a>
+                                        <a href="/about/certification">国际级安心认证</a>
                                     </li>
                                     <li>
                                         <a href="/about/location">全球布局</a>
