@@ -169,6 +169,16 @@ $(function () {
         }
         
     });
+    
+    if (!localStorage.cookies_accept) {
+        $('.cookies-bar').show()
+    }
+
+    $('.cookies-btn').on('click', () => {
+        localStorage.cookies_accept = true
+        $('.cookies-bar').hide()
+    })
+
 
 });
 

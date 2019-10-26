@@ -467,4 +467,7 @@ return [
     'timeline_6' => "Won the demonstration plant of the Yangtze River Delta Health Care Zone.",
     'timeline_7' => "ISO22000 certified.",
     'timeline_8' => "Shanghai Business Center officially opened.",
+
+    'cookie_definition' => "To provide you with the best personalized and instant service, this website records and accesses your browsing usage messages through the use of cookies. By using this website, you agree to the technical support of cookies.",
+    'accept' => 'Accept'
 ];

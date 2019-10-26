@@ -467,4 +467,7 @@ return [
     'timeline_6' => "荣获营养保健长三角区示范工厂​",
     'timeline_7' => "通过ISO22000认证​",
     'timeline_8' => "上海业务中心正式启用​",
+
+    'cookie_definition' => "提供您最佳个人化且即时的服务，本网站透过使用Cookies记录与存取您的浏览使用消息。当您使用本网站，即表示您同意Cookies技术支持。",
+    'accept' => '同意'
 ];

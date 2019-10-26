@@ -13,6 +13,18 @@
 
 </head>
 <body>
+    <div class="cookies-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9" style="padding-top: 30px; padding-bottom: 30px">
+                    {{ trans('string.cookie_definition') }}
+                </div>
+                <div class="col-md-3 btn-sec" style="text-align: right">
+                    <button class="btn cookies-btn">{{ trans('string.accept') }}</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     {{-- Loading --}}
     <div class="loading-bar">
