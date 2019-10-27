@@ -36,6 +36,7 @@ $(window).scroll(function () {
 <style>
 .sub-page-banner {
     background-image: url('/img/about/global/banner.jpg');
+    background-position: 80% center;
 }
 </style>
 @endsection
@@ -61,27 +62,52 @@ $(window).scroll(function () {
             </div>
         </div>
     </div>
+    <div class="global-loaction" data-aos="fade-in">
+        <div class="flat-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 about-content">
+                        <h3 class="about-section-title" id="about_3" style="margin-top: 0">{{ trans('string.about32') }}</h3>
+                        <div class="about-text">
+                            {!! trans('string.about33') !!}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location-map">
+            <div class="img-container">
+                <img src="/img/map/1.png" alt="" data-aos="fade-in">
+                <img src="/img/map/3.png" alt="" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                <img src="/img/map/4.png" alt="" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+                <img src="/img/map/5.png" alt="" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1000">
+                <img src="/img/map/6.png" alt="" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                <img src="/img/map/2.png" alt="" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
+            </div>
+        </div>
+        
+    </div>
+    <div class="location-gallary" style="margin-top: -50px">
+        @php
+            $albumPath = public_path('img/about/global/album/thumb');
+
+            $devices = preg_grep('~\.(jpeg|jpg|png)$~', scandir($albumPath));
+        @endphp
+        @if (true)
+            <div class="device-album" style="margin: 50px 0;">
+                @foreach ($devices as $item)
+                    <a data-fancybox="devices" href="/img/about/global/album/{{$item}}">
+                        <img width="100%" src="/img/about/global/album/thumb/{{$item}}" alt="">
+                    </a>
+                @endforeach
+            </div>    
+        @endif
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 about-content">
-                <h3 class="about-section-title" id="about_1">{{ trans('string.about32') }}</h3>
-                <div class="about-text">
-                    {!! trans('string.about33') !!}
-                </div>
-                @php
-                    $albumPath = public_path('img/about/global/album/thumb');
-
-                    $devices = preg_grep('~\.(jpeg|jpg|png)$~', scandir($albumPath));
-                @endphp
-                @if (false)
-                    <div class="device-album" style="margin: 50px 0;">
-                        @foreach ($devices as $item)
-                            <a data-fancybox="devices" href="/img/about/global/album/{{$item}}">
-                                <img width="100%" src="/img/about/global/album/thumb/{{$item}}" alt="">
-                            </a>
-                        @endforeach
-                    </div>    
-                @endif
+            
+            <div class="col-md-9 mx-auto about-content">
+                
                 
                 <div class="about-text">
                     <ul class="nav nav-tabs about-location-tab" id="myTab" role="tablist">
@@ -222,9 +248,9 @@ $(window).scroll(function () {
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 about-thumbnail">
+            {{-- <div class="col-md-3 about-thumbnail">
                 @include('components.aboutThumbnail')
-            </div>
+            </div> --}}
         </div>
     </div>
     
