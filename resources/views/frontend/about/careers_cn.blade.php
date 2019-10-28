@@ -89,7 +89,7 @@
                     <div class="row">
                         <div class="col-md-6 short-cut">
                             <ul style="    margin-top: 18px;">
-                                <li><a href="https://www.pro-partner.com.tw/" target="_blank">葡众企业</a></li>
+                                <li style="padding-left: 0"><a href="https://www.pro-partner.com.tw/" target="_blank">葡众企业</a></li>
                                 <li><a href="https://www.grapeking.com.tw/tw/home" target="_blank">台湾葡萄王</a></li>
                                 <li><a href="https://www.grapekingmuseum.com.tw/" target="_blank">健康活力能量馆</a></li>
                             </ul>
