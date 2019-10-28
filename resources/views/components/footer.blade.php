@@ -95,8 +95,8 @@
 </section>
 <section class="site-copyright">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-10 mx-auto">
+        <div class="row" style="max-width: 1420px; margin: 0 auto">
+            <div class="col-md-12 mx-auto">
                 <div class="row">
                     <div class="col-md-5 info" style="">
                         Copyright &copy; Shanghai Grape King Enterprises Corp.
