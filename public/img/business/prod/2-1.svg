@@ -1,0 +1,102 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734.32 472">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2 {
+                fill: none;
+                stroke: #eb7471;
+            }
+
+            .cls-1,
+            .cls-10,
+            .cls-2 {
+                stroke-miterlimit: 10;
+            }
+
+            .cls-1 {
+                stroke-width: 12px;
+            }
+
+            .cls-2 {
+                stroke-width: 9px;
+            }
+
+            .cls-3 {
+                font-size: 25px;
+            }
+
+            .cls-10,
+            .cls-3,
+            .cls-4,
+            .cls-6,
+            .cls-7,
+            .cls-8 {
+                fill: #fff;
+            }
+
+            .cls-3,
+            .cls-4,
+            .cls-5,
+            .cls-8 {
+                font-family: MicrosoftJhengHeiBold, Microsoft JhengHei;
+            }
+
+            .cls-4 {
+                font-size: 15px;
+            }
+
+            .cls-5 {
+                font-size: 76px;
+                fill: #eb7471;
+            }
+
+            .cls-6 {
+                opacity: 0.3;
+            }
+
+            .cls-8 {
+                font-size: 30.51px;
+            }
+
+            .cls-9 {
+                opacity: 0.8;
+            }
+
+            .cls-10 {
+                stroke: #fff;
+                stroke-width: 2px;
+            }
+        </style>
+    </defs>
+    <title>2-1</title>
+    <circle class="cls-1" cx="231.25" cy="240.49" r="101" />
+    <path class="cls-2"
+        d="M809.75,627l5.23-8.59a23.45,23.45,0,0,1,32.14-7.78h0a23.45,23.45,0,0,1,7.78,32.14L825.47,691a23.45,23.45,0,0,1-32.14,7.78h0a23.3,23.3,0,0,1-10.28-13.54"
+        transform="translate(-571.75 -404.51)" />
+    <circle class="cls-2" cx="209.58" cy="244.7" r="36.07" />
+    <line class="cls-2" x1="174.52" y1="253.19" x2="244.63" y2="236.21" />
+    <line class="cls-2" x1="268.43" y1="262.37" x2="245.47" y2="248.35" />
+    <line class="cls-1" x1="309.25" y1="308.49" x2="734.25" y2="308.49" /><text class="cls-3"
+        transform="translate(395.81 273.42)">固态产品</text><text class="cls-4"
+        transform="translate(395.81 338.42)">200mg、1300mg 瓶装</text><text class="cls-5"
+        transform="translate(582.32 270.19)">片剂</text>
+    <circle class="cls-6" cx="20.9" cy="382.32" r="4.17" />
+    <circle class="cls-6" cx="20.9" cy="360.41" r="4.17" />
+    <circle class="cls-6" cx="20.9" cy="338.49" r="4.17" />
+    <circle class="cls-6" cx="20.9" cy="316.58" r="4.17" />
+    <circle class="cls-7" cx="20.9" cy="294.67" r="4.17" /><text class="cls-8" transform="translate(5.64 123.15)">五
+        <tspan x="0" y="36.61">大</tspan>
+        <tspan x="0" y="73.22">剂</tspan>
+        <tspan x="0" y="109.83">型</tspan>
+    </text>
+    <circle class="cls-6" cx="21" cy="21" r="21" />
+    <g class="cls-9">
+        <polyline class="cls-7" points="16.06 18.43 21 13.49 25.94 18.43" />
+        <line class="cls-10" x1="21.21" y1="18.23" x2="21.21" y2="28.51" />
+    </g>
+    <circle class="cls-6" cx="21" cy="451" r="21" />
+    <g class="cls-9">
+        <polyline class="cls-7" points="25.94 453.57 21 458.51 16.06 453.57" />
+        <line class="cls-10" x1="20.79" y1="453.77" x2="20.79" y2="443.49" />
+    </g>
+</svg>

@@ -1,0 +1,109 @@
+<svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 734.74 472">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-5 {
+                fill: none;
+                stroke: #cacaca;
+            }
+
+            .cls-1,
+            .cls-11,
+            .cls-5 {
+                stroke-miterlimit: 10;
+            }
+
+            .cls-1 {
+                stroke-width: 12px;
+            }
+
+            .cls-2 {
+                font-size: 25px;
+            }
+
+            .cls-2,
+            .cls-3,
+            .cls-4 {
+                fill: #cacaca;
+            }
+
+            .cls-2,
+            .cls-3,
+            .cls-4,
+            .cls-8 {
+                font-family: MicrosoftJhengHeiBold, Microsoft JhengHei;
+            }
+
+            .cls-3 {
+                font-size: 15px;
+            }
+
+            .cls-4 {
+                font-size: 76px;
+            }
+
+            .cls-5 {
+                stroke-width: 8px;
+            }
+
+            .cls-11,
+            .cls-6,
+            .cls-7,
+            .cls-8 {
+                fill: #fff;
+            }
+
+            .cls-6,
+            .cls-9 {
+                opacity: 0.3;
+            }
+
+            .cls-8 {
+                font-size: 30.51px;
+            }
+
+            .cls-9 {
+                fill: #b1b1b1;
+            }
+
+            .cls-10 {
+                opacity: 0.8;
+            }
+
+            .cls-11 {
+                stroke: #fff;
+                stroke-width: 2px;
+            }
+        </style>
+    </defs>
+    <title>2-3</title>
+    <circle class="cls-1" cx="263.08" cy="236.49" r="101" />
+    <line class="cls-1" x1="334.75" y1="304.49" x2="733.75" y2="304.49" /><text class="cls-2"
+        transform="translate(395.81 282.67)">固态产品</text><text class="cls-3" transform="translate(395.81 337.67)">
+        <tspan xml:space="preserve">铝箔袋装(背封) 1.5g - 25g</tspan>
+    </text><text class="cls-4" transform="translate(582.74 189.98)">曲线<tspan x="-76" y="91.2">铝箔袋</tspan></text>
+    <path class="cls-5"
+        d="M850,702.15,786,683.4a7.16,7.16,0,0,1-4.86-8.89s14.89-33,18.25-44.5,8.68-47.38,8.68-47.38a7.17,7.17,0,0,1,8.89-4.86l64,18.75a7.17,7.17,0,0,1,4.86,8.89S870.92,638.5,867.56,650s-8.66,47.31-8.66,47.31A7.16,7.16,0,0,1,850,702.15Z"
+        transform="translate(-570.75 -403.51)" />
+    <line class="cls-5" x1="235.08" y1="186.86" x2="312.81" y2="209.65" />
+    <line class="cls-5" x1="212.3" y1="264.59" x2="290.03" y2="287.38" />
+    <circle class="cls-6" cx="20.9" cy="382.32" r="4.17" />
+    <circle class="cls-6" cx="20.9" cy="360.41" r="4.17" />
+    <circle class="cls-7" cx="20.9" cy="338.49" r="4.17" />
+    <circle class="cls-6" cx="20.9" cy="316.58" r="4.17" />
+    <circle class="cls-6" cx="20.9" cy="294.67" r="4.17" /><text class="cls-8" transform="translate(5.64 123.15)">五
+        <tspan x="0" y="36.61">大</tspan>
+        <tspan x="0" y="73.22">剂</tspan>
+        <tspan x="0" y="109.83">型</tspan>
+    </text>
+    <circle class="cls-9" cx="21" cy="21" r="21" />
+    <g class="cls-10">
+        <polyline class="cls-7" points="16.06 18.43 21 13.49 25.94 18.43" />
+        <line class="cls-11" x1="21.21" y1="18.23" x2="21.21" y2="28.51" />
+    </g>
+    <circle class="cls-9" cx="21" cy="451" r="21" />
+    <g class="cls-10">
+        <polyline class="cls-7" points="25.94 453.57 21 458.51 16.06 453.57" />
+        <line class="cls-11" x1="20.79" y1="453.77" x2="20.79" y2="443.49" />
+    </g>
+</svg>
