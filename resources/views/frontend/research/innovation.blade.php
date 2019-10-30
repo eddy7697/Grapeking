@@ -55,7 +55,7 @@ $(window).scroll(function () {
 <link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/research/banner-2.jpg');
+    background-image: url('/img/research/inno_banner.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
