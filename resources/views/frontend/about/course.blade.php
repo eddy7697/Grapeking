@@ -131,6 +131,17 @@ $(".slider-nav").on('init', function () {
 
 @section('content')
 <div class="sub-page-banner">
+    <div class="site-page-label">
+        <div class="container">
+            <div class="col-md-12 container-label">
+                <h2>
+                        愿景与历程
+                    <br>
+                    <span style="font-size: 16px;">Vision and History</span>
+                </h2>
+            </div>
+        </div>
+    </div>
     <div class="site-thumbnail-section">
         <div class="container">
             <div class="row">

@@ -50,6 +50,17 @@ $(window).scroll(function () {
 
 @section('content')
     <div class="sub-page-banner">
+        <div class="site-page-label">
+            <div class="container">
+                <div class="col-md-12 container-label">
+                    <h2>
+                        员工关系
+                        <br>
+                        <span style="font-size: 16px;">Employee relationship</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
         <div class="site-thumbnail-section">
             <div class="container">
                 <div class="row">

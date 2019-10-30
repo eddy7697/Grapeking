@@ -71,6 +71,17 @@ $(window).scroll(function () {
 
 @section('content')
 <div class="sub-page-banner">
+    <div class="site-page-label">
+        <div class="container">
+            <div class="col-md-12 container-label">
+                <h2>
+                        创新研发中心
+                    <br>
+                    <span style="font-size: 16px;">Innovative R&D Center</span>
+                </h2>
+            </div>
+        </div>
+    </div>
     <div class="site-thumbnail-section">
         <div class="container">
             <div class="row">

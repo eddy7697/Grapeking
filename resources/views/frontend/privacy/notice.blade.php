@@ -11,6 +11,17 @@
 @section('content')
 
 <div class="sub-page-banner">
+    <div class="site-page-label">
+        <div class="container">
+            <div class="col-md-12 container-label">
+                <h2>
+                        使用条款
+                    <br>
+                    <span style="font-size: 16px;">Terms of Use</span>
+                </h2>
+            </div>
+        </div>
+    </div>
     <div class="site-thumbnail-section">
         <div class="container">
             <div class="row">

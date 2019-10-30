@@ -1720,6 +1720,27 @@ a.toggle-locale-btn {
             height: 3px;
             width: 120px;
         }
+        .site-page-label {
+            position: absolute;
+            top: calc(50% + 60px);
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+
+            .container-label {
+                padding: 0;
+
+                h2 {
+                    text-shadow: 2px 2px 12px rgba($color: #000000, $alpha: .8);
+                    text-align: left;
+                    font-weight: 600;
+                    font-size: 2.4rem;
+                    padding: 0;
+                    margin: 0;
+                    line-height: 28px;
+                }
+            }
+        }
         .site-thumbnail-section {
             width: 100%;
             background-color: #efefef;

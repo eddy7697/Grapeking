@@ -155,6 +155,17 @@ $('.material_box').on('click', function (e) {
 
 @section('content')
     <div class="sub-page-banner">
+        <div class="site-page-label">
+            <div class="container">
+                <div class="col-md-12 container-label">
+                    <h2>
+                            生产服务
+                        <br>
+                        <span style="font-size: 16px;">Production service</span>
+                    </h2>
+                </div>
+            </div>
+        </div>
         <div class="site-thumbnail-section">
             <div class="container">
                 <div class="row">

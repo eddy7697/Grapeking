@@ -329,7 +329,7 @@ return [
 
     'business' => '业务体系',
     'production' => '生产服务',
-    'lump_sum' => '统包服务',
+    'lump_sum' => '整合服务',
     'professional' => '专业服务',
     'foundry' => '精确代工进程',
     'pro_foundry' => '专业代工',

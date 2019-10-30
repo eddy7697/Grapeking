@@ -372,6 +372,17 @@
 
     <section class="site-content" style="min-height: 413.208px;">
         <div class="sub-page-banner">
+            <div class="site-page-label">
+                <div class="container">
+                    <div class="col-md-12 container-label">
+                        <h2>
+                            人才招聘
+                            <br>
+                            <span style="font-size: 16px;">Careers</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
             <div class="site-thumbnail-section">
                 <div class="container">
                     <div class="row">
