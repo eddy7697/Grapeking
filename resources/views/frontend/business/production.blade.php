@@ -7,9 +7,10 @@ function tabShow(label) {
 }
 
 $('.nav-link').on('shown.bs.tab', function(event){
+    $('.prod-material').addClass('fadeInLeft animated')
+});
+$('.nav-link').on('hide.bs.tab', function(event){
     $('.prod-material').removeClass('fadeInLeft animated')
-
-    setTimeout(() => {$('.prod-material').addClass('fadeInLeft animated')}, 1)
 });
 </script>
 @endsection
