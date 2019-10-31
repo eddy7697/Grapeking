@@ -1,110 +1,110 @@
 <svg id="图层_1" data-name="图层 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 733.25 472">
     <defs>
         <style>
-            .cls-1 {
+            .cls_5-1 {
                 fill: none;
                 stroke-width: 12px;
             }
 
-            .cls-1,
-            .cls-5 {
+            .cls_5-1,
+            .cls_5-5 {
                 stroke: #1ba8d5;
             }
 
-            .cls-1,
-            .cls-11,
-            .cls-5 {
+            .cls_5-1,
+            .cls_5-11,
+            .cls_5-5 {
                 stroke-miterlimit: 10;
             }
 
-            .cls-2 {
+            .cls_5-2 {
                 font-size: 25px;
             }
 
-            .cls-11,
-            .cls-2,
-            .cls-3,
-            .cls-6,
-            .cls-7,
-            .cls-8 {
+            .cls_5-11,
+            .cls_5-2,
+            .cls_5-3,
+            .cls_5-6,
+            .cls_5-7,
+            .cls_5-8 {
                 fill: #fff;
             }
 
-            .cls-2,
-            .cls-3,
-            .cls-4,
-            .cls-8 {
+            .cls_5-2,
+            .cls_5-3,
+            .cls_5-4,
+            .cls_5-8 {
                 font-family: MicrosoftJhengHeiBold, Microsoft JhengHei;
             }
 
-            .cls-3 {
+            .cls_5-3 {
                 font-size: 15px;
             }
 
-            .cls-4 {
+            .cls_5-4 {
                 font-size: 76px;
             }
 
-            .cls-4,
-            .cls-5 {
+            .cls_5-4,
+            .cls_5-5 {
                 fill: #1ba8d5;
             }
 
-            .cls-5 {
+            .cls_5-5 {
                 stroke-width: 4px;
             }
 
-            .cls-7,
-            .cls-9 {
+            .cls_5-7,
+            .cls_5-9 {
                 opacity: 0.3;
             }
 
-            .cls-8 {
+            .cls_5-8 {
                 font-size: 30.51px;
             }
 
-            .cls-9 {
+            .cls_5-9 {
                 fill: #b1b1b1;
             }
 
-            .cls-10 {
+            .cls_5-10 {
                 opacity: 0.8;
             }
 
-            .cls-11 {
+            .cls_5-11 {
                 stroke: #fff;
                 stroke-width: 2px;
             }
         </style>
     </defs>
     <title>2-5</title>
-    <circle class="cls-1" cx="263.08" cy="226.24" r="101" />
-    <line class="cls-1" x1="341.25" y1="294.49" x2="733.25" y2="294.49" /><text class="cls-2"
-        transform="translate(395.81 274.67)">液态产品</text><text class="cls-3" transform="translate(395.81 325.67)">小容量
-        30ml、50ml / 大容量 100ml、150ml</text><text class="cls-4" transform="translate(502.74 267.95)">玻璃瓶</text>
-    <path class="cls-5"
+    <circle class="cls_5-1" cx="263.08" cy="226.24" r="101" />
+    <line class="cls_5-1" x1="341.25" y1="294.49" x2="733.25" y2="294.49" /><text class="cls_5-2"
+        transform="translate(395.81 274.67)">液态产品</text><text class="cls_5-3" transform="translate(395.81 325.67)">小容量
+        30ml、50ml / 大容量 100ml、150ml</text><text class="cls_5-4" transform="translate(502.74 267.95)">玻璃瓶</text>
+    <path class="cls_5-5"
         d="M864.51,605.83c-2.36-11.65-2.37-16.76.33-26.8l.43-1.63a2.56,2.56,0,0,0,1.85-1.79,2.63,2.63,0,0,0-1.88-3.19l-1.28-.34L846,567.27l-1.28-.35a2.65,2.65,0,0,0-3.24,1.83,2.42,2.42,0,0,0,.71,2.47l-.44,1.63c-2.69,10-5.25,14.46-13.13,23.37a51.67,51.67,0,0,0-10.5,18.69l-17.5,65.21A15.71,15.71,0,0,0,812,699.29l15.36,4.12a15.7,15.7,0,0,0,19.4-10.92l17.49-65.22A51.68,51.68,0,0,0,864.51,605.83Zm-22.88,85.28a10.53,10.53,0,0,1-12.94,7.29l-15.36-4.12a10.54,10.54,0,0,1-7.55-12.78l17.5-65.22a46.77,46.77,0,0,1,9.4-16.63c8.47-9.56,11.39-14.83,14.23-25.42l.34-1.26,12.8,3.44-.34,1.25c-2.84,10.6-2.94,16.62-.4,29.13a47.53,47.53,0,0,1-.19,19.11Z"
         transform="translate(-572.75 -404.51)" />
-    <path class="cls-5"
+    <path class="cls_5-5"
         d="M842.53,565l25.6,6.87a1.26,1.26,0,0,0,1.6-.85l1.06-4a1.32,1.32,0,0,0-.75-1.54,77.63,77.63,0,0,0-26-7,1.25,1.25,0,0,0-1.36,1l-1.06,4A1.16,1.16,0,0,0,842.53,565Zm22.86,1.77a1,1,0,0,1,1.21-.69l.64.17a1,1,0,0,1,.71,1.2l-.17.63a1,1,0,0,1-1.21.68l-.64-.17a1,1,0,0,1-.71-1.2Zm-5.12-1.38a1,1,0,0,1,1.21-.68l.64.17a1,1,0,0,1,.71,1.2l-.17.63a1,1,0,0,1-1.21.68l-.64-.17a1,1,0,0,1-.71-1.2ZM855.15,564a1,1,0,0,1,1.21-.68l.64.17a1,1,0,0,1,.71,1.2l-.17.62a1,1,0,0,1-1.21.69l-.64-.18a1,1,0,0,1-.71-1.19ZM850,562.62a1,1,0,0,1,1.21-.68l.64.17a1,1,0,0,1,.71,1.2l-.17.63a1,1,0,0,1-1.21.68l-.64-.17a1,1,0,0,1-.71-1.2Zm-5.12-1.37a1,1,0,0,1,1.21-.68l.64.17a1,1,0,0,1,.71,1.2l-.17.62a1,1,0,0,1-1.21.69l-.64-.17a1,1,0,0,1-.71-1.2Z"
         transform="translate(-572.75 -404.51)" />
-    <circle class="cls-6" cx="20.9" cy="382.32" r="4.17" />
-    <circle class="cls-7" cx="20.9" cy="360.41" r="4.17" />
-    <circle class="cls-7" cx="20.9" cy="338.49" r="4.17" />
-    <circle class="cls-7" cx="20.9" cy="316.58" r="4.17" />
-    <circle class="cls-7" cx="20.9" cy="294.67" r="4.17" /><text class="cls-8" transform="translate(5.64 123.15)">五
+    <circle class="cls_5-6" cx="20.9" cy="382.32" r="4.17" />
+    <circle class="cls_5-7" cx="20.9" cy="360.41" r="4.17" />
+    <circle class="cls_5-7" cx="20.9" cy="338.49" r="4.17" />
+    <circle class="cls_5-7" cx="20.9" cy="316.58" r="4.17" />
+    <circle class="cls_5-7" cx="20.9" cy="294.67" r="4.17" /><text class="cls_5-8" transform="translate(5.64 123.15)">五
         <tspan x="0" y="36.61">大</tspan>
         <tspan x="0" y="73.22">剂</tspan>
         <tspan x="0" y="109.83">型</tspan>
     </text>
-    <circle class="cls-9" cx="21" cy="21" r="21" />
-    <g class="cls-10">
-        <polyline class="cls-6" points="16.06 18.43 21 13.49 25.94 18.43" />
-        <line class="cls-11" x1="21.21" y1="18.23" x2="21.21" y2="28.51" />
+    <circle class="cls_5-9" cx="21" cy="21" r="21" />
+    <g class="cls_5-10">
+        <polyline class="cls_5-6" points="16.06 18.43 21 13.49 25.94 18.43" />
+        <line class="cls_5-11" x1="21.21" y1="18.23" x2="21.21" y2="28.51" />
     </g>
-    <circle class="cls-9" cx="21" cy="451" r="21" />
-    <g class="cls-10">
-        <polyline class="cls-6" points="25.94 453.57 21 458.51 16.06 453.57" />
-        <line class="cls-11" x1="20.79" y1="453.77" x2="20.79" y2="443.49" />
+    <circle class="cls_5-9" cx="21" cy="451" r="21" />
+    <g class="cls_5-10">
+        <polyline class="cls_5-6" points="25.94 453.57 21 458.51 16.06 453.57" />
+        <line class="cls_5-11" x1="20.79" y1="453.77" x2="20.79" y2="443.49" />
     </g>
 </svg>

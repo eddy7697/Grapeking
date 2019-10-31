@@ -1,8 +1,17 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+function tabShow(label) {
+    $(`.nav-link.` + label).tab('show')
+}
 
+$('.nav-link').on('shown.bs.tab', function(event){
+    $('.prod-material').removeClass('fadeInLeft animated')
 
+    setTimeout(() => {$('.prod-material').addClass('fadeInLeft animated')}, 1)
+});
+</script>
 @endsection
 
 @section('custom-style')
@@ -90,47 +99,57 @@
             <div class="tab-pane container-fluid active" id="home">
                 <div class="row">
                     <div class="col-md-5 label tablet">
-                        <img src="/img/business/prod/2-1.svg" alt="">
+                        @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                        @include('components.prod.01')
+                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-1.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-1.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="tab-pane container-fluid fade" id="menu1">
+            <div class="tab-pane fade container-fluid" id="menu1">
                 <div class="row">
                     <div class="col-md-5 label granule">
-                        <img src="/img/business/prod/2-2.svg" alt="">
+                        @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
+                        @include('components.prod.02')
+                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-2.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-2.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="tab-pane container-fluid fade" id="menu2">
+            <div class="tab-pane fade container-fluid" id="menu2">
                 <div class="row">
                     <div class="col-md-5 label aluminum">
-                        <img src="/img/business/prod/2-3.svg" alt="">
+                        @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
+                        @include('components.prod.03')
+                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-3.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-3.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="tab-pane container-fluid fade" id="menu3">
+            <div class="tab-pane fade container-fluid" id="menu3">
                 <div class="row">
                     <div class="col-md-5 label capsule">
-                        <img src="/img/business/prod/2-4.svg" alt="">
+                        @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
+                        @include('components.prod.04')
+                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-4.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-4.jpg" alt="">
                     </div>
                 </div>
             </div>
-            <div class="tab-pane container-fluid fade" id="menu4">
+            <div class="tab-pane fade container-fluid" id="menu4">
                 <div class="row">
                     <div class="col-md-5 label glass_bottle">
-                        <img src="/img/business/prod/2-5.svg" alt="">
+                        @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
+                        @include('components.prod.05')
+                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-5.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-5.jpg" alt="">

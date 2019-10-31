@@ -179,7 +179,9 @@ $(function () {
         $('.cookies-bar').hide()
     })
 
-
+    function tabShow(label) {
+        $(`.nav-link.${label}`).tab('show')
+    }
 });
 
 
