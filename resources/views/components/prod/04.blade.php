@@ -46,7 +46,7 @@
                 }
             </style>
         </defs>
-        <title>m04</title>
+        <title>咖啡胶囊</title>
         <circle class="cls_4-1" cx="107" cy="118.61" r="101" />
         <line class="cls_4-1" x1="179.17" y1="186.61" x2="578.17" y2="186.61" /><text class="cls_4-2"
             transform="translate(239.74 157.79)">固态产品</text><text class="cls_4-3" transform="translate(239.74 216.79)">18 - 31

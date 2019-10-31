@@ -46,7 +46,7 @@
                 }
             </style>
         </defs>
-        <title>m05</title>
+        <title>玻璃瓶</title>
         <circle class="cls_5-1" cx="107" cy="107" r="101" />
         <line class="cls_5-1" x1="185.17" y1="175.25" x2="577.17" y2="175.25" /><text class="cls_5-2"
             transform="translate(239.74 155.43)">液态产品</text><text class="cls_5-3" transform="translate(239.74 206.43)">小容量

@@ -70,7 +70,7 @@ $('.nav-link').on('hide.bs.tab', function(event){
     <div class="container">
         <div class="row production-content">
             <div class="col-md-7 production-left-side">
-                <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.png" class="production-image" alt="">
+                <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
             </div>
             <div class="col-md-5 production-right-side mobile-to-hide">
                 工厂规模
