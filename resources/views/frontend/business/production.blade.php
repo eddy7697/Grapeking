@@ -2,15 +2,55 @@
 
 @section('custom-script')
 <script>
-function tabShow(label) {
-    $(`.nav-link.` + label).tab('show')
+var links = $('.nav-link');
+var count = 0;
+var timeOunt = 5000;
+var autoPlay = function () {
+    if (count == links.length - 1) {
+        count = 0;
+    } else {
+        count += 1    ;
+    }
+    
+    $(links.get(count)).tab('show');
 }
 
+var play = setInterval(function() {
+    autoPlay();
+}, timeOunt);
+
+function tabShow(label) {
+    $(`.nav-link.` + label).tab('show');
+}
+
+function startProgress() {
+    $('.tab-pane .progress-bar').show();
+    $('.tab-pane .progress-bar').addClass('full');
+}
+
+function restoreProgress() {
+    $('.tab-pane .progress-bar').hide();
+    $('.tab-pane .progress-bar').removeClass('full');
+}
+
+startProgress();
+
+$('.tab-pane .progress-bar .percentage').css({
+    'transition-duration': timeOunt - 100 + 'ms'
+});
+
 $('.nav-link').on('shown.bs.tab', function(event){
-    $('.prod-material').addClass('fadeInLeft animated')
+    count = $('.nav-link').index($(event.currentTarget));
+    startProgress();
+    play = setInterval(function() {
+            autoPlay();
+        }, timeOunt);
+    $('.prod-material').addClass('fadeInLeft animated');
 });
 $('.nav-link').on('hide.bs.tab', function(event){
-    $('.prod-material').removeClass('fadeInLeft animated')
+    restoreProgress();
+    clearInterval(play)
+    $('.prod-material').removeClass('fadeInLeft animated');
 });
 </script>
 @endsection
@@ -108,6 +148,9 @@ $('.nav-link').on('hide.bs.tab', function(event){
                         <img src="/img/business/prod/2-1.jpg" alt="">
                     </div>
                 </div>
+                <div class="progress-bar tablet">
+                    <div class="percentage"></div>
+                </div>
             </div>
             <div class="tab-pane fade container-fluid" id="menu1">
                 <div class="row">
@@ -119,6 +162,9 @@ $('.nav-link').on('hide.bs.tab', function(event){
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-2.jpg" alt="">
                     </div>
+                </div>
+                <div class="progress-bar granule">
+                    <div class="percentage"></div>
                 </div>
             </div>
             <div class="tab-pane fade container-fluid" id="menu2">
@@ -132,6 +178,9 @@ $('.nav-link').on('hide.bs.tab', function(event){
                         <img src="/img/business/prod/2-3.jpg" alt="">
                     </div>
                 </div>
+                <div class="progress-bar aluminum">
+                    <div class="percentage"></div>
+                </div>
             </div>
             <div class="tab-pane fade container-fluid" id="menu3">
                 <div class="row">
@@ -144,6 +193,9 @@ $('.nav-link').on('hide.bs.tab', function(event){
                         <img src="/img/business/prod/2-4.jpg" alt="">
                     </div>
                 </div>
+                <div class="progress-bar capsule">
+                    <div class="percentage"></div>
+                </div>
             </div>
             <div class="tab-pane fade container-fluid" id="menu4">
                 <div class="row">
@@ -155,6 +207,9 @@ $('.nav-link').on('hide.bs.tab', function(event){
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-5.jpg" alt="">
                     </div>
+                </div>
+                <div class="progress-bar glass_bottle">
+                    <div class="percentage"></div>
                 </div>
             </div>
         </div>

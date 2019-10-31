@@ -1,7 +1,7 @@
 $(function () {
     let btnClick = false
 
-    $('.mega-btn').on('click', function(e) {
+    $('.mega-btn').on('mouseenter', function(e) {
         let btn = $(this)
         let parent = $('.mega-nav')
         let target = btn.attr('data-menu-target')

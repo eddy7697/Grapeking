@@ -8,7 +8,7 @@
     }
 @endphp
 
-<section class="site-header">
+<section class="site-header" data-aos="fade-down" data-aos-duration="1500">
     <div class="container-fluid" id="site-header-bar" style="background-color: rgba(255, 255, 255, 1);">
         <div class="row top-bar">
             <div class="col-md-12 mx-auto">
