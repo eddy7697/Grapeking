@@ -357,7 +357,14 @@ $font_0: icomoon;
 		}
 		.slider-for {
 			margin-top: 100px;
-			padding: 0 40px;
+            padding: 0 40px;
+            
+            .feature-image-container {
+                @extend %force-center;
+                .feature-image {
+                    max-width: 100%;
+                }
+            }
 		}
 		.years {
 			.slider {
@@ -524,7 +531,9 @@ $font_0: icomoon;
 			.slider-for {
 				h4 {
 					font-size: 48px;
-					padding-bottom: 25px;
+                    padding-bottom: 25px;
+                    font-weight: 700;
+                    color: $custom_main;
 				}
 				ul {
 					position: relative;
@@ -570,7 +579,9 @@ $font_0: icomoon;
 		.years {
 			.slider-for {
 				h4 {
-					font-size: 30px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: $custom_main;
 				}
 				ul li {
 					line-height: 30px;
