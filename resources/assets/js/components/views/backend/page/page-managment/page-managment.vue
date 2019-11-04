@@ -135,7 +135,7 @@
             return {
                 activedContentTab: 'first',
                 editIndex: 1,
-                activeTab: 'second',
+                activeTab: 'first',
                 timelineContentEditStatus: false,
                 dialogVisible: false,
                 siteMeta: {
@@ -300,6 +300,7 @@
             handleClose() {
                 this.clearTimelineObj()
                 this.dialogVisible = false
+                this.activedContentTab = 'first'
             },
             clearTimelineObj() {
                 this.timelineContent.year = null

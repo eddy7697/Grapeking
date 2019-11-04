@@ -116,8 +116,8 @@ $(".slider-for").on('beforeChange', function (event, slick, direction) {
     $('.timeline-text-container').removeClass('animated fadeInLeft').hide();
     $('.timeline-text-container').addClass('animated fadeInLeft').show();
     
-    $('.feature-image-container').removeClass('animated fadeInRight').hide();
-    $('.feature-image-container').addClass('animated fadeInRight').show();
+    $('.feature-image-container .feature-image').removeClass('animated fadeInRight').hide();
+    $('.feature-image-container .feature-image').addClass('animated fadeInRight').show();
     // setTimeout(function () {
     //     $('.timeline-text-container').addClass('animated fadeInLeft').show();
     // }, 1);
