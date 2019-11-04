@@ -70,7 +70,7 @@ var s = $("html"),
         focusOnSelect: !0,
         infinite: !0,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         responsive: [{
             breakpoint: 1530,
             settings: {
@@ -102,7 +102,7 @@ var s = $("html"),
         slidesToScroll: 1,
         fade: !0,
         asNavFor: ".slider-nav",
-        adaptiveHeight: true,
+        // adaptiveHeight: true,
         infinite: !0,
         arrows: !1
     }), $('a[data-toggle="tab"]').on("shown.bs.tab", function () {
@@ -110,6 +110,17 @@ var s = $("html"),
     })
 $(".slider-nav").on('init', function () {
     $(this).show() 
+});
+$(".slider-for").on('beforeChange', function (event, slick, direction) {
+
+    $('.timeline-text-container').removeClass('animated fadeInLeft').hide();
+    $('.timeline-text-container').addClass('animated fadeInLeft').show();
+    
+    $('.feature-image-container').removeClass('animated fadeInRight').hide();
+    $('.feature-image-container').addClass('animated fadeInRight').show();
+    // setTimeout(function () {
+    //     $('.timeline-text-container').addClass('animated fadeInLeft').show();
+    // }, 1);
 });
 </script>
 @endsection
@@ -189,7 +200,7 @@ $(".slider-nav").on('init', function () {
                         @foreach ($timeline as $item)
                             <div class="list">
                                 <div class="row">
-                                    <div class="col-xs-12 col-lg-7 left">
+                                    <div class="col-xs-12 col-lg-7 left timeline-text-container">
                                         <h4 class="year">{{$item->year}}</h4>
                                         <ul>
                                             <li>{!! $item->content->{App::getLocale()} !!}</li>
