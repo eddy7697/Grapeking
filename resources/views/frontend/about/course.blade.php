@@ -7,42 +7,42 @@
 @section('custom-script')
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
-new PerfectScrollbar('.thumb-container');
+// new PerfectScrollbar('.thumb-container');
 
-updatePosition();
+// updatePosition();
 updateLayout();
 
-$(window).scroll(function () {
-    updatePosition();
-});
+// $(window).scroll(function () {
+//     updatePosition();
+// });
 
 $(window).resize(function () {
-    updatePosition();
+    // updatePosition();
     updateLayout();
 });
 
-function updatePosition() {
-    var windowScrollTop = $(window).scrollTop();
-    var headerHeight = $('#site-header-bar').height() + $('.sub-page-banner').height();
-    var menuHeight = $('.site-header').height();
-    var elmHeight = $(window).scrollTop() < $('.vdieo-present-section').offset().top - $(window).height() ? $(window).height() - $('.site-header').height() : $('.vdieo-present-section').offset().top - $(window).scrollTop() - $('.site-header').height()
+// function updatePosition() {
+//     var windowScrollTop = $(window).scrollTop();
+//     var headerHeight = $('#site-header-bar').height() + $('.sub-page-banner').height();
+//     var menuHeight = $('.site-header').height();
+//     var elmHeight = $(window).scrollTop() < $('.vdieo-present-section').offset().top - $(window).height() ? $(window).height() - $('.site-header').height() : $('.vdieo-present-section').offset().top - $(window).scrollTop() - $('.site-header').height()
 
-    if (windowScrollTop > headerHeight - 140) {
-        $('.thumb-container').css({
-            'position': 'fixed',
-            'top': (menuHeight - 32) + 'px',
-            'left': $('.about-thumbnail').offset().left + 32,
-            'height': elmHeight
-        });
-    } else {
-        $('.thumb-container').css({
-            'position': 'initial',
-            'top': 'initial',
-            'left': 'initial',
-            'height': 'initial'
-        });
-    }
-}
+//     if (windowScrollTop > headerHeight - 140) {
+//         $('.thumb-container').css({
+//             'position': 'fixed',
+//             'top': (menuHeight - 32) + 'px',
+//             'left': $('.about-thumbnail').offset().left + 32,
+//             'height': elmHeight
+//         });
+//     } else {
+//         $('.thumb-container').css({
+//             'position': 'initial',
+//             'top': 'initial',
+//             'left': 'initial',
+//             'height': 'initial'
+//         });
+//     }
+// }
 
 function updateLayout() {
     var windowWidth = $(window).width();
@@ -69,6 +69,8 @@ var s = $("html"),
         asNavFor: ".slider-for",
         focusOnSelect: !0,
         infinite: !0,
+        autoplay: true,
+        autoplaySpeed: 2000,
         responsive: [{
             breakpoint: 1530,
             settings: {
@@ -100,6 +102,7 @@ var s = $("html"),
         slidesToScroll: 1,
         fade: !0,
         asNavFor: ".slider-nav",
+        adaptiveHeight: true,
         infinite: !0,
         arrows: !1
     }), $('a[data-toggle="tab"]').on("shown.bs.tab", function () {
@@ -163,7 +166,7 @@ $(".slider-nav").on('init', function () {
 </div>
 <div class="container" id="course-container">
     <div class="row">
-        <div class="col-md-9 about-content wp history">
+        <div class="col-md-12 about-content wp history">
             <h3 class="about-section-title" id="about_5">{{ trans('string.about11') }}</h3>
             <div class="about-text">
                 {!! trans('string.about12') !!}
@@ -180,38 +183,6 @@ $(".slider-nav").on('init', function () {
                                     <span class="circle"></span>
                                 </div>
                             @endforeach
-                            {{-- <div class="dot">
-                                <p class="year">1994</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">1997</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">2003</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">2008</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">2014</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">2016</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">2017</p>
-                                <span class="circle"></span>
-                            </div>
-                            <div class="dot">
-                                <p class="year">2019</p>
-                                <span class="circle"></span>
-                            </div> --}}
                         </div>
                     </div>
                     <div class="slider-for lists">
@@ -223,140 +194,23 @@ $(".slider-nav").on('init', function () {
                                         <ul>
                                             <li>{!! $item->content->{App::getLocale()} !!}</li>
                                         </ul>
-    
                                     </div>
-                                    <div class="col-xs-12 col-lg-5 right">
+                                    <div class="col-xs-12 col-lg-5 right feature-image-container">
+                                        @if (isset($item->featureImage))
+                                            <img src="{!! $item->featureImage->{App::getLocale()} !!}" class="feature-image" alt="">
+                                        @endif
                                     </div>
                                 </div>
                             </div>
                         @endforeach
-                        {{-- <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">1994</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_1') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">1997</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_2') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">2003</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_3') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">2008</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_4') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">2014</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_5') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">2016</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_6') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">2017</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_7') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list">
-                            <div class="row">
-                                <div class="col-xs-12 col-lg-7 left">
-                                    <h4 class="year">2019</h4>
-                                    <ul>
-                                        <li>{{ trans('string.timeline_8') }}</li>
-                                    </ul>
-
-                                </div>
-                                <div class="col-xs-12 col-lg-5 right">
-                                </div>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
-            {{-- @if (App::getLocale() == 'en')
-            {!!PageView::show(14)!!}
-            @else
-            {!!PageView::show(13)!!}
-            @endif --}}
-            {{-- <h3 class="about-section-title" id="about_1">{{ trans('string.about13') }}</h3>
-            <div class="about-text">
-                {!! trans('string.about14') !!}
-            </div> --}}
-            {{-- <img class="about-image" src="/img/about/course_pic.jpg" alt=""> --}}
-            {{-- <div class="about-text">
-                {!! trans('string.about15') !!}
-            </div> --}}
             
-        </div>
-        <div class="col-md-3 about-thumbnail">
-            @include('components.aboutThumbnail')
         </div>
     </div>
 </div>
+@if (false)
 <a data-fancybox class="fancybox-btn" href="https://www.youtube.com/watch?v=KAFJLVrKwJQ">
     <div class="vdieo-present-section">
         <div class="info">
@@ -366,4 +220,6 @@ $(".slider-nav").on('init', function () {
         </div>
     </div>
 </a>
+@endif
+
 @endsection

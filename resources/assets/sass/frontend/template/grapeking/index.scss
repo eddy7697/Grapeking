@@ -357,7 +357,14 @@ $font_0: icomoon;
 		}
 		.slider-for {
 			margin-top: 100px;
-			padding: 0 40px;
+            padding: 0 40px;
+            
+            .feature-image-container {
+                @extend %force-center;
+                .feature-image {
+                    max-width: 100%;
+                }
+            }
 		}
 		.years {
 			.slider {
@@ -524,7 +531,9 @@ $font_0: icomoon;
 			.slider-for {
 				h4 {
 					font-size: 48px;
-					padding-bottom: 25px;
+                    padding-bottom: 25px;
+                    font-weight: 700;
+                    color: $custom_main;
 				}
 				ul {
 					position: relative;
@@ -570,7 +579,9 @@ $font_0: icomoon;
 		.years {
 			.slider-for {
 				h4 {
-					font-size: 30px;
+                    font-size: 30px;
+                    font-weight: 700;
+                    color: $custom_main;
 				}
 				ul li {
 					line-height: 30px;
@@ -2691,7 +2702,7 @@ a.toggle-locale-btn {
     .production-content {
         margin-top: 120px;
         margin-bottom: 80px;
-        background-image: url('/img/business/production_flow_bg.png');
+        background-image: url('/img/business/production_flow_bg.jpg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: right;
@@ -2715,29 +2726,13 @@ a.toggle-locale-btn {
             border: none;
             padding-left: 25px;
 
-            // &::after, &::before {
-            //     content: '...';
-            //     position: absolute;
-            //     top: 0;
-            //     bottom: 0;
-            //     width: auto;
-            //     padding: 0 10px;
-            //     line-height: 36px;
-            // }
-            // &::after {
-            //     right: 0;
-            //     background-image: linear-gradient(to right, transparent , white);
-            // }
-            // &::before {
-            //     left: 0;
-            //     background-image: linear-gradient(to left, transparent , white);
-            // }
             li.nav-item {
 
                 a.nav-link {
                     overflow: hidden;
                     color: #666;
                     padding: 10px 25px;
+                    font-weight: 700;
 
                     &.active {
                         color: #fff;
@@ -2807,6 +2802,46 @@ a.toggle-locale-btn {
                 }                
                 &.active {
 
+                }
+                .progress-bar {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 5px;
+                    background-color: transparent;
+
+                    .percentage {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        width: 0;
+                        transition: all;
+                        transition-timing-function: linear;
+                        transition-duration: 2000ms;
+                        box-shadow: 2px 2px 12px -2px rgba($color: #000000, $alpha: .5);
+                    }
+                    &.tablet .percentage {
+                        background-color: #630016;
+                    }
+                    &.granule .percentage {
+                        background-color: #663D14;
+                    }
+                    &.aluminum .percentage {
+                        background-color: #575757;
+                    }
+                    &.capsule .percentage {
+                        background-color: #2E3811;
+                    }
+                    &.glass_bottle .percentage {
+                        background-color: #082C3B;
+                    }
+                    &.full {
+                        .percentage {
+                            width: 100%;
+                        }
+                    }
                 }
             }
         }

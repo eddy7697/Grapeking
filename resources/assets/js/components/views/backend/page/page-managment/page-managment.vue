@@ -84,12 +84,28 @@
                     <el-form-item label="年份">
                         <el-input v-model="timelineContent.year"></el-input>
                     </el-form-item>
-                    <el-form-item label="內容(簡中)">
-                        <el-input v-model="timelineContent.content['zh-CN']" type="textarea"></el-input>
-                    </el-form-item>
-                    <el-form-item label="內容(英)">
-                        <el-input v-model="timelineContent.content['en']" type="textarea"></el-input>
-                    </el-form-item>
+                    <el-tabs v-model="activedContentTab">
+                        <el-tab-pane label="簡體中文" name="first">
+                            <el-form-item label="內容(簡中)">
+                                <el-input v-model="timelineContent.content['zh-CN']" type="textarea"></el-input>
+                            </el-form-item>
+                            <el-form-item label="圖片(簡中)">
+                                <el-input v-model="timelineContent.featureImage['zh-CN']" type="hidden" style="display: none"></el-input>
+                                <img :src="timelineContent.featureImage['zh-CN']" style="max-width: 100%; margin-bottom: 15px;" alt="">
+                                <el-button @click="setTimelineFeatureImage('zh-CN')">設置圖片</el-button>
+                            </el-form-item>
+                        </el-tab-pane>
+                        <el-tab-pane label="英文" name="second">
+                            <el-form-item label="內容(英)">
+                                <el-input v-model="timelineContent.content['en']" type="textarea"></el-input>
+                            </el-form-item>
+                            <el-form-item label="圖片(英)">
+                                <el-input v-model="timelineContent.featureImage['en']" type="hidden" style="display: none"></el-input>
+                                <img :src="timelineContent.featureImage['en']" style="max-width: 100%; margin-bottom: 15px;" alt="">
+                                <el-button @click="setTimelineFeatureImage('en')">設置圖片</el-button>
+                            </el-form-item>
+                        </el-tab-pane>
+                    </el-tabs>
                 </el-form>
                 <span slot="footer" class="dialog-footer">
                     <el-button @click="handleClose()">取 消</el-button>
@@ -117,6 +133,7 @@
         },
         data() {
             return {
+                activedContentTab: 'first',
                 editIndex: 1,
                 activeTab: 'second',
                 timelineContentEditStatus: false,
@@ -137,7 +154,11 @@
                     content: {
                         'zh-CN': null,
                         en: null
-                    }
+                    },
+                    featureImage: {
+                        'zh-CN': null,
+                        en: null
+                    },
                 },
                 picTitle: null,
                 picUrl: null,
@@ -169,20 +190,32 @@
                     dataType: 'json'
                 })
                 .done(function(result) {
-                    // console.log(result.data);
+                    let timeline = result.data.timeline ? JSON.parse(result.data.timeline) : [];
 
-                    self.siteMeta.title = result.data.title;
-                    self.siteMeta.keyword = result.data.keyword;
-                    self.siteMeta.description = result.data.description;
-                    self.siteMeta.shortcut = result.data.shortcut;
-                    self.siteMeta.pageTopContent = result.data.pageTopContent;
-                    self.siteMeta.pageTopButton = result.data.pageTopButton;
-                    self.siteMeta.pageTopLink = result.data.pageTopLink;
-                    self.siteMeta.index_album = JSON.parse(result.data.index_album);
-                    self.siteMeta.timeline = result.data.timeline ? JSON.parse(result.data.timeline) : [];
+                    timeline.forEach(elm => {
+                        if (!elm.featureImage) {
+                            elm.featureImage = {
+                                'zh-CN': null,
+                                en: null
+                            }
+                        }
+                    });
 
-                    self.isEdit = true;
-                    self.isDirty = false;
+                    self.$nextTick(() => {
+                        self.siteMeta.title = result.data.title;
+                        self.siteMeta.keyword = result.data.keyword;
+                        self.siteMeta.description = result.data.description;
+                        self.siteMeta.shortcut = result.data.shortcut;
+                        self.siteMeta.pageTopContent = result.data.pageTopContent;
+                        self.siteMeta.pageTopButton = result.data.pageTopButton;
+                        self.siteMeta.pageTopLink = result.data.pageTopLink;
+                        self.siteMeta.index_album = JSON.parse(result.data.index_album);
+                        self.siteMeta.timeline = timeline
+
+                        self.isEdit = true;
+                        self.isDirty = false;
+                    })
+                    
                 })
                 .fail(function() {
                     self.isEdit = false;
@@ -203,6 +236,13 @@
                 window.open('/laravel-filemanager' + '?type=Images', 'FileManager', 'width=900,height=600');
                 window.SetUrl = function (url, file_path) {
                     self.picUrl = file_path;
+                };
+            },
+            setTimelineFeatureImage(elm) {
+                var self = this;
+                window.open('/laravel-filemanager' + '?type=Images', 'FileManager', 'width=900,height=600');
+                window.SetUrl = function (url, file_path) {
+                    self.timelineContent.featureImage[elm] = file_path;
                 };
             },
             addBanner: function () {
