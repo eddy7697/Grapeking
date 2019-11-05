@@ -149,7 +149,7 @@ $(".slider-for").on('beforeChange', function (event, slick, direction) {
         <div class="container">
             <div class="col-md-12 container-label">
                 <h2>
-                        愿景与历程
+                    愿景与历程
                     <br>
                     <span style="font-size: 16px;">Vision and History</span>
                 </h2>
@@ -199,6 +199,21 @@ $(".slider-for").on('beforeChange', function (event, slick, direction) {
                     <div class="slider-for lists">
                         @foreach ($timeline as $item)
                             <div class="list">
+                                <div class="text-mask">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-lg-7 text">
+                                            <h4 class="year">{{$item->year}}</h4>
+                                            <ul>
+                                                <li>{!! $item->content->{App::getLocale()} !!}</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 col-lg-5 image">
+                                            @if (isset($item->featureImage))
+                                                <img src="{!! $item->featureImage->{App::getLocale()} !!}" class="feature-image" alt="">
+                                            @endif
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-xs-12 col-lg-7 left timeline-text-container">
                                         <h4 class="year">{{$item->year}}</h4>
