@@ -2707,6 +2707,17 @@ a.toggle-locale-btn {
         background-size: contain;
         background-position: right;
 
+        .bg-img {
+            background-image: url('/img/business/production_flow_bg.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            right: 15px;
+            bottom: 0;
+        }
         .production-left-side {
             .production-image {
                 width: 100%;
@@ -3130,6 +3141,7 @@ a.toggle-locale-btn {
         margin-bottom: -8px;
         overflow: auto;
         white-space: nowrap;
+        overflow-y: hidden;
 
         li.nav-item {
             display: inline-block;
@@ -3209,6 +3221,10 @@ a.toggle-locale-btn {
 
     .mobile-to-hide {
         display: none !important;
+    }
+
+    .mobile-to-hide-bg {
+        background: none !important;
     }
 
     .mobile-to-center {

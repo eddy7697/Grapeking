@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('custom-script')
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+{{-- <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -27,12 +27,12 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script> --}}
 
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+{{-- <link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css"> --}}
 <style>
 .sub-page-banner {
     background-image: url('/img/about/global/banner.jpg');
