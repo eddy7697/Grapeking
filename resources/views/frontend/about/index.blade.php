@@ -99,7 +99,7 @@ $(window).scroll(function () {
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 about-content">
+            <div class="col-md-12 about-content">
                 @if (App::getLocale() == 'en')
                 {!!PageView::show(12)!!}
                 @else
@@ -151,9 +151,9 @@ $(window).scroll(function () {
                 </div>
                 <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt=""> --}}
             </div>
-            <div class="col-md-3 about-thumbnail">
+            {{-- <div class="col-md-3 about-thumbnail">
                 @include('components.aboutThumbnail')
-            </div>
+            </div> --}}
         </div>
     </div>
 @endsection
