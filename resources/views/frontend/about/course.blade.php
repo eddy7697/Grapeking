@@ -183,7 +183,9 @@
                     <div class="container-timeline">
                         <div class="content-timeline">
                             <h2>{{$item->year}}</h2>
-                            <p>{!! $item->content->{App::getLocale()} !!}</p>
+                            <div class="content-text">
+                                <p>{!! $item->content->{App::getLocale()} !!}</p>
+                            </div>
                             <img src="{!! $item->featureImage->{App::getLocale()} !!}" class="feature-image" alt="">
                         </div>
                     </div>

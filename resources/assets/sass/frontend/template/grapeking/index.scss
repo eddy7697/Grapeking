@@ -147,7 +147,7 @@
             font-weight: 700;
         }
         .feature-image {
-            width: 100%;
+            width: 80%;
         }
         &::before {
             content: '';
@@ -191,9 +191,13 @@
             border-color: transparent transparent transparent white;
         }
         .content-timeline {
-            h2 {
-                text-align: right;
-            }
+            text-align: right;
+            // h2 {
+            //     text-align: right;
+            // }
+            // .content-text {
+            //     text-align: right;
+            // }
             &::before {
                 right: -50px;
             }
@@ -3277,7 +3281,11 @@ a.toggle-locale-btn {
             }
             &:nth-child(odd) {
                 .content-timeline {
+                    text-align: left;
                     h2 {
+                        text-align: left;
+                    }
+                    .content-text {
                         text-align: left;
                     }
                 }
