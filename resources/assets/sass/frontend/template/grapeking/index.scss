@@ -2826,11 +2826,13 @@ a.toggle-locale-btn {
 
     
     .production-content {
-        margin-top: 120px;
+        margin-top: 38px;
         margin-bottom: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         background-image: url('/img/business/production_flow_bg.jpg');
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: right;
 
         .bg-img {
@@ -2858,7 +2860,7 @@ a.toggle-locale-btn {
 
             .factory-text {
                 position: absolute;
-                top: 11%;
+                top: 35%;
                 left: -10%;
             }
         }

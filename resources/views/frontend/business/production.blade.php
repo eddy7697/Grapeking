@@ -107,17 +107,19 @@ $('.nav-link').on('hide.bs.tab', function(event){
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row production-content mobile-to-hide-bg">
-            <div class="bg-img"></div>
-            <div class="col-md-12 mobile-to-show">
-                <h1 style="text-align: center; font-weight: 700">工厂规模</h1>
-            </div>
-            <div class="col-md-7 production-left-side">
-                <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
-            </div>
-            <div class="col-md-5 production-right-side mobile-to-hide">
-                <span class="factory-text">工厂规模</span>
+    <div class="production-content">
+        <div class="container">
+            <div class="row">
+                {{-- <div class="bg-img"></div> --}}
+                <div class="col-md-12 mobile-to-show">
+                    <h1 style="text-align: center; font-weight: 700">工厂规模</h1>
+                </div>
+                <div class="col-md-7 production-left-side">
+                    <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
+                </div>
+                <div class="col-md-5 production-right-side mobile-to-hide">
+                    <span class="factory-text">工厂规模</span>
+                </div>
             </div>
         </div>
     </div>
