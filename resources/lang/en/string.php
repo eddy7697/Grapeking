@@ -248,7 +248,7 @@ return [
     'product_info_sub' => 'Find your security products.',
     'solution_sub' => 'Exclusive solution.',
     'partners_sub' => 'Check out our partners.',
-    'learn_more' => 'Learn more',
+    'learn_more' => 'More',
 
     'how_to_buy' => 'How to buy.',
     'you_can_call' => 'You can make a call',
@@ -395,7 +395,7 @@ return [
     'research_f_d_2' => 'With our commitment to look after public health. Grape King Bio regards product liability as the most important part of our operation and production. Therefore, we manage all aspects of the production process with the most stringent quality and sanitation standards. Grape King Bio has also obtained multiple accreditations for quality systems. Our four major food safety philosophies include "continuous innovation, the pursuit of outstanding quality, implementation of social responsibilities, and ensuring customer satisfaction". We hope to develop more high-quality products, implement the annual quality targets established in the factories, and dedication so that customers have more confidence in the products we produced',
     'research_f_d_3' => "All purchases of raw materials by Grape King Bio must meet the Company's procurement policies. This would allow suppliers to provide the highest quality raw materials and improve the quality of our products. This would contribute to consumers' peace of mind when making purchases. This strategy allows us to create a scenario where all three parties (suppliers, Grape King Bio, and consumers) ultimately win out.",
 
-    'index_d_1' => 'We provide professional services',
+    'index_d_1' => 'We Provide Professional Service',
     'index_d_2' => 'Your closest partner',
     'index_d_3' => 'Grape King Founded',
     'index_d_4' => 'Globe Certification',
