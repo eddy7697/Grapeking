@@ -1,75 +1,61 @@
 @extends('main')
 
 @section('custom-script')
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
-new PerfectScrollbar('.thumb-container');
-
-$(window).scroll(function () {
-    var windowScrollTop = $(window).scrollTop();
-    var headerHeight = $('#site-header-bar').height() + $('.sub-page-banner').height();
-    var menuHeight = $('.site-header').height();
-    var elmHeight = $(window).scrollTop() < $('.site-footer').offset().top - $(window).height() ? $(window).height() - $('.site-header').height() : $('.site-footer').offset().top - $(window).scrollTop() - $('.site-header').height()
-
-    if (windowScrollTop > headerHeight - 140) {
-        $('.thumb-container').css({
-            'position': 'fixed',
-            'top': (menuHeight - 32) + 'px',
-            'left': $('.about-thumbnail').offset().left + 32,
-            'height': elmHeight
-        });
-    } else {
-        $('.thumb-container').css({
-            'position': 'initial',
-            'top': 'initial',
-            'left': 'initial',
-            'height': 'initial'
-        });
-    }
-});
-</script>
-<script>
-$('.material-card-list').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    arrow: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrow: true,
-                infinite: true
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrow: true
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrow: true
-            }
+    var links = $('.nav-link');
+    var count = 0;
+    var timeOunt = 5000;
+    var autoPlay = function () {
+        if (count == links.length - 1) {
+            count = 0;
+        } else {
+            count += 1;
         }
-    ]
-});
+        
+        $(links.get(count)).tab('show');
+    }
 
+    var play = setInterval(function() {
+        autoPlay();
+    }, timeOunt);
+
+    function tabShow(label) {
+        $(`.nav-link.` + label).tab('show');
+    }
+
+    function startProgress() {
+        $('.tab-pane .progress-bar').show();
+        $('.tab-pane .progress-bar').addClass('full');
+    }
+
+    function restoreProgress() {
+        $('.tab-pane .progress-bar').hide();
+        $('.tab-pane .progress-bar').removeClass('full');
+    }
+
+    startProgress();
+
+    $('.tab-pane .progress-bar .percentage').css({
+        'transition-duration': timeOunt - 100 + 'ms'
+    });
+
+    $('.nav-link').on('shown.bs.tab', function(event){
+        count = $('.nav-link').index($(event.currentTarget));
+        startProgress();
+        play = setInterval(function() {
+                autoPlay();
+            }, timeOunt);
+        $('.info-content').addClass('fadeInRight animated');
+    });
+    $('.nav-link').on('hide.bs.tab', function(event){
+        restoreProgress();
+        clearInterval(play)
+        $('.info-content').removeClass('fadeInRight animated');
+    });
 </script>
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
     background-image: url('/img/business/banner-2.jpg');
@@ -118,186 +104,155 @@ $('.material-card-list').slick({
             </div>
         </div>
     </div>
+    
+
     <div class="container">
         <div class="row">
-            <div class="col-md-9 about-content">
+            <div class="col-md-12 about-content" style="margin: 0">
+                <h3 class="about-section-title" id="section_1">一條龍代工服務平台</h3>            
+            </div>
+        </div>
+    </div>
+
+    <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
+        <div class="tab-content tunnel">
+            <div class="tab-pane odm_oem container-fluid active" id="home">
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5 info">
+                        <div class="info-content">
+                            <h3>{{ trans('text.tunnel_1') }}</h3>
+                            <p>{{ trans('text.tunnel_1_text') }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar odm_oem">
+                    <div class="percentage"></div>
+                </div>
+            </div>
+            <div class="tab-pane research fade container-fluid" id="menu1">
+                <div class="row">
+                    <div class="col-md-7">
+                        
+                    </div>
+                    <div class="col-md-5 info">
+                        <div class="info-content">
+                            <h3>{{ trans('text.tunnel_2') }}</h3>
+                            <p>{{ trans('text.tunnel_2_text') }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="progress-bar research">
+                    <div class="percentage"></div>
+                </div>
+            </div>
+            <div class="tab-pane formula fade container-fluid" id="menu2">
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5 info">
+                        <div class="info-content">
+                            <h3>{{ trans('text.tunnel_3') }}</h3>
+                            <p>{{ trans('text.tunnel_3_text') }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="progress-bar formula">
+                    <div class="percentage"></div>
+                </div>
+            </div>
+            <div class="tab-pane package fade container-fluid" id="menu3">
+                <div class="row">
+                    <div class="col-md-7 ">
+
+                    </div>
+                    <div class="col-md-5 info">
+                        <div class="info-content">
+                            <h3>{{ trans('text.tunnel_4') }}</h3>
+                            <p>{{ trans('text.tunnel_4_text') }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="progress-bar package">
+                    <div class="percentage"></div>
+                </div>
+            </div>
+            <div class="tab-pane production fade container-fluid" id="menu4">
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5 info">
+                        <div class="info-content">
+                            <h3>{{ trans('text.tunnel_5') }}</h3>
+                            <p>{{ trans('text.tunnel_5_text') }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="progress-bar production">
+                    <div class="percentage"></div>
+                </div>
+            </div>
+            <div class="tab-pane deliver fade container-fluid" id="menu5">
+                <div class="row">
+                    <div class="col-md-7">
+
+                    </div>
+                    <div class="col-md-5 info">
+                        <div class="info-content">
+                            <h3>{{ trans('text.tunnel_6') }}</h3>
+                            <p>{{ trans('text.tunnel_6_text') }}</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="progress-bar deliver">
+                    <div class="percentage"></div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav nav-tabs tunnel">
+            <li class="nav-item">
+                <a class="nav-link active odm_oem" data-toggle="tab" href="#home">ODM/OEM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link research" data-toggle="tab" href="#menu1">專業研發</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link formula" data-toggle="tab" href="#menu2">配方設計</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link package" data-toggle="tab" href="#menu3">包裝設計</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link production" data-toggle="tab" href="#menu4">生產製造</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link deliver" data-toggle="tab" href="#menu5">物流配送</a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 about-content">
                 @if (App::getLocale() == 'en')
                 {!!PageView::show(22)!!}
                 @else
                 {!!PageView::show(21)!!}
                 @endif
-                {{-- <h3 class="about-section-title" id="section_1">{{ trans('string.professional') }}</h3>
-                <div class="about-text">
-                    <p>
-                        {{ trans('string.production_d_1') }}
-                    </p>                    
-                </div>
-                <hr style="margin-top: 50px;">
-                <h3 class="about-section-title" id="section_2">{{ trans('string.foundry') }}</h3>
-                <div class="about-text">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <p>
-                                {{ trans('string.production_d_2') }}
-                            </p>     
-                        </div>
-                        <div class="col-md-5 mobile-to-left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/business/package-1.png" alt="">
-                        </div>
-                    </div>  
-                    <div class="row" style="margin-top: 50px">
-                        <div class="col-md-5" style="text-align: left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/business/package-2.jpg" alt="">
-                        </div>
-                        <div class="col-md-7">
-                            <p>
-                                {{ trans('string.production_d_3') }}
-                            </p>     
-                        </div>
-                        
-                    </div>                    
-                </div>
-                <hr style="margin-top: 50px;">
-                <div class="about-text">
-                    <ul class="nav nav-tabs about-location-tab center" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span>{{ trans('string.production_d_4') }}</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false"><span>{{ trans('string.production_d_5') }}</span></a>
-                        </li>
-                    </ul>
-                    <div class="tab-content" id="location-tab-content">
-                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                            <p>{{ trans('string.production_d_6') }}</p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <img class="about-image" src="/img/business/package-3.png" alt="{{ trans('string.production_d_6') }}">
-                                </div>
-                                <div class="col-md-6">
-                                    <img class="about-image" src="/img/business/package-4.png" alt="{{ trans('string.production_d_6') }}">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3" style="text-align: center">
-                                    <img style="margin-bottom: 10px;" class="about-image" src="/img/business/package-5-1.jpg" alt="{{ trans('string.production_d_7') }}">
-                                    <p>{{ trans('string.production_d_7') }}</p>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <img style="margin-bottom: 10px;" class="about-image" src="/img/business/package-5-2.jpg" alt="{{ trans('string.production_d_8') }}">
-                                    <p>{{ trans('string.production_d_8') }}</p>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <img style="margin-bottom: 10px;" class="about-image" src="/img/business/package-5-3.jpg" alt="{{ trans('string.production_d_9') }}">
-                                    <p>{{ trans('string.production_d_9') }}</p>
-                                </div>
-                                <div class="col-md-3" style="text-align: center">
-                                    <img style="margin-bottom: 10px;" class="about-image" src="/img/business/package-5-4.jpg" alt="{{ trans('string.production_d_10') }}">
-                                    <p>{{ trans('string.production_d_10') }}</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="text-align: center">
-                            <p style="margin-bottom: 50px;">{{ trans('string.production_d_13') }}</p>
-                            <div class="material-card mobile-to-hide first" style="background-color: #ABCD03">
-                                <h4>{{ trans('text.material_1') }}</h4>
-                                <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
-                                <p class="material-info">
-                                    {{ trans('text.material_d_1') }}
-                                </p>
-                                <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/1.Mushroom.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="material-card mobile-to-hide" style="background-color: #F39800">
-                                <h4>{{ trans('text.material_2') }}</h4>
-                                <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
-                                <p class="material-info">
-                                    {{ trans('text.material_d_2') }}
-                                </p>
-                                <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/2.Probiotic.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="material-card mobile-to-hide last" style="background-color: #38A1DB">
-                                <h4>{{ trans('text.material_3') }}</h4>
-                                <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
-                                <p class="material-info">
-                                    {{ trans('text.material_d_3') }}
-                                </p>
-                                <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
-                            </div>
-                            <div class="mobile-to-show material-card-list" >
-                                <div>
-                                    <div class="material-card " style="background-color: #ABCD03">
-                                        <h4>{{ trans('text.material_1') }}</h4>
-                                        <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
-                                        <p class="material-info">
-                                            {{ trans('text.material_d_1') }}
-                                        </p>
-                                        <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/1.Mushroom.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="material-card" style="background-color: #F39800">
-                                        <h4>{{ trans('text.material_2') }}</h4>
-                                        <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
-                                        <p class="material-info">
-                                            {{ trans('text.material_d_2') }}
-                                        </p>
-                                        <a class="material-link" href="https://www.grapeking.com.tw/media/odm/microbe/2.Probiotic.pdf">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="material-card " style="background-color: #38A1DB">
-                                        <h4>{{ trans('text.material_3') }}</h4>
-                                        <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
-                                        <p class="material-info">
-                                            {{ trans('text.material_d_3') }}
-                                        </p>
-                                        <a class="material-link" href="">{{ trans('text.check_material') }}&nbsp;<i class="fa fa-external-link" aria-hidden="true"></i></a>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="about-text" style="margin-top: 50px;">
-                                <div class="row">
-                                    <div class="col-md-6" style="text-align: left">
-                                        <h3 style="margin-bottom: 50px">{{ trans('string.production_d_14') }}</h3>
-                                        <p>
-                                            {{ trans('string.production_d_15') }}
-                                        </p> 
-                                        <a class="location-contact-btn" style="margin-top: 50px;" href="">{{ trans('string.production_d_16') }}</a>
-                                    </div>
-                                    <div class="col-md-6" style="text-align: left">
-                                        <img class="about-image" style="margin: 0; width: 100%; display: inline-block" src="/img/business/package-7.jpg" alt="">
-                                    </div>
-                                    
-                                </div>                    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr style="margin-top: 50px;">
-                <h3 class="about-section-title" id="section_3">{{ trans('string.foundry_flow') }}</h3>
-                <div class="about-text">
-                    <p>
-                        {{ trans('string.production_d_11') }}
-                    </p>                    
-                </div>
-                <img class="about-image" src="/img/business/package-{{App::getLocale()}}.jpg" alt="">
-                <hr style="margin-top: 50px;">
-
-                <div class="about-text" style="text-align: center">
-                    <p style="margin-top: 50px; font-weight: 700">{{ trans('string.production_d_12') }}</p>
-                    <a class="location-contact-btn" style="margin-top: 20px;" href="/contact">{{ trans('string.catalog_d_17') }}</a>
-                </div>
-                 --}}
-
 
             </div>
             
-            {{-- side thumd --}}
-            <div class="col-md-3 about-thumbnail">
-                @include('components.businessThumbnail')
-            </div>
         </div>
     </div>
 @endsection

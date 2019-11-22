@@ -2915,6 +2915,47 @@ a.toggle-locale-btn {
             border: none;
             padding-left: 25px;
 
+            &.tunnel {
+                display: flex;
+                padding-left: 0;
+
+                li.nav-item {
+                    flex: 0 0 16.666%;
+
+                    a.nav-link {
+                        text-align: center;
+                        color: #fff;
+                        border: none;
+                        border-radius: 0;
+                        font-size: 22px;
+                        padding: 20px 30px;
+                        transition: all .2s ease;
+
+                        &.odm_oem {
+                            background-color: #e40031;
+                        }
+                        &.research {
+                            background-color: #e58a2d;
+                        }
+                        &.formula {
+                            background-color: #95b838;
+                        }
+                        &.package {
+                            background-color: #188db9;
+                        }
+                        &.production {
+                            background-color: #6fc6cf;
+                        }
+                        &.deliver {
+                            background-color: #17a491;
+                        }
+                        &.active, &:hover {
+                            box-shadow: 2px 2px 12px -2px rgba($color: #000000, $alpha: .5);
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
             li.nav-item {
 
                 a.nav-link {
@@ -2947,6 +2988,56 @@ a.toggle-locale-btn {
         }
         .tab-content {
 
+            &.tunnel {
+                .tab-pane {
+                    background-size: cover;
+                    background-position: center;
+
+                    .info {
+                        height: 600px;
+                        display: flex;
+                        align-items: center;
+                        padding: 20px;
+
+                        .info-content {
+                            height: fit-content;
+                            h3 {
+                                font-size: 32px;
+                                margin-bottom: 20px;
+                                font-weight: 600;
+                            }
+                            p {
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    &.odm_oem {
+                        background-image: url('/img/business/tunnel/odm_oem.jpg');
+                    }
+                    &.research {
+                        background-image: url('/img/business/tunnel/research.jpg');
+                    }
+                    &.formula {
+                        background-image: url('/img/business/tunnel/formula.jpg');
+                    }
+                    &.package {
+                        background-image: url('/img/business/tunnel/package.jpg');
+                    }
+                    &.production {
+                        background-image: url('/img/business/tunnel/production.jpg');
+                    }
+                    &.deliver {
+                        background-image: url('/img/business/tunnel/deliver.jpg');
+                    }
+                    .progress-bar {
+                        bottom: -5px;
+                        z-index: 2;
+                        .percentage {
+                            background-color: rgba($color: #fff, $alpha: .5);
+                        }
+                    }
+                }
+            }
             .tab-pane {
 
                 [class*='col-md-'] {
@@ -3362,6 +3453,10 @@ a.toggle-locale-btn {
         li.nav-item {
             display: inline-block;
         }
+    }
+
+    .site-content .production-tabs ul.nav-tabs.tunnel li.nav-item {
+        flex: 0 0 33.33%;
     }
 
     .site-content .production-tabs .tab-content .tab-pane [class*='col-md-'].label {
@@ -3892,6 +3987,14 @@ a.toggle-locale-btn {
     }
     .site-content .factory-list .factory-item .factory-item-info {
         padding-bottom: 0;
+    }
+
+    .site-content .production-tabs ul.nav-tabs.tunnel {
+        display: none;
+    }
+
+    .site-content .production-tabs .tab-content.tunnel .tab-pane .progress-bar {
+        bottom: 0;
     }
 
     .mobile-site-header a.header-logo {
