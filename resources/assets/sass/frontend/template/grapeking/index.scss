@@ -3997,6 +3997,10 @@ a.toggle-locale-btn {
         bottom: 0;
     }
 
+    .site-content .production-tabs .tab-content.tunnel .tab-pane .info {
+        background-color: rgba($color: #fff, $alpha: .5);  
+    }
+
     .mobile-site-header a.header-logo {
         margin-top: -5px;
     }
