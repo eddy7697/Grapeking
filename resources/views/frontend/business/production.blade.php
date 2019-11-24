@@ -91,6 +91,61 @@ $('.nav-link').on('hide.bs.tab', function(event){
     $('.prod-material').removeClass('fadeInLeft animated');
 });
 </script>
+
+<script>
+$('.material-slide').slick({
+    // dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 5,
+    // slidesToScroll: 5,
+    responsive: [{
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 4,
+                // slidesToScroll: 4,
+                infinite: true,
+                dots: true
+            }
+        },
+        {
+            breakpoint: 1180,
+            settings: {
+                slidesToShow: 3,
+                // slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                // slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                // slidesToScroll: 1
+            }
+        }
+    ]
+});
+
+function adjustMaterial() {
+    if ($(window).width() < 1080) {
+        $('.material-item').addClass('active');
+    } else {
+        $('.material-item').removeClass('active');
+    }
+}
+
+adjustMaterial();
+
+$(window).resize(function () {
+    adjustMaterial()
+});
+</script>
 @endsection
 
 @section('custom-style')
@@ -167,14 +222,17 @@ $('.nav-link').on('hide.bs.tab', function(event){
     </div>
     <div class="material-slide">
         @foreach ($material as $index => $item)
-            <div class="material-item" style="background-image: url('{{$item['bg']}}')">
+            <div class="material-item">
+                <div class="material-bg" style="background-image: url('{{$item['bg']}}')"></div>
                 <div class="material-mask">
-                    <div class="material-logo" style="background-color: {{$item['color']}}">
-                        <img src="{{$item['image']}}" alt="">
-                    </div>
-                    <h4>{{$item['title']}}</h4>
-                    <div class="text">
-                        {{$item['text']}}
+                    <div class="material-info">
+                        <div class="material-logo" style="background-color: {{$item['color']}}">
+                            <img src="{{$item['image']}}" alt="">
+                        </div>
+                        <h4>{{$item['title']}}</h4>
+                        <div class="text">
+                            {{$item['text']}}
+                        </div>
                     </div>
                 </div>
             </div>
