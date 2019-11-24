@@ -1,6 +1,13 @@
 <?php
 
 return [
+    'prod_factory' => 'FACTORY FACILITY',
+    'prod_1' => 'Tablets',
+    'prod_2' => 'Granule & Powder',
+    'prod_3' => 'Bottle – Shaped Foil Pouch',
+    'prod_4' => 'Coffee Capsule',
+    'prod_5' => 'Glass Bottle',
+
     'tunnel_1' => 'ODM/OEM',
     'tunnel_1_text' => "Shanghai grape king integrates the resources and technical capabilities of Grape King Bio Group, and continues to provide one-stop ODM / OEM services for food and health food. Through high-level quality control and continuous innovation of R&D and production technology, it provides customers with all-round customized products and services of the highest quality, and establishes a chain from raw material procurement, import, inspection, production, packaging and storage transportation The OEM / ODM platform of 'One-Stop Service' strictly monitors and guarantees the quality standards of products throughout the process, and provides professional consulting services for customers' raw materials, nutrition and products at any time, so that customers have market advantages and competitiveness, because we have always believed that high quality is the only way for us to have competitive advantages.",
     'tunnel_2' => 'Bio-Professional R & D',

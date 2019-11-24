@@ -300,7 +300,7 @@
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
                     <p>食安中心</p>
-                    <p>Food safety center</p>
+                    <p>Food Safety Center</p>
                 </div>
                 <a href="/research/foodsafty"></a>
             </div>
@@ -324,7 +324,7 @@
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
                     <p>世界级工厂</p>
-                    <p>World class factory</p>
+                    <p>World Class Factory</p>
                 </div>
                 <a href="/research/factory"></a>
             </div>
@@ -476,7 +476,7 @@
                             'content' => trans('string.index_d_8')
                         ],
                         [
-                            'featureImage' => '/img/about-section-2.jpg',
+                            'featureImage' => '/img/csr/csr-3.jpg',
                             'title' => trans('string.innovation_rnd_center'),
                             'link' => '/research/innovation',
                             'content' => trans('string.index_d_9')

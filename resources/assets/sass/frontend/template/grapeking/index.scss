@@ -1285,6 +1285,7 @@ a.toggle-locale-btn {
                 }
                 .featureImage {
                     background-repeat: no-repeat;
+                    background-position: center;
                     background-size: cover;
                     padding-bottom: 65%;
                 }
@@ -2301,6 +2302,7 @@ a.toggle-locale-btn {
 
             .session-image {
                 width: 100%;
+                min-height: 100%;
                 background-position: center;
                 background-size: cover;
                 padding-bottom: 70%;
@@ -2431,7 +2433,7 @@ a.toggle-locale-btn {
                         max-width: 250px;
                     }
                     .mask {
-                        @extend %force-center;
+                        @extend %force-bottom-center;
                         opacity: 0;
                         position: absolute;
                         top: 0;
@@ -2442,7 +2444,7 @@ a.toggle-locale-btn {
                         transition: all .2s ease-out;
 
                         .info {
-                            padding: 75px 0;
+                            padding: 75px 15px;
                             border-top: #fff solid thin;
                             border-bottom: #fff solid thin;
                             transition: all .2s ease-out;
@@ -2469,7 +2471,7 @@ a.toggle-locale-btn {
                     max-width: 250px;
                 }
                 .mask {
-                    @extend %force-center;
+                    @extend %force-bottom-center;
                     opacity: 0;
                     position: absolute;
                     top: 0;
@@ -2480,7 +2482,7 @@ a.toggle-locale-btn {
                     transition: all .2s ease-out;
 
                     .info {
-                        padding: 75px 0;
+                        padding: 75px 15px;
                         border-top: #fff solid thin;
                         border-bottom: #fff solid thin;
                         transition: all .2s ease-out;
@@ -2491,7 +2493,7 @@ a.toggle-locale-btn {
                         opacity: 1;
 
                         .info {
-                            padding: 15px 0;
+                            padding: 15px;
                         }
                     }
                 }

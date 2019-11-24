@@ -1,5 +1,9 @@
 @extends('main')
 
+@php
+    $locale = App::getLocale();
+@endphp
+
 @section('custom-script')
 <script>
 var links = $('.nav-link');
@@ -18,6 +22,7 @@ var autoPlay = function () {
 var play = setInterval(function() {
     autoPlay();
 }, timeOunt);
+
 
 function tabShow(label) {
     $(`.nav-link.` + label).tab('show');
@@ -112,13 +117,17 @@ $('.nav-link').on('hide.bs.tab', function(event){
             <div class="row">
                 {{-- <div class="bg-img"></div> --}}
                 <div class="col-md-12 mobile-to-show">
-                    <h1 style="text-align: center; font-weight: 700">工厂规模</h1>
+                    <h1 style="text-align: center; font-weight: 700">{{trans('text.prod_factory')}}</h1>
                 </div>
                 <div class="col-md-7 production-left-side">
-                    <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
+                    @if (App::getLocale() == 'en')
+                        <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow_en.svg" class="production-image" alt="">    
+                    @else
+                        <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
+                    @endif
                 </div>
                 <div class="col-md-5 production-right-side mobile-to-hide">
-                    <span class="factory-text">工厂规模</span>
+                    <span class="factory-text">{{trans('text.prod_factory')}}</span>
                 </div>
             </div>
         </div>
@@ -126,19 +135,19 @@ $('.nav-link').on('hide.bs.tab', function(event){
     <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link active tablet" data-toggle="tab" href="#home">片劑</a>
+                <a class="nav-link active tablet" data-toggle="tab" href="#home">{{trans('text.prod_1')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link granule" data-toggle="tab" href="#menu1">顆粒粉末</a>
+                <a class="nav-link granule" data-toggle="tab" href="#menu1">{{trans('text.prod_2')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link aluminum" data-toggle="tab" href="#menu2">曲線鋁箔袋</a>
+                <a class="nav-link aluminum" data-toggle="tab" href="#menu2">{{trans('text.prod_3')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link capsule" data-toggle="tab" href="#menu3">咖啡膠囊</a>
+                <a class="nav-link capsule" data-toggle="tab" href="#menu3">{{trans('text.prod_4')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link glass_bottle" data-toggle="tab" href="#menu4">玻璃瓶</a>
+                <a class="nav-link glass_bottle" data-toggle="tab" href="#menu4">{{trans('text.prod_5')}}</a>
             </li>
         </ul>
         
@@ -146,8 +155,13 @@ $('.nav-link').on('hide.bs.tab', function(event){
             <div class="tab-pane container-fluid active" id="home">
                 <div class="row">
                     <div class="col-md-5 label tablet">
-                        @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
-                        @include('components.prod.01')
+                        @if ($locale == 'en')
+                                @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                                @include('components.prod_en.01')
+                        @else
+                                @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                                @include('components.prod.01')
+                        @endif
                         {{-- <img data-aos="fade-right" src="/img/business/prod/2-1.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
@@ -161,8 +175,13 @@ $('.nav-link').on('hide.bs.tab', function(event){
             <div class="tab-pane fade container-fluid" id="menu1">
                 <div class="row">
                     <div class="col-md-5 label granule">
-                        @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
-                        @include('components.prod.02')
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
+                            @include('components.prod_en.02')    
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
+                            @include('components.prod.02')
+                        @endif
                         {{-- <img data-aos="fade-right" src="/img/business/prod/2-2.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
@@ -176,8 +195,14 @@ $('.nav-link').on('hide.bs.tab', function(event){
             <div class="tab-pane fade container-fluid" id="menu2">
                 <div class="row">
                     <div class="col-md-5 label aluminum">
-                        @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
-                        @include('components.prod.03')
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
+                            @include('components.prod_en.03')
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
+                            @include('components.prod.03')
+                        @endif
+                        
                         {{-- <img data-aos="fade-right" src="/img/business/prod/2-3.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
@@ -191,8 +216,14 @@ $('.nav-link').on('hide.bs.tab', function(event){
             <div class="tab-pane fade container-fluid" id="menu3">
                 <div class="row">
                     <div class="col-md-5 label capsule">
-                        @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
-                        @include('components.prod.04')
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
+                            @include('components.prod_en.04')
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
+                            @include('components.prod.04')
+                        @endif
+                        
                         {{-- <img data-aos="fade-right" src="/img/business/prod/2-4.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
@@ -206,8 +237,13 @@ $('.nav-link').on('hide.bs.tab', function(event){
             <div class="tab-pane fade container-fluid" id="menu4">
                 <div class="row">
                     <div class="col-md-5 label glass_bottle">
+                        @if ($locale == 'en')
+                        @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
+                        @include('components.prod_en.05')
+                        @else
                         @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
                         @include('components.prod.05')
+                        @endif
                         {{-- <img data-aos="fade-right" src="/img/business/prod/2-5.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
@@ -223,7 +259,7 @@ $('.nav-link').on('hide.bs.tab', function(event){
     <div class="container">
         <div class="col-md-12 about-content">
             <div class="about-text" style="text-align: center">
-                <p style="margin-top: 50px; font-weight: 700">{{ trans('string.production_d_12') }}</p>
+                <p style="margin-top: 50px; font-weight: 700">{!! trans('string.production_d_12') !!}</p>
                 <a class="location-contact-btn" style="margin-top: 20px;" href="/contact">{{ trans('string.catalog_d_17') }}</a>
             </div>
         </div>

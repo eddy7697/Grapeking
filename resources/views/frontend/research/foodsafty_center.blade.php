@@ -54,9 +54,9 @@ $(window).scroll(function () {
         <div class="container">
             <div class="col-md-12 container-label">
                 <h2>
-                        食品安全
+                        食品安全中心
                     <br>
-                    <span style="font-size: 16px;">Food Safety</span>
+                    <span style="font-size: 16px;">Centre for Food Safety</span>
                 </h2>
             </div>
         </div>
@@ -71,9 +71,9 @@ $(window).scroll(function () {
                             <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
                             <li>{{ trans('string.research') }}</li>
                             <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
-                            <li>{{ trans('string.foodSafty') }}</li>
+                            <li>{{ trans('string.food_safty_center') }}</li>
                         </ul>
-                        <h2>{{ trans('string.foodSafty') }}</h2>
+                        <h2>{{ trans('string.food_safty_center') }}</h2>
                     </div>
                 </div>
             </div>

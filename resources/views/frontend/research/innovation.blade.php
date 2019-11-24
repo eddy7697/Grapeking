@@ -39,15 +39,15 @@ $(window).scroll(function () {
     }
     $('.info-text').height(finalHeight);
 
-    var titles = $('.about-section-title');
-    var finalHeight = 0;
+    // var titles = $('.about-section-title');
+    // var finalHeight = 0;
     
-    for (let i = 0; i < titles.length; i++) {
-        if ($(titles[i]).height() > finalHeight) {
-            finalHeight = $(titles[i]).height();
-        }
-    }
-    $('.about-section-title').height(finalHeight);
+    // for (let i = 0; i < titles.length; i++) {
+    //     if ($(titles[i]).height() > finalHeight) {
+    //         finalHeight = $(titles[i]).height();
+    //     }
+    // }
+    // $('.about-section-title').height(finalHeight);
 </script>
 @endsection
 
