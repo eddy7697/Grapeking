@@ -2,6 +2,39 @@
 
 @php
     $locale = App::getLocale();
+    $material = array(
+        [
+            'title' => trans('text.material_prod_1'),
+            'text' => trans('text.material_prod_1_text'),
+            'bg' => '/img/business/material/material-1_bg.jpg',
+            'image' => '/img/business/material/material-1.png',
+            'color' => '#e30133',
+        ],[
+            'title' => trans('text.material_prod_2'),
+            'text' => trans('text.material_prod_2_text'),
+            'bg' => '/img/business/material/material-2_bg.jpg',
+            'image' => '/img/business/material/material-2.png',
+            'color' => '#a8ca02',
+        ],[
+            'title' => trans('text.material_prod_3'),
+            'text' => trans('text.material_prod_3_text'),
+            'bg' => '/img/business/material/material-3_bg.jpg',
+            'image' => '/img/business/material/material-3.png',
+            'color' => '#f23764',
+        ],[
+            'title' => trans('text.material_prod_4'),
+            'text' => trans('text.material_prod_4_text'),
+            'bg' => '/img/business/material/material-4_bg.jpg',
+            'image' => '/img/business/material/material-4.png',
+            'color' => '#e58a2d',
+        ],[
+            'title' => trans('text.material_prod_5'),
+            'text' => trans('text.material_prod_5_text'),
+            'bg' => '/img/business/material/material-5_bg.jpg',
+            'image' => '/img/business/material/material-5.png',
+            'color' => '#369fd9',
+        ]
+    );
 @endphp
 
 @section('custom-script')
@@ -132,6 +165,21 @@ $('.nav-link').on('hide.bs.tab', function(event){
             </div>
         </div>
     </div>
+    <div class="material-slide">
+        @foreach ($material as $index => $item)
+            <div class="material-item" style="background-image: url('{{$item['bg']}}')">
+                <div class="material-mask">
+                    <div class="material-logo" style="background-color: {{$item['color']}}">
+                        <img src="{{$item['image']}}" alt="">
+                    </div>
+                    <h4>{{$item['title']}}</h4>
+                    <div class="text">
+                        {{$item['text']}}
+                    </div>
+                </div>
+            </div>
+        @endforeach
+    </div>
     <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         <ul class="nav nav-tabs">
             <li class="nav-item">
@@ -162,7 +210,6 @@ $('.nav-link').on('hide.bs.tab', function(event){
                                 @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
                                 @include('components.prod.01')
                         @endif
-                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-1.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-1.jpg" alt="">
@@ -182,7 +229,6 @@ $('.nav-link').on('hide.bs.tab', function(event){
                             @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
                             @include('components.prod.02')
                         @endif
-                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-2.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-2.jpg" alt="">
@@ -202,8 +248,6 @@ $('.nav-link').on('hide.bs.tab', function(event){
                             @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
                             @include('components.prod.03')
                         @endif
-                        
-                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-3.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-3.jpg" alt="">
@@ -223,8 +267,6 @@ $('.nav-link').on('hide.bs.tab', function(event){
                             @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
                             @include('components.prod.04')
                         @endif
-                        
-                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-4.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-4.jpg" alt="">
@@ -244,7 +286,6 @@ $('.nav-link').on('hide.bs.tab', function(event){
                         @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
                         @include('components.prod.05')
                         @endif
-                        {{-- <img data-aos="fade-right" src="/img/business/prod/2-5.svg" alt=""> --}}
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-5.jpg" alt="">
