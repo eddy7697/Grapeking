@@ -64,6 +64,9 @@
 @if (App::getLocale() == 'en')
 <style>
     {!!PageView::css(22)!!}
+    .tunnel .nav-link {
+        font-size: 14px !important;
+    }
 </style>
 @else
 <style>
@@ -224,19 +227,19 @@
                 <a class="nav-link active odm_oem" data-toggle="tab" href="#home">ODM/OEM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link research" data-toggle="tab" href="#menu1">專業研發</a>
+                <a class="nav-link research" data-toggle="tab" href="#menu1">{{ trans('text.tunnel_2') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link formula" data-toggle="tab" href="#menu2">配方設計</a>
+                <a class="nav-link formula" data-toggle="tab" href="#menu2">{{ trans('text.tunnel_3') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link package" data-toggle="tab" href="#menu3">包裝設計</a>
+                <a class="nav-link package" data-toggle="tab" href="#menu3">{{ trans('text.tunnel_4') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link production" data-toggle="tab" href="#menu4">生產製造</a>
+                <a class="nav-link production" data-toggle="tab" href="#menu4">{{ trans('text.tunnel_5') }}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link deliver" data-toggle="tab" href="#menu5">物流配送</a>
+                <a class="nav-link deliver" data-toggle="tab" href="#menu5">{{ trans('text.tunnel_6') }}</a>
             </li>
         </ul>
     </div>
