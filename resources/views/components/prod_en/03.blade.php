@@ -42,7 +42,7 @@
                 }
             </style>
         </defs>
-        <title>曲线铝箔袋</title>
+        <title>铝箔袋</title>
         <circle class="cls_3-1" cx="107" cy="114.16" r="101" />
         <line class="cls_3-1" x1="178.67" y1="182.16" x2="577.67" y2="182.16" /><text class="cls_3-2"
             transform="translate(239.74 160.34)">Liquid</text><text class="cls_3-3" transform="translate(239.74 215.34)">

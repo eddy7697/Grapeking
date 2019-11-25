@@ -72,7 +72,7 @@ return [
     'about_1' => 'Milestone',
     'about_2' => 'Founder',
     'about_3' => 'Certification',
-    'about_4' => 'Location',
+    'about_4' => 'Global layout',
     'about1' => 'Founded in 1969, Grape King Bio has undergone three innovative transformations, including: producing the first local energy drink “CANBET ORAL DRINK ”, which became instant market success; progressing into the health food market by establishing an Grape King’s Bioengineering Center in 1991(Now Grape King Biotech Research Institute); and the organizational restructure & rebranding in 2010. Over the years, we have gradually developed our own smile curve and not only do we have the largest fermentation capacity as well as best leading technology in Taiwan, but we’re also a PIC/S GMP pharmaceutical factory with ISO22000 and ISO17025 international quality certification. This guarantees the safety and quality of our products. Most importantly, we have cultivated our presence within the local market for a long period of time, allowing our products to be distributed across all national sales channels. Such advantages make us the most competitive business in the industry. "Technology, Health, Hope" has always core of Grape King’s values. It is the basis in which we carry out our mission – “Live Healthy, Think Grape King", thereby providing richness and color to the lives of the public. We stand by your side as jointly embrace the bright future.',
     'about2' => 'Grape King Bio',
     'about3' => 'location',
@@ -434,6 +434,11 @@ return [
     'contact_inf_4' => 'Email: gki@grapeking.com.cn',
     'contact_inf_5' => 'Contact line',
     'contact_inf_6' => '+86-21-5760-9598',
+
+    'contact_1' => '<li>Grape King Bio Head Office</li> <li>Addr.：No. 402, Section 2 Jinling Road, Pingzhen District, Taoyuan City</li> <li>Tel：+886-03-457-2121</li> <li>Fax：+886-03-457-2128</li> <li>Web：www.grapeking.com.tw</li> <li>E-Mail：gki.global.sales@grapeking.com.tw</li>',
+    'contact_2' => '<li>Shanghai Grape King </li> <li>Addr.：No. 518, Che-Xin Road, Songjiang, Shanghai, China </li> <li>Tel：+86-21-5760 9598</li> <li>Fax：+86-21-5760-9698</li> <li>Web：www.grapeking.com.cn</li> <li>E-Mail：gki@grapeking.com.cn</li>',
+    'contact_3' => '<li>Dongpu Biotech Corporation</li> <li>Room 204 &205, Building 9, Kejiyuan, Innovation, Dongwan Songshanhu New & Hi-Tech Industry Development Area, China</li> <li>Tel：+86-769-2289-2726</li> <li>Fax：+86-769-2289-2729</li>',
+    'contact_4' => '<li>Pro-Partner Ltd.</li> <li>Addr：3F., No. 18, Jinzhuang Rd., Neihu Dist.,Taipei City</li> <li>Tel：+886-02-2792-2103</li> <li>Fax：+886-02-2792-2263</li> <li>Web：www.pro-partner.com.tw</li>',
 
     'contact_inf__1' => 'No. 402, Section 2, Jinling Road, Pingzhen District, Taoyuan City',
     'contact_inf__2' => '(03)457-2121',

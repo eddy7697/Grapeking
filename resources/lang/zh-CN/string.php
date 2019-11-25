@@ -427,6 +427,10 @@ return [
     'career_d_13' => '职缺专区',
     'career_d_14' => '请务必透过『<a href="https://company.zhaopin.com/CZ178566810.htm">智联招聘网站</a>』进行履历表投递，经审核资格后，将主动通知面试。',
     
+    'contact_1' => '<li>葡萄王生技股份有限公司</li> <li>地址：324 桃園市平鎮區金陵路2段402號</li> <li>電話：+886-03-457-2121</li> <li>传真：+886-03-457-2128</li> <li>网址：www.grapeking.com.tw</li> <li>电邮：gki.global.sales@grapeking.com.tw</li>',
+    'contact_2' => '<li>上海葡萄王</li> <li>地址：324 上海市松江區車墩鎮車新公路518號</li> <li>電話：+86-21-5760 9598</li> <li>传真：+86-21-5760-9698</li> <li>网址：www.grapeking.com.cn</li> <li>电邮：gki@grapeking.com.cn</li>',
+    'contact_3' => '<li>东葡生物科技(东莞)有限公司</li><li>地址：東莞松山湖高新技術產業開發區創新科技園9號樓204、205室</li><li>電話：+86-769-2289-2726</li><li>傳真：+86-769-2289-2729</li>',
+    'contact_4' => '<li>葡众企业股份有限公司</li> <li>地址：台北市內湖區金莊路 18 號 3 樓</li> <li>電話：+886-02-2792-2103</li> <li>傳真：+886-02-2792-2263</li> <li>网址：www.pro-partner.com.tw</li>',
     
     'contact_inf_1' => '地址：上海市松江区车墩镇车新公路518号',
     'contact_inf_2' => '传真：+86-21-5760-9698',

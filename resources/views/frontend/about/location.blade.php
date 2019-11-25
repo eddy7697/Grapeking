@@ -64,9 +64,9 @@ $(window).scroll(function () {
                                 <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
                                 <li>{{ trans('string.about') }}</li>
                                 <li>&nbsp;&nbsp;<i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;</li>
-                                <li>{{ trans('string.about31') }}</li>
+                                <li>{{ trans('string.about_4') }}</li>
                             </ul>
-                            <h2>{{ trans('string.about31') }}</h2>
+                            <h2>{{ trans('string.about_4') }}</h2>
                         </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ $(window).scroll(function () {
     <div class="container">
         <div class="row">
             
-            <div class="col-md-9 mx-auto about-content">
+            <div class="col-md-10 mx-auto about-content">
                 
                 
                 <div class="about-text">
@@ -149,11 +149,7 @@ $(window).scroll(function () {
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
-                                                <li>{{ trans('string.contact_inf__1') }}</li>
-                                                <li>{{ trans('string.contact_inf__2') }}</li>
-                                                <li>{{ trans('string.contact_inf__2_fax') }}</li>
-                                                <li>{!! trans('string.contact_inf__3') !!}</li>
-                                                <li>{{ trans('string.contact_inf__4') }}</li>
+                                                {!! trans('string.contact_1') !!}
                                             </ul>
                                         </div>
                                     </div>
@@ -180,10 +176,7 @@ $(window).scroll(function () {
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
-                                                <li>{{ trans('string.contact_inf_1') }}</li>
-                                                <li>{{ trans('string.contact_inf_2') }}</li>
-                                                <li>{!! trans('string.contact_inf_3') !!}</li>
-                                                <li>{{ trans('string.contact_inf_4') }}</li>
+                                                {!! trans('string.contact_2') !!}
                                             </ul>
                                         </div>
                                     </div>
@@ -210,10 +203,7 @@ $(window).scroll(function () {
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
-                                                <li>{{ trans('string.contact_inf___1') }}</li>
-                                                <li>{{ trans('string.contact_inf___2') }}</li>
-                                                <li>{{ trans('string.contact_inf___3') }}</li>
-                                                <li>{{ trans('string.contact_inf___4') }}</li>
+                                                {!! trans('string.contact_3') !!}
                                             </ul>
                                         </div>
                                     </div>
@@ -240,10 +230,7 @@ $(window).scroll(function () {
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;">
-                                                <li>{{ trans('string.contact_inf____1') }}</li>
-                                                <li>{{ trans('string.contact_inf____2') }}</li>
-                                                <li>{!! trans('string.contact_inf____3') !!}</li>
-                                                <li>{{ trans('string.contact_inf____4') }}</li>
+                                                {!! trans('string.contact_4') !!}
                                             </ul>
                                         </div>
                                     </div>
