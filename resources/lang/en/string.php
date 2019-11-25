@@ -430,14 +430,15 @@ return [
     
     'contact_inf_1' => 'Address: No. 518, Chexin Road, Chedun Town, Songjiang District, Shanghai, China',
     'contact_inf_2' => 'Fax: +86-21-5760-9698',
-    'contact_inf_3' => 'URL: www.grapeking.com.cn',
+    'contact_inf_3' => 'URL: <a href="www.grapeking.com.cn" target="_blank">www.grapeking.com.cn</a>',
     'contact_inf_4' => 'Email: gki@grapeking.com.cn',
     'contact_inf_5' => 'Contact line',
-    'contact_inf_6' => '021-5760-9598',
+    'contact_inf_6' => '+86-21-5760-9598',
 
     'contact_inf__1' => 'No. 402, Section 2, Jinling Road, Pingzhen District, Taoyuan City',
     'contact_inf__2' => '(03)457-2121',
-    'contact_inf__3' => 'www.grapeking.com.cn',
+    'contact_inf__2_fax' => '+886-3-457-2128',
+    'contact_inf__3' => 'URL: <a href="https://www.grapeking.com.tw/" target="_blank">https://www.grapeking.com.tw/</a>',
     'contact_inf__4' => 'gki@grapeking.com.cn',
 
     'contact_inf___1' => 'Room 204, 205, Building 9, Innovation and Technology Park, Songshan Lake High-tech Industrial Development Zone, Dongguan',
@@ -446,8 +447,8 @@ return [
     'contact_inf___4' => 'gki@grapeking.com.cn',
 
     'contact_inf____1' => '3/F, 18 Jinzhuang Road, Neihu District, Taipei',
-    'contact_inf____2' => '+86-21-5760-9698',
-    'contact_inf____3' => 'www.grapeking.com.cn',
+    'contact_inf____2' => '+886-2-27922103',
+    'contact_inf____3' => '<a href="https://www.pro-partner.com.tw/">https://www.pro-partner.com.tw/</a>',
     'contact_inf____4' => 'gki@grapeking.com.cn',
     
     'founder_d_1' => 'Founder and President Mr. Zeng Shuizhao',

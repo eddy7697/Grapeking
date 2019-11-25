@@ -430,14 +430,15 @@ return [
     
     'contact_inf_1' => '地址：上海市松江区车墩镇车新公路518号',
     'contact_inf_2' => '传真：+86-21-5760-9698',
-    'contact_inf_3' => '网址：www.grapeking.com.cn',
+    'contact_inf_3' => '网址：<a href="www.grapeking.com.cn" target="_blank">www.grapeking.com.cn</a>',
     'contact_inf_4' => '电邮：gki@grapeking.com.cn',
     'contact_inf_5' => '联系专线',
-    'contact_inf_6' => '021-5760-9598',
+    'contact_inf_6' => '+86-21-5760-9598',
 
     'contact_inf__1' => '地址：324 桃園市平鎮區金陵路2段402號',
-    'contact_inf__2' => '传真：+86-21-5760-9698',
-    'contact_inf__3' => '网址：www.grapeking.com.cn',
+    'contact_inf__2' => '电话：+886-3-457-2121',
+    'contact_inf__2_fax' => '傳真：+886-3-457-2128',
+    'contact_inf__3' => '网址：<a href="https://www.grapeking.com.tw/" target="_blank">https://www.grapeking.com.tw/</a>',
     'contact_inf__4' => '电邮：gki@grapeking.com.cn',
 
     'contact_inf___1' => '地址：東莞松山湖高新技術產業開發區創新科技園9號樓204、205室',
@@ -446,8 +447,8 @@ return [
     'contact_inf___4' => '电邮：gki@grapeking.com.cn',
 
     'contact_inf____1' => '地址：台北市內湖區金莊路18號3樓',
-    'contact_inf____2' => '传真：+86-21-5760-9698',
-    'contact_inf____3' => '网址：www.grapeking.com.cn',
+    'contact_inf____2' => '电话：+886-2-27922103',
+    'contact_inf____3' => '网址：<a href="https://www.pro-partner.com.tw/">https://www.pro-partner.com.tw/</a>',
     'contact_inf____4' => '电邮：gki@grapeking.com.cn',
 
     'founder_d_1' => '創辦人暨總裁 曾水照 先生',

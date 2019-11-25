@@ -151,7 +151,8 @@ $(window).scroll(function () {
                                             <ul style="font-size: 13px;">
                                                 <li>{{ trans('string.contact_inf__1') }}</li>
                                                 <li>{{ trans('string.contact_inf__2') }}</li>
-                                                <li>{{ trans('string.contact_inf__3') }}</li>
+                                                <li>{{ trans('string.contact_inf__2_fax') }}</li>
+                                                <li>{!! trans('string.contact_inf__3') !!}</li>
                                                 <li>{{ trans('string.contact_inf__4') }}</li>
                                             </ul>
                                         </div>
@@ -181,7 +182,7 @@ $(window).scroll(function () {
                                             <ul style="font-size: 13px;">
                                                 <li>{{ trans('string.contact_inf_1') }}</li>
                                                 <li>{{ trans('string.contact_inf_2') }}</li>
-                                                <li>{{ trans('string.contact_inf_3') }}</li>
+                                                <li>{!! trans('string.contact_inf_3') !!}</li>
                                                 <li>{{ trans('string.contact_inf_4') }}</li>
                                             </ul>
                                         </div>
@@ -241,7 +242,7 @@ $(window).scroll(function () {
                                             <ul style="font-size: 13px;">
                                                 <li>{{ trans('string.contact_inf____1') }}</li>
                                                 <li>{{ trans('string.contact_inf____2') }}</li>
-                                                <li>{{ trans('string.contact_inf____3') }}</li>
+                                                <li>{!! trans('string.contact_inf____3') !!}</li>
                                                 <li>{{ trans('string.contact_inf____4') }}</li>
                                             </ul>
                                         </div>
