@@ -89,15 +89,16 @@ $(window).scroll(function () {
         <div class="location-map">
             <div class="img-container">
                 <img src="/img/map/1.png" alt="" data-aos="fade-in">
-                <img src="/img/map/m1.png" alt="" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
-                <img src="/img/map/m2.png" alt="" data-aos="fade-left" data-aos-delay="1300" data-aos-duration="1000">
-                <img src="/img/map/m3.png" alt="" data-aos="fade-left" data-aos-delay="1600" data-aos-duration="1000">
-                <img src="/img/map/m4.png" alt="" data-aos="fade-left" data-aos-delay="1900" data-aos-duration="1000">
-                <img src="/img/map/m5.png" alt="" data-aos="fade-left" data-aos-delay="2200" data-aos-duration="1000">
-                <img src="/img/map/m6.png" alt="" data-aos="fade-right" data-aos-delay="2500" data-aos-duration="1000">
-                <img src="/img/map/m7.png" alt="" data-aos="fade-right" data-aos-delay="2800" data-aos-duration="1000">
-                <img src="/img/map/m8.png" alt="" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="1000">
-                <img src="/img/map/2.png" alt="" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m8.png" alt="" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m9.png" alt="" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m7.png" alt="" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m5.png" alt="" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m4.png" alt="" data-aos="fade-left" data-aos-delay="1700" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m3.png" alt="" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m2.png" alt="" data-aos="fade-left" data-aos-delay="2300" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m1.png" alt="" data-aos="fade-left" data-aos-delay="2700" data-aos-duration="1000">
+                <img src="/img/map/{{App::getLocale()}}/m6.png" alt="" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="1000">
+                <img src="/img/map/2.png" alt="" data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
             </div>
         </div>
         

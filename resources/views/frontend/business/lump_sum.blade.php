@@ -112,7 +112,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 about-content" style="margin: 0">
-                <h3 class="about-section-title" id="section_1">一條龍代工服務平台</h3>            
+                <h3 class="about-section-title" id="section_1">{{ trans('string.one_line_flow') }}</h3>            
             </div>
         </div>
     </div>

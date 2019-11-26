@@ -68,6 +68,8 @@ return [
     'not_validate' => 'Login must be verified.',
     'send_valid_letter' => 'Send verification letter',
 
+    'one_line_flow' => 'One-Stop Service​',
+
     'company_tw' => 'Taiwan Grape King Biotechnology Co., Ltd.',    
     'about_1' => 'Milestone',
     'about_2' => 'Founder',
