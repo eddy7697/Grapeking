@@ -1,6 +1,23 @@
 <?php
 
 return [
+    'flow_1' => 'Consultation and Suggestion',
+    'flow_1_text' => 'We advise on the ingredients, dosage form, size, package, etc. depending on customers request.',
+    'flow_2' => 'Quotation',
+    'flow_2_text' => 'We give a rough quote based on the product development planning.',
+    'flow_3' => 'Trail Production',
+    'flow_3_text' => 'Customized ingredients<br>Client evaluation<br>Discussion and modifications',
+    'flow_4' => 'Proofing',
+    'flow_4_text' => 'Proofing is made after deciding formulation and package design.',
+    'flow_5' => 'Formulation Modification',
+    'flow_5_text' => 'Further modifications are made according to customers’ feedback.',
+    'flow_6' => 'Product Quotation',
+    'flow_6_text' => 'Give the product quotation based on given quantity and contents.',
+    'flow_7' => 'Order Confirmation',
+    'flow_7_text' => 'Packaging material<br>Product<br>Delivery date<br>Schedule',
+    'flow_8' => 'Manufacturer and Shipment',
+    'flow_8_text' => 'Full-scale manufacturing<br>Finished packaging<br>Quality control<br>Goods submission',
+
     'material_prod_1' => '漢方保養',
     'material_prod_1_text' => '內補元氣、外增體力，健康有效率，讓漢方本草變身為您的貼身調理良伴',
     'material_prod_2' => '健康調節',

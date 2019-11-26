@@ -255,7 +255,59 @@
                 @endif
 
             </div>
-            
+            <div class="col-12 col-sm-10 mx-auto one-stop-flow">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_1') }}</h5>
+                            <p>{!! trans('text.flow_1_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_2') }}</h5>
+                            <p>{!! trans('text.flow_2_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_3') }}</h5>
+                            <p>{!! trans('text.flow_3_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_4') }}</h5>
+                            <p>{!! trans('text.flow_4_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_5') }}</h5>
+                            <p>{!! trans('text.flow_5_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_6') }}</h5>
+                            <p>{!! trans('text.flow_6_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_7') }}</h5>
+                            <p>{!! trans('text.flow_7_text') !!}</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 flow-item">
+                        <div class="inner-box">
+                            <h5>{{ trans('text.flow_8') }}</h5>
+                            <p>{!! trans('text.flow_8_text') !!}</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 @endsection

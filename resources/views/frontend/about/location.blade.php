@@ -49,7 +49,7 @@ $(window).scroll(function () {
                     <h2>
                             全球布局
                         <br>
-                        <span style="font-size: 16px;">Global layout</span>
+                        <span style="font-size: 16px;">Location</span>
                     </h2>
                 </div>
             </div>
