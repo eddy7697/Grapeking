@@ -221,7 +221,7 @@ $(window).resize(function () {
         </div>
         <div class="bottom-mask"></div>
     </div>
-    <div class="material-slide" style="overflow: hidden">
+    <div class="material-slide">
         @foreach ($material as $index => $item)
             <div class="material-item">
                 <div class="material-bg" style="background-image: url('{{$item['bg']}}')"></div>
@@ -238,6 +238,7 @@ $(window).resize(function () {
                 </div>
             </div>
         @endforeach
+        
     </div>
     <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         <ul class="nav nav-tabs">
