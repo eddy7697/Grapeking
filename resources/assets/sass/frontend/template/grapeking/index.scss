@@ -2880,14 +2880,22 @@ a.toggle-locale-btn {
     
     .production-content {
         margin-top: 38px;
-        margin-bottom: 80px;
+        // margin-bottom: 80px;
         padding-top: 60px;
-        padding-bottom: 60px;
+        padding-bottom: 80px;
         background-image: url('/img/business/production_flow_bg.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: top left;
 
+        .bottom-mask {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 80px;
+            background: linear-gradient(rgba(#FFF, 0), #fff);
+        }
         .bg-img {
             background-image: url('/img/business/production_flow_bg.jpg');
             background-repeat: no-repeat;

@@ -219,6 +219,7 @@ $(window).resize(function () {
                 </div>
             </div>
         </div>
+        <div class="bottom-mask"></div>
     </div>
     <div class="material-slide">
         @foreach ($material as $index => $item)
