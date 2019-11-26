@@ -221,7 +221,7 @@ $(window).resize(function () {
         </div>
         <div class="bottom-mask"></div>
     </div>
-    <div class="material-slide">
+    <div class="material-slide" style="overflow: hidden">
         @foreach ($material as $index => $item)
             <div class="material-item">
                 <div class="material-bg" style="background-image: url('{{$item['bg']}}')"></div>

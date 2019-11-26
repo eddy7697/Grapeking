@@ -35,7 +35,7 @@
     <div class="contact-side-link">
         <a href="/contact">
             @if (App::getLocale() == 'en')
-            <img src="/img/contact-icon.svg" alt="">
+            <img src="/img/contact-icon_en.png" alt="">
             @else
             <img src="/img/contact-icon.png" alt="">    
             @endif
