@@ -34,7 +34,12 @@
     {{-- Contact link --}}
     <div class="contact-side-link">
         <a href="/contact">
-            <img src="/img/contact-icon.png" alt="">
+            @if (App::getLocale() == 'en')
+            <img src="/img/contact-icon.svg" alt="">
+            @else
+            <img src="/img/contact-icon.png" alt="">    
+            @endif
+            
         </a>
     </div>
 
