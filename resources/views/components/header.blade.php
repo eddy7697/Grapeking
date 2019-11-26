@@ -149,7 +149,7 @@
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/business/tunnel_service" class="site-mega-menu-link">
+                        <a href="/business/odm_service" class="site-mega-menu-link">
                             <img src="/img/menu/lump_sum.jpg" alt="{{ trans('string.lump_sum') }}">
                             <p class="header-job-txt">{{ trans('string.lump_sum') }}</p>
                         </a>
@@ -289,7 +289,7 @@
         <li><a class="menu-item-dropdown">{{ trans('string.sales') }}</a>
             <ul>
                 <li><a href="/business/production">{{ trans('string.production') }}</a></li>
-                <li><a href="/business/tunnel_service">{{ trans('string.lump_sum') }}</a></li>
+                <li><a href="/business/odm_service">{{ trans('string.lump_sum') }}</a></li>
                 {{-- <li><a href="/business/catalog">{{ trans('string.catalog') }}</a></li> --}}
             </ul>
         </li>
