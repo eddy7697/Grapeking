@@ -1,6 +1,8 @@
 <?php
 
 return [
+    'refer_other' => 'Refer to our other brand information?',
+    
     'flow_1' => 'Consultation and Suggestion',
     'flow_1_text' => 'We advise on the ingredients, dosage form, size, package, etc. depending on customers request.',
     'flow_2' => 'Quotation',

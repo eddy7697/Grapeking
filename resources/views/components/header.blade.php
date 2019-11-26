@@ -272,8 +272,8 @@
     @else
         <a class="toggle-locale-btn" href="{{ route('lang.switch', 'en') }}">EN</a>    
     @endif
-    <img src="/img/icon/burger-open_{{App::getLocale()}}.svg" style="display: none">
-    <img src="/img/icon/burger-close_{{App::getLocale()}}.svg" style="display: none">
+    <img src="/img/icon/burger-open.svg" style="display: none">
+    <img src="/img/icon/burger-close.svg" style="display: none">
 </section>
 <section class="mobile-site-menu hide">
     <ul class="menu-item">
@@ -318,7 +318,7 @@
                     <div class="col-11 mx-auto">
                         <div class="row menu-org-list">
                             <div style="margin-bottom: 20px">
-                                <span style="color: #ccc; font-size: 12px">參考我們其他品牌資訊？（點選前往）</span>
+                                <span style="color: #ccc; font-size: 12px">{{ trans('text.refer_other') }}</span>
                             </div>
                             <div class="col-4 force-center">
                                 <a class="org-item" href="https://www.grapeking.com.tw/tw/home" target="_blank">
