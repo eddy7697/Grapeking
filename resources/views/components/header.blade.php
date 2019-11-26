@@ -149,7 +149,7 @@
                         </a>
                     </li>
                     <li class="site-mega-menu-item">
-                        <a href="/business/odm_service" class="site-mega-menu-link">
+                        <a href="/business/tunnel_service" class="site-mega-menu-link">
                             <img src="/img/menu/lump_sum.jpg" alt="{{ trans('string.lump_sum') }}">
                             <p class="header-job-txt">{{ trans('string.lump_sum') }}</p>
                         </a>
@@ -265,15 +265,15 @@
 
 {{-- Mobile side menu --}}
 <section class="mobile-site-header">
-    <div id="menu-btn" class="menu-btn"></div>
+    <div id="menu-btn" class="menu-btn {{App::getLocale()}}"></div>
     <a class="header-logo" href="/"><img src="/img/site-logo/logo_footer.png" alt=""></a>
     @if (App::getLocale() == 'en')
         <a class="toggle-locale-btn" href="{{ route('lang.switch', 'zh-CN') }}">簡</a>    
     @else
         <a class="toggle-locale-btn" href="{{ route('lang.switch', 'en') }}">EN</a>    
     @endif
-    <img src="/img/icon/burger-open.svg" style="display: none">
-    <img src="/img/icon/burger-close.svg" style="display: none">
+    <img src="/img/icon/burger-open_{{App::getLocale()}}.svg" style="display: none">
+    <img src="/img/icon/burger-close_{{App::getLocale()}}.svg" style="display: none">
 </section>
 <section class="mobile-site-menu hide">
     <ul class="menu-item">
@@ -289,7 +289,7 @@
         <li><a class="menu-item-dropdown">{{ trans('string.sales') }}</a>
             <ul>
                 <li><a href="/business/production">{{ trans('string.production') }}</a></li>
-                <li><a href="/business/odm_service">{{ trans('string.lump_sum') }}</a></li>
+                <li><a href="/business/tunnel_service">{{ trans('string.lump_sum') }}</a></li>
                 {{-- <li><a href="/business/catalog">{{ trans('string.catalog') }}</a></li> --}}
             </ul>
         </li>
@@ -312,5 +312,34 @@
             </ul>
         </li>
         <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
+        <li>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-11 mx-auto">
+                        <div class="row menu-org-list">
+                            <div style="margin-bottom: 20px">
+                                <span style="color: #ccc; font-size: 12px">參考我們其他品牌資訊？（點選前往）</span>
+                            </div>
+                            <div class="col-4 force-center">
+                                <a class="org-item" href="https://www.grapeking.com.tw/tw/home" target="_blank">
+                                    <img style="width: 70%" src="/img/site-logo/menu/grapeking.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-4 force-center">
+                                <a class="org-item" href="https://www.grapekingmuseum.com.tw/" target="_blank">
+                                    <img src="/img/site-logo/menu/energy.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-4 force-center">
+                                <a class="org-item" href="https://www.pro-partner.com.tw/" target="_blank">
+                                    <img style="width: 70%" src="/img/site-logo/menu/pu-zun.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </li>
     </ul>
 </section>

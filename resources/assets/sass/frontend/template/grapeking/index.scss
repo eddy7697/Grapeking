@@ -959,6 +959,21 @@ a.toggle-locale-btn {
     }
 }
 
+.menu-org-list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    a.org-item {
+        display: block !important;
+        padding: 0 !important;
+        border: 0 !important;
+        text-align: center;
+        
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .mobile-site-header {
     position: fixed;
     top: 0;
@@ -978,6 +993,13 @@ a.toggle-locale-btn {
         height: 60px;
         background: url('/img/icon/burger-close.svg');
 
+        &.en {
+            background: url('/img/icon/burger-close_en.svg');
+
+            &.active {
+                background: url('/img/icon/burger-open_en.svg');
+            }
+        }
         &.active {
             background: url('/img/icon/burger-open.svg');
         }
