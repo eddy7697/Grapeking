@@ -73,7 +73,7 @@ $(window).scroll(function () {
                     <h2>
                         关于我们
                         <br>
-                        <span style="font-size: 16px;">About Us</span>
+                        <span style="font-size: 16px;">Introduction</span>
                     </h2>
                 </div>
             </div>

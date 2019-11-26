@@ -47,7 +47,7 @@ $(window).scroll(function () {
                 <h2>
                         报告书下载
                     <br>
-                    <span style="font-size: 16px;">Report download</span>
+                    <span style="font-size: 16px;">CSR Report</span>
                 </h2>
             </div>
         </div>

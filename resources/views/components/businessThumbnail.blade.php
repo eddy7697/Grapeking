@@ -8,12 +8,12 @@
             </ul>
         </li>
         <li>
-            <a href="/business/tunnel_service">{{ trans('string.lump_sum') }}</a>
+            <a href="/business/odm_service">{{ trans('string.lump_sum') }}</a>
             <ul class="sub-thumb">
-                <li><a href="/business/tunnel_service#section_1">{{ trans('string.professional') }}</a></li>
-                <li><a href="/business/tunnel_service#section_2">{{ trans('string.foundry') }}</a></li>
-                <li><a href="/business/tunnel_service#section_3">{{ trans('string.pro_foundry') }}</a></li>
-                <li><a href="/business/tunnel_service#section_4">{{ trans('string.foundry_flow') }}</a></li>
+                <li><a href="/business/odm_service#section_1">{{ trans('string.professional') }}</a></li>
+                <li><a href="/business/odm_service#section_2">{{ trans('string.foundry') }}</a></li>
+                <li><a href="/business/odm_service#section_3">{{ trans('string.pro_foundry') }}</a></li>
+                <li><a href="/business/odm_service#section_4">{{ trans('string.foundry_flow') }}</a></li>
             </ul>
         </li>
         <li>

@@ -49,7 +49,7 @@ $(window).scroll(function () {
                 <h2>
                         专利及文献发表
                     <br>
-                    <span style="font-size: 16px;">Patent and literature publication</span>
+                    <span style="font-size: 16px;">Patent Literature</span>
                 </h2>
             </div>
         </div>

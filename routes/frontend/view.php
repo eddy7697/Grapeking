@@ -58,7 +58,7 @@ Route::group(['prefix' => 'csr'], function()
 Route::group(['prefix' => 'business'], function()
 {
     Route::get('/production', 'Frontend\PageController@production')->name('production');
-    Route::get('/tunnel_service', 'Frontend\PageController@lump_sum')->name('lump_sum');
+    Route::get('/odm_service', 'Frontend\PageController@lump_sum')->name('lump_sum');
     Route::get('/catalog', 'Frontend\PageController@catalog')->name('catalog');
 });
 

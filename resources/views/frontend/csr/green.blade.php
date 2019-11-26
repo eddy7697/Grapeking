@@ -56,7 +56,7 @@ $(window).scroll(function () {
                     <h2>
                             绿色环境
                         <br>
-                        <span style="font-size: 16px;">Green environment</span>
+                        <span style="font-size: 16px;">Green Environment</span>
                     </h2>
                 </div>
             </div>

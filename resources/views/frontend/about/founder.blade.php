@@ -56,7 +56,7 @@ $(window).scroll(function () {
                     <h2>
                             关于创办人
                         <br>
-                        <span style="font-size: 16px;">About the founder</span>
+                        <span style="font-size: 16px;">Founder</span>
                     </h2>
                 </div>
             </div>

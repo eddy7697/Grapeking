@@ -212,7 +212,7 @@
                             </a>
                         </li>
                         <li class="site-mega-menu-item">
-                            <a href="/business/tunnel_service" class="site-mega-menu-link">
+                            <a href="/business/odm_service" class="site-mega-menu-link">
                                 <img src="/img/menu/lump_sum.jpg" alt="统包服务">
                                 <p class="header-job-txt">统包服务</p>
                             </a>
@@ -344,7 +344,7 @@
             <li><a class="menu-item-dropdown">业务体系</a>
                 <ul>
                     <li><a href="/business/production">生产服务</a></li>
-                    <li><a href="/business/tunnel_service">统包服务</a></li>
+                    <li><a href="/business/odm_service">统包服务</a></li>
                     <li><a href="/business/catalog">产品型录</a></li>
                 </ul>
             </li>

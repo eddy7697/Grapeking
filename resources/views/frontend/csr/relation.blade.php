@@ -56,7 +56,7 @@ $(window).scroll(function () {
                     <h2>
                         员工关系
                         <br>
-                        <span style="font-size: 16px;">Employee relationship</span>
+                        <span style="font-size: 16px;">Happy Workplace</span>
                     </h2>
                 </div>
             </div>

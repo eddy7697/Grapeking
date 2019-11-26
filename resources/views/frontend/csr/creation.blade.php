@@ -56,7 +56,7 @@ $(window).scroll(function () {
                     <h2>
                             研发创新
                         <br>
-                        <span style="font-size: 16px;">R&D innovation</span>
+                        <span style="font-size: 16px;">R&D and Innovation</span>
                     </h2>
                 </div>
             </div>

@@ -176,7 +176,7 @@ $(window).resize(function () {
                     <h2>
                             生产服务
                         <br>
-                        <span style="font-size: 16px;">Production service</span>
+                        <span style="font-size: 16px;">OEM Service</span>
                     </h2>
                 </div>
             </div>

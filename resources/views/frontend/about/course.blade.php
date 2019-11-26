@@ -136,7 +136,7 @@
                 <h2>
                     愿景与历程
                     <br>
-                    <span style="font-size: 16px;">Vision and History</span>
+                    <span style="font-size: 16px;">Milestone</span>
                 </h2>
             </div>
         </div>

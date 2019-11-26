@@ -93,7 +93,7 @@ $(window).scroll(function () {
                     <h2>
                             国际级安心认证
                         <br>
-                        <span style="font-size: 16px;">Global certification</span>
+                        <span style="font-size: 16px;">Certification</span>
                     </h2>
                 </div>
             </div>
