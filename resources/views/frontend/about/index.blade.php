@@ -101,7 +101,7 @@ $(window).scroll(function () {
         <div class="row">
             <div class="col-md-12 about-content">
                 <div class="row company-section">
-                    <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-down-right" data-aos-duration="2000">
+                    <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
                         <img src="/img/about/company-1.jpg" class="company-image" alt="">
                     </div>
                     <div class="col-md-7 info-content" data-aos="fade-left" data-aos-duration="2000">
@@ -136,12 +136,12 @@ $(window).scroll(function () {
                         </div>
                         
                     </div>
-                    <div class="col-md-5 info-image force-center" data-aos="fade-down-left" data-aos-duration="2000">
+                    <div class="col-md-5 info-image force-center" data-aos="fade-left" data-aos-duration="2000">
                         <img src="/img/about/company-2.jpg" class="company-image" alt="">
                     </div>
                 </div>
                 <div class="row company-section">
-                    <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-down-right" data-aos-duration="2000">
+                    <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
                         <img src="/img/about/company-3.jpg" class="company-image" alt="">
                     </div>
                     <div class="col-md-7 info-content" data-aos="fade-left" data-aos-duration="2000">
@@ -175,7 +175,7 @@ $(window).scroll(function () {
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5 info-image force-center" data-aos="fade-down-left" data-aos-duration="2000">
+                    <div class="col-md-5 info-image force-center" data-aos="fade-left" data-aos-duration="2000">
                         <img src="/img/about/company-4.jpg" class="company-image" alt="">
                     </div>
                 </div>
