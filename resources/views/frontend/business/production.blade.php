@@ -263,11 +263,11 @@ $(window).resize(function () {
                 <div class="row">
                     <div class="col-md-5 label tablet">
                         @if ($locale == 'en')
-                                @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
-                                @include('components.prod_en.01')
+                            @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                            @include('components.prod_en.01')
                         @else
-                                @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
-                                @include('components.prod.01')
+                            @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                            @include('components.prod.01')
                         @endif
                     </div>
                     <div class="col-md-7 image">
@@ -339,11 +339,11 @@ $(window).resize(function () {
                 <div class="row">
                     <div class="col-md-5 label glass_bottle">
                         @if ($locale == 'en')
-                        @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
-                        @include('components.prod_en.05')
+                            @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
+                            @include('components.prod_en.05')
                         @else
-                        @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
-                        @include('components.prod.05')
+                            @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
+                            @include('components.prod.05')
                         @endif
                     </div>
                     <div class="col-md-7 image">
