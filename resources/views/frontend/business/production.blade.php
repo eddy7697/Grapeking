@@ -243,10 +243,10 @@ $(window).resize(function () {
             @endforeach
         </div>
         <div class="prev-arrow">
-            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
         <div class="next-arrow">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
     
