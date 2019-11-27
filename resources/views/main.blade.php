@@ -113,6 +113,22 @@
                 cssEase: 'ease-in-out',
                 autoplay: true,
                 autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 4,
+                            // slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 3,
+                            // slidesToScroll: 1
+                        }
+                    }
+                ]
             });
             $('.loading-bar').hide()
         });

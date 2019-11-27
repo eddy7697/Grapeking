@@ -1,6 +1,13 @@
 @extends('main')
 
 @section('custom-script')
+<script>
+$('[data-target]').on('click', function () {
+    var target = $(this).attr('data-target');
+
+    $('a[aria-controls=' + target + ']').tab('show');
+});
+</script>
 {{-- <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -126,7 +133,7 @@ $(window).scroll(function () {
                 
                 
                 <div class="about-text">
-                    <ul class="nav nav-tabs about-location-tab" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs about-location-tab mobile-to-hide" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a style="border: none" class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><span>{{ trans('string.company_tw') }}</span></a>
                         </li>
@@ -141,7 +148,14 @@ $(window).scroll(function () {
                         </li>
                     </ul>
                     <div class="tab-content" id="location-tab-content">
+                        
                         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="prev-arrow" data-target="location">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="next-arrow" data-target="profile">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
                             <div class="row">
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
@@ -155,20 +169,35 @@ $(window).scroll(function () {
                                         </div>
                                     </div>
                                     <p>&nbsp;</p>
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
-                                    <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
-                                    <p class="mobile-to-show">&nbsp;</p>
+                                    <div class="mobile-to-hide">
+                                        <p>{{ trans('string.location_n_1') }}</p>
+                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p class="mobile-to-hide">&nbsp;</p>
+                                        <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                        <p class="mobile-to-show">&nbsp;</p>
+                                    </div>
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent_tw">
                                         <iframe src="/grapeking_tw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
+                                <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
+                                    <p>{{ trans('string.location_n_1') }}</p>
+                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p class="mobile-to-hide">&nbsp;</p>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                    <p class="mobile-to-show">&nbsp;</p>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="prev-arrow" data-target="home">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="next-arrow" data-target="contact">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
                             <div class="row">
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
@@ -182,20 +211,37 @@ $(window).scroll(function () {
                                         </div>
                                     </div>
                                     <p>&nbsp;</p>
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
-                                    <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
-                                    <p class="mobile-to-show">&nbsp;</p>
+                                    <div class="mobile-to-hide">
+                                        <p>{{ trans('string.location_n_1') }}</p>
+                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p class="mobile-to-hide">&nbsp;</p>
+                                        <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                        <p class="mobile-to-show">&nbsp;</p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;">
                                         <iframe src="/grapeking_sh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
+
+                                <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
+                                    <p>{{ trans('string.location_n_1') }}</p>
+                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p class="mobile-to-hide">&nbsp;</p>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                    <p class="mobile-to-show">&nbsp;</p>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="prev-arrow" data-target="profile">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="next-arrow" data-target="location">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
                             <div class="row">
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
@@ -209,20 +255,36 @@ $(window).scroll(function () {
                                         </div>
                                     </div>
                                     <p>&nbsp;</p>
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
-                                    <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
-                                    <p class="mobile-to-show">&nbsp;</p>
+                                    <div class="mobile-to-hide">
+                                        <p>{{ trans('string.location_n_1') }}</p>
+                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p class="mobile-to-hide">&nbsp;</p>
+                                        <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                        <p class="mobile-to-show">&nbsp;</p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent_dongpu">
                                         <iframe src="/grapeking_donpu" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
+                                <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
+                                    <p>{{ trans('string.location_n_1') }}</p>
+                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p class="mobile-to-hide">&nbsp;</p>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                    <p class="mobile-to-show">&nbsp;</p>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="location" role="tabpanel" aria-labelledby="location-tab">
+                            <div class="prev-arrow" data-target="contact">
+                                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            </div>
+                            <div class="next-arrow" data-target="home">
+                                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                            </div>
                             <div class="row">
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
@@ -236,16 +298,26 @@ $(window).scroll(function () {
                                         </div>
                                     </div>
                                     <p>&nbsp;</p>
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
-                                    <p class="mobile-to-hide">&nbsp;</p>
-                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
-                                    <p class="mobile-to-show">&nbsp;</p>
+                                    <div class="mobile-to-hide">
+                                        <p>{{ trans('string.location_n_1') }}</p>
+                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p class="mobile-to-hide">&nbsp;</p>
+                                        <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                        <p class="mobile-to-show">&nbsp;</p>
+                                    </div>
+                                    
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent_fam">
                                         <iframe src="/grapeking_fm" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
+                                </div>
+                                <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
+                                    <p>{{ trans('string.location_n_1') }}</p>
+                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p class="mobile-to-hide">&nbsp;</p>
+                                    <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
+                                    <p class="mobile-to-show">&nbsp;</p>
                                 </div>
                             </div>
                         </div>

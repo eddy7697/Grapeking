@@ -2809,7 +2809,7 @@ a.toggle-locale-btn {
             }
         }
         #location-tab-content {
-            margin-top: 50px;
+            margin-top: 20px;
 
             .tab-pane {
 
@@ -3458,6 +3458,15 @@ a.toggle-locale-btn {
             float: initial;
         }
         padding: 15px 15px;
+    }
+
+    .location-map {
+        overflow: hidden;
+        margin-top: -45px;
+        .img-container {
+            transform: scale(1.6);
+            transform-origin: center bottom;
+        }
     }
 
     .timeline {
