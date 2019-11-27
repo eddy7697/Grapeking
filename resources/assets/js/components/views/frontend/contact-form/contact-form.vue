@@ -81,7 +81,6 @@
                             <input type="checkbox" class="form-check-input" name="" value="角豆" v-model="contact.concern">{{i18n.catalog_d_4}}
                         </label>
                     </div>
-                    <br>
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="" value="体重管理" v-model="contact.concern">{{i18n.weight_management}}
