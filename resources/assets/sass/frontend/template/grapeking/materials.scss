@@ -6,6 +6,7 @@
     }
     .prev-arrow, .next-arrow {
         @include force-center;
+        display: none;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -93,3 +94,10 @@
     }
 }
 
+@media (max-width: 768px) {
+    .material-slide-container {
+        .prev-arrow, .next-arrow {
+            display: block;
+        }
+    }
+}
