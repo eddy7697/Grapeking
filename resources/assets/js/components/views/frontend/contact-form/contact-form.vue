@@ -5,18 +5,18 @@
     <form v-else v-on:submit.prevent="sendForm">
         <div class="col-md-12 contact-form-body">
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.contact1}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <input class="form-control width-limit" type="text" name="name" v-model="contact.name" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.contact2}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="radio" class="form-check-input" name="gender" v-model="contact.gender" value="男" required>{{i18n.male}}
@@ -30,42 +30,42 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column">
+                <div class="col-4 column">
                     <p>{{i18n.address}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <input class="form-control width-limit" type="text" name="address" v-model="contact.address">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.email}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <input class="form-control width-limit" type="email" name="email" v-model="contact.email" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.phone}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <input class="form-control width-limit" type="phone" name="phone" v-model="contact.phone" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.company_title}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <input class="form-control width-limit" type="text" name="company" v-model="contact.company" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.follow_prod}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">{{i18n.catalog_d_2}}
@@ -106,11 +106,11 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                <div class="col-4 column important" require-label="*">
                     <p>{{i18n.inquiry_content}}</p>
                     <p class="text">{{i18n.inquiry_notice}}</p>
                 </div>
-                <div class="col-md-9 column">
+                <div class="col-8 column">
                     <textarea name="content" class="form-control content" v-model="contact.content" required></textarea>
                 </div>
             </div>

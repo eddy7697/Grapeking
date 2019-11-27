@@ -2008,10 +2008,10 @@ a.toggle-locale-btn {
                         position: absolute;
                         top: 18px;
                         // left: 120px;
-                        right: 10px;
+                        right: 0px;
                         content: attr(require-label);
-                        border: red thin solid;
-                        padding: 1px 7px;
+                        // border: red thin solid;
+                        padding: 1px 1px;
                         border-radius: 5px;
                         color: red;
                         font-size: 0.8rem;
