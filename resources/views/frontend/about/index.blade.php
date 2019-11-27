@@ -3,7 +3,7 @@
 @section('custom-script')
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
-new PerfectScrollbar('.thumb-container');
+// new PerfectScrollbar('.thumb-container');
 
 $(window).scroll(function () {
     var windowScrollTop = $(window).scrollTop();

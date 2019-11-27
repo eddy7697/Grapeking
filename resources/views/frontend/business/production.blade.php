@@ -95,9 +95,11 @@ $('.nav-link').on('hide.bs.tab', function(event){
 <script>
 $('.material-slide').slick({
     // dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 5,
+    nextArrow: $('.next-arrow'),
+    prevArrow: $('.prev-arrow'),
     // slidesToScroll: 5,
     responsive: [{
             breakpoint: 1400,
@@ -221,25 +223,33 @@ $(window).resize(function () {
         </div>
         <div class="bottom-mask"></div>
     </div>
-    <div class="material-slide">
-        @foreach ($material as $index => $item)
-            <div class="material-item">
-                <div class="material-bg" style="background-image: url('{{$item['bg']}}')"></div>
-                <div class="material-mask">
-                    <div class="material-info">
-                        <div class="material-logo" style="background-color: {{$item['color']}}">
-                            <img src="{{$item['image']}}" alt="">
-                        </div>
-                        <h4>{{$item['title']}}</h4>
-                        <div class="text">
-                            {{$item['text']}}
+    <div class="material-slide-container">
+        <div class="material-slide">
+            @foreach ($material as $index => $item)
+                <div class="material-item">
+                    <div class="material-bg" style="background-image: url('{{$item['bg']}}')"></div>
+                    <div class="material-mask">
+                        <div class="material-info">
+                            <div class="material-logo" style="background-color: {{$item['color']}}">
+                                <img src="{{$item['image']}}" alt="">
+                            </div>
+                            <h4>{{$item['title']}}</h4>
+                            <div class="text">
+                                {{$item['text']}}
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        @endforeach
-        
+            @endforeach
+        </div>
+        <div class="prev-arrow">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+        </div>
+        <div class="next-arrow">
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </div>
     </div>
+    
     <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
         <ul class="nav nav-tabs">
             <li class="nav-item">
