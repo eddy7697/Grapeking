@@ -2164,6 +2164,7 @@ a.toggle-locale-btn {
     }
     // about
     .about-content {
+        overflow: hidden;
         margin-bottom: 50px;
 
         .company-section {
@@ -3363,6 +3364,12 @@ a.toggle-locale-btn {
 }
 
 @media (max-width: 1170px) {
+    .content article.description .row .box {
+        padding-right: 0 !important;
+    }
+    .content article.title {
+        padding-bottom: 0 !important;
+    }
     .global-loaction {
         display: inline-block;
         // @extend %force-center-right;
@@ -3436,6 +3443,14 @@ a.toggle-locale-btn {
         overflow-y: hidden;
     }
     
+    .site-content .about-content .company-section {
+        margin-top: 20px;
+    }
+
+    .site-content .about-content .about-text.signature h3 {
+        margin-top: 50px !important;
+    }
+
     .site-footer .site-footer-content .footer-section .footer-info .site-map {
         ul {
             float: initial;

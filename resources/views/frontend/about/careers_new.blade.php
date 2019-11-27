@@ -10,6 +10,12 @@ $(function () {
             scrollTop: $(target).offset().top - $('.site-header').height()
         }, 1000);
     });
+
+    $(window).resize(function () {
+        $('#process').css({
+            'min-height': $('.flow-title').height() + $('.flow-image').height() + 300
+        });
+    });
 });
 </script>
 @endsection
@@ -52,7 +58,7 @@ $(function () {
             </div>
         </div>
     </div>
-    <div class="content">
+    <div class="content" style="overflow: hidden">
         <article class="title">
             <div class="container">
                 <h3 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">菁英招募</h3>
@@ -78,10 +84,10 @@ $(function () {
                     </div>
                 </div>
         
-                <div class="container info">
+                <div class="container info flow-title">
                     <h4 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">招募甄选流程</h4>
         
-                    <div class="pic" style="max-width: 768px; width: 100%" alt="招募甄选流程"> 
+                    <div class="pic flow-image" style="max-width: 768px; width: 100%" alt="招募甄选流程"> 
                         <div class="process-flow">
                             <img class="process-img left-side" src="/img/about/process/left-side.png" alt="" data-aos="fade-down" data-aos-duration="1500">
                             <img class="process-img right-side-1" src="/img/about/process/right-side-1.png" alt="" data-aos="fade-right" data-aos-duration="1500">
