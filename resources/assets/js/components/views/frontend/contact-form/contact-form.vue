@@ -81,6 +81,7 @@
                             <input type="checkbox" class="form-check-input" name="" value="角豆" v-model="contact.concern">{{i18n.catalog_d_4}}
                         </label>
                     </div>
+                    <br>
                     <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="" value="体重管理" v-model="contact.concern">{{i18n.weight_management}}
@@ -100,7 +101,7 @@
                     <div class="form-check-inline">
                         <label class="form-check-label" style="width: 240px;">
                             <input type="checkbox" class="form-check-input" name="" value="OTHER" v-model="contact.concern">{{i18n.others}}
-                            <input type="text" style="width: 180px; display: inline-block;" class="form-control" v-model="theOther" :disabled="!hasOther">
+                            <!-- <input type="text" style="width: 180px; display: inline-block;" class="form-control" v-model="theOther" :disabled="!hasOther"> -->
                         </label>
                     </div>
                 </div>
