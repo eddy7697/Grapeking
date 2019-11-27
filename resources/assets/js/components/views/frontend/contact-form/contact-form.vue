@@ -108,7 +108,7 @@
             <div class="row">
                 <div class="col-3 column important" require-label="*">
                     <p>{{i18n.inquiry_content}}&nbsp;<span style="color: red">*</span></p>
-                    <p class="text">{{i18n.inquiry_notice}}</p>
+                    <p class="text mobile-to-hide">{{i18n.inquiry_notice}}</p>
                 </div>
                 <div class="col-9 column">
                     <textarea name="content" class="form-control content" v-model="contact.content" required></textarea>
