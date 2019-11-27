@@ -1081,6 +1081,7 @@ a.toggle-locale-btn {
 .site-content {
     margin-top: 60px;
     min-height: 180px;
+    overflow-x: hidden;
 
     .btn-section {
         text-align: center;
