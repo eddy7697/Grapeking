@@ -168,12 +168,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 {{-- <img class="about-image mobile-to-hide" style="width: 80%;" src="/img/hori-logo.png" alt=""> --}}
-                                <p>我们非常重视您的意见与建议，如果您对葡萄王生技有任何疑问或反馈，请与我们联络，我们随时准备聆听您的声音。</p>
+                                {!! trans('text.contact_text') !!}
                                 <hr>
-                                <p>地址：上海市松江区车墩镇车新公路518号</p>
-                                <p>传真：+86-21-5760-9698</p>
-                                <p>网址：www.grapeking.com.cn</p>
-                                <p>电邮：gki@grapeking.com.cn</p>
+                                {!! trans('text.contact_info') !!}
                                 <hr>
                                 <div style="width: 320px;">
                                     <div class="row">
@@ -181,7 +178,7 @@
                                             <img src="/img/phone-icon.png" width="100%" style="margin-top: 3px;" alt="">
                                         </div>
                                         <div class="col-9">
-                                            <p style="font-size: 24px; margin-bottom: 5px;">联系专线</p>
+                                            <p style="font-size: 24px; margin-bottom: 5px;">{{ trans('string.contact_inf_5') }}</p>
                                             <p style="font-size: 24px; margin-bottom: 5px; color: #E70034">+86-021-5760-9598</p>
                                         </div>
                                         <div class="col-12">        
@@ -189,7 +186,7 @@
                                     </div>
                                 </div>
                                 <hr>
-                                <p>※服务时间为 09:00 - 18:00，每周一至五</p>
+                                <p>{{ trans('text.service_hour') }}</p>
                             </div>
                             <div class="col-md-6">
                                 <div style="width:100%;height:430px;border:#ccc solid 1px;" id="dituContent"></div>
@@ -201,7 +198,7 @@
                     <div class="col-md-12" style="margin-top: 30px;">
                         <div style="position: absolute; border-top: #E70034 solid 1px; top: 50%; left: 15px; right: 15px;"></div>
                         <div style="background: white; margin: 20px auto; width: fit-content; padding: 0 20px">
-                            或是您可以留下您的联络资讯，我们的服务代表将会尽速与您联系
+                            {{ trans('text.contact_notice') }}
                         </div>
                         
                     </div>

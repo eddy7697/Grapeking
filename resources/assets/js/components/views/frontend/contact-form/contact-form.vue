@@ -1,114 +1,114 @@
 <template>
     <div v-if="formSended">
-        <h2 style="text-align: center">非常感谢您的来信，我们会尽快联系您。</h2>
+        <h2 style="text-align: center">{{i18n.thanke_content}}</h2>
     </div>
     <form v-else v-on:submit.prevent="sendForm">
         <div class="col-md-12 contact-form-body">
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>姓名</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.contact1}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <input class="form-control width-limit" type="text" name="name" v-model="contact.name" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>性别</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.contact2}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="gender" v-model="contact.gender" value="男" required>男
+                            <input type="radio" class="form-check-input" name="gender" v-model="contact.gender" value="男" required>{{i18n.male}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="gender" v-model="contact.gender" value="女" required>女
+                            <input type="radio" class="form-check-input" name="gender" v-model="contact.gender" value="女" required>{{i18n.female}}
                         </label>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-3 column">
-                    <p>地址</p>
+                    <p>{{i18n.address}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <input class="form-control width-limit" type="text" name="address" v-model="contact.address">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>电子邮箱</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.email}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <input class="form-control width-limit" type="email" name="email" v-model="contact.email" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>连络电话</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.phone}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <input class="form-control width-limit" type="phone" name="phone" v-model="contact.phone" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>公司名称</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.company_title}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <input class="form-control width-limit" type="text" name="company" v-model="contact.company" required>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>关注产品</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.follow_prod}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">胶原蛋白
+                            <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">{{i18n.catalog_d_2}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="益生菌" v-model="contact.concern">益生菌
+                            <input type="checkbox" class="form-check-input" name="" value="益生菌" v-model="contact.concern">{{i18n.catalog_d_3}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="角豆" v-model="contact.concern">角豆
+                            <input type="checkbox" class="form-check-input" name="" value="角豆" v-model="contact.concern">{{i18n.catalog_d_4}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="体重管理" v-model="contact.concern">体重管理
+                            <input type="checkbox" class="form-check-input" name="" value="体重管理" v-model="contact.concern">{{i18n.weight_management}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="保健食品" v-model="contact.concern">保健食品
+                            <input type="checkbox" class="form-check-input" name="" value="保健食品" v-model="contact.concern">{{i18n.healthy_food}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="机能饮品" v-model="contact.concern">机能饮品
+                            <input type="checkbox" class="form-check-input" name="" value="机能饮品" v-model="contact.concern">{{i18n.functional_drinks}}
                         </label>
                     </div>
                     
                     <div class="form-check-inline">
                         <label class="form-check-label" style="width: 240px;">
-                            <input type="checkbox" class="form-check-input" name="" value="OTHER" v-model="contact.concern">其他
+                            <input type="checkbox" class="form-check-input" name="" value="OTHER" v-model="contact.concern">{{i18n.others}}
                             <input type="text" style="width: 180px; display: inline-block;" class="form-control" v-model="theOther" :disabled="!hasOther">
                         </label>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 column important">
-                    <p>询问内容</p>
-                    <p class="text">提醒您，若您填写得越精准，越有利我们及时回复给您信息。</p>
+                <div class="col-md-3 column important" :require-label="i18n.form_required">
+                    <p>{{i18n.inquiry_content}}</p>
+                    <p class="text">{{i18n.inquiry_notice}}</p>
                 </div>
                 <div class="col-md-9 column">
                     <textarea name="content" class="form-control content" v-model="contact.content" required></textarea>
@@ -117,14 +117,14 @@
         </div>
         <div style="clear: both"></div>
         <div class="col-md-10 mx-auto contact-form-footer">
-            <p class="info" style="text-align: center">我们不会将您输入的任何个人信息用于回答查找以外的目的，您亦可<a href="">点击这里</a>查看更多关于天壬提供的隐私权保护政策。</p>
-            <p class="info" style="text-align: center">* 请您务必将天壬的电子邮箱地址或域名设置为可接收的电子邮箱，以免错过我们的回复，您亦可直接与我们联系，<a href="">(点击这里查看联系信息)</a>。</p>
+            <p class="info" style="text-align: center" v-html="i18n.contact_form_notice"></p>
+            <p class="info" style="text-align: center" v-html="i18n.contact_submit_notice"></p>
             <div class="captcha-section">
-                <strong>确认码</strong>
+                <strong>{{i18n.captcha}}</strong>
                 <img :src="captchaUrl" id="captcha" alt="">
-                <a style="cursor: pointer" id="refresh-captcha" @click="refreshCaptcha">更新确认码</a>
-                <input type="text" class="form-control captcha" v-model="contact.captcha" name="captcha" placeholder="请输入上方的确认码..." required title="请输入验证码">
-                <button class="submit-btn" type="submit">提交信息</button>
+                <a style="cursor: pointer" id="refresh-captcha" @click="refreshCaptcha">{{i18n.captcha_refresh}}</a>
+                <input type="text" class="form-control captcha" v-model="contact.captcha" name="captcha" :placeholder="i18n.captcha_enter" required :title="i18n.captcha">
+                <button class="submit-btn" type="submit">{{i18n.contact_submit}}</button>
             </div>
         </div>
     </form>
@@ -136,7 +136,9 @@
             console.log('Component mounted.')
         },
         data () {
+            let i18n = JSON.parse(document.getElementById('i18n-text').value)
             return {
+                i18n: i18n,
                 captchaUrl: null,
                 formSended: false,
                 contact: {

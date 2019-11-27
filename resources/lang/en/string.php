@@ -117,6 +117,7 @@ return [
     'contact5' => 'Inquire',
     'contact6' => 'Comments',
 
+    'thanke_content' => 'Thank you very much for your letter and we will contact you as soon as possible.',
     'form_required' => 'Required',
     'male' => 'Male',
     'female' => 'Female',
@@ -134,6 +135,8 @@ return [
     'captcha_enter' => 'Please enter the verification code above...',    
     'captcha_error' => 'Captcha code error.',
     'contact_submit' => 'Submit',
+    'contact_form_notice' => 'We will not use any personal information you enter for purposes other than those specified in the privacy protection policy. You can also click <a href="/about/privacy">here</a> to see more about the privacy protection policy we provide.',
+    'contact_submit_notice' => '*Please be sure to set your email address or domain name as an acceptable email address to avoid missing our reply. You can also contact us directly <a href="/about/privacy">(click here to view contact information)</a>.',
 
     'company_profile' => 'Grape King Bio',
     'responsibility' => 'CSR',
@@ -160,6 +163,8 @@ return [
     'fullAddress' => "1F, 3F, No. 60, Sanguang Road, Zhongli District, Taoyuan City, Taiwan",
     'postcode' => 'Postal area code',
     'working' => 'service time',
+    'company_title' => 'Company',
+    'follow_prod' => 'Following products',
 
     'count_create' => 'established in',
     'count_product' => 'Product quantity',
@@ -390,6 +395,12 @@ return [
     'catalog_d_15' => 'International affirmation',
     'catalog_d_16' => 'If you have any questions about Grape King, you are welcome to contact us, the Customer Service Specialist will solve your problem with the fastest and most professional response. ',
     'catalog_d_17' => 'Contact us',
+    'weight_management' => 'Weight management',
+    'healthy_food' => 'Healthy food',
+    'functional_drinks' => 'Functional drinks',
+    'others' => 'Others',
+    'inquiry_content' => 'Inquiry content',
+    'inquiry_notice' => 'Remind you that the more accurate you fill in, the better it will be for us to respond to your information in a timely manner.',
     
     'research_f_1' => 'Test process',
 

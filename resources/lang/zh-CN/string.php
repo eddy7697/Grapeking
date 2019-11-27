@@ -117,6 +117,7 @@ return [
     'contact5' => '问题类型',
     'contact6' => '询问内容',
     
+    'thanke_content' => '非常感谢您的来信，我们会尽快联系您。',
     'form_required' => '必填',
     'male' => '男',
     'female' => '女',
@@ -134,6 +135,8 @@ return [
     'captcha_enter' => '请输入上方的验证码...',    
     'captcha_error' => '验证码错误',
     'contact_submit' => '提交信息',
+    'contact_form_notice' => '我们不会将您输入的任何个人信息用于隐私权保护政策規範以外的目的，您亦可<a href="/about/privacy">点击这里</a>查看更多关于我们所提供的隐私权保护政策。',
+    'contact_submit_notice' => '* 请您务必将您的电子邮箱地址或域名设置为可接收的电子邮箱，以免错过我们的回复，您亦可直接与我们联系，<a href="/about/privacy">(点击这里查看联系信息)</a>。​',
 
     'company_profile' => '葡萄王生技集団介绍',
     'responsibility' => '社会责任',
@@ -160,6 +163,8 @@ return [
     'fullAddress' => '台湾桃园市中坜区三光路60号3F之1',
     'postcode' => '邮递区号',
     'working' => '服务时间',
+    'company_title' => '公司名称',
+    'follow_prod' => '关注产品',
     
     'count_create' => '成立于',
     'count_product' => '产品数量',
@@ -390,6 +395,12 @@ return [
     'catalog_d_15' => '国际肯定',
     'catalog_d_16' => '若您对葡萄王有任何问题，欢迎随时联系我们，我们将尽速提供您亲切与专业的回复，协助解决您的问题，谢谢您',
     'catalog_d_17' => '联系我们',
+    'weight_management' => '体重管理',
+    'healthy_food' => '保健食品',
+    'functional_drinks' => '机能饮品',
+    'others' => '其他',
+    'inquiry_content' => '询问内容',
+    'inquiry_notice' => '提醒您，若您填写得越精准，越有利我们及时回复给您信息。',
 
     'research_f_1' => '检验流程',
 

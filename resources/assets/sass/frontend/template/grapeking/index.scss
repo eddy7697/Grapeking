@@ -2007,8 +2007,9 @@ a.toggle-locale-btn {
                     &::after {
                         position: absolute;
                         top: 18px;
-                        left: 120px;
-                        content: '\5FC5\586B';
+                        // left: 120px;
+                        right: 10px;
+                        content: attr(require-label);
                         border: red thin solid;
                         padding: 1px 7px;
                         border-radius: 5px;
