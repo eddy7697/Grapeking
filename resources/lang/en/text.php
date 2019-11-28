@@ -24,6 +24,7 @@ return [
     'flow_7_text' => 'Packaging material<br>Product<br>Delivery date<br>Schedule',
     'flow_8' => 'Manufacturer and Shipment',
     'flow_8_text' => 'Full-scale manufacturing<br>Finished packaging<br>Quality control<br>Goods submission',
+    'flow_middle_lable' => '<p>One-stop service</p>',
 
     'material_prod_1' => 'Chinese Herbal',
     'material_prod_1_text' => '內補元氣、外增體力，健康有效率，讓漢方本草變身為您的貼身調理良伴',

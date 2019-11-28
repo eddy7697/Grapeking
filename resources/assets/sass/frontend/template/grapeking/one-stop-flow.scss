@@ -1,23 +1,229 @@
+@mixin square-arrow {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 0;
+}
+@mixin down-arrow($top:0) {
+    content: "";
+    background: url('/img/assets/arrow-down.png') 50% 50% no-repeat;
+    background-size: 18px;
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 75px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: $top;
+    left: 50%;
+}
+@mixin right-return($width, $height, $top, $size) {
+    content: "";
+    background: url('/img/assets/arrow2.png') 50% 50% no-repeat;
+    background-size: $size;
+    position: absolute;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    top: $top;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 97%;
+}
+@mixin left-return($width, $height, $top, $size) {
+    content: "";
+    background: url('/img/assets/arrow.png') 50% 50% no-repeat;
+    background-size: $size;
+    position: absolute;
+    display: inline-block;
+    width: $width;
+    height: $height;
+    top: $top;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 3%;
+}
+
 .one-stop-flow {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .flow-middle-lable {
+        @include force-center;
+
+        .inner-text {
+            padding: 30px 0;
+            text-align: center;
+
+            p {
+                font-size: 20px;
+                color: $main-color;
+                font-weight: 700;
+                margin: 0;
+            }
+        }
+    }
     .flow-item {
         @include force-center;
         text-align: center;
         color: $main-color;
         padding: 10px;
+        min-height: 150px;
 
+        .inner-border {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            right: 8px;
+            bottom: 8px;
+            border: $main-color solid thin;
+        }
         .inner-box {
             padding: 15px 25px;
-            border: $main-color thin solid;
             
             h5 {
+                margin: 5px;
                 font-size: 20px;
                 font-weight: 700;
                 margin-bottom: 15px;
             }
             p {
+                margin: 5px;
                 font-size: 14px;
                 font-weight: 700;
             }
         }
+        &.right {
+            &::before {
+                @include square-arrow;
+                background: url('/img/assets/arrow-right.png') 50% 50% no-repeat;
+                background-size: 55px;
+            }
+            
+        }
+        &.left {
+            &::before {
+                @include square-arrow;
+                background: url('/img/assets/arrow-left.png') 50% 50% no-repeat;
+                background-size: 55px;
+            }
+        }
+        &.down {
+            &::before {
+                @include down-arrow;
+            }
+            &.last {
+                &::after {
+                    @include down-arrow(178px);
+                }
+            }
+        }
+        
+        
     }
+
+}
+
+@media (min-width: 992px) {
+    .column_4 {
+        display: block;
+
+        .flow-item {
+            &.right-return {
+                &::after {
+                    @include right-return(90px, 420px, 0, 49px);
+                }
+            }
+        }
+    }
+    .column_3, .column_2, .column_1 {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .column_3 {
+        display: block;
+
+        .flow-item {
+            &.right-return {
+                &::after {
+                    @include right-return(90px, 420px, 0, 49px);
+                }
+            }
+            &.left-return {
+                &::after {
+                    @include left-return(90px, 420px, 0, 49px);
+                }
+            }
+        }
+    }
+    .column_4, .column_2, .column_1 {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    
+}
+@media (max-width: 768px) {
+    .column_2 {
+        display: block;
+
+        .flow-item {
+            &.right-return {
+                &::after {
+                    @include right-return(90px, 420px, 0, 49px);
+                }
+            }
+            &.left-return {
+                &::after {
+                    @include left-return(90px, 420px, 0, 49px);
+                }
+            }
+        }
+    }
+    .column_4, .column_3, .column_1 {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+}
+@media (max-width: 576px) {
+    .column_1 {
+        display: block;
+
+        .flow-item {
+            margin: 5px 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 175px;
+        }
+    }
+    .column_4, .column_3, .column_2 {
+        display: none;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media (min-width: 768px) and (max-width: 991px) {
+
 }

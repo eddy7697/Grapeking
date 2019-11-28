@@ -24,6 +24,7 @@ return [
     'flow_7_text' => '订制包材<br>稿件确认<br>回复交期',
     'flow_8' => '生产出货',
     'flow_8_text' => '产线生产<br>包装检验<br>验收交货',
+    'flow_middle_lable' => '<p>一条龙代工服务流程</p><p>One-stop service</p>',
 
     'material_prod_1' => '汉方保养',
     'material_prod_1_text' => '内补元气、外增体力，健康有效率，让汉方本草变身为您的贴身调理良伴',
