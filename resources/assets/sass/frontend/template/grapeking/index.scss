@@ -3369,6 +3369,9 @@ a.toggle-locale-btn {
     .content article.description .row .box {
         padding-right: 0 !important;
     }
+    .content article.description {
+        padding-right: 30px;
+    }
     .content article.title {
         padding-bottom: 0 !important;
     }
@@ -4098,5 +4101,9 @@ a.toggle-locale-btn {
     }
     .site-content .sub-page-banner .site-page-label .container-label h2 {
         font-size: 1.5rem;
+    }
+
+    .content article.title ul li a {
+        margin-bottom: 15px;
     }
 }
