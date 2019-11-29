@@ -12,9 +12,16 @@ $(function () {
     });
 
     $(window).resize(function () {
-        $('#process').css({
-            'min-height': $('.flow-title').height() + $('.flow-image').height() + 300
-        });
+        if ($(window.width() < 576)) {
+            $('#process').css({
+                'min-height': $('.flow-title').height() + $('.flow-image').height()
+            });
+        } else {
+            $('#process').css({
+                'min-height': $('.flow-title').height() + $('.flow-image').height() + 300
+            });    
+        }
+        
     });
 });
 </script>
@@ -93,19 +100,13 @@ $(function () {
                         <div class="process-flow">
                             <img class="process-img left-side" src="/img/about/process/left-side.png" alt="" data-aos="fade-down" data-aos-duration="1500">
                             <img class="process-img right-side-1" src="/img/about/process/right-side-1.png" alt="" data-aos="fade-right" data-aos-duration="1500">
-                            <img class="process-img right-side-2" src="/img/about/process/right-side-2.png" alt="" data-aos="fade-left" data-aos-duration="1500">
-                            <img class="process-img success" src="/img/about/process/bottom-success.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="process-img right-side-1-mobile" src="/img/about/process/right-side-1-mobile.png" alt="" data-aos="fade-right" data-aos-duration="1500">
+                            <img class="process-img right-side-2 mobile-to-hide" src="/img/about/process/right-side-2.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+                            <img class="process-img right-side-2-mobile mobile-to-show" src="/img/about/process/right-side-2-mobile.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+                            <img class="process-img success mobile-to-hide" src="/img/about/process/bottom-success.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="process-img success-mobile mobile-to-show" src="/img/about/process/bottom-success-mobile.png" alt="" data-aos="fade-up" data-aos-duration="1500">
                             <img class="process-img main" src="/img/about/process/main.png" alt="" data-aos="fade-in" data-aos-duration="1500">
                         </div>
-                        {{-- <img alt="招募甄选流程" class="wow fade-in-bottom" src="/img/about/process.svg"
-                            style="visibility: visible; animation-name: fade-in-bottom; width: 100%"> --}}
-                        {{-- <div class="wow fade-in-left  left" style="visibility: visible; animation-name: fade-in-left;">
-                            <span>大约十个工作天</span></div>
-        
-                        <div class="wow fade-in-right  right" style="visibility: visible; animation-name: fade-in-right;">
-                            <span>没通过<br>
-                                感谢您的应征，欢迎再次<br>
-                                投递您的履历，谢谢！</span></div> --}}
                     </div>
                 </div>
             </div>        
@@ -145,8 +146,6 @@ $(function () {
                                 </div>
         
                                 <div class="group">
-                                    {{-- <label style="font-size: 24px;">点击前往<br>投递履历</label>
-                                    <p style="font-size: 14px">本公司应聘履历登录透过「智联招聘网站」进行</p> --}}
                                     <img src="/img/about/link-text.svg" alt="">
                                 </div>
                                 <a href="https://company.zhaopin.com/CZ178566810.htm" class="link-mask" target="_blank"></a>
