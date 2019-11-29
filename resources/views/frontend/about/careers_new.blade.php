@@ -11,17 +11,28 @@ $(function () {
         }, 1000);
     });
 
-    $(window).resize(function () {
-        if ($(window.width() < 576)) {
+    function updateLayout() {
+        if ($(window).width() < 576) {
             $('#process').css({
-                'min-height': $('.flow-title').height() + $('.flow-image').height()
+                'min-height': $('.flow-title').height() + $('.flow-image').height() - 200
+            });
+            $('#description').css({
+                'background': 'none'
             });
         } else {
             $('#process').css({
                 'min-height': $('.flow-title').height() + $('.flow-image').height() + 300
             });    
+            $('#description').css({
+                'background': ' linear-gradient(rgba(255,255,255,0), #FFF, #FFF, #FFF, #FFF)'
+            });
         }
-        
+    }
+
+    updateLayout();
+
+    $(window).resize(function () {
+        updateLayout();    
     });
 });
 </script>
