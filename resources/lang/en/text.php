@@ -1,6 +1,15 @@
 <?php
 
 return [
+    'factory_label_1' => '170 Mu',
+    'factory_label_2' => '12500m&sup2;',
+    'factory_label_3' => 'Class 100,000',
+    'factory_label_4' => 'GMP',
+    'factory_label_1_text' => 'Factory Area',
+    'factory_label_2_text' => 'GMP Factory',
+    'factory_label_3_text' => 'Cleanroom Manufacturing Environment<br>( Liquid Production’s Class 10,000 )',
+    'factory_label_4_text' => 'Qualified Manufacturers<br>( Conformity to the Healthfood Hygiene Production Standards. )',
+
     'contact_text' => '<p>We attach great importance to your opinion.​</p><p>If you have any questions or suggestions about Shanghai Grape King, please contact us.</p>',
     'contact_info' => '<p>Addr.：No. 518, Che-Xin Road, Songjiang, Shanghai, China ​</p> <p>Tel：+86-21-5760 9598​</p> <p>Fax：+86-21-5760-9698​</p> <p>Web：www.grapeking.com.cn​</p> <p>E-Mail：gki@grapeking.com.cn</p>',
     'contact_notice' => 'Or you can leave your contact information and our service representative will contact you as soon as possible.',

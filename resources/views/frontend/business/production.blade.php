@@ -142,11 +142,27 @@ function adjustMaterial() {
     }
 }
 
+function adjustInnerText() {
+    var cards = $('.label-inner-text');
+    var finalHeight = 0;
+
+    for (let i = 0; i < cards.length; i++) {
+        if ($(cards[i]).height() > finalHeight) {
+            finalHeight = $(cards[i]).height();
+        }
+    }
+    $('.label-inner-text').height(finalHeight);
+}
+
 adjustMaterial();
+adjustInnerText()
 
 $(window).resize(function () {
     adjustMaterial()
 });
+
+
+
 </script>
 @endsection
 
@@ -202,27 +218,71 @@ $(window).resize(function () {
             </div>
         </div>
     </div>
-    <div class="production-content">
-        <div class="container">
-            <div class="row">
-                {{-- <div class="bg-img"></div> --}}
-                <div class="col-md-12 mobile-to-show">
-                    <h1 style="text-align: center; font-weight: 700">{{trans('text.prod_factory')}}</h1>
-                </div>
-                <div class="col-md-7 production-left-side">
-                    @if (App::getLocale() == 'en')
-                        <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow_en.svg" class="production-image" alt="">    
-                    @else
-                        <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
-                    @endif
-                </div>
-                <div class="col-md-5 production-right-side mobile-to-hide">
-                    <span class="factory-text">{{trans('text.prod_factory')}}</span>
+
+    <div class="factory-layout">
+        <div class="factory-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" data-aos="fade-left" data-aos-duration="1500">
+                        <h1 style="">{{trans('text.prod_factory')}}</h1>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bottom-mask"></div>
+        <div class="factory-label-container">
+            <div class="factory-label">
+                <div class="label-item">
+                    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">{!!trans('text.factory_label_1')!!}</h2>
+                    <div class="label-inner-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <p>{!!trans('text.factory_label_1_text')!!}</p>
+                    </div>
+                </div>
+                <div class="label-item">
+                    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">{!!trans('text.factory_label_2')!!}</h2>
+                    <div class="label-inner-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        <p>{!!trans('text.factory_label_2_text')!!}</p>
+                    </div>
+                </div>
+                <div class="label-item">
+                    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">{!!trans('text.factory_label_3')!!}</h2>
+                    <div class="label-inner-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                        <p>{!!trans('text.factory_label_3_text')!!}</p>
+                    </div>
+                </div>
+                <div class="label-item">
+                    <h2 data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">{!!trans('text.factory_label_4')!!}</h2>
+                    <div class="label-inner-text" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
+                        <p>{!!trans('text.factory_label_4_text')!!}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+    @if (false)
+        <div class="production-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 mobile-to-show">
+                        <h1 style="text-align: center; font-weight: 700">{{trans('text.prod_factory')}}</h1>
+                    </div>
+                    <div class="col-md-7 production-left-side">
+                        @if (App::getLocale() == 'en')
+                            <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow_en.svg" class="production-image" alt="">    
+                        @else
+                            <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
+                        @endif
+                    </div>
+                    <div class="col-md-5 production-right-side mobile-to-hide">
+                        <span class="factory-text">{{trans('text.prod_factory')}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-mask"></div>
+        </div>
+    @endif
+    
     <div class="material-slide-container">
         <div class="material-slide">
             @foreach ($material as $index => $item)
