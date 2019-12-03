@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>         
+@endif
+
 @endsection
 
 @section('custom-style')
@@ -73,7 +76,7 @@ $(window).scroll(function () {
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-9 about-content">
+        <div class="col-md-{{config('app.sideBar') ? 9 : 12}} about-content">
             <h3 class="about-section-title" id="section_1">{{ trans('string.download_paper') }}</h3>
             {{-- {{json_encode(FeatureView::download())}} --}}
             <div class="row">
@@ -157,9 +160,12 @@ $(window).scroll(function () {
         </div>
         
         {{-- side thumd --}}
+        @if (config('app.sideBar'))
         <div class="col-md-3 about-thumbnail">
             @include('components.csrThumbnail')
-        </div>
+        </div>   
+        @endif
+        
     </div>
 </div>
 @endsection

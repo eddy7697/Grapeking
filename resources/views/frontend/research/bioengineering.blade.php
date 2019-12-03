@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>           
+@endif
+
 <script>
 $('.material-card-list').slick({
     dots: true,
@@ -132,7 +135,7 @@ $('.material-card-list').slick({
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 about-content">
+            <div class="col-md-{{config('app.sideBar') ? 9 : 12}} about-content">
                 @if (App::getLocale() == 'en')
                 {!!PageView::show(1)!!}
                 @else
@@ -272,9 +275,12 @@ $('.material-card-list').slick({
             </div>
             
             {{-- side thumd --}}
+            @if (config('app.sideBar'))
             <div class="col-md-3 about-thumbnail">
                 @include('components.researchThumbnail')
-            </div>
+            </div>    
+            @endif
+            
         </div>
     </div>
 @endsection

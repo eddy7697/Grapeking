@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>         
+@endif
+
 <script>
     var cards = $('.info-text');
     var finalHeight = 0;
@@ -103,7 +106,7 @@ $(window).scroll(function () {
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-9 about-content">
+        <div class="col-md-{{config('app.sideBar') ? 9 : 12}} about-content">
             @if (App::getLocale() == 'en')
             {!!PageView::show(26)!!}
             @else
@@ -155,9 +158,12 @@ $(window).scroll(function () {
         </div>
         
         {{-- side thumd --}}
+        @if (config('app.sideBar'))
         <div class="col-md-3 about-thumbnail">
             @include('components.researchThumbnail')
-        </div>
+        </div> 
+        @endif
+        
     </div>
 </div>
 @endsection

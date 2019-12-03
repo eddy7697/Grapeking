@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>           
+@endif
+
 @endsection
 
 @section('custom-style')
@@ -87,7 +90,7 @@ $(window).scroll(function () {
                 </li>
             </ul>
         </div>
-        <div class="col-md-9 about-content">
+        <div class="col-md-{{config('app.sideBar') ? 9 : 12}} about-content">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <h3 class="about-section-title" id="section_1">{{ trans('string.laboratory_equipment') }}</h3>
@@ -153,9 +156,12 @@ $(window).scroll(function () {
                 </div>
             </div>
         </div>
+        @if (config('app.sideBar'))
         <div class="col-md-3 about-thumbnail">
             @include('components.researchThumbnail')
         </div>
+        @endif
+        
     </div>
 </div>
 @endsection

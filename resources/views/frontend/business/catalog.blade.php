@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>        
+@endif
+
 <script>
 var cards = $('.material-card');
 var finalHeight = 0;
@@ -84,7 +87,7 @@ $('.material-card').height(finalHeight);
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-9 about-content">
+            <div class="col-md-{{config('app.sideBar') ? 9 : 12}} about-content">
                 <h3 class="about-section-title" id="section_1">{{ trans('string.p_slogan') }}</h3>
                 <div class="about-text">
                     <p>
@@ -226,9 +229,12 @@ $('.material-card').height(finalHeight);
             </div>
             
             {{-- side thumd --}}
+            @if (config('app.sideBar'))
             <div class="col-md-3 about-thumbnail">
                 @include('components.businessThumbnail')
             </div>
+            @endif
+            
         </div>
     </div>
 @endsection

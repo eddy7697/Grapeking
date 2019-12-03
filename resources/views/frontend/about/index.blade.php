@@ -1,9 +1,10 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
-// new PerfectScrollbar('.thumb-container');
+new PerfectScrollbar('.thumb-container');
 
 $(window).scroll(function () {
     var windowScrollTop = $(window).scrollTop();
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>       
+@endif
+
 <script>
 
 // var sections = ['#about_1', '#about_2', '#about_3', '#about_4'];
