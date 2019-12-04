@@ -51,6 +51,12 @@ var autoPlay = function () {
     
     $(links.get(count)).tab('show');
 }
+var labels = links.map(function (elm) {
+    // console.log(elm)
+    return $(links[elm]).attr('data-label');
+})
+var currentTab = labels[0];
+
 
 var play = setInterval(function() {
     autoPlay();
@@ -58,6 +64,7 @@ var play = setInterval(function() {
 
 
 function tabShow(label) {
+    console.log(label)
     $(`.nav-link.` + label).tab('show');
 }
 
@@ -310,22 +317,22 @@ $(window).resize(function () {
         </div>
     </div>
     
-    <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500">
-        <ul class="nav nav-tabs">
+    <div class="production-tabs" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500" style="margin-top: -7px">
+        <ul class="nav nav-tabs mobile-to-hide">
             <li class="nav-item">
-                <a class="nav-link active tablet" data-toggle="tab" href="#home">{{trans('text.prod_1')}}</a>
+                <a class="nav-link active tablet" data-label="tablet" data-toggle="tab" href="#home">{{trans('text.prod_1')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link granule" data-toggle="tab" href="#menu1">{{trans('text.prod_2')}}</a>
+                <a class="nav-link granule" data-label="granule" data-toggle="tab" href="#menu1">{{trans('text.prod_2')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link aluminum" data-toggle="tab" href="#menu2">{{trans('text.prod_3')}}</a>
+                <a class="nav-link aluminum" data-label="aluminum" data-toggle="tab" href="#menu2">{{trans('text.prod_3')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link capsule" data-toggle="tab" href="#menu3">{{trans('text.prod_4')}}</a>
+                <a class="nav-link capsule" data-label="capsule" data-toggle="tab" href="#menu3">{{trans('text.prod_4')}}</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link glass_bottle" data-toggle="tab" href="#menu4">{{trans('text.prod_5')}}</a>
+                <a class="nav-link glass_bottle" data-label="glass_bottle" data-toggle="tab" href="#menu4">{{trans('text.prod_5')}}</a>
             </li>
         </ul>
         
