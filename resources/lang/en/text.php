@@ -7,7 +7,7 @@ return [
     'factory_label_4' => 'GMP',
     'factory_label_1_text' => 'Factory Area',
     'factory_label_2_text' => 'GMP Factory',
-    'factory_label_3_text' => "Liquid Production's Class 10k",
+    'factory_label_3_text' => "Liquid Production's Class 10K",
     'factory_label_4_text' => 'Qualified Manufacturers',
 
     'contact_text' => '<p>We attach great importance to your opinion.​</p><p>If you have any questions or suggestions about Shanghai Grape King, please contact us.</p>',
