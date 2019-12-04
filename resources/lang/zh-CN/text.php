@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'factory_label_1' => '170畝',
-    'factory_label_2' => '12500m&sup2;',
-    'factory_label_3' => '10萬級',
+    'factory_label_1' => '170<span style="font-size: 65%;">亩</span>',
+    'factory_label_2' => '12500<span style="font-size: 65%;">m&sup2;</span>',
+    'factory_label_3' => '10<span style="font-size: 65%;">万级</span>',
     'factory_label_4' => 'GMP',
-    'factory_label_1_text' => '生產廠區佔地',
-    'factory_label_2_text' => 'GMP廠房',
-    'factory_label_3_text' => '製造環境（液體一萬級）',
-    'factory_label_4_text' => '合格製造廠<br>（符合生產保健食品衛生標準）',
+    'factory_label_1_text' => '厂区占地',
+    'factory_label_2_text' => 'GMP厂房',
+    'factory_label_3_text' => '液体一万级',
+    'factory_label_4_text' => '合格制造厂',
 
 
     'contact_text' => '<p>我们非常重视您的意见与建议，如果您对上海葡萄王生技有任何疑问或反馈，请与我们联络，我们随时准备聆听您的声音。​</p>',

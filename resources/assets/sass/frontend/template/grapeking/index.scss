@@ -2146,7 +2146,9 @@ a.toggle-locale-btn {
         
     }
     ul.about-tab {
-        background-color: #DCDDDD;
+        background-image: linear-gradient(to right, #DCDDDD, #FFF);
+        border: none;
+        // background-color: #DCDDDD;
 
         li.nav-item {
             
@@ -2407,7 +2409,7 @@ a.toggle-locale-btn {
         }
         .about-text {
             font-size: 15px;
-            line-height: 30px;
+            line-height: 40px;
 
             &.signature {
                 margin-top: 70px;
@@ -2454,7 +2456,7 @@ a.toggle-locale-btn {
                 height: 400px;
 
                 .link-image {
-                    background-position: center;
+                    background-position: top center;
                     background-size: cover;
                     display: inline-block;
                     text-decoration: none;
@@ -2887,6 +2889,7 @@ a.toggle-locale-btn {
                 margin: 20px 0;
             }
             .material-img {
+                height: 80px;
                 margin: 20px 0;
             }
             .material-info {
@@ -4130,7 +4133,15 @@ a.toggle-locale-btn {
     }
 
     .site-content .production-tabs .tab-content.tunnel .tab-pane .info {
-        background-color: rgba($color: #fff, $alpha: .5);  
+        height: auto;
+        padding-top: 40px;
+        background-color: rgba($color: #fff, $alpha: .8);  
+
+        .info-content {
+            h3 {
+                font-size: 26px;
+            }
+        }
     }
 
     .mobile-site-header a.header-logo {

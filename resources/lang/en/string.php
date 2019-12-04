@@ -271,7 +271,7 @@ return [
     'bioengineering_center' => 'Biotech Research Institute',
     'professional_equipment' => 'Professional equipment',
     'repeated_success' => 'Frequently seen',
-    'raw_material_introduction' => 'Introduction to raw materials',
+    'raw_material_introduction' => 'Introduction to Raw Materials',
     'innovation_rnd_center' => 'Innovative R&D Center',
     'professional_rnd_lineup' => 'Professional R&D lineup',
     'leading_rnd_technology' => 'Leading R&D Technology',
@@ -281,8 +281,8 @@ return [
     'patent' => 'Patent',
     'literature_publication' => 'Documentation',
     'world_class_factory' => 'World Class Factory',
-    'production_equipment' => 'Production equipment',
-    'laboratory_equipment' => 'Laboratory equipment',
+    'production_equipment' => 'Production Equipment',
+    'laboratory_equipment' => 'Laboratory Equipment',
     'market_trends' => 'Monitoring the Latest Market Trends',
     'international_quality_standards' => 'Strict Controls and Compliance to International Quality Standards',
 
@@ -420,7 +420,7 @@ return [
     'index_d_10' => "Grape King Bio has always regarded food safety as a top priority. We have acquired multiple international and national certifications that include ISO 22000, HACCP, PIC/S GMP, and NSF. We hope to implement strict controls in all steps From the procurement of raw materials, processing, packaging, to sales in order To achieve food safety standards and customer satisfaction, which eventually Create core value for Grape King Bio.",
     'index_d_11' => "<p>We provides Healthfood's OEM and ODM services,​</p><p>Building the Comprehensive and High-Quality Service is Your Best Partner.​</p>",
     'index_d_12' => "<p>We actively invests a lot of R & D resources,​</p><p>Established a Biotechnology Research Institute, Innovation R&D center, and an International Standard Laboratory for food safety,​</p><p>Jointly Building the strongest R&D team.​</p>",
-    'index_d_13' => 'Our security quality',
+    'index_d_13' => 'International Quality Certification​',
     'index_d_14' => '<p>Grape King Bio has its own health food production line. Safety and quality are top considerations for every production line to provide products of the highest quality.  We maintain constant monitoring of our entire production flow and established multiple check points to ensure product safety and effectiveness. In 2014, we also achieved the PIC/S GMP certification, the highest level of international qualifications in this area. Our commitment to quality is aimed at bringing our customers with products of the highest quality.</p>',
     'index_d_15' => 'Grape King Biotech Co., Ltd. introduced the film',
     
@@ -469,7 +469,7 @@ return [
     'contact_inf____3' => '<a href="https://www.pro-partner.com.tw/">https://www.pro-partner.com.tw/</a>',
     'contact_inf____4' => 'gki@grapeking.com.cn',
     
-    'founder_d_1' => 'Founder and President Mr. Zeng Shuizhao',
+    'founder_d_1' => 'Shui-Zhao Tseng(曾水照),​<br>the founder and President of Grape King​',
     'founder_d_2' => 'The baseball team wins the prize with the president',
     'founder_d_3' => 'President (front row left) and the six major consultants of the Portuguese group',
     'founder_d_4' => 'Combate Dealer Conference',

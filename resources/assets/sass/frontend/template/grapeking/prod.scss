@@ -58,6 +58,18 @@
             @media (max-width: 991px) {
                 .label-item {
                     flex: 0 0 50%;
+                    padding: 5px 10px;
+
+                    h2 {
+                        margin: 5px 0 0;
+                    }
+                    .label-inner-text {
+                        
+                        p {
+                            // font-weight: 500;
+                            font-size: 12px;
+                        }
+                    }
                 }
             }
         }

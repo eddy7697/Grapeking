@@ -155,6 +155,8 @@ return [
 
     'force2www' => false,
 
+    'sideBar' => false,
+
     /*
     |--------------------------------------------------------------------------
     | Autoloaded Service Providers

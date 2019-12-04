@@ -81,8 +81,8 @@ $(function () {
             <div class="container">
                 <h3 class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">菁英招募</h3>
                 <p class="wow fade-in-top" style="visibility: visible; animation-name: fade-in-top;">葡萄王诚挚欢迎您的加入 <br>
-                    <span class="mobile-to-hide">80分的专业+100分的态度=葡萄王人才方进程</span>
-                    <span class="mobile-to-show">80分的专业+100分的态度<br>=葡萄王人才方进程</span>
+                    <span class="mobile-to-hide">80分的专业+100分的态度=葡萄王人才方程式</span>
+                    <span class="mobile-to-show">80分的专业+100分的态度<br>=葡萄王人才方程式</span>
                 </p>
                 <ul class="wow fade-in-top list-unstyled row center-xs"
                     style="visibility: visible; animation-name: fade-in-top;">

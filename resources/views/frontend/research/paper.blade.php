@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('custom-script')
+@if (config('app.sideBar'))
 <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
@@ -27,7 +28,9 @@ $(window).scroll(function () {
         });
     }
 });
-</script>
+</script>          
+@endif
+
 <script src="/js/paper-list.js"></script>
 <script src="/js/patent-list.js"></script>
 @endsection
@@ -75,7 +78,7 @@ $(window).scroll(function () {
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-md-9">
+        <div class="col-md-{{config('app.sideBar') ? 9 : 12}}">
             <ul class="nav nav-tabs about-tab" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="patent-list-tab" data-toggle="tab" href="#patent-list" role="tab" aria-controls="patent-list" aria-selected="true">
@@ -89,7 +92,7 @@ $(window).scroll(function () {
                 </li>
             </ul>
         </div>
-        <div class="col-md-9 about-content">
+        <div class="col-md-{{config('app.sideBar') ? 9 : 12}} about-content">
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="patent-list" role="tabpanel" aria-labelledby="patent-list-tab">
                     <h3 class="about-section-title" id="section_1">{{ trans('string.patent') }}</h3>
@@ -101,9 +104,12 @@ $(window).scroll(function () {
                 </div>
             </div>
         </div>
+        @if (config('app.sideBar'))
         <div class="col-md-3 about-thumbnail">
             @include('components.researchThumbnail')
-        </div>
+        </div>     
+        @endif
+        
     </div>
 </div>
 @endsection
