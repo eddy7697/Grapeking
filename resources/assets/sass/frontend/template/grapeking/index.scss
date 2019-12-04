@@ -2146,7 +2146,9 @@ a.toggle-locale-btn {
         
     }
     ul.about-tab {
-        background-color: #DCDDDD;
+        background-image: linear-gradient(to right, #DCDDDD, #FFF);
+        border: none;
+        // background-color: #DCDDDD;
 
         li.nav-item {
             
@@ -2887,6 +2889,7 @@ a.toggle-locale-btn {
                 margin: 20px 0;
             }
             .material-img {
+                height: 80px;
                 margin: 20px 0;
             }
             .material-info {

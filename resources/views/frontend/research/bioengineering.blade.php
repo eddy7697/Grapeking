@@ -79,6 +79,28 @@ $('.material-card-list').slick({
     }
     $('.material-card').height(finalHeight);
 </script>
+<script>
+    var cards = $('.site-content .about-content .material-card h4');
+    var finalHeight = 0;
+    
+    for (let i = 0; i < cards.length; i++) {
+        if ($(cards[i]).height() > finalHeight) {
+            finalHeight = $(cards[i]).height();
+        }
+    }
+    $('.site-content .about-content .material-card h4').height(finalHeight);
+</script>
+<script>
+    var cards = $('.site-content .about-content .material-card .material-info');
+    var finalHeight = 0;
+    
+    for (let i = 0; i < cards.length; i++) {
+        if ($(cards[i]).height() > finalHeight) {
+            finalHeight = $(cards[i]).height();
+        }
+    }
+    $('.site-content .about-content .material-card .material-info').height(finalHeight);
+</script>
 @endsection
 
 @section('custom-style')
