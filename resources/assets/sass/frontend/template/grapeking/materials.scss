@@ -1,9 +1,6 @@
 .material-slide-container {
     overflow: hidden;
 
-    * {
-        transition: all .5s ease-out;
-    }
     .prev-arrow, .next-arrow {
         @include force-center;
         display: none;
@@ -29,11 +26,15 @@
     }
 
     .material-slide {
-    
+        
+        
         .material-item {
             overflow: hidden;
             height: 700px;
-    
+
+            * {
+                transition: all .5s ease-out;
+            }
             &:hover, &.active {
                 .material-bg {
                     transform: scale(1.1);
