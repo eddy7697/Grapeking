@@ -5,7 +5,7 @@ return [
     'factory_label_2' => '12500<span style="font-size: 65%;">m&sup2;</span>',
     'factory_label_3' => '10<span style="font-size: 65%;">万级</span>',
     'factory_label_4' => 'GMP',
-    'factory_label_1_text' => '生产厂区占地',
+    'factory_label_1_text' => '厂区占地',
     'factory_label_2_text' => 'GMP厂房',
     'factory_label_3_text' => '液体一万级',
     'factory_label_4_text' => '合格制造厂',
