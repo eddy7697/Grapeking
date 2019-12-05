@@ -37,7 +37,7 @@ $(window).scroll(function () {
 <link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/research/foodsafty-banner.jpg');
+    background-image: url('/img/research/banner-foodsafty.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
