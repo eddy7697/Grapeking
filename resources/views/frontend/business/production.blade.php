@@ -366,7 +366,7 @@ $(window).resize(function () {
         <div class="tab-content">
             <div class="tab-pane container-fluid active" id="home">
                 <div class="row">
-                    <div class="col-md-5 label tablet mobile-to-hide">
+                    <div class="col-md-5 label tablet">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
                             @include('components.prod_en.01')
@@ -374,18 +374,15 @@ $(window).resize(function () {
                             @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
                             @include('components.prod.01')
                         @endif
+                        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-1.jpg" alt="">
-                    </div>
-                    <div class="col-md-5 label tablet mobile-to-show">
-                        @if ($locale == 'en')
-                            @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
-                            @include('components.prod_en.01')
-                        @else
-                            @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
-                            @include('components.prod.01')
-                        @endif
                     </div>
                 </div>
                 <div class="progress-bar tablet">
@@ -394,7 +391,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu1">
                 <div class="row">
-                    <div class="col-md-5 label granule mobile-to-hide">
+                    <div class="col-md-5 label granule">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
                             @include('components.prod_en.02')    
@@ -402,18 +399,15 @@ $(window).resize(function () {
                             @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
                             @include('components.prod.02')
                         @endif
+                        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-2.jpg" alt="">
-                    </div>
-                    <div class="col-md-5 label granule mobile-to-show">
-                        @if ($locale == 'en')
-                            @include('components.prod_en.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
-                            @include('components.prod_en.02')    
-                        @else
-                            @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
-                            @include('components.prod.02')
-                        @endif
                     </div>
                 </div>
                 <div class="progress-bar granule">
@@ -422,7 +416,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu2">
                 <div class="row">
-                    <div class="col-md-5 label aluminum mobile-to-hide">
+                    <div class="col-md-5 label aluminum">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
                             @include('components.prod_en.03')
@@ -430,18 +424,15 @@ $(window).resize(function () {
                             @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
                             @include('components.prod.03')
                         @endif
+                        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-3.jpg" alt="">
-                    </div>
-                    <div class="col-md-5 label aluminum mobile-to-show">
-                        @if ($locale == 'en')
-                            @include('components.prod_en.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
-                            @include('components.prod_en.03')
-                        @else
-                            @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
-                            @include('components.prod.03')
-                        @endif
                     </div>
                 </div>
                 <div class="progress-bar aluminum">
@@ -450,7 +441,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu3">
                 <div class="row">
-                    <div class="col-md-5 label capsule mobile-to-hide">
+                    <div class="col-md-5 label capsule">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
                             @include('components.prod_en.04')
@@ -458,18 +449,15 @@ $(window).resize(function () {
                             @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
                             @include('components.prod.04')
                         @endif
+                        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-4.jpg" alt="">
-                    </div>
-                    <div class="col-md-5 label capsule mobile-to-show">
-                        @if ($locale == 'en')
-                            @include('components.prod_en.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
-                            @include('components.prod_en.04')
-                        @else
-                            @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
-                            @include('components.prod.04')
-                        @endif
                     </div>
                 </div>
                 <div class="progress-bar capsule">
@@ -478,7 +466,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu4">
                 <div class="row">
-                    <div class="col-md-5 label glass_bottle mobile-to-hide">
+                    <div class="col-md-5 label glass_bottle">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
                             @include('components.prod_en.05')
@@ -486,18 +474,15 @@ $(window).resize(function () {
                             @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
                             @include('components.prod.05')
                         @endif
+                        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                        </div>
+                        <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
                     </div>
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-5.jpg" alt="">
-                    </div>
-                    <div class="col-md-5 label glass_bottle mobile-to-show">
-                        @if ($locale == 'en')
-                            @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
-                            @include('components.prod_en.05')
-                        @else
-                            @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
-                            @include('components.prod.05')
-                        @endif
                     </div>
                 </div>
                 <div class="progress-bar glass_bottle">
@@ -506,12 +491,12 @@ $(window).resize(function () {
             </div>
         </div>
 
-        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+        {{-- <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
             <i class="fa fa-arrow-left" aria-hidden="true"></i>
         </div>
         <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
             <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </div>
+        </div> --}}
     </div>
     <div class="container">
         <div class="col-md-12 about-content">

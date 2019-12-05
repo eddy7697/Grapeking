@@ -43,7 +43,11 @@
                         <div class="row">
                             <div class="col-md-5 offset-md-1 site-map">                            
                                 <ul>
-                                    <h5>{{ trans('string.about') }}</h5>
+                                    @if (App::getLocale() == 'en')
+                                        <h5>About Us</h5>
+                                    @else
+                                        <h5>{{ trans('string.about') }}</h5>    
+                                    @endif
                                     <li>
                                         <a href="/about">{{ trans('string.about_us') }}</a>
                                     </li>

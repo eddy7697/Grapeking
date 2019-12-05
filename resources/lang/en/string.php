@@ -394,7 +394,7 @@ return [
     'catalog_d_14' => 'Quality Certification',
     'catalog_d_15' => 'International affirmation',
     'catalog_d_16' => 'If you have any questions about Grape King, you are welcome to contact us, the Customer Service Specialist will solve your problem with the fastest and most professional response. ',
-    'catalog_d_17' => 'Contact us',
+    'catalog_d_17' => 'Contact Us',
     'weight_management' => 'Weight management',
     'healthy_food' => 'Healthy food',
     'functional_drinks' => 'Functional drinks',
