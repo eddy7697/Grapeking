@@ -101,7 +101,7 @@
 }
 
 .mobile-to-show {
-    display: none;
+    display: none !important;
 }
 
 .contact-side-link {
@@ -2961,6 +2961,21 @@ a.toggle-locale-btn {
     }
     .production-tabs {
 
+        .tab-btn {
+            @include force-center;
+            position: absolute;
+            width: 30px;
+            background-color: rgba($color: white, $alpha: .6);
+            top: 0;
+            bottom: 0;
+
+            &.prev {
+                left: 0;
+            }
+            &.next {
+                right: 0;
+            }
+        }
         ul.nav-tabs {
             border: none;
             padding-left: 25px;
@@ -3648,6 +3663,10 @@ a.toggle-locale-btn {
 
     .mobile-to-show {
         display: block !important;
+    }
+
+    .mobile-to-show-flex {
+        display: flex !important;
     }
 
     .mobile-to-hide {

@@ -51,10 +51,14 @@ var autoPlay = function () {
     
     $(links.get(count)).tab('show');
 }
-var labels = links.map(function (elm) {
+var labels = [];
+
+links.map(function (elm) {
     // console.log(elm)
-    return $(links[elm]).attr('data-label');
+    labels.push($(links[elm]).attr('data-label'));
+    return ;
 })
+
 var currentTab = labels[0];
 
 
@@ -65,6 +69,7 @@ var play = setInterval(function() {
 
 function tabShow(label) {
     console.log(label)
+    count = labels.indexOf(label)
     $(`.nav-link.` + label).tab('show');
 }
 
@@ -85,6 +90,9 @@ $('.tab-pane .progress-bar .percentage').css({
 });
 
 $('.nav-link').on('shown.bs.tab', function(event){
+    currentTab = labels[count]
+    console.log(currentTab);
+    
     count = $('.nav-link').index($(event.currentTarget));
     startProgress();
     play = setInterval(function() {
@@ -97,11 +105,30 @@ $('.nav-link').on('hide.bs.tab', function(event){
     clearInterval(play)
     $('.prod-material').removeClass('fadeInLeft animated');
 });
+
+function prevTab() {
+    var index = labels.indexOf(currentTab)
+    
+    if (count == 0) {
+        tabShow(labels[labels.length - 1]);
+    } else {
+        tabShow(labels[index - 1]);
+    }
+}
+function nextTab() {
+    var index = labels.indexOf(currentTab)
+
+    if (count == labels.length - 1) {
+        tabShow(labels[0]);
+    } else {
+        tabShow(labels[index + 1]);
+    }
+}
 </script>
 
 <script>
 $('.material-slide').slick({
-    // dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 5,
@@ -114,7 +141,7 @@ $('.material-slide').slick({
                 slidesToShow: 4,
                 // slidesToScroll: 4,
                 infinite: true,
-                dots: true
+                dots: false
             }
         },
         {
@@ -339,7 +366,7 @@ $(window).resize(function () {
         <div class="tab-content">
             <div class="tab-pane container-fluid active" id="home">
                 <div class="row">
-                    <div class="col-md-5 label tablet">
+                    <div class="col-md-5 label tablet mobile-to-hide">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
                             @include('components.prod_en.01')
@@ -351,6 +378,15 @@ $(window).resize(function () {
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-1.jpg" alt="">
                     </div>
+                    <div class="col-md-5 label tablet mobile-to-show">
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                            @include('components.prod_en.01')
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 1, 'prev' => 'glass_bottle', 'next' => 'granule'])
+                            @include('components.prod.01')
+                        @endif
+                    </div>
                 </div>
                 <div class="progress-bar tablet">
                     <div class="percentage"></div>
@@ -358,7 +394,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu1">
                 <div class="row">
-                    <div class="col-md-5 label granule">
+                    <div class="col-md-5 label granule mobile-to-hide">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
                             @include('components.prod_en.02')    
@@ -370,6 +406,15 @@ $(window).resize(function () {
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-2.jpg" alt="">
                     </div>
+                    <div class="col-md-5 label granule mobile-to-show">
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
+                            @include('components.prod_en.02')    
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 2, 'prev' => 'tablet', 'next' => 'aluminum'])
+                            @include('components.prod.02')
+                        @endif
+                    </div>
                 </div>
                 <div class="progress-bar granule">
                     <div class="percentage"></div>
@@ -377,7 +422,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu2">
                 <div class="row">
-                    <div class="col-md-5 label aluminum">
+                    <div class="col-md-5 label aluminum mobile-to-hide">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
                             @include('components.prod_en.03')
@@ -389,6 +434,15 @@ $(window).resize(function () {
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-3.jpg" alt="">
                     </div>
+                    <div class="col-md-5 label aluminum mobile-to-show">
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
+                            @include('components.prod_en.03')
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 3, 'prev' => 'granule', 'next' => 'capsule'])
+                            @include('components.prod.03')
+                        @endif
+                    </div>
                 </div>
                 <div class="progress-bar aluminum">
                     <div class="percentage"></div>
@@ -396,7 +450,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu3">
                 <div class="row">
-                    <div class="col-md-5 label capsule">
+                    <div class="col-md-5 label capsule mobile-to-hide">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
                             @include('components.prod_en.04')
@@ -408,6 +462,15 @@ $(window).resize(function () {
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-4.jpg" alt="">
                     </div>
+                    <div class="col-md-5 label capsule mobile-to-show">
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
+                            @include('components.prod_en.04')
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 4, 'prev' => 'aluminum', 'next' => 'glass_bottle'])
+                            @include('components.prod.04')
+                        @endif
+                    </div>
                 </div>
                 <div class="progress-bar capsule">
                     <div class="percentage"></div>
@@ -415,7 +478,7 @@ $(window).resize(function () {
             </div>
             <div class="tab-pane fade container-fluid" id="menu4">
                 <div class="row">
-                    <div class="col-md-5 label glass_bottle">
+                    <div class="col-md-5 label glass_bottle mobile-to-hide">
                         @if ($locale == 'en')
                             @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
                             @include('components.prod_en.05')
@@ -427,11 +490,27 @@ $(window).resize(function () {
                     <div class="col-md-7 image">
                         <img src="/img/business/prod/2-5.jpg" alt="">
                     </div>
+                    <div class="col-md-5 label glass_bottle mobile-to-show">
+                        @if ($locale == 'en')
+                            @include('components.prod_en.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
+                            @include('components.prod_en.05')
+                        @else
+                            @include('components.prod.prod_thumb', ['index' => 5, 'prev' => 'capsule', 'next' => 'tablet'])
+                            @include('components.prod.05')
+                        @endif
+                    </div>
                 </div>
                 <div class="progress-bar glass_bottle">
                     <div class="percentage"></div>
                 </div>
             </div>
+        </div>
+
+        <div class="tab-btn prev mobile-to-show-flex" onclick="prevTab()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </div>
+        <div class="tab-btn next mobile-to-show-flex" onclick="nextTab()">
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </div>
     </div>
     <div class="container">
