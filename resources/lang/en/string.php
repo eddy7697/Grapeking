@@ -372,7 +372,7 @@ return [
     'production_d_9' => 'glass bottle',
     'production_d_10' => '康美包',
     'production_d_11' => 'Grape King Bio has been developing OEM/ODM products for over 40 years. Our dedicated Research and Development team closely follows developing global trends of the health food markets in Europe, America and Asia to ensure we are able to introduce the latest products for customer needs and requirements. Grape King Bio has also collaborated with well-known international firms using our integrated one-stop OEM/ODM services to produce and manufacture best products with Grape King’s excellent services. Further details to our OEM/ODM services are listed below:',
-    'production_d_12' => 'If you have any questions about Grape King, please feel free to contact us. The Customer Service Specialist will solve your problem with the fastest and most professional response.',
+    'production_d_12' => 'If any questions, please feel free to contact us.​',
     'production_d_13' => 'The grape king has long-term research experience in fermentation technology, we can provide you with professional fermentation foundry, and have a wealth of raw materials to choose from. ',
     'production_d_14' => 'fermentation equipment',
     'production_d_15' => 'Grape King Bio runs a fermentation production capacity of 286 tons. The fermenters range in size from 200L, 500L, 40T, to 50T. The fermentation process is well controlled by professional and qualified staff, based on automatic and computerized system to ensure the best fermentation production harvest. The diversity of our fermentation facility means that raw material can be produced to customer’s specific needs.',

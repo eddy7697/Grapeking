@@ -58,7 +58,7 @@
         </div>
         
     </div>
-    <div class="container-fluid top-menu" style="background-color: rgba(255, 255, 255, .85);">
+    <div class="container-fluid top-menu" style="background-color: rgba(255, 255, 255, .85); transition: all .2s ease-out">
         <div class="row site-header-container">
             <div class="col-md-12 mx-auto">
                 <div class="site-logo">

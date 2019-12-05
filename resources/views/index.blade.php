@@ -56,6 +56,8 @@
         .swiper-container-horizontal>.swiper-pagination-bullets {
             bottom: 20px;
         }
+
+        
     </style>
 @endsection
 
@@ -76,7 +78,7 @@
                 useEasing: true
             });
             var countUpProd = new CountUp('count-prod', 32, countOption);
-            var countUpMem = new CountUp('count-mem', 83, countOption);
+            var countUpMem = new CountUp('count-mem', 90, countOption);
             var countUpReturn = new CountUp('count-return', 70, countOption);
             var counted = false
             
@@ -101,6 +103,7 @@
     </script>
     <script>
         var swiper = new Swiper('.swiper-container', {
+            autoRestart: false,
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
@@ -108,9 +111,15 @@
                 return '<span class="' + className + '"></span>';
                 },
             },
+            coverflowEffect: {
+                rotate: 30,
+                slideShadows: false,
+            },
+            effect: 'coverflow',
             autoplay: {
                 delay: 4000
             },
+            loop: true,
         });
 
         $('.witness-container').slick({
