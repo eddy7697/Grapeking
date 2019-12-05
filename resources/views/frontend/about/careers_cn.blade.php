@@ -241,8 +241,8 @@
                     <ul class="site-mega-menu-container">
                         <li class="site-mega-menu-item">
                             <a href="/research/foodsafty" class="site-mega-menu-link">
-                                <img src="/img/menu/food-safty-research.jpg" alt="食安中心">
-                                <p class="header-job-txt">食安中心</p>
+                                <img src="/img/menu/food-safty-research.jpg" alt="食品安全中心">
+                                <p class="header-job-txt">食品安全中心</p>
                             </a>
                         </li>
                         <li class="site-mega-menu-item">
@@ -350,7 +350,7 @@
             </li>
             <li><a class="menu-item-dropdown">专业研发</a>
                 <ul>
-                    <li><a href="/research/foodsafty">食安中心</a></li>
+                    <li><a href="/research/foodsafty">食品安全中心</a></li>
                     <li><a href="/research/bioengineering">生物科技研究所</a></li>
                     <li><a href="/research/innovation">创新研发中心</a></li>
                     <li><a href="/research/factory">世界级工厂</a></li>
@@ -509,7 +509,7 @@
                                 <ul>
                                     <h5>专业研发</h5>
                                     <li>
-                                        <a href="/research/foodsafty">食安中心</a>
+                                        <a href="/research/foodsafty">食品安全中心</a>
                                     </li>
                                     <li>
                                         <a href="/research/bioengineering">生物科技研究所</a>

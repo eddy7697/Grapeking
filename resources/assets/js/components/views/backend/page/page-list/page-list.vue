@@ -139,7 +139,7 @@
                         label: '專業研發',
                         children: [
                             {
-                                label: '食安中心',
+                                label: '食品安全中心',
                                 id: 23
                             },{
                                 label: '生物科技研究所',
@@ -212,7 +212,7 @@
                         label: '專業研發',
                         children: [
                             {
-                                label: '食安中心',
+                                label: '食品安全中心',
                                 id: 24
                             },{
                                 label: '生物科技研究所',

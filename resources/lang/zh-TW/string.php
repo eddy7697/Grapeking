@@ -244,7 +244,7 @@ return [
     'partner_finder_choose' => '選擇',
     'partner_finder_country' => '地區',
 
-    'food_safty_center' => '食安中心',
+    'food_safty_center' => '食品安全中心',
     'inspection_process' => '檢驗流程',
     'bioengineering_center' => '生物工程研究所',
     'professional_equipment' => '專業裝置',

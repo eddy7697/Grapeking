@@ -299,7 +299,7 @@
             <div class="col-sm-6 col-md-3 factory-item food-safety">
                 <div class="border-bar"></div>
                 <div class="factory-item-info">
-                    <p>食安中心</p>
+                    <p>食品安全中心</p>
                     <p>Food Safety Center</p>
                 </div>
                 <a href="/research/foodsafty"></a>
@@ -483,7 +483,7 @@
                         ],
                         [
                             'featureImage' => '/img/about-section-3.jpg',
-                            'title' => App::getLocale() == 'en' ? 'Food Safety' : '食品安全​',
+                            'title' => App::getLocale() == 'en' ? 'Food Safety' : '食品安全中心​',
                             'link' => '/research/foodsafty',
                             'content' => trans('string.index_d_10')
                         ]
