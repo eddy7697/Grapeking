@@ -317,7 +317,7 @@ $(window).resize(function () {
         </div>
     @endif
     
-    <div class="material-slide-container">
+    <div class="material-slide-container {{App::getLocale()}}">
         <div class="material-slide">
             @foreach ($material as $index => $item)
                 <div class="material-item">

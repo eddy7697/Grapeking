@@ -1,6 +1,7 @@
 .material-slide-container {
     overflow: hidden;
 
+    
     .prev-arrow, .next-arrow {
         @include force-center;
         display: none;
@@ -41,6 +42,7 @@
                 }
                 .material-mask {
                     top: 420px;
+                    
                     .material-info {
                         margin-bottom: 30px;
                         .material-logo {
@@ -92,6 +94,30 @@
                     }
                 }
             }
+        }
+    }
+    &.en {
+        .material-slide {
+            .material-item {
+                .material-mask {
+                    top: 370px;
+
+                    .material-info {
+                        margin-bottom: 75px;
+                    }
+                }
+            }
+        }
+        .prev-arrow, .next-arrow {
+            top: 350px;
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .material-slide-container {
+        .prev-arrow, .next-arrow {
+            display: flex !important;
         }
     }
 }

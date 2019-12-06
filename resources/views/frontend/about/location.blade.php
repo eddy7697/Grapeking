@@ -170,8 +170,7 @@ $(window).scroll(function () {
                                     </div>
                                     <p>&nbsp;</p>
                                     <div class="mobile-to-hide">
-                                        <p>{{ trans('string.location_n_1') }}</p>
-                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p>{{ trans('string.production_d_12') }}</p>
                                         <p class="mobile-to-hide">&nbsp;</p>
                                         <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                         <p class="mobile-to-show">&nbsp;</p>
@@ -183,8 +182,7 @@ $(window).scroll(function () {
                                     </div>
                                 </div>
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p>{{ trans('string.production_d_12') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
                                     <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
@@ -212,8 +210,7 @@ $(window).scroll(function () {
                                     </div>
                                     <p>&nbsp;</p>
                                     <div class="mobile-to-hide">
-                                        <p>{{ trans('string.location_n_1') }}</p>
-                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p>{{ trans('string.production_d_12') }}</p>
                                         <p class="mobile-to-hide">&nbsp;</p>
                                         <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                         <p class="mobile-to-show">&nbsp;</p>
@@ -227,8 +224,7 @@ $(window).scroll(function () {
                                 </div>
 
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p>{{ trans('string.production_d_12') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
                                     <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
@@ -256,8 +252,7 @@ $(window).scroll(function () {
                                     </div>
                                     <p>&nbsp;</p>
                                     <div class="mobile-to-hide">
-                                        <p>{{ trans('string.location_n_1') }}</p>
-                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p>{{ trans('string.production_d_12') }}</p>
                                         <p class="mobile-to-hide">&nbsp;</p>
                                         <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                         <p class="mobile-to-show">&nbsp;</p>
@@ -270,8 +265,7 @@ $(window).scroll(function () {
                                     </div>
                                 </div>
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p>{{ trans('string.production_d_12') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
                                     <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
@@ -299,8 +293,7 @@ $(window).scroll(function () {
                                     </div>
                                     <p>&nbsp;</p>
                                     <div class="mobile-to-hide">
-                                        <p>{{ trans('string.location_n_1') }}</p>
-                                        <p>{{ trans('string.location_n_2') }}</p>
+                                        <p>{{ trans('string.production_d_12') }}</p>
                                         <p class="mobile-to-hide">&nbsp;</p>
                                         <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                         <p class="mobile-to-show">&nbsp;</p>
@@ -313,8 +306,7 @@ $(window).scroll(function () {
                                     </div>
                                 </div>
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
-                                    <p>{{ trans('string.location_n_1') }}</p>
-                                    <p>{{ trans('string.location_n_2') }}</p>
+                                    <p>{{ trans('string.production_d_12') }}</p>
                                     <p class="mobile-to-hide">&nbsp;</p>
                                     <a href="/contact" class="location-contact-btn" style="padding: 8px 100px; width: auto">{{ trans('string.about4') }}</a>
                                     <p class="mobile-to-show">&nbsp;</p>
