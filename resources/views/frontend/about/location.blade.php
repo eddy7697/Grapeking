@@ -163,7 +163,7 @@ $(window).scroll(function () {
                                             <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/grapeking.png" alt="">
                                         </div>
                                         <div class="col-md-8">
-                                            <ul style="font-size: 13px;">
+                                            <ul style="font-size: 13px;" class="location-contact-info">
                                                 {!! trans('string.contact_1') !!}
                                             </ul>
                                         </div>
@@ -203,7 +203,7 @@ $(window).scroll(function () {
                                             <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/site-logo.png" alt="">
                                         </div>
                                         <div class="col-md-8">
-                                            <ul style="font-size: 13px;">
+                                            <ul style="font-size: 13px;" class="location-contact-info">
                                                 {!! trans('string.contact_2') !!}
                                             </ul>
                                         </div>
@@ -245,7 +245,7 @@ $(window).scroll(function () {
                                             <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/dong-pu.png" alt="">
                                         </div>
                                         <div class="col-md-8">
-                                            <ul style="font-size: 13px;">
+                                            <ul style="font-size: 13px;" class="location-contact-info">
                                                 {!! trans('string.contact_3') !!}
                                             </ul>
                                         </div>
@@ -286,7 +286,7 @@ $(window).scroll(function () {
                                             <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/pu-zun.png" alt="">
                                         </div>
                                         <div class="col-md-8">
-                                            <ul style="font-size: 13px;">
+                                            <ul style="font-size: 13px;" class="location-contact-info">
                                                 {!! trans('string.contact_4') !!}
                                             </ul>
                                         </div>

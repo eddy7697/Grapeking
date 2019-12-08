@@ -2219,17 +2219,50 @@ a.toggle-locale-btn {
                 }
             }
         }
-        .material-list {
-            .item {
-                display: inline-block;
-                width: 19.5%;
-                padding: 20px;
-
-                .img {
-                    width: 100%;
+        .material-list-container {
+            .material-list {
+                .item {
+                    display: inline-block;
+                    // width: 19.5%;
+                    padding: 20px;
+    
+                    .img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .prev-arrow, .next-arrow {
+                @include force-center;
+                display: none;
+                position: absolute;
+                top: 50%;
+                // bottom: 0;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: rgba($color: #fff, $alpha: .6);
+                color: #333;
+                box-shadow: 2px 2px 12px -2px rgba($color: #000000, $alpha: .5);
+                &:hover {
+                    // width: 45px;
+                    background-color: rgba($color: #fff, $alpha: .9);
+                    color: #333;
+                }
+            }
+            .prev-arrow {
+                left: 0px;
+            }
+            .next-arrow {
+                right: 0px;
+            }
+            @media screen and (max-width: 768px) {
+                .prev-arrow, .next-arrow {
+                    display: flex;
                 }
             }
         }
+        
         .location-contact-btn {
             display: inline-block;
             text-decoration: none;
@@ -2347,7 +2380,7 @@ a.toggle-locale-btn {
                 width: 100%;
                 min-height: 100%;
                 background-position: center;
-                background-size: cover;
+                background-size: cover !important;
                 padding-bottom: 70%;
 
                 .session-mask {
@@ -2833,6 +2866,11 @@ a.toggle-locale-btn {
                         max-width: 90%;
                         max-height: 90%;
                         transform: translate(-50%, -50%);
+                    }
+                }
+                .location-contact-info {
+                    a {
+                        padding-bottom: inherit;
                     }
                 }
             }
@@ -4200,5 +4238,12 @@ a.toggle-locale-btn {
 
     .content article.title ul li a {
         margin-bottom: 15px;
+    }
+
+    .site-content .about-content .about-session-info .session-image .session-mask {
+        opacity: 1;
+    }
+    .site-content .about-content .location-contact-btn {
+        padding: 5px 20px;
     }
 }

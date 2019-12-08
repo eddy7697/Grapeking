@@ -28,9 +28,46 @@ $(window).scroll(function () {
         });
     }
 });
-</script>          
+</script>      
+  
 @endif
-
+<script>
+    $('.prev-arrow').html('<i class="fa fa-arrow-left" aria-hidden="true"></i>');
+    $('.next-arrow').html('<i class="fa fa-arrow-right" aria-hidden="true"></i>');
+$('.material-list').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    // arrows: false,
+    nextArrow: $('.next-arrow'),
+    prevArrow: $('.prev-arrow'),
+    // slidesToScroll: 5,
+    responsive: [
+        {
+            breakpoint: 1180,
+            settings: {
+                slidesToShow: 4,
+                // slidesToScroll: 3
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 3,
+                // slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                // slidesToScroll: 1
+            }
+        }
+    ]
+});
+</script>  
 @endsection
 
 @section('custom-style')
