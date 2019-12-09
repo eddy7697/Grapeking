@@ -182,6 +182,27 @@ $(window).scroll(function () {
                         <img src="/img/about/company-4.jpg" class="company-image" alt="">
                     </div>
                 </div>
+                <div class="row company-section">
+                    <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
+                        <img src="/img/about/company-5.jpg" class="company-image" alt="">
+                    </div>
+                    <div class="col-md-7 info-content" data-aos="fade-left" data-aos-duration="2000">
+                        <div class="info-box">
+                            <div class="label-section">
+                                <div class="logo">
+                                    <img src="/img/about/bio-center.png" alt="">
+                                </div>
+                                <div class="label">{{ trans('string.bioengineering_center') }}​</div>
+                            </div>
+                            <div class="content">
+                                <p>{!! trans('string.index_d_8') !!}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 info-image mobile-to-show">
+                        <img src="/img/about/company-5.jpg" class="company-image" alt="">
+                    </div>
+                </div>
                 {{-- @if (App::getLocale() == 'en')
                 {!!PageView::show(12)!!}
                 @else
