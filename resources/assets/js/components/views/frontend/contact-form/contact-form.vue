@@ -68,30 +68,30 @@
                 <div class="col-9 column">
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="胶原蛋白" v-model="contact.concern">{{i18n.catalog_d_2}}
+                            <input type="checkbox" class="form-check-input" name="" :value="i18n.prod_1" v-model="contact.concern">{{i18n.prod_1}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="益生菌" v-model="contact.concern">{{i18n.catalog_d_3}}
+                            <input type="checkbox" class="form-check-input" name="" :value="i18n.prod_2" v-model="contact.concern">{{i18n.prod_2}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="角豆" v-model="contact.concern">{{i18n.catalog_d_4}}
+                            <input type="checkbox" class="form-check-input" name="" :value="i18n.prod_3" v-model="contact.concern">{{i18n.prod_3}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="体重管理" v-model="contact.concern">{{i18n.weight_management}}
+                            <input type="checkbox" class="form-check-input" name="" :value="i18n.prod_4" v-model="contact.concern">{{i18n.prod_4}}
                         </label>
                     </div>
                     <div class="form-check-inline">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="" value="保健食品" v-model="contact.concern">{{i18n.healthy_food}}
+                            <input type="checkbox" class="form-check-input" name="" :value="i18n.prod_5" v-model="contact.concern">{{i18n.prod_5}}
                         </label>
                     </div>
-                    <div class="form-check-inline">
+                    <!-- <div class="form-check-inline">
                         <label class="form-check-label">
                             <input type="checkbox" class="form-check-input" name="" value="机能饮品" v-model="contact.concern">{{i18n.functional_drinks}}
                         </label>
@@ -100,9 +100,9 @@
                     <div class="form-check-inline">
                         <label class="form-check-label" style="width: 240px;">
                             <input type="checkbox" class="form-check-input" name="" value="OTHER" v-model="contact.concern">{{i18n.others}}
-                            <!-- <input type="text" style="width: 180px; display: inline-block;" class="form-control" v-model="theOther" :disabled="!hasOther"> -->
+                            <input type="text" style="width: 180px; display: inline-block;" class="form-control" v-model="theOther" :disabled="!hasOther">
                         </label>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="row">

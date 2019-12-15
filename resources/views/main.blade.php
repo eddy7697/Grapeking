@@ -55,7 +55,14 @@
     {{-- Footer --}}
     @include('components.footer')
 
-    <textarea style="display: none;" id="i18n-text" cols="30" rows="10">{{ json_encode(trans('string')) }}</textarea>
+    @php
+        $string = json_encode(trans('string'));
+        $text = json_encode(trans('text'));
+
+        $res = array_merge(json_decode($string, true), json_decode($text, true));
+    @endphp
+
+    <textarea style="display: none;" id="i18n-text" cols="30" rows="10">{{ json_encode($res) }}</textarea>
     <!-- Scripts -->
     <script src="{{ asset('js/plugins/moment/moment-with-locales.min.js') }}"></script>
     
