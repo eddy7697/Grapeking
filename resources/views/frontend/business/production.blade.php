@@ -41,7 +41,7 @@
 <script>
 var links = $('.nav-link');
 var count = 0;
-var timeOunt = 5000;
+var timeOunt = 5000000;
 var autoPlay = function () {
     if (count == links.length - 1) {
         count = 0;

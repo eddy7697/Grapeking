@@ -28,7 +28,7 @@
                 }
     
                 .cls_4-3 {
-                    font-size: 15px;
+                    font-size: 20px;
                 }
     
                 .cls_4-4 {
