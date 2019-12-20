@@ -78,8 +78,8 @@
                 useEasing: true
             });
             var countUpProd = new CountUp('count-prod', 32, countOption);
-            var countUpMem = new CountUp('count-mem', 90, countOption);
-            var countUpReturn = new CountUp('count-return', 70, countOption);
+            var countUpMem = new CountUp('count-mem', 98, countOption);
+            var countUpReturn = new CountUp('count-return', 73, countOption);
             var counted = false
             
             $(window).scroll(function(){
@@ -317,7 +317,7 @@
                 <div class="border-bar"></div>                
                 <div class="factory-item-info">
                     <p>生物科技研究所</p>
-                    <p>Bioengineering Center</p>
+                    <p>Biotech Research Institute</p>
                 </div>
                 <a href="/research/bioengineering"></a>
             </div>
