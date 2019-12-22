@@ -7,7 +7,7 @@ $(function () {
         var target = $(this).attr('scroll-target')
 
         $('html,body').animate({
-            scrollTop: $(target).offset().top - $('.site-header').height()
+            scrollTop: $(target).offset().top - $('.site-header').height() + 10
         }, 1000);
     });
 
@@ -123,9 +123,9 @@ $(function () {
             </div>        
         </article>
 
-        <article class="description" id="description" style="background: linear-gradient(rgba(255,255,255,0), #FFF, #FFF, #FFF, #FFF)">
+        <article class="description" style="background: linear-gradient(rgba(255,255,255,0), #FFF, #FFF, #FFF, #FFF)">
             <div class="row">
-                <div class="col-xs">
+                <div class="col-xs" id="description">
                     <div class="box wow slideInLeft" data-aos="fade-right" data-aos-duration="1500">
                         <div class="row">
                             <div class="col-xs-12 col-lg-8 column left">
