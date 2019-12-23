@@ -32,7 +32,7 @@
                 }
     
                 .cls_1-4 {
-                    font-size: 15px;
+                    font-size: 20px;
                 }
     
                 .cls_1-5 {

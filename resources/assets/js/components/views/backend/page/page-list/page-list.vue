@@ -106,37 +106,37 @@
                 token: $('meta[name="csrf-token"]').attr('content'),
                 pageTree: [
                     {
-                        label: '關於上海葡萄王',
+                        label: '关于上海葡萄王',
                         children: [
                             {
-                                label: '關於我們',
+                                label: '关于我们',
                                 id: 11
+                            // },{
+                            //     label: '发展历程',
+                            //     id: 13
                             },{
-                                label: '發展歷程',
-                                id: 13
-                            },{
-                                label: '關於創辦人',
+                                label: '关于创办人',
                                 id: 15
                             },{
-                                label: '全球認證',
+                                label: '国际级安心认证',
                                 id: 17
                             },
                         ]
                     },
+                    // {
+                    //     label: '业务体系',
+                    //     children: [
+                    //         {
+                    //             label: '生产服务',
+                    //             id: 19
+                    //         },{
+                    //             label: '统包服务',
+                    //             id: 21
+                    //         },
+                    //     ]
+                    // },
                     {
-                        label: '業務體系',
-                        children: [
-                            {
-                                label: '生產服務',
-                                id: 19
-                            },{
-                                label: '統包服務',
-                                id: 21
-                            },
-                        ]
-                    },
-                    {
-                        label: '專業研發',
+                        label: '专业研发',
                         children: [
                             {
                                 label: '食品安全中心',
@@ -145,101 +145,101 @@
                                 label: '生物科技研究所',
                                 id: 2
                             },{
-                                label: '創新研發中心',
+                                label: '创新研发中心',
                                 id: 25
                             },{
-                                label: '世界級工廠',
+                                label: '世界级工厂',
                                 url: '/cyberholic-system/page/factory'
                             }
                         ]
                     },
                     {
-                        label: '社會責任',
+                        label: '社会责任',
                         children: [
                             {
-                                label: '員工關係',
+                                label: '员工关系',
                                 
                                 id: 3
                             },{
                                 label: '食品安全',
                                 id: 5
                             },{
-                                label: '研發創新',
+                                label: '研发创新',
                                 id: 7
                             },{
-                                label: '綠色環境',
+                                label: '绿色环境',
                                 id: 9
                             },
                         ]
                     },
-                    {
-                        label: '人才招聘',
-                        id: 29
-                    },
+                    // {
+                    //     label: '人才招聘',
+                    //     id: 29
+                    // },
                 ],
                 pageTreeEn: [
                     {
-                        label: '關於上海葡萄王',
+                        label: 'About Shanghai Grape King',
                         children: [
                             {
-                                label: '關於我們',
+                                label: 'Introduction',
                                 id: 12
+                            // },{
+                            //     label: '發展歷程',
+                            //     id: 14
                             },{
-                                label: '發展歷程',
-                                id: 14
-                            },{
-                                label: '關於創辦人',
+                                label: 'Founder',
                                 id: 16
                             },{
-                                label: '全球認證',
+                                label: 'Certification',
                                 id: 18
                             },
                         ]
                     },
+                    // {
+                    //     label: '業務體系',
+                    //     children: [
+                    //         {
+                    //             label: '生產服務',
+                    //             id: 20
+                    //         },{
+                    //             label: '統包服務',
+                    //             id: 22
+                    //         },
+                    //     ]
+                    // },
                     {
-                        label: '業務體系',
+                        label: 'Professional R&D',
                         children: [
                             {
-                                label: '生產服務',
-                                id: 20
-                            },{
-                                label: '統包服務',
-                                id: 22
-                            },
-                        ]
-                    },
-                    {
-                        label: '專業研發',
-                        children: [
-                            {
-                                label: '食品安全中心',
+                                label: 'Centre for Food Safety',
                                 id: 24
                             },{
-                                label: '生物科技研究所',
+                                label: 'Biotech Research Institute',
                                 id: 1
                             },{
-                                label: '創新研發中心',
+                                label: 'Innovative R&D Center',
                                 id: 26
                             },{
-                                label: '世界級工廠',
+                                label: 'World Class Factory',
                                 url: '/cyberholic-system/page/factory'
                             }
                         ]
                     },
                     {
-                        label: '社會責任',
+                        label: 'CSR',
                         children: [
                             {
-                                label: '員工關係',
+                                label: 'Happy Workplace',
                                 id: 4
                             },{
-                                label: '食品安全',
+                                label: 'Food Safety',
                                 id: 6
                             },{
-                                label: '研發創新',
+                                label: 'R&D and Innovation',
                                 id: 8
                             },{
-                                label: '綠色環境',
+                                label: 'Green Environment',
                                 id: 10
                             },
                         ]

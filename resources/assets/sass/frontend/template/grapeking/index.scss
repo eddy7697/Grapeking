@@ -3107,6 +3107,8 @@ a.toggle-locale-btn {
                         display: flex;
                         align-items: center;
                         padding: 20px;
+                        padding-left: 100px;
+                        background-image: linear-gradient(to right, rgba(#fff, 0), rgba(#fff, .8), rgba(#fff, 1), rgba(#fff, 1), rgba(#fff, 1), rgba(#fff, 1) );
 
                         .info-content {
                             height: fit-content;
@@ -4207,6 +4209,7 @@ a.toggle-locale-btn {
     .site-content .production-tabs .tab-content.tunnel .tab-pane .info {
         height: auto;
         padding-top: 40px;
+        padding-left: 20px;
         background-color: rgba($color: #fff, $alpha: .8);  
 
         .info-content {

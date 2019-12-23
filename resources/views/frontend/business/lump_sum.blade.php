@@ -135,10 +135,10 @@
         <div class="tab-content tunnel">
             <div class="tab-pane odm_oem container-fluid active" id="home">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6">
 
                     </div>
-                    <div class="col-md-5 info">
+                    <div class="col-md-6 info">
                         <div class="info-content">
                             <h3>{{ trans('text.tunnel_1') }}</h3>
                             <p>{{ trans('text.tunnel_1_text') }}</p>
@@ -151,10 +151,10 @@
             </div>
             <div class="tab-pane research fade container-fluid" id="menu1">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6">
                         
                     </div>
-                    <div class="col-md-5 info">
+                    <div class="col-md-6 info">
                         <div class="info-content">
                             <h3>{{ trans('text.tunnel_2') }}</h3>
                             <p>{{ trans('text.tunnel_2_text') }}</p>
@@ -168,10 +168,10 @@
             </div>
             <div class="tab-pane formula fade container-fluid" id="menu2">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6">
 
                     </div>
-                    <div class="col-md-5 info">
+                    <div class="col-md-6 info">
                         <div class="info-content">
                             <h3>{{ trans('text.tunnel_3') }}</h3>
                             <p>{{ trans('text.tunnel_3_text') }}</p>
@@ -185,10 +185,10 @@
             </div>
             <div class="tab-pane package fade container-fluid" id="menu3">
                 <div class="row">
-                    <div class="col-md-7 ">
+                    <div class="col-md-6 ">
 
                     </div>
-                    <div class="col-md-5 info">
+                    <div class="col-md-6 info">
                         <div class="info-content">
                             <h3>{{ trans('text.tunnel_4') }}</h3>
                             <p>{{ trans('text.tunnel_4_text') }}</p>
@@ -202,10 +202,10 @@
             </div>
             <div class="tab-pane production fade container-fluid" id="menu4">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6">
 
                     </div>
-                    <div class="col-md-5 info">
+                    <div class="col-md-6 info">
                         <div class="info-content">
                             <h3>{{ trans('text.tunnel_5') }}</h3>
                             <p>{{ trans('text.tunnel_5_text') }}</p>
@@ -219,10 +219,10 @@
             </div>
             <div class="tab-pane deliver fade container-fluid" id="menu5">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-6">
 
                     </div>
-                    <div class="col-md-5 info">
+                    <div class="col-md-6 info">
                         <div class="info-content">
                             <h3>{{ trans('text.tunnel_6') }}</h3>
                             <p>{{ trans('text.tunnel_6_text') }}</p>
