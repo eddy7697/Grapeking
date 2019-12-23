@@ -167,7 +167,7 @@
             <div class="row">
                 <div class="col-md-8">
                     <h3 class="about-section-title" id="about_5">{{ trans('string.about11') }}</h3>
-                    <div class="about-text force-center-left" style="text-indent : 36px">
+                    <div class="about-text force-center-left">
                         {!! trans('string.about12') !!}
                     </div>
                 </div>
