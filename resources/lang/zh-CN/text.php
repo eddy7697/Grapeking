@@ -41,7 +41,7 @@ return [
     'material_prod_2' => '健康调节',
     'material_prod_2_text' => '维持各项生理机能正常，满足不同年龄及肠道、骨关节、视力及心血管保健等不同要求的营养补充',
     'material_prod_3' => '女性美妍',
-    'material_prod_3_text' => '特别针爱美女性，可以在忙碌的生活中，以简单的方式迅速补充所需的营养专业服务​',
+    'material_prod_3_text' => '特别针对爱美女性，可以在忙碌的生活中，以简单的方式迅速补充所需的营养专业服务​',
     'material_prod_4' => '学龄保健',
     'material_prod_4_text' => '针对学龄前儿童所需补充的营养素，并有多种类型可供代工选择​',
     'material_prod_5' => '机能饮品',
