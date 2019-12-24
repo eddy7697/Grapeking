@@ -57,7 +57,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"葡萄王",content:"324&nbsp;桃園市平鎮區金陵路2段402號",point:"121.235667|24.937414",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"葡萄王",content:"324&nbsp;桃園市平鎮區金陵路2段402號",point:"121.235667|24.937414",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){

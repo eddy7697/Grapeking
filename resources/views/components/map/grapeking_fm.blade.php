@@ -57,7 +57,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"葡众企业股份有限公司",content:"台北市內湖區金莊路18號3樓",point:"121.598071|25.064429",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"葡众企业股份有限公司",content:"台北市內湖區金莊路18號3樓",point:"121.598071|25.064429",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){

@@ -7,6 +7,13 @@ $('[data-target]').on('click', function () {
 
     $('a[aria-controls=' + target + ']').tab('show');
 });
+$('.nav-link').on('shown.bs.tab', function(event){
+    var target = $($(event.target).attr('href')).find('iframe');
+    
+    if (!target.attr('src')) {
+        target.attr('src', target.attr('data-link') + '?' + Math.floor(Math.random() * 10000));    
+    }
+});
 </script>
 {{-- <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
@@ -178,7 +185,7 @@ $(window).scroll(function () {
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent_tw">
-                                        <iframe src="/grapeking_tw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
+                                        <iframe src="/grapeking_tw" data-link="/grapeking_tw" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
@@ -219,7 +226,7 @@ $(window).scroll(function () {
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;">
-                                        <iframe src="/grapeking_sh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
+                                        <iframe data-link="/grapeking_sh" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
 
@@ -261,7 +268,7 @@ $(window).scroll(function () {
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent_dongpu">
-                                        <iframe src="/grapeking_donpu" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
+                                        <iframe data-link="/grapeking_donpu" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">
@@ -302,7 +309,7 @@ $(window).scroll(function () {
                                 </div>
                                 <div class="col-md-7">
                                     <div style="width:100%;height:400px;border:#ccc solid 1px;" id="dituContent_fam">
-                                        <iframe src="/grapeking_fm" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
+                                        <iframe data-link="/grapeking_fm" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%" frameborder="0"></iframe>
                                     </div>
                                 </div>
                                 <div class="col-md-12 mobile-to-show mobile-to-center" style="margin-top: 35px; margin-bottom: -20px">

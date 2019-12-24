@@ -57,7 +57,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"东葡生物科技(东莞)有限公司",content:"東莞松山湖高新技術產業開發區創新科技園9號",point:"113.900039|22.936896",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"东葡生物科技(东莞)有限公司",content:"東莞松山湖高新技術產業開發區創新科技園9號",point:"113.900039|22.936896",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){
