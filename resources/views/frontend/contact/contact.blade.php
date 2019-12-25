@@ -3,7 +3,7 @@
 @section('custom-script')
     <script src="{{ asset('js/plugins/jquery.fancytree/dist/jquery.fancytree-all.min.js') }}"></script>
     <script src="/js/contact-form.js"></script>
-    <script src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+    {{-- <script src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
     <script>
         $(function () {
         
@@ -104,7 +104,7 @@
             
             initMap();//创建和初始化地图 
         });
-        </script>
+        </script> --}}
 @endsection
 
 @section('custom-style')
@@ -189,7 +189,8 @@
                                 <p>{{ trans('text.service_hour') }}</p>
                             </div>
                             <div class="col-md-6">
-                                <div style="width:100%;height:430px;border:#ccc solid 1px;" id="dituContent"></div>
+                                {{-- <div style="width:100%;height:430px;border:#ccc solid 1px;" id="dituContent"></div> --}}
+                                <iframe src="/grapeking_sh" data-link="/grapeking_sh" style="width: 100%; height: 430px;border:#ccc solid 1px;" frameborder="0"></iframe>
                             </div>
                         </div>
                         
