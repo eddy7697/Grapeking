@@ -11,7 +11,7 @@
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true&s=1"></script>
+<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=zMyv0kR3YDlvwfxOkeXYMdZwylxMINrm"></script>
 </head>
 
 <body style="overflow: hidden">
@@ -57,7 +57,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"东葡生物科技(东莞)有限公司",content:"東莞松山湖高新技術產業開發區創新科技園9號",point:"113.900039|22.936896",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"东葡生物科技(东莞)有限公司",content:"東莞松山湖高新技術產業開發區創新科技園9號",point:"113.900039|22.936896",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){

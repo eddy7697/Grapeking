@@ -53,6 +53,20 @@
         $('.info-content').removeClass('fadeInRight animated');
     });
 </script>
+<script>
+    if ($(window).height() < 768) {
+        var cards = $('.site-content .production-tabs .tab-content.tunnel .tab-pane .info');
+        var finalHeight = 0;
+        
+        for (let i = 0; i < cards.length; i++) {
+            if ($(cards[i]).height() > finalHeight) {
+                finalHeight = $(cards[i]).height();
+            }
+        }
+        $('.site-content .production-tabs .tab-content.tunnel .tab-pane .info').height(finalHeight);
+    }
+    
+</script>
 @endsection
 
 @section('custom-style')
@@ -223,22 +237,22 @@
         </div>
 
         <ul class="nav nav-tabs tunnel">
-            <li class="nav-item">
+            <li class="nav-item {{App::getLocale()}}">
                 <a class="nav-link active odm_oem" data-toggle="tab" href="#home">ODM/OEM</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{App::getLocale()}}">
                 <a class="nav-link research" data-toggle="tab" href="#menu1">{{ trans('text.tunnel_2') }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{App::getLocale()}}">
                 <a class="nav-link formula" data-toggle="tab" href="#menu2">{{ trans('text.tunnel_3') }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{App::getLocale()}}">
                 <a class="nav-link package" data-toggle="tab" href="#menu3">{{ trans('text.tunnel_4') }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{App::getLocale()}}">
                 <a class="nav-link production" data-toggle="tab" href="#menu4">{{ trans('text.tunnel_5') }}</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{App::getLocale()}}">
                 <a class="nav-link deliver" data-toggle="tab" href="#menu5">{{ trans('text.tunnel_6') }}</a>
             </li>
         </ul>

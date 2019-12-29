@@ -11,7 +11,7 @@
     .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
     .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
 </style>
-<script type="text/javascript" src="https://api.map.baidu.com/api?key=&v=1.1&services=true&s=1"></script>
+<script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=zMyv0kR3YDlvwfxOkeXYMdZwylxMINrm"></script>
 </head>
 
 <body style="overflow: hidden">
@@ -57,7 +57,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"葡萄王",content:"324&nbsp;桃園市平鎮區金陵路2段402號",point:"121.235667|24.937414",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"葡萄王",content:"324&nbsp;桃園市平鎮區金陵路2段402號",point:"121.235667|24.937414",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){
