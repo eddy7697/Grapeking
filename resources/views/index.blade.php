@@ -72,14 +72,14 @@
                 duration: 2,
                 useEasing: true
             }
-            var countUpYear = new CountUp('count-year', 1969, {
+            var countUpYear = new CountUp('count-year', {{SiteMetaView::counting()->founded}}, {
                 useGrouping: false,
                 duration: 2,
                 useEasing: true
             });
-            var countUpProd = new CountUp('count-prod', 32, countOption);
-            var countUpMem = new CountUp('count-mem', 98, countOption);
-            var countUpReturn = new CountUp('count-return', 73, countOption);
+            var countUpProd = new CountUp('count-prod', {{SiteMetaView::counting()->certificate}}, countOption);
+            var countUpMem = new CountUp('count-mem', {{SiteMetaView::counting()->award}}, countOption);
+            var countUpReturn = new CountUp('count-return', {{SiteMetaView::counting()->patent}}, countOption);
             var counted = false
             
             $(window).scroll(function(){

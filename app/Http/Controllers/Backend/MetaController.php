@@ -44,6 +44,7 @@ class MetaController extends Controller
     public function editMeta(Request $request)
     {
         $meta = SiteMeta::all()->first()->update($request->all());
+        // return $request->all();
 
         if ($meta) {
             $status = 200;

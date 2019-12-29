@@ -71,6 +71,25 @@
                     </draggable>
                     <el-button type="primary" icon="el-icon-plus" plain style="color: #fff; width: 100%; margin-top: 10px;" @click="addContent">新增內容</el-button>
                 </el-tab-pane>
+                <el-tab-pane label="首頁記數管理" name="third">
+                    <el-form :model="siteMeta" ref="siteMeta" label-width="100px" class="demo-siteMeta">
+                        <el-form-item label="集团创立" prop="founded">
+                            <el-input v-model="siteMeta.counting.founded"></el-input>
+                        </el-form-item>
+                        <el-form-item label="认证肯定" prop="certificate">
+                            <el-input v-model="siteMeta.counting.certificate"></el-input>
+                        </el-form-item>
+                        <el-form-item label="发明奖牌" prop="award">
+                            <el-input v-model="siteMeta.counting.award"></el-input>
+                        </el-form-item>
+                        <el-form-item label="跨国专利" prop="patent">
+                            <el-input v-model="siteMeta.counting.patent"></el-input>
+                        </el-form-item>
+                        <el-form-item>
+                            <el-button type="primary" @click="saveMeta">儲存</el-button>
+                        </el-form-item>
+                    </el-form>
+                </el-tab-pane>
             </el-tabs>
             <el-dialog
                 :title="timelineContentEditStatus ? '編輯內容' : '新增內容'"
@@ -147,7 +166,13 @@
                     pageTopLink: null,
                     pageTopButton: null,
                     index_album: [],
-                    timeline: []
+                    timeline: [],
+                    counting: {
+                        founded: '',
+                        certificate: '',
+                        award: '',
+                        patent: ''
+                    }
                 },
                 timelineContent: {
                     year: null,
@@ -191,6 +216,7 @@
                 })
                 .done(function(result) {
                     let timeline = result.data.timeline ? JSON.parse(result.data.timeline) : [];
+                    let counting = result.data.counting ? JSON.parse(result.data.counting) : {};
 
                     timeline.forEach(elm => {
                         if (!elm.featureImage) {
@@ -210,7 +236,8 @@
                         self.siteMeta.pageTopButton = result.data.pageTopButton;
                         self.siteMeta.pageTopLink = result.data.pageTopLink;
                         self.siteMeta.index_album = JSON.parse(result.data.index_album);
-                        self.siteMeta.timeline = timeline
+                        self.siteMeta.timeline = timeline,
+                        self.siteMeta.counting = counting,
 
                         self.isEdit = true;
                         self.isDirty = false;
@@ -333,7 +360,8 @@
                         pageTopButton: self.siteMeta.pageTopButton,
                         pageTopContent: self.siteMeta.pageTopContent,
                         index_album: JSON.stringify(self.siteMeta.index_album),
-                        timeline: JSON.stringify(self.siteMeta.timeline)
+                        timeline: JSON.stringify(self.siteMeta.timeline),
+                        counting: JSON.stringify(self.siteMeta.counting)
                     },
                     beforeSend: function(xhr) {
                         xhr.setRequestHeader('X-CSRF-TOKEN', token);
@@ -370,7 +398,8 @@
                         pageTopButton: self.siteMeta.pageTopButton,
                         pageTopContent: self.siteMeta.pageTopContent,
                         index_album: JSON.stringify(self.siteMeta.index_album),
-                        timeline: JSON.stringify(self.siteMeta.timeline)
+                        timeline: JSON.stringify(self.siteMeta.timeline),
+                        counting: JSON.stringify(self.siteMeta.counting)
                     },
                     beforeSend: function(xhr) {
                         xhr.setRequestHeader('X-CSRF-TOKEN', token);
@@ -388,6 +417,9 @@
                     // console.log("complete");
                 });
 
+            },
+            resetForm(formName) {
+                this.$refs[formName].resetFields();
             },
             nl2br( str ) {
                 return str.replace(/([^>])\n/g, '$1<br/>\n');

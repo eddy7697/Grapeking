@@ -17,7 +17,8 @@ class SiteMeta extends Model
         'pageTopLink',
         'pageTopButton',
         'index_album',
-        'timeline'
+        'timeline',
+        'counting'
     ];
 
 }

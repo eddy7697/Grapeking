@@ -51,6 +51,15 @@ class SiteMetaView
             return array();
         }
     }
+    
+    public static function counting()
+    {
+        try {
+            return json_decode(SiteMeta::all()->first()['counting']);
+        } catch (\Exception $e) {
+            return array();
+        }
+    }
 
     public static function timeline()
     {
