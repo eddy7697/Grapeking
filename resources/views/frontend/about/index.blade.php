@@ -103,7 +103,12 @@ $(window).scroll(function () {
     <div class="container">
         <div class="row">
             <div class="col-md-12 about-content">
-                <div class="row company-section">
+                @if (App::getLocale() == 'en')
+                {!!PageView::show(12)!!}
+                @else
+                {!!PageView::show(11)!!}
+                @endif
+                {{-- <div class="row company-section">
                     <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
                         <img src="/img/about/company-1.jpg" class="company-image" alt="">
                     </div>
@@ -202,7 +207,7 @@ $(window).scroll(function () {
                     <div class="col-md-5 info-image mobile-to-show">
                         <img src="/img/about/company-5.jpg" class="company-image" alt="">
                     </div>
-                </div>
+                </div> --}}
                 {{-- @if (App::getLocale() == 'en')
                 {!!PageView::show(12)!!}
                 @else
