@@ -2,7 +2,7 @@
 
 @section('custom-script')
     <script src="{{ asset('js/plugins/jquery.fancytree/dist/jquery.fancytree-all.min.js') }}"></script>
-    <script src="/js/contact-form.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/contact-form.js"></script>
     {{-- <script src="https://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
     <script>
         $(function () {
@@ -110,7 +110,7 @@
 @section('custom-style')
     <style media="screen">
         .feature-image {
-            background-image: url('/img/logo_grey.png');
+            background-image: url('https://grapeking.shuo-guo.net/img/logo_grey.png');
             background-position: center;
             background-size: cover;
             padding-bottom: 41.6%;
@@ -123,7 +123,7 @@
             text-indent : 2em;
         }
         .sub-page-banner {
-            background-image: url('/img/about/contact-banner.jpg');
+            background-image: url('https://grapeking.shuo-guo.net/img/about/contact-banner.jpg');
         }
     </style>
 @endsection
@@ -167,7 +167,7 @@
                     <div class="col-md-12">
                         <div class="row">
                             <div class="col-md-6">
-                                {{-- <img class="about-image mobile-to-hide" style="width: 80%;" src="/img/hori-logo.png" alt=""> --}}
+                                {{-- <img class="about-image mobile-to-hide" style="width: 80%;" src="https://grapeking.shuo-guo.net/img/hori-logo.png" alt=""> --}}
                                 {!! trans('text.contact_text') !!}
                                 <hr>
                                 {!! trans('text.contact_info') !!}
@@ -175,7 +175,7 @@
                                 <div style="width: 320px;">
                                     <div class="row">
                                         <div class="col-3 mobile-to-left">
-                                            <img src="/img/phone-icon.png" width="100%" style="margin-top: 3px;" alt="">
+                                            <img src="https://grapeking.shuo-guo.net/img/phone-icon.png" width="100%" style="margin-top: 3px;" alt="">
                                         </div>
                                         <div class="col-9">
                                             <p style="font-size: 24px; margin-bottom: 5px;">{{ trans('string.contact_inf_5') }}</p>

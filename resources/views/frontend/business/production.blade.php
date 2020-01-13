@@ -6,32 +6,32 @@
         [
             'title' => trans('text.material_prod_1'),
             'text' => trans('text.material_prod_1_text'),
-            'bg' => '/img/business/material/material-1_bg.jpg',
-            'image' => '/img/business/material/material-1.png',
+            'bg' => 'https://grapeking.shuo-guo.net/img/business/material/material-1_bg.jpg',
+            'image' => 'https://grapeking.shuo-guo.net/img/business/material/material-1.png',
             'color' => '#e30133',
         ],[
             'title' => trans('text.material_prod_2'),
             'text' => trans('text.material_prod_2_text'),
-            'bg' => '/img/business/material/material-2_bg.jpg',
-            'image' => '/img/business/material/material-2.png',
+            'bg' => 'https://grapeking.shuo-guo.net/img/business/material/material-2_bg.jpg',
+            'image' => 'https://grapeking.shuo-guo.net/img/business/material/material-2.png',
             'color' => '#a8ca02',
         ],[
             'title' => trans('text.material_prod_3'),
             'text' => trans('text.material_prod_3_text'),
-            'bg' => '/img/business/material/material-3_bg.jpg',
-            'image' => '/img/business/material/material-3.png',
+            'bg' => 'https://grapeking.shuo-guo.net/img/business/material/material-3_bg.jpg',
+            'image' => 'https://grapeking.shuo-guo.net/img/business/material/material-3.png',
             'color' => '#f23764',
         ],[
             'title' => trans('text.material_prod_4'),
             'text' => trans('text.material_prod_4_text'),
-            'bg' => '/img/business/material/material-4_bg.jpg',
-            'image' => '/img/business/material/material-4.png',
+            'bg' => 'https://grapeking.shuo-guo.net/img/business/material/material-4_bg.jpg',
+            'image' => 'https://grapeking.shuo-guo.net/img/business/material/material-4.png',
             'color' => '#e58a2d',
         ],[
             'title' => trans('text.material_prod_5'),
             'text' => trans('text.material_prod_5_text'),
-            'bg' => '/img/business/material/material-5_bg.jpg',
-            'image' => '/img/business/material/material-5.png',
+            'bg' => 'https://grapeking.shuo-guo.net/img/business/material/material-5_bg.jpg',
+            'image' => 'https://grapeking.shuo-guo.net/img/business/material/material-5.png',
             'color' => '#369fd9',
         ]
     );
@@ -203,7 +203,7 @@ $(window).resize(function () {
 @section('custom-style')
 <style>
 .sub-page-banner {
-    background-image: url('/img/business/banner-1.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/business/banner-1.jpg');
 }
 .slick-dots {
     /* bottom: 0; */
@@ -303,9 +303,9 @@ $(window).resize(function () {
                     </div>
                     <div class="col-md-7 production-left-side">
                         @if (App::getLocale() == 'en')
-                            <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow_en.svg" class="production-image" alt="">    
+                            <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="https://grapeking.shuo-guo.net/img/business/production_flow_en.svg" class="production-image" alt="">    
                         @else
-                            <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="/img/business/production_flow.svg" class="production-image" alt="">
+                            <img data-aos="fade-right" data-aos-duration="1500" data-aos-delay="500" src="https://grapeking.shuo-guo.net/img/business/production_flow.svg" class="production-image" alt="">
                         @endif
                     </div>
                     <div class="col-md-5 production-right-side mobile-to-hide">
@@ -382,7 +382,7 @@ $(window).resize(function () {
                         </div>
                     </div>
                     <div class="col-md-7 image">
-                        <img src="/img/business/prod/2-1.jpg" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/business/prod/2-1.jpg" alt="">
                     </div>
                 </div>
                 <div class="progress-bar tablet">
@@ -407,7 +407,7 @@ $(window).resize(function () {
                         </div>
                     </div>
                     <div class="col-md-7 image">
-                        <img src="/img/business/prod/2-2.jpg" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/business/prod/2-2.jpg" alt="">
                     </div>
                 </div>
                 <div class="progress-bar granule">
@@ -432,7 +432,7 @@ $(window).resize(function () {
                         </div>
                     </div>
                     <div class="col-md-7 image">
-                        <img src="/img/business/prod/2-3.jpg" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/business/prod/2-3.jpg" alt="">
                     </div>
                 </div>
                 <div class="progress-bar aluminum">
@@ -457,7 +457,7 @@ $(window).resize(function () {
                         </div>
                     </div>
                     <div class="col-md-7 image">
-                        <img src="/img/business/prod/2-4.jpg" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/business/prod/2-4.jpg" alt="">
                     </div>
                 </div>
                 <div class="progress-bar capsule">
@@ -482,7 +482,7 @@ $(window).resize(function () {
                         </div>
                     </div>
                     <div class="col-md-7 image">
-                        <img src="/img/business/prod/2-5.jpg" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/business/prod/2-5.jpg" alt="">
                     </div>
                 </div>
                 <div class="progress-bar glass_bottle">

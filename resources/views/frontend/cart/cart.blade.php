@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('custom-script')
-    <script src="/js/cart-page.js" charset="utf-8"></script>
+    <script src="https://grapeking.shuo-guo.net/js/cart-page.js" charset="utf-8"></script>
     <script type="text/javascript">
         function removeSingleProduct(rowid) {
             CH.removeSingleProduct(rowid);

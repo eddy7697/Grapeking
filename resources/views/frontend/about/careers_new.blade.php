@@ -34,6 +34,8 @@ $(function () {
     $(window).resize(function () {
         updateLayout();    
     });
+
+    $("img").lazyload({ placeholder : "https://grapeking.shuo-guo.net/img/loading.gif" });
 });
 </script>
 @endsection
@@ -41,7 +43,7 @@ $(function () {
 @section('custom-style')
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/careers.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/about/careers.jpg');
 }
 </style>
 @endsection
@@ -98,8 +100,8 @@ $(function () {
                 <div class="bg">
                     <div class="pic">
                         <div class="jqimgFill imgLiquid_bgSize imgLiquid_ready"
-                            style="background-image: url(&quot;/img/about/bg-process.jpg&quot;); background-size: cover; background-position: center center !important; background-repeat: no-repeat;">
-                            <img alt="background" class="wow fade-in-left left animated" src="/img/about/bg-process.jpg"
+                            style="background-image: url(&quot;https://grapeking.shuo-guo.net/img/about/bg-process.jpg&quot;); background-size: cover; background-position: center center !important; background-repeat: no-repeat;">
+                            <img alt="background" class="wow fade-in-left left animated" src="https://grapeking.shuo-guo.net/img/about/bg-process.jpg"
                                 style="display: none; visibility: visible; animation-name: fade-in-left;"></div>
                     </div>
                 </div>
@@ -109,14 +111,14 @@ $(function () {
         
                     <div class="pic flow-image" style="max-width: 768px; width: 100%" alt="招募甄选流程"> 
                         <div class="process-flow">
-                            <img class="process-img left-side" src="/img/about/process/left-side.png" alt="" data-aos="fade-down" data-aos-duration="1500">
-                            <img class="process-img right-side-1" src="/img/about/process/right-side-1.png" alt="" data-aos="fade-right" data-aos-duration="1500">
-                            <img class="process-img right-side-1-mobile" src="/img/about/process/right-side-1-mobile.png" alt="" data-aos="fade-right" data-aos-duration="1500">
-                            <img class="process-img right-side-2 mobile-to-hide" src="/img/about/process/right-side-2.png" alt="" data-aos="fade-left" data-aos-duration="1500">
-                            <img class="process-img right-side-2-mobile mobile-to-show" src="/img/about/process/right-side-2-mobile.png" alt="" data-aos="fade-left" data-aos-duration="1500">
-                            <img class="process-img success mobile-to-hide" src="/img/about/process/bottom-success.png" alt="" data-aos="fade-up" data-aos-duration="1500">
-                            <img class="process-img success-mobile mobile-to-show" src="/img/about/process/bottom-success-mobile.png" alt="" data-aos="fade-up" data-aos-duration="1500">
-                            <img class="process-img main" src="/img/about/process/main.png" alt="" data-aos="fade-in" data-aos-duration="1500">
+                            <img class="process-img left-side" src="https://grapeking.shuo-guo.net/img/about/process/left-side.png" alt="" data-aos="fade-down" data-aos-duration="1500">
+                            <img class="process-img right-side-1" src="https://grapeking.shuo-guo.net/img/about/process/right-side-1.png" alt="" data-aos="fade-right" data-aos-duration="1500">
+                            <img class="process-img right-side-1-mobile" src="https://grapeking.shuo-guo.net/img/about/process/right-side-1-mobile.png" alt="" data-aos="fade-right" data-aos-duration="1500">
+                            <img class="process-img right-side-2 mobile-to-hide" src="https://grapeking.shuo-guo.net/img/about/process/right-side-2.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+                            <img class="process-img right-side-2-mobile mobile-to-show" src="https://grapeking.shuo-guo.net/img/about/process/right-side-2-mobile.png" alt="" data-aos="fade-left" data-aos-duration="1500">
+                            <img class="process-img success mobile-to-hide" src="https://grapeking.shuo-guo.net/img/about/process/bottom-success.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="process-img success-mobile mobile-to-show" src="https://grapeking.shuo-guo.net/img/about/process/bottom-success-mobile.png" alt="" data-aos="fade-up" data-aos-duration="1500">
+                            <img class="process-img main" src="https://grapeking.shuo-guo.net/img/about/process/main.png" alt="" data-aos="fade-in" data-aos-duration="1500">
                         </div>
                     </div>
                 </div>
@@ -151,13 +153,13 @@ $(function () {
         
                             <div class="col-xs-12 col-lg-4 column right">
                                 <div class="dec">
-                                    <img class="bg-layer" alt="description" src="/img/about/description-right.png">
-                                    <img class="click-btn" src="/img/about/clicl-text.svg" alt="">
-                                    <img class="click-mask" src="/img/about/click-mask.png" alt="">
+                                    <img class="bg-layer" alt="description" src="https://grapeking.shuo-guo.net/img/about/description-right.png">
+                                    <img class="click-btn" src="https://grapeking.shuo-guo.net/img/about/clicl-text.svg" alt="">
+                                    <img class="click-mask" src="https://grapeking.shuo-guo.net/img/about/click-mask.png" alt="">
                                 </div>
         
                                 <div class="group">
-                                    <img src="/img/about/link-text.svg" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/about/link-text.svg" alt="">
                                 </div>
                                 <a href="https://company.zhaopin.com/CZ178566810.htm" class="link-mask" target="_blank"></a>
                             </div>

@@ -1,7 +1,7 @@
 @extends('main')
 
 @section('custom-script')
-<script src="/js/checkout.js" charset="utf-8"></script>
+<script src="https://grapeking.shuo-guo.net/js/checkout.js" charset="utf-8"></script>
 @endsection
 
 @section('content')

@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -55,10 +55,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/research/inno_banner.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/research/inno_banner.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -116,7 +116,7 @@ $(window).scroll(function () {
             <div class="about-text">
                 <p>{{trans('text.invo_d_1')}}</p>                  
             </div>
-            <img class="about-image" src="/img/research/research-1.jpg" alt="">
+            <img class="about-image" src="https://grapeking.shuo-guo.net/img/research/research-1.jpg" alt="">
 
             <h3 class="about-section-title" id="section_2">{{ trans('string.leading_rnd_technology') }}</h3>
             <div class="about-text">
@@ -127,7 +127,7 @@ $(window).scroll(function () {
                     {{trans('text.invo_d_3')}}
                 </p>                  
             </div>
-            <img class="about-image" src="/img/research/research-2.jpg" alt="">
+            <img class="about-image" src="https://grapeking.shuo-guo.net/img/research/research-2.jpg" alt="">
 
             <div class="row">
                 <div class="col-md-6">
@@ -140,7 +140,7 @@ $(window).scroll(function () {
                         </div>
                                         
                     </div>
-                    <img class="about-image" src="/img/research/research-3.jpg" alt="">
+                    <img class="about-image" src="https://grapeking.shuo-guo.net/img/research/research-3.jpg" alt="">
                 </div>
                 <div class="col-md-6">
                     <h3 class="about-section-title" id="section_4">{{ trans('string.international_quality_standards') }}</h3>
@@ -152,7 +152,7 @@ $(window).scroll(function () {
                         </div>
                                         
                     </div>
-                    <img class="about-image" src="/img/research/research-4.jpg" alt="">
+                    <img class="about-image" src="https://grapeking.shuo-guo.net/img/research/research-4.jpg" alt="">
                 </div>
             </div> --}}
         </div>

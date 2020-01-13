@@ -12,7 +12,7 @@
 @endsection
 
 @section('custom-script')
-    <script src="/js/product-methods.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/product-methods.js"></script>
 @endsection
 
 @section('content')

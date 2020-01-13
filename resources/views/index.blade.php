@@ -5,7 +5,7 @@
 @endphp
 
 @section('custom-style')
-    <link rel="stylesheet" href="/js/plugins/swipe/swiper.min.css">
+    <link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/swipe/swiper.min.css">
     <style>
         .swiper-container {
             width: 100%;
@@ -62,7 +62,7 @@
 @endsection
 
 @section('custom-script')
-    <script src="/js/plugins/swipe/swiper.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/swipe/swiper.min.js"></script>
     <script src="/js/plugins/countup/countUp.min.js" type="module"></script>
     <script type="module">
         import { CountUp } from '/js/plugins/countup/countUp.min.js';
@@ -254,7 +254,7 @@
 @section('content')
 
     {{-- <div class="">
-        <img src="/img/banner.jpg" width="100%" alt="">
+        <img src="https://grapeking.shuo-guo.net/img/banner.jpg" width="100%" alt="">
     </div> --}}
 
     {{-- banner --}}
@@ -264,7 +264,7 @@
             @php
                 $album = SiteMetaView::album();
                 // $album = array([
-                //     'url' => '/img/banner-2.jpg',
+                //     'url' => 'https://grapeking.shuo-guo.net/img/banner-2.jpg',
                 //     'title' => 'test',
                 //     'content' => 'test'
                 // ]);
@@ -273,14 +273,14 @@
                 <div class="swiper-slide" style="background-image: url('{{$item->url}}'); background-size: cover;">
                     <div class="slide-item">     
                         {{-- <div class="type-icon mem" data-aos="fade-up" data-aos-easing="ease-out" data-aos-duration="1500">
-                            <img src="/img/banner-logo-1.png" style="max-width: 300px;" alt="">
+                            <img src="https://grapeking.shuo-guo.net/img/banner-logo-1.png" style="max-width: 300px;" alt="">
                         </div>                    --}}
                         {{-- <div class="flex-column" data-aos="fade-left" data-aos-easing="ease-out" data-aos-duration="1500">
                             <div style="text-align: left">
-                                <img src="/img/banner-text-1.png" alt="">
+                                <img src="https://grapeking.shuo-guo.net/img/banner-text-1.png" alt="">
                             </div>
                             <div style="text-align: left">
-                                <img src="/img/banner-text-2.png" alt="">
+                                <img src="https://grapeking.shuo-guo.net/img/banner-text-2.png" alt="">
                             </div>
                         </div> --}}
                         {{-- <h2>{{$item['title']}}</h2>
@@ -350,7 +350,7 @@
             <div class="col-md-11 mx-auto cate-type">
                 <div class="row">
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('/img/about-1.jpg')">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-1.jpg')">
                             <div class="text">
                                 <p>{{ trans('string.business_1') }}</p>
                             </div>
@@ -358,7 +358,7 @@
                         <a href=""></a>
                     </div>
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('/img/about-2.jpg')">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-2.jpg')">
                             <div class="text">
                                 <p>{{ trans('string.business_2') }}</p>
                             </div>
@@ -366,7 +366,7 @@
                         <a href=""></a>
                     </div>
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('/img/about-3.jpg')">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-3.jpg')">
                             <div class="text">
                                 <p>{{ trans('string.business_3') }}</p>
                             </div>
@@ -374,7 +374,7 @@
                         <a href=""></a>
                     </div>
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('/img/about-4.jpg')">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-4.jpg')">
                             <div class="text">
                                 <p>{{ trans('string.business_4') }}</p>
                             </div>
@@ -382,7 +382,7 @@
                         <a href=""></a>
                     </div>
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('/img/about-5.jpg')">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-5.jpg')">
                             <div class="text">
                                 <p>{{ trans('string.business_5') }}</p>
                             </div>
@@ -479,19 +479,19 @@
                 @php
                     $abouts = array(
                         [
-                            'featureImage' => '/img/about-section-1.jpg',
+                            'featureImage' => 'https://grapeking.shuo-guo.net/img/about-section-1.jpg',
                             'title' => trans('string.bioengineering_center'),
                             'link' => '/research/bioengineering',
                             'content' => trans('string.index_d_8')
                         ],
                         [
-                            'featureImage' => '/img/csr/csr-3.jpg',
+                            'featureImage' => 'https://grapeking.shuo-guo.net/img/csr/csr-3.jpg',
                             'title' => trans('string.innovation_rnd_center'),
                             'link' => '/research/innovation',
                             'content' => trans('string.index_d_9')
                         ],
                         [
-                            'featureImage' => '/img/about-section-3.jpg',
+                            'featureImage' => 'https://grapeking.shuo-guo.net/img/about-section-3.jpg',
                             'title' => App::getLocale() == 'en' ? 'Food Safety' : '食品安全中心​',
                             'link' => '/research/foodsafty',
                             'content' => trans('string.index_d_10')
@@ -536,8 +536,8 @@
     @endphp
     <div class="device-album">
         @foreach ($devices as $item)
-            <a data-fancybox="devices" href="/img/device/{{$item}}">
-                <img width="100%" src="/img/device/{{$item}}" alt="">
+            <a data-fancybox="devices" href="https://grapeking.shuo-guo.net/img/device/{{$item}}">
+                <img width="100%" src="https://grapeking.shuo-guo.net/img/device/{{$item}}" alt="">
             </a>
         @endforeach
     </div>
@@ -555,7 +555,7 @@
                         <div class="row license-container">
                             @foreach ($licenses as $item)
                                 <div>
-                                    <img src="/img/license/{{$item}}" width="100%" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/license/{{$item}}" width="100%" alt="">
                                 </div>
                             @endforeach
                         </div>    
@@ -564,7 +564,7 @@
                     <div class="col-md-10">
                         <div class="license-container mobile">
                             @foreach ($licenses as $item)
-                                <img src="/img/license/{{$item}}" width="100%" alt="">
+                                <img src="https://grapeking.shuo-guo.net/img/license/{{$item}}" width="100%" alt="">
                             @endforeach
                         </div> 
                     </div>
@@ -579,7 +579,7 @@
             <div class="info">
                 <h2>VIDEO</h2>
                 <h4>{{ trans('string.index_d_15') }}</h4>
-                <img class="play-btn" src="/img/site-logo/play-icon.png" alt="">
+                <img class="play-btn" src="https://grapeking.shuo-guo.net/img/site-logo/play-icon.png" alt="">
             </div>
         </div>
     </a>

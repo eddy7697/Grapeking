@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -34,10 +34,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/research/banner-foodsafty.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/research/banner-foodsafty.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -101,7 +101,7 @@ $(window).scroll(function () {
                         </p> 
                     </div>
                     <div class="col-md-6 mobile-to-left">
-                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/CSR/CSR_{{App::getLocale()}}_1.jpg" alt="">
+                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/research/CSR/CSR_{{App::getLocale()}}_1.jpg" alt="">
                     </div>
                 </div>                    
             </div>
@@ -110,12 +110,12 @@ $(window).scroll(function () {
                 {{ trans('string.research_f_d_2') }}
             </div>
 
-            <img class="about-image" src="/img/research/CSR/CSR_{{App::getLocale()}}_3.jpg" alt="{{ trans('string.research_f_d_2') }}">
+            <img class="about-image" src="https://grapeking.shuo-guo.net/img/research/CSR/CSR_{{App::getLocale()}}_3.jpg" alt="{{ trans('string.research_f_d_2') }}">
 
             <div class="about-text" style="margin-top: 50px;">
                 <div class="row">
                     <div class="col-md-5" style="text-align: left">
-                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/CSR/CSR_{{App::getLocale()}}_2.jpg" alt="">
+                        <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/research/CSR/CSR_{{App::getLocale()}}_2.jpg" alt="">
                     </div>
                     <div class="col-md-7 force-center">
                         <p>

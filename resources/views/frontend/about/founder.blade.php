@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -34,10 +34,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/founder/banner.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/about/founder/banner.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -93,15 +93,15 @@ $(window).scroll(function () {
                 @endif
                 {{-- <div class="about-text signature" id="about_1">
                     <h3 style="margin: 150px 0 50px; font-weight: 700">{{ trans('string.about17') }}</h3>
-                    <img class="about-image pull-right" src="/img/about/founder/signature.jpg" alt="">
+                    <img class="about-image pull-right" src="https://grapeking.shuo-guo.net/img/about/founder/signature.jpg" alt="">
                 </div>
                 <div style="clear: both"></div>
                 <h3 class="about-section-title" id="about_3" style="margin-top: 0">{{ trans('string.about18') }}</h3>
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-3">
-                            <div data-fancybox="gallery" href="/img/about/founder/person.jpg" class="link-image">
-                                <img src="/img/about/founder/person.jpg" alt="">
+                            <div data-fancybox="gallery" href="https://grapeking.shuo-guo.net/img/about/founder/person.jpg" class="link-image">
+                                <img src="https://grapeking.shuo-guo.net/img/about/founder/person.jpg" alt="">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_1') }}
@@ -124,10 +124,10 @@ $(window).scroll(function () {
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6 mobile-to-left">
-                            <img class="about-image" style="height: 400px; display: inline" src="/img/about/founder/bottle.png" alt="">
+                            <img class="about-image" style="height: 400px; display: inline" src="https://grapeking.shuo-guo.net/img/about/founder/bottle.png" alt="">
                         </div>
                         <div class="col-md-6">
-                            <img class="about-image" style="height: 350px; display: inline" src="/img/about/founder/paper.jpg" alt="">
+                            <img class="about-image" style="height: 350px; display: inline" src="https://grapeking.shuo-guo.net/img/about/founder/paper.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@ $(window).scroll(function () {
                 <div class="about-text" style="margin-top: 50px;" >
                     <div class="row">
                         <div class="col-md-7 founder-info">
-                            <div data-fancybox="gallery" href="/img/about/founder/pic.jpg" class="link-image"  style="background-image: url('/img/about/founder/pic.jpg');">
+                            <div data-fancybox="gallery" href="https://grapeking.shuo-guo.net/img/about/founder/pic.jpg" class="link-image"  style="background-image: url('https://grapeking.shuo-guo.net/img/about/founder/pic.jpg');">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_2') }}
@@ -146,7 +146,7 @@ $(window).scroll(function () {
                             </div>
                         </div>
                         <div class="col-md-5 founder-info">
-                            <div data-fancybox="gallery" href="/img/about/founder/pic2.jpg" class="link-image" style="background-image: url('/img/about/founder/pic2.jpg');">
+                            <div data-fancybox="gallery" href="https://grapeking.shuo-guo.net/img/about/founder/pic2.jpg" class="link-image" style="background-image: url('https://grapeking.shuo-guo.net/img/about/founder/pic2.jpg');">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_3') }}
@@ -155,7 +155,7 @@ $(window).scroll(function () {
                             </div>
                         </div>
                         <div class="col-md-12 founder-info">
-                            <div data-fancybox="gallery" href="/img/about/founder/pic3.jpg" class="link-image" style="background-image: url('/img/about/founder/pic3.jpg');">
+                            <div data-fancybox="gallery" href="https://grapeking.shuo-guo.net/img/about/founder/pic3.jpg" class="link-image" style="background-image: url('https://grapeking.shuo-guo.net/img/about/founder/pic3.jpg');">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_4') }}
@@ -172,8 +172,8 @@ $(window).scroll(function () {
                             {!! trans('string.about24') !!}
                         </div>
                         <div class="col-md-4">
-                            <div data-fancybox="gallery" href="/img/about/founder/pic4.png" class="link-image">
-                                <img style="max-width: 400px;" src="/img/about/founder/pic4.png" alt="">
+                            <div data-fancybox="gallery" href="https://grapeking.shuo-guo.net/img/about/founder/pic4.png" class="link-image">
+                                <img style="max-width: 400px;" src="https://grapeking.shuo-guo.net/img/about/founder/pic4.png" alt="">
                                 <div class="mask">
                                     <div class="info">
                                         {{ trans('string.founder_d_5') }}

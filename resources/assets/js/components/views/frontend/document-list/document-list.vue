@@ -124,6 +124,9 @@
                         order: 'desc'
                     }
                 }
+
+                vo.keyword = this.listVo.keyword
+                
                 $('.loading-bar').show()
                 axios.post(this.urlPath, vo)
                     .then(res => {

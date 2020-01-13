@@ -5,7 +5,7 @@
 @endphp
 
 @section('custom-script')
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
     var windowWidth = $(window).width()
 
@@ -111,10 +111,10 @@
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
     .sub-page-banner {
-        background-image: url('/img/about/course_banner.jpg');
+        background-image: url('https://grapeking.shuo-guo.net/img/about/course_banner.jpg');
     }
 </style>
 @if (App::getLocale() == 'en')
@@ -172,7 +172,7 @@
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt="">
+                    <img class="about-image" style="max-width: 400px; width: 100%" src="https://grapeking.shuo-guo.net/img/about/pic.png" alt="">
                 </div>
             </div>
             
@@ -252,7 +252,7 @@
         <div class="info">
             <h2>VIDEO</h2>
             <h4>{{ trans('string.index_d_15') }}</h4>
-            <img class="play-btn" src="/img/site-logo/play-icon.png" alt="">
+            <img class="play-btn" src="https://grapeking.shuo-guo.net/img/site-logo/play-icon.png" alt="">
         </div>
     </div>
 </a>

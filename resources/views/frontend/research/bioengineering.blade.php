@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -104,10 +104,10 @@ $('.material-card-list').slick({
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/research/banner-1.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/research/banner-1.jpg');
 }
 </style>
 
@@ -186,7 +186,7 @@ $('.material-card-list').slick({
                             </p>
                         </div>
                         <div class="col-md-6 mobile-to-left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/bio-1.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/research/bio-1.jpg" alt="">
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">更多专利</a>
                         </div>
                     </div>                    
@@ -196,7 +196,7 @@ $('.material-card-list').slick({
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6" style="text-align: left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/bio-2.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/research/bio-2.jpg" alt="">
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">更多设备</a>
                         </div>
                         <div class="col-md-6">
@@ -228,7 +228,7 @@ $('.material-card-list').slick({
                             </p> 
                         </div>
                         <div class="col-md-6 mobile-to-left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/research/bio-3.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/research/bio-3.jpg" alt="">
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">更多专利</a>
                         </div>
                     </div>                    
@@ -238,7 +238,7 @@ $('.material-card-list').slick({
                 <h3 class="about-section-title" id="section_4">{{ trans('string.raw_material_introduction') }}</h3>
                 <div class="material-card mobile-to-hide first" style="background-color: #ABCD03">
                     <h4>{{ trans('text.material_1') }}</h4>
-                    <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
+                    <img class="material-img" src="https://grapeking.shuo-guo.net/img/research/bio-icon-1.png" alt="">                    
                     <p class="material-info">
                         {{ trans('text.material_d_1') }}
                     </p>
@@ -246,7 +246,7 @@ $('.material-card-list').slick({
                 </div>
                 <div class="material-card mobile-to-hide" style="background-color: #F39800">
                     <h4>{{ trans('text.material_2') }}</h4>
-                    <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
+                    <img class="material-img" src="https://grapeking.shuo-guo.net/img/research/bio-icon-2.png" alt="">                    
                     <p class="material-info">
                         {{ trans('text.material_d_2') }}
                     </p>
@@ -254,7 +254,7 @@ $('.material-card-list').slick({
                 </div>
                 <div class="material-card mobile-to-hide last" style="background-color: #38A1DB">
                     <h4>{{ trans('text.material_3') }}</h4>
-                    <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
+                    <img class="material-img" src="https://grapeking.shuo-guo.net/img/research/bio-icon-3.png" alt="">                    
                     <p class="material-info">
                         {{ trans('text.material_d_3') }}
                     </p>
@@ -265,7 +265,7 @@ $('.material-card-list').slick({
                     <div>
                         <div class="material-card " style="background-color: #ABCD03">
                             <h4>{{ trans('text.material_1') }}</h4>
-                            <img class="material-img" src="/img/research/bio-icon-1.png" alt="">                    
+                            <img class="material-img" src="https://grapeking.shuo-guo.net/img/research/bio-icon-1.png" alt="">                    
                             <p class="material-info">
                                 {{ trans('text.material_d_1') }}
                             </p>
@@ -275,7 +275,7 @@ $('.material-card-list').slick({
                     <div>
                         <div class="material-card" style="background-color: #F39800">
                             <h4>{{ trans('text.material_2') }}</h4>
-                            <img class="material-img" src="/img/research/bio-icon-2.png" alt="">                    
+                            <img class="material-img" src="https://grapeking.shuo-guo.net/img/research/bio-icon-2.png" alt="">                    
                             <p class="material-info">
                                 {{ trans('text.material_d_2') }}
                             </p>
@@ -285,7 +285,7 @@ $('.material-card-list').slick({
                     <div>
                         <div class="material-card " style="background-color: #38A1DB">
                             <h4>{{ trans('text.material_3') }}</h4>
-                            <img class="material-img" src="/img/research/bio-icon-3.png" alt="">                    
+                            <img class="material-img" src="https://grapeking.shuo-guo.net/img/research/bio-icon-3.png" alt="">                    
                             <p class="material-info">
                                 {{ trans('text.material_d_3') }}
                             </p>

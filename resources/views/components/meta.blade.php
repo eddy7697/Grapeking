@@ -11,11 +11,11 @@
 <link rel="shortcut icon" href="{{ SiteMetaView::shortcut() }}">
 
 <!-- Fonts -->
-<link rel="stylesheet" href="/js/plugins/b4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/b4/css/bootstrap.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/js/plugins/AOS/aos.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.css">
 <link rel="stylesheet" href="/css/animate.css">
 <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
 <link href="/css/frontend.css" rel="stylesheet">

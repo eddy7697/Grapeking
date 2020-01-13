@@ -15,7 +15,7 @@ $('.nav-link').on('shown.bs.tab', function(event){
     }
 });
 </script>
-{{-- <script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+{{-- <script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -46,10 +46,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-{{-- <link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css"> --}}
+{{-- <link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css"> --}}
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/global/banner.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/about/global/banner.jpg');
     background-position: 80% center;
 }
 </style>
@@ -102,17 +102,17 @@ $(window).scroll(function () {
         </div>
         <div class="location-map">
             <div class="img-container">
-                <img src="/img/map/1.png" alt="" data-aos="fade-in">
-                <img src="/img/map/{{App::getLocale()}}/m8.png" alt="" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m9.png" alt="" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m7.png" alt="" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m5.png" alt="" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m4.png" alt="" data-aos="fade-left" data-aos-delay="1700" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m3.png" alt="" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m2.png" alt="" data-aos="fade-left" data-aos-delay="2300" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m1.png" alt="" data-aos="fade-left" data-aos-delay="2700" data-aos-duration="1000">
-                <img src="/img/map/{{App::getLocale()}}/m6.png" alt="" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="1000">
-                <img src="/img/map/2.png" alt="" data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
+                <img src="https://grapeking.shuo-guo.net/img/map/1.png" alt="" data-aos="fade-in">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m8.png" alt="" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m9.png" alt="" data-aos="fade-right" data-aos-delay="800" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m7.png" alt="" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m5.png" alt="" data-aos="fade-left" data-aos-delay="1400" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m4.png" alt="" data-aos="fade-left" data-aos-delay="1700" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m3.png" alt="" data-aos="fade-left" data-aos-delay="2000" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m2.png" alt="" data-aos="fade-left" data-aos-delay="2300" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m1.png" alt="" data-aos="fade-left" data-aos-delay="2700" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/{{App::getLocale()}}/m6.png" alt="" data-aos="fade-right" data-aos-delay="3000" data-aos-duration="1000">
+                <img src="https://grapeking.shuo-guo.net/img/map/2.png" alt="" data-aos="fade-in" data-aos-delay="500" data-aos-duration="500">
             </div>
         </div>
         
@@ -126,8 +126,8 @@ $(window).scroll(function () {
         @if (true)
             <div class="device-album" style="margin: 50px 0;">
                 @foreach ($devices as $item)
-                    <a data-fancybox="devices" href="/img/about/global/album/{{$item}}">
-                        <img width="100%" src="/img/about/global/album/thumb/{{$item}}" alt="">
+                    <a data-fancybox="devices" href="https://grapeking.shuo-guo.net/img/about/global/album/{{$item}}">
+                        <img width="100%" src="https://grapeking.shuo-guo.net/img/about/global/album/thumb/{{$item}}" alt="">
                     </a>
                 @endforeach
             </div>    
@@ -167,7 +167,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/grapeking.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="https://grapeking.shuo-guo.net/img/about/grapeking.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;" class="location-contact-info">
@@ -207,7 +207,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/site-logo.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="https://grapeking.shuo-guo.net/img/about/site-logo.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;" class="location-contact-info">
@@ -249,7 +249,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/dong-pu.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="https://grapeking.shuo-guo.net/img/about/dong-pu.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;" class="location-contact-info">
@@ -290,7 +290,7 @@ $(window).scroll(function () {
                                 <div class="col-md-5 mobile-to-center">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="/img/about/pu-zun.png" alt="">
+                                            <img width="100%" style="margin-bottom: 10px; max-width: 200px;" src="https://grapeking.shuo-guo.net/img/about/pu-zun.png" alt="">
                                         </div>
                                         <div class="col-md-8">
                                             <ul style="font-size: 13px;" class="location-contact-info">

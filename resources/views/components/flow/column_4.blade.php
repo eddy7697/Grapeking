@@ -38,8 +38,8 @@
     <div class="col-3 flow-item left">
         <div class="inner-border"></div>
         <div class="inner-box">
-            <h5>{{ trans('text.flow_5') }}</h5>
-            <p>{!! trans('text.flow_5_text') !!}</p>
+            <h5>{{ trans('text.flow_8') }}</h5>
+            <p>{!! trans('text.flow_8_text') !!}</p>
         </div>
     </div>
     <div class="col-3 flow-item left">
@@ -59,8 +59,8 @@
     <div class="col-3 flow-item left">
         <div class="inner-border"></div>
         <div class="inner-box">
-            <h5>{{ trans('text.flow_8') }}</h5>
-            <p>{!! trans('text.flow_8_text') !!}</p>
+            <h5>{{ trans('text.flow_5') }}</h5>
+            <p>{!! trans('text.flow_5_text') !!}</p>
         </div>
     </div>
 </div>

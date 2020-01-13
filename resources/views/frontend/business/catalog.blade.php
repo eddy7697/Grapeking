@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -45,10 +45,10 @@ $('.material-card').height(finalHeight);
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/business/banner-3.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/business/banner-3.jpg');
 }
 </style>
 @endsection
@@ -94,12 +94,12 @@ $('.material-card').height(finalHeight);
                         {{ trans('string.catalog_d_1') }}
                     </p>                    
                 </div>
-                <img class="about-image" src="/img/business/product-1.jpg" alt="">
+                <img class="about-image" src="https://grapeking.shuo-guo.net/img/business/product-1.jpg" alt="">
 
 
                 <h3 class="about-section-title" id="section_2">{{ trans('string.raw_material_introduction') }}</h3>
                 <div class="material-card first" style="background-color: #ABCD03">
-                    <img class="material-img" src="/img/business/product-btn-1.png" alt="">                    
+                    <img class="material-img" src="https://grapeking.shuo-guo.net/img/business/product-btn-1.png" alt="">                    
                     <h4>
                         <span style="border-bottom: #FFF 2px solid">{{ trans('string.catalog_d_2') }}</span>
                     </h4>
@@ -111,7 +111,7 @@ $('.material-card').height(finalHeight);
                     </p>
                 </div>
                 <div class="material-card" style="background-color: #F39800">
-                    <img class="material-img" src="/img/business/product-btn-2.png" alt="">                    
+                    <img class="material-img" src="https://grapeking.shuo-guo.net/img/business/product-btn-2.png" alt="">                    
                     <h4>
                         <span style="border-bottom: #FFF 2px solid">{{ trans('string.catalog_d_3') }}</span>
                     </h4>
@@ -121,7 +121,7 @@ $('.material-card').height(finalHeight);
                     </p>
                 </div>
                 <div class="material-card last" style="background-color: #38A1DB">
-                    <img class="material-img" src="/img/business/product-btn-3.png" alt="">                    
+                    <img class="material-img" src="https://grapeking.shuo-guo.net/img/business/product-btn-3.png" alt="">                    
                     <h4>
                         <span style="border-bottom: #FFF 2px solid">{{ trans('string.catalog_d_4') }}</span>
                     </h4>
@@ -160,7 +160,7 @@ $('.material-card').height(finalHeight);
                         {{ trans('string.catalog_d_12') }}
                     </p>                  
                 </div>
-                <img class="about-image" src="/img/business/product-2.jpg" alt="">
+                <img class="about-image" src="https://grapeking.shuo-guo.net/img/business/product-2.jpg" alt="">
 
 
                 <div class="about-text">
@@ -189,8 +189,8 @@ $('.material-card').height(finalHeight);
                             <div class="row" style="margin: 50px 0;">
                                 @foreach ($lines as $item)
                                     <div class="col-md-3 license-img-item" style="margin-bottom: 20px;">
-                                        <a data-fancybox="lines" href="/img/business/license/{{$item}}">
-                                            <img width="100%" src="/img/business/license/{{$item}}" alt="">
+                                        <a data-fancybox="lines" href="https://grapeking.shuo-guo.net/img/business/license/{{$item}}">
+                                            <img width="100%" src="https://grapeking.shuo-guo.net/img/business/license/{{$item}}" alt="">
                                         </a>
                                     </div>                                    
                                 @endforeach
@@ -200,8 +200,8 @@ $('.material-card').height(finalHeight);
                             <div class="row" style="margin: 50px 0;">
                                 @foreach ($specs as $item)
                                     <div class="col-md-3 license-img-item" style="margin-bottom: 20px;">
-                                        <a data-fancybox="specs" href="/img/business/quality/{{$item}}">
-                                            <img width="100%" src="/img/business/quality/{{$item}}" alt="">
+                                        <a data-fancybox="specs" href="https://grapeking.shuo-guo.net/img/business/quality/{{$item}}">
+                                            <img width="100%" src="https://grapeking.shuo-guo.net/img/business/quality/{{$item}}" alt="">
                                         </a>
                                     </div>                                    
                                 @endforeach
@@ -211,8 +211,8 @@ $('.material-card').height(finalHeight);
                             <div class="row" style="margin: 50px 0;">
                                 @foreach ($results as $item)
                                     <div class="col-md-3 license-img-item" style="margin-bottom: 20px;">
-                                        <a data-fancybox="results" href="/img/business/International/{{$item}}">
-                                            <img width="100%" src="/img/business/International/{{$item}}" alt="">
+                                        <a data-fancybox="results" href="https://grapeking.shuo-guo.net/img/business/International/{{$item}}">
+                                            <img width="100%" src="https://grapeking.shuo-guo.net/img/business/International/{{$item}}" alt="">
                                         </a>
                                     </div>                                    
                                 @endforeach

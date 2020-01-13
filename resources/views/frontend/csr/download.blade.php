@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -34,10 +34,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/csr/csr-5.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/csr/csr-5.jpg');
 }
 </style>
 @endsection
@@ -89,7 +89,7 @@ $(window).scroll(function () {
                                         <span style="font-weight:700; color: #fff; text-shadow: 2px 2px 12px rgba(0,0,0,.9); text-align: center">{{$item->locale}}</span>
                                         <br>
                                         <br>
-                                        <img src="/img/download-btn.png" alt="">
+                                        <img src="https://grapeking.shuo-guo.net/img/download-btn.png" alt="">
                                     </div>
                                 </div>
                             </div>

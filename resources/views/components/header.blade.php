@@ -69,7 +69,9 @@
                     <li><a class="dropdown mega-btn" data-menu-target="product">{{ trans('string.sales') }}</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="research">{{ trans('string.research') }}</a></li>
                     <li><a class="dropdown mega-btn" data-menu-target="support">{{ trans('string.responsibility') }}</a></li>
-                    <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
+                    @unless (App::getLocale() == 'en')
+                        <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>    
+                    @endunless
                 </ul>
             </div>
         </div>
@@ -311,7 +313,9 @@
                 <li><a href="/csr/download">{{trans('string.download_paper')}}</a></li>
             </ul>
         </li>
-        <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>
+        @unless (App::getLocale() == 'en')
+        <li><a href="/about/careers">{{ trans('string.recruiting') }}</a></li>    
+        @endunless
         <li>
             <div class="container-fluid">
                 <div class="row">

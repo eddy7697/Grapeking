@@ -64,12 +64,12 @@
     <script src="{{ asset('js/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
     <script src="{{ asset('js/plugins/jquery.fancytree/dist/jquery.fancytree-all.min.js') }}"></script>
     <script src="{{ asset('js/customFunction.js') }}"></script>
-    <script src="/js/plugins/ckeditor/ckeditor.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/ckeditor/ckeditor.js"></script>
     <script src="/vendor/laravel-filemanager/js/lfm.js"></script>
-    <script src="/js/jquery.print.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/jquery.print.js"></script>
     @unless (Auth::guest())
     @endunless
-    <script src="/js/plugins/AOS/aos.js" charset="utf-8"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.js" charset="utf-8"></script>
 
     <script type="text/javascript">
         AOS.init();

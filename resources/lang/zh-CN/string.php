@@ -450,7 +450,7 @@ return [
     'contact_inf_3' => '网址：<a href="www.grapeking.com.cn" target="_blank">www.grapeking.com.cn</a>',
     'contact_inf_4' => '电邮：gki@grapeking.com.cn',
     'contact_inf_5' => '联系专线',
-    'contact_inf_6' => '+86-21-5760-9598',
+    'contact_inf_6' => '电话：+86-21-5760-9598',
 
     'contact_inf__1' => '地址：324 桃园市平镇区金陵路2段402号',
     'contact_inf__2' => '电话：+886-3-457-2121',

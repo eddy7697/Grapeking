@@ -3,7 +3,7 @@
 @section('custom-js-script')
     {{-- <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet"/> --}}
     <script src="https://unpkg.com/grapesjs"></script>
-    <script src="/js/plugins/grapesjs-blocks-bootstrap4.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/grapesjs-blocks-bootstrap4.min.js"></script>
     <script src="{{ asset('js/backend/page-builder.js') }}"></script>
 @endsection
 

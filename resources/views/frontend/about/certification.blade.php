@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -71,10 +71,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/certification/banner.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/about/certification/banner.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -132,25 +132,25 @@ $(window).scroll(function () {
                 <div class="about-text">
                     {!! trans('string.about27') !!}
                 </div>
-                <img class="about-image" src="/img/about/certification/pic1.jpg" alt="">
+                <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic1.jpg" alt="">
                 <h3 class="about-section-title" id="about_2">{{ trans('string.about28') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about29') !!}
                     <div class="row mobile-to-hide">
                         <div class="col-md-4">
-                            <img class="about-image" src="/img/about/certification/pic2.jpg" alt="">
+                            <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic2.jpg" alt="">
                         </div>
                         <div class="col-md-4">
-                            <img class="about-image" src="/img/about/certification/pic3.jpg" alt="">
+                            <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic3.jpg" alt="">
                         </div>
                         <div class="col-md-4">
-                            <img class="about-image" src="/img/about/certification/pic4.jpg" alt="">
+                            <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic4.jpg" alt="">
                         </div>
                     </div>
                     <div class="cert-album mobile-to-show">
-                        <img class="about-image" src="/img/about/certification/pic2.jpg" alt="">
-                        <img class="about-image" src="/img/about/certification/pic3.jpg" alt="">
-                        <img class="about-image" src="/img/about/certification/pic4.jpg" alt="">
+                        <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic2.jpg" alt="">
+                        <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic3.jpg" alt="">
+                        <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/certification/pic4.jpg" alt="">
                     </div>
                     
                     {!! trans('string.about30') !!}

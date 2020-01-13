@@ -7,6 +7,7 @@
 
 require('./f2e-bootstrap');
 require('jquery-bar-rating');
+require('jquery-lazyload');
 require('chart.js');
 require('slick-carousel');
 require('popper.js');

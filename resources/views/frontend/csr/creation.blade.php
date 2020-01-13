@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -71,10 +71,10 @@ $('.material-list').slick({
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/csr/csr-3.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/csr/csr-3.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -138,7 +138,7 @@ $('.material-list').slick({
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">{{ trans('string.go_center') }}</a>
                         </div>
                         <div class="col-md-6" style="text-align: left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/csr/invo-1.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/csr/invo-1.jpg" alt="">
                         </div>
                         
                     </div>                    
@@ -148,7 +148,7 @@ $('.material-list').slick({
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-6" style="text-align: left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/csr/invo-2.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/csr/invo-2.jpg" alt="">
                         </div>
                         <div class="col-md-6">
                             <p>
@@ -171,7 +171,7 @@ $('.material-list').slick({
                             <a class="location-contact-btn" style="margin-top: 50px;" href="">{{ trans('string.go_pro') }}</a>
                         </div>
                         <div class="col-md-6" style="text-align: left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/csr/invo-3.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/csr/invo-3.jpg" alt="">
                         </div>
                         
                     </div>                    
@@ -188,19 +188,19 @@ $('.material-list').slick({
                 </div>
                 <div class="material-list">
                     <div class="item">
-                        <img class="img" src="/img/csr/invo-material-1.svg" alt="">
+                        <img class="img" src="https://grapeking.shuo-guo.net/img/csr/invo-material-1.svg" alt="">
                     </div>
                     <div class="item">
-                        <img class="img" src="/img/csr/invo-material-2.svg" alt="">
+                        <img class="img" src="https://grapeking.shuo-guo.net/img/csr/invo-material-2.svg" alt="">
                     </div>
                     <div class="item">
-                        <img class="img" src="/img/csr/invo-material-3.svg" alt="">
+                        <img class="img" src="https://grapeking.shuo-guo.net/img/csr/invo-material-3.svg" alt="">
                     </div>
                     <div class="item">
-                        <img class="img" src="/img/csr/invo-material-4.svg" alt="">
+                        <img class="img" src="https://grapeking.shuo-guo.net/img/csr/invo-material-4.svg" alt="">
                     </div>
                     <div class="item">
-                        <img class="img" src="/img/csr/invo-material-5.svg" alt="">
+                        <img class="img" src="https://grapeking.shuo-guo.net/img/csr/invo-material-5.svg" alt="">
                     </div>
                 </div> --}}
 

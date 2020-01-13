@@ -12,10 +12,10 @@
     <link rel="shortcut icon" href="{{ SiteMetaView::shortcut() }}">
 
     <!-- Fonts -->
-    <link rel="stylesheet" href="/js/plugins/b4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/b4/css/bootstrap.min.css">
     <link href="/css/frontend.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/js/plugins/AOS/aos.css">
+    <link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.css">
     <link rel="stylesheet" href="/css/animate.css">
     <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
 
@@ -561,17 +561,17 @@
   
     <script src="http://localhost:8000/js/plugins/moment/moment-with-locales.min.js"></script>
 
-    <script src="/js/frontend.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/frontend.js"></script>
 
-    <script src="/js/plugins/popper/popper.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/popper/popper.min.js"></script>
 
-    <script src="/js/plugins/b4/js/bootstrap.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/b4/js/bootstrap.min.js"></script>
 
 
 
-    <script src="/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
-    <script src="/js/plugins/AOS/aos.js" charset="utf-8"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.js" charset="utf-8"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 

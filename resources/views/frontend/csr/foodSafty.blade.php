@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -34,10 +34,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/csr/csr-2.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/csr/csr-2.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -97,7 +97,7 @@ $(window).scroll(function () {
                         {{ trans('string.foodSafty_d_1') }}
                     </p>                    
                 </div>
-                <img class="about-image" src="/img/csr/food-safty.png" alt="">
+                <img class="about-image" src="https://grapeking.shuo-guo.net/img/csr/food-safty.png" alt="">
 
                 <h3 class="about-section-title" id="section_2">{{ trans('string.relation_2') }}</h3>
                 <div class="about-text">
@@ -114,7 +114,7 @@ $(window).scroll(function () {
                             </p> 
                         </div>
                         <div class="col-md-6 mobile-to-left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 500px; display: inline-block" src="/img/csr/food-safty-2.png" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 500px; display: inline-block" src="https://grapeking.shuo-guo.net/img/csr/food-safty-2.png" alt="">
                         </div>
                     </div>                    
                 </div> --}}

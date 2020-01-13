@@ -446,7 +446,7 @@ return [
     'contact_inf_3' => 'URL: <a href="www.grapeking.com.cn" target="_blank">www.grapeking.com.cn</a>',
     'contact_inf_4' => 'Email: gki@grapeking.com.cn',
     'contact_inf_5' => 'Contact line',
-    'contact_inf_6' => '+86-21-5760-9598',
+    'contact_inf_6' => 'Tel: +86-21-5760-9598',
 
     'contact_1' => '<li>Grape King Bio Head Office</li> <li>Addr.：No. 402, Section 2 Jinling Road, Pingzhen District, Taoyuan City</li> <li>Tel：+886-03-457-2121</li> <li>Fax：+886-03-457-2128</li> <li>Web：www.grapeking.com.tw</li> <li>E-Mail：gki.global.sales@grapeking.com.tw</li>',
     'contact_2' => '<li>Shanghai Grape King </li> <li>Addr.：No. 518, Che-Xin Road, Songjiang, Shanghai, China </li> <li>Tel：+86-21-5760 9598</li> <li>Fax：+86-21-5760-9698</li> <li>Web：www.grapeking.com.cn</li> <li>E-Mail：gki@grapeking.com.cn</li>',

@@ -34,7 +34,7 @@ return [
     'flow_7_text' => '订制包材<br>稿件确认<br>回复交期',
     'flow_8' => '生产出货',
     'flow_8_text' => '产线生产<br>包装检验<br>验收交货',
-    'flow_middle_lable' => '<p>一条龙代工服务流程</p><p>One-stop service</p>',
+    'flow_middle_lable' => '<p>一条龙代工服务流程</p><p>One-Stop Service</p>',
 
     'material_prod_1' => '汉方保养',
     'material_prod_1_text' => '以汉方角度开发产品，结合葡萄王生技集团菇菌类的发酵专业技术，提供全方位保养品的专业代工服务​',

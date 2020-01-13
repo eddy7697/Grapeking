@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -31,15 +31,15 @@ $(window).scroll(function () {
 </script>          
 @endif
 
-<script src="/js/paper-list.js"></script>
-<script src="/js/patent-list.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/paper-list.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/patent-list.js"></script>
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/research/banner-3.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/research/banner-3.jpg');
 }
 </style>
 @endsection

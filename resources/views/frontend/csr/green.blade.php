@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -34,10 +34,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/csr/csr-4.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/csr/csr-4.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -103,7 +103,7 @@ $(window).scroll(function () {
                     <p>{{ trans('string.green_d_6') }}</p>
                     <p>{{ trans('string.green_d_7') }}</p>
                 </div>
-                <img class="about-image" src="/img/csr/green-1.jpg" alt="">
+                <img class="about-image" src="https://grapeking.shuo-guo.net/img/csr/green-1.jpg" alt="">
 
                 <h3 class="about-section-title" id="section_2">{{ trans('string.green_2') }}</h3>
                 <div class="about-text">
@@ -124,7 +124,7 @@ $(window).scroll(function () {
                             </p> 
                         </div>
                         <div class="col-md-5 mobile-to-left">
-                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="/img/csr/green-2.jpg" alt="">
+                            <img class="about-image" style="margin: 0; width: 100%; max-width: 400px; display: inline-block" src="https://grapeking.shuo-guo.net/img/csr/green-2.jpg" alt="">
                         </div>
                         
                     </div>                    
@@ -134,10 +134,10 @@ $(window).scroll(function () {
                 <p>&nbsp;</p>
                 <div class="row about-session-info">
                     <div class="col-md-4" style="padding: 0">
-                        <div class="session-image" style="background: url('/img/csr/session-1.jpg');">
+                        <div class="session-image" style="background: url('https://grapeking.shuo-guo.net/img/csr/session-1.jpg');">
                             <div class="session-mask" style="background-color: rgba(243,152,0,0.5);">
                                 <div>
-                                    <img src="/img/csr/invo-icon-1.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/csr/invo-icon-1.png" alt="">
                                     <p>{{ trans('string.green_d_14') }}</p>
                                 </div>
                             </div>
@@ -152,10 +152,10 @@ $(window).scroll(function () {
                 <p>&nbsp;</p>
                 <div class="row about-session-info">
                     <div class="col-md-4" style="padding: 0">
-                        <div class="session-image" style="background: url('/img/csr/session-2.jpg');">
+                        <div class="session-image" style="background: url('https://grapeking.shuo-guo.net/img/csr/session-2.jpg');">
                             <div class="session-mask" style="background-color: rgba(171,205,3,0.5);">
                                 <div>
-                                    <img src="/img/csr/invo-icon-2.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/csr/invo-icon-2.png" alt="">
                                     <p>{{ trans('string.green_d_15') }}</p>
                                 </div>
                             </div>
@@ -170,10 +170,10 @@ $(window).scroll(function () {
                 <p>&nbsp;</p>
                 <div class="row about-session-info">
                     <div class="col-md-4" style="padding: 0">
-                        <div class="session-image" style="background: url('/img/csr/session-3.jpg');">
+                        <div class="session-image" style="background: url('https://grapeking.shuo-guo.net/img/csr/session-3.jpg');">
                             <div class="session-mask" style="background-color: rgba(56,161,219,0.5);">
                                 <div>
-                                    <img src="/img/csr/invo-icon-3.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/csr/invo-icon-3.png" alt="">
                                     <p>{{ trans('string.green_d_16') }}</p>
                                 </div>
                             </div>

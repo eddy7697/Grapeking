@@ -1,7 +1,7 @@
 @extends('frontend.partners.main')
 
 @section('sub-script')
-    <script src="/js/partner.js" charset="utf-8"></script>
+    <script src="https://grapeking.shuo-guo.net/js/partner.js" charset="utf-8"></script>
     <script>
         // var map;
         window.initGoogleMap = function () {

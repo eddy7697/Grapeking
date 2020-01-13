@@ -8,7 +8,7 @@
   <meta name="description" content="LayoutIt! 可拖放排序在线编辑的Bootstrap可视化布局系统">
 
   <!-- Le styles -->
-  <link href="/js/plugins/layoutit/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="https://grapeking.shuo-guo.net/js/plugins/layoutit/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
   <link href="{{url('/css/page-builder.css')}}" rel="stylesheet">
 
   <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -16,12 +16,12 @@
   <script src="js/html5shiv.js"></script>
   <![endif]-->
 
-  <script src="/js/plugins/layoutit/lib/jquery/dist/jquery.min.js"></script>
-  <script src="/js/plugins/layoutit/js/jquery-ui.js"></script>
-  <script src="/js/plugins/layoutit/js/jquery.htmlClean.js"></script>
-  <script src="/js/plugins/layoutit/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="/js/plugins/ckeditor/ckeditor.js"></script>
-  <script src="/js/plugins/layoutit/js/scripts.js"></script>
+  <script src="https://grapeking.shuo-guo.net/js/plugins/layoutit/lib/jquery/dist/jquery.min.js"></script>
+  <script src="https://grapeking.shuo-guo.net/js/plugins/layoutit/js/jquery-ui.js"></script>
+  <script src="https://grapeking.shuo-guo.net/js/plugins/layoutit/js/jquery.htmlClean.js"></script>
+  <script src="https://grapeking.shuo-guo.net/js/plugins/layoutit/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="https://grapeking.shuo-guo.net/js/plugins/ckeditor/ckeditor.js"></script>
+  <script src="https://grapeking.shuo-guo.net/js/plugins/layoutit/js/scripts.js"></script>
 
 </head>
 
@@ -759,7 +759,7 @@
               <div class="preview">图片</div>
               <div class="view">
                 <img alt="140x140"
-                     src="/js/plugins/layoutit/img/default_004.jpg">
+                     src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_004.jpg">
               </div>
             </div>
           </li>
@@ -1186,7 +1186,7 @@
                   <div class="col-md-4">
                     <div class="thumbnail">
                       <img alt="300x200"
-                           src="/js/plugins/layoutit/img/default_006.jpg">
+                           src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_006.jpg">
 
                       <div class="caption contenteditable" contenteditable="true">
                         <h3>Thumbnail label</h3>
@@ -1207,7 +1207,7 @@
                   <div class="col-md-4">
                     <div class="thumbnail">
                       <img alt="300x200"
-                           src="/js/plugins/layoutit/img/default.jpg">
+                           src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default.jpg">
 
                       <div class="caption contenteditable" contenteditable="true">
                         <h3>Thumbnail label</h3>
@@ -1228,7 +1228,7 @@
                   <div class="col-md-4">
                     <div class="thumbnail">
                       <img alt="300x200"
-                           src="/js/plugins/layoutit/img/default_007.jpg">
+                           src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_007.jpg">
 
                       <div class="caption contenteditable" contenteditable="true">
                         <h3>Thumbnail label</h3>
@@ -1289,7 +1289,7 @@
               <div class="view">
                 <div class="media">
                   <a href="#" class="pull-left">
-                    <img src="/js/plugins/layoutit/img/default_002.jpg"
+                    <img src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_002.jpg"
                          class="media-object"></a>
 
                   <div class="media-body contenteditable" contenteditable="true">
@@ -1299,7 +1299,7 @@
                     vulputate at, tempus viverra turpis.
                     <div class="media">
                       <a href="#" class="pull-left">
-                        <img src="/js/plugins/layoutit/img/default_002.jpg"
+                        <img src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_002.jpg"
                              class="media-object"></a>
 
                       <div class="media-body contenteditable" contenteditable="true">
@@ -1716,7 +1716,7 @@
                   <div class="carousel-inner">
                     <div class="item active">
                       <img alt=""
-                           src="/js/plugins/layoutit/img/default_008.jpg">
+                           src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_008.jpg">
 
                       <div class="carousel-caption">
                         <h4>First Thumbnail label</h4>
@@ -1730,7 +1730,7 @@
                     </div>
                     <div class="item">
                       <img alt=""
-                           src="/js/plugins/layoutit/img/default_003.jpg">
+                           src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_003.jpg">
 
                       <div class="carousel-caption">
                         <h4>Second Thumbnail label</h4>
@@ -1744,7 +1744,7 @@
                     </div>
                     <div class="item">
                       <img alt=""
-                           src="/js/plugins/layoutit/img/default_005.jpg">
+                           src="https://grapeking.shuo-guo.net/js/plugins/layoutit/img/default_005.jpg">
 
                       <div class="carousel-caption">
                         <h4>Third Thumbnail label</h4>

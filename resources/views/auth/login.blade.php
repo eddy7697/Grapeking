@@ -121,7 +121,7 @@
             </div>
         </div>
     </div>
-    <script src="/js/app.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/app.js"></script>
     <script>
     function refreshCaptcha() {
         axios.get('/cap_str')

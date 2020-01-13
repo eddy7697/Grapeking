@@ -4,7 +4,7 @@
 <script>
     var links = $('.nav-link');
     var count = 0;
-    var timeOunt = 5000;
+    var timeOunt = 7000;
     var autoPlay = function () {
         if (count == links.length - 1) {
             count = 0;
@@ -72,7 +72,7 @@
 @section('custom-style')
 <style>
 .sub-page-banner {
-    background-image: url('/img/business/banner-2.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/business/banner-2.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')

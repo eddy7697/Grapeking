@@ -23,11 +23,12 @@
                                     <img src="/img/site-logo/logo_footer.png" alt="">
                                 </div>
                                 <ul class="contact-info">
-                                    <li>地址：中国 上海市松江区车新公路518号</li>
-                                    <li>电话：+86-21-5760-9598</li>
-                                    <li>传真：+86-21-5760-9698</li>
-                                    <li>网址：www.grapeking.com.cn</li>
-                                    <li>电邮：gki@grapeking.com.cn</li>
+                                    {{-- {!! trans('string.contact_2') !!} --}}
+                                    <li>{{ trans('string.contact_inf_1') }}</li>
+                                    <li>{{ trans('string.contact_inf_6') }}</li>
+                                    <li>{{ trans('string.contact_inf_2') }}</li>
+                                    <li>{!! trans('string.contact_inf_3') !!}</li>
+                                    <li>{{ trans('string.contact_inf_4') }}</li>
                                 </ul>
                             </div>
                         </div>

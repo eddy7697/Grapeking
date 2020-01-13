@@ -1,11 +1,11 @@
 @extends('main')
 
 @section('custom-style')
-    <link rel="stylesheet" href="/js/plugins/AOS/aos.css">
+    <link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.css">
 @endsection
 
 @section('custom-script')
-    <script src="/js/plugins/AOS/aos.js" charset="utf-8"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.js" charset="utf-8"></script>
 
     <script type="text/javascript">
         AOS.init();

@@ -2,7 +2,7 @@
 
 @section('custom-script')
 @if (config('app.sideBar'))
-<script src="/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
+<script src="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/dist/perfect-scrollbar.min.js"></script>
 <script>
 new PerfectScrollbar('.thumb-container');
 
@@ -51,10 +51,10 @@ $(window).scroll(function () {
 @endsection
 
 @section('custom-style')
-<link rel="stylesheet" href="/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
+<link rel="stylesheet" href="https://grapeking.shuo-guo.net/js/plugins/perfect-scrollbar-master/css/perfect-scrollbar.css">
 <style>
 .sub-page-banner {
-    background-image: url('/img/about/banner.jpg');
+    background-image: url('https://grapeking.shuo-guo.net/img/about/banner.jpg');
 }
 </style>
 @if (App::getLocale() == 'en')
@@ -110,13 +110,13 @@ $(window).scroll(function () {
                 @endif
                 {{-- <div class="row company-section">
                     <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="/img/about/company-1.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-1.jpg" class="company-image" alt="">
                     </div>
                     <div class="col-md-7 info-content" data-aos="fade-left" data-aos-duration="2000">
                         <div class="info-box">
                             <div class="label-section">
                                 <div class="logo">
-                                    <img src="/img/about/grapeking.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/about/grapeking.png" alt="">
                                 </div>
                                 <div class="label">{{ trans('string.company_profile') }}</div>
                             </div>
@@ -126,7 +126,7 @@ $(window).scroll(function () {
                         </div>
                     </div>
                     <div class="col-md-5 info-image mobile-to-show">
-                        <img src="/img/about/company-1.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-1.jpg" class="company-image" alt="">
                     </div>
                 </div>
                 <div class="row company-section">
@@ -134,7 +134,7 @@ $(window).scroll(function () {
                         <div class="info-box">
                             <div class="label-section">
                                 <div class="logo">
-                                    <img src="/img/about/site-logo.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/about/site-logo.png" alt="">
                                 </div>
                                 <div class="label">{{ trans('string.about5') }}</div>
                             </div>
@@ -145,18 +145,18 @@ $(window).scroll(function () {
                         
                     </div>
                     <div class="col-md-5 info-image force-center" data-aos="fade-left" data-aos-duration="2000">
-                        <img src="/img/about/company-2.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-2.jpg" class="company-image" alt="">
                     </div>
                 </div>
                 <div class="row company-section">
                     <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="/img/about/company-3.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-3.jpg" class="company-image" alt="">
                     </div>
                     <div class="col-md-7 info-content" data-aos="fade-left" data-aos-duration="2000">
                         <div class="info-box">
                             <div class="label-section">
                                 <div class="logo">
-                                    <img src="/img/about/dong-pu.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/about/dong-pu.png" alt="">
                                 </div>
                                 <div class="label">{{ trans('string.about7') }}​</div>
                             </div>
@@ -166,7 +166,7 @@ $(window).scroll(function () {
                         </div>
                     </div>
                     <div class="col-md-5 info-image mobile-to-show">
-                        <img src="/img/about/company-3.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-3.jpg" class="company-image" alt="">
                     </div>
                 </div>
                 <div class="row company-section">
@@ -174,7 +174,7 @@ $(window).scroll(function () {
                         <div class="info-box">
                             <div class="label-section">
                                 <div class="logo">
-                                    <img src="/img/about/pu-zun.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/about/pu-zun.png" alt="">
                                 </div>
                                 <div class="label">{!! trans('string.about9') !!}</div>
                             </div>
@@ -184,18 +184,18 @@ $(window).scroll(function () {
                         </div>
                     </div>
                     <div class="col-md-5 info-image force-center" data-aos="fade-left" data-aos-duration="2000">
-                        <img src="/img/about/company-4.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-4.jpg" class="company-image" alt="">
                     </div>
                 </div>
                 <div class="row company-section">
                     <div class="col-md-5 info-image force-center mobile-to-hide" data-aos="fade-right" data-aos-duration="2000">
-                        <img src="/img/about/company-5.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-5.jpg" class="company-image" alt="">
                     </div>
                     <div class="col-md-7 info-content" data-aos="fade-left" data-aos-duration="2000">
                         <div class="info-box">
                             <div class="label-section">
                                 <div class="logo">
-                                    <img src="/img/about/bio-center.png" alt="">
+                                    <img src="https://grapeking.shuo-guo.net/img/about/bio-center.png" alt="">
                                 </div>
                                 <div class="label">{{ trans('string.bioengineering_center') }}​</div>
                             </div>
@@ -205,7 +205,7 @@ $(window).scroll(function () {
                         </div>
                     </div>
                     <div class="col-md-5 info-image mobile-to-show">
-                        <img src="/img/about/company-5.jpg" class="company-image" alt="">
+                        <img src="https://grapeking.shuo-guo.net/img/about/company-5.jpg" class="company-image" alt="">
                     </div>
                 </div> --}}
                 {{-- @if (App::getLocale() == 'en')
@@ -217,17 +217,17 @@ $(window).scroll(function () {
                 <div class="about-text">
                     {!! trans('string.about1') !!}
                 </div>
-                <img class="about-image" src="/img/about/company-1.jpg" alt="">
+                <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/company-1.jpg" alt="">
                 <h3 class="about-section-title" id="about_2">{{ trans('string.about5') }}</h3>
                 <div class="about-text">
                     {!! trans('string.about6') !!}
                 </div>
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="about-image" src="/img/about/company-2.jpg" alt="">
+                        <img class="about-image" src="https://grapeking.shuo-guo.net/img/about/company-2.jpg" alt="">
                     </div>
                     <div class="col-md-6">
-                        <img class="about-image" style="height: 250px;" src="/img/about/site-logo.png" alt="">
+                        <img class="about-image" style="height: 250px;" src="https://grapeking.shuo-guo.net/img/about/site-logo.png" alt="">
                     </div>
                 </div>
                 
@@ -238,7 +238,7 @@ $(window).scroll(function () {
                             {!! trans('string.about8') !!}
                         </div>
                         <div class="col-md-4">
-                            <img class="about-image inner" src="/img/about/dong-pu.png" alt="">
+                            <img class="about-image inner" src="https://grapeking.shuo-guo.net/img/about/dong-pu.png" alt="">
                         </div>
                     </div>                    
                 </div>
@@ -246,7 +246,7 @@ $(window).scroll(function () {
                 <div class="about-text">
                     <div class="row">
                         <div class="col-md-4">
-                            <img class="about-image inner" src="/img/about/pu-zun.png" alt="">
+                            <img class="about-image inner" src="https://grapeking.shuo-guo.net/img/about/pu-zun.png" alt="">
                         </div>
                         <div class="col-md-8">
                             {!! trans('string.about10') !!}
@@ -257,7 +257,7 @@ $(window).scroll(function () {
                 <div class="about-text">
                     {!! trans('string.about12') !!}
                 </div>
-                <img class="about-image" style="max-width: 400px; width: 100%" src="/img/about/pic.png" alt=""> --}}
+                <img class="about-image" style="max-width: 400px; width: 100%" src="https://grapeking.shuo-guo.net/img/about/pic.png" alt=""> --}}
             </div>
             {{-- <div class="col-md-3 about-thumbnail">
                 @include('components.aboutThumbnail')

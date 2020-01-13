@@ -28,16 +28,16 @@
 
     {{-- Loading --}}
     <div class="loading-bar">
-        <img src="/img/icon/loading-spinner.svg">
+        <img src="https://grapeking.shuo-guo.net/img/icon/loading-spinner.svg">
     </div>
 
     {{-- Contact link --}}
     <div class="contact-side-link">
         <a href="/contact">
             @if (App::getLocale() == 'en')
-            <img src="/img/contact-icon_en.png" alt="">
+            <img src="https://grapeking.shuo-guo.net/img/contact-icon_en.png" alt="">
             @else
-            <img src="/img/contact-icon.png" alt="">    
+            <img src="https://grapeking.shuo-guo.net/img/contact-icon.png" alt="">    
             @endif
             
         </a>
@@ -64,19 +64,21 @@
 
     <textarea style="display: none;" id="i18n-text" cols="30" rows="10">{{ json_encode($res) }}</textarea>
     <!-- Scripts -->
-    <script src="{{ asset('js/plugins/moment/moment-with-locales.min.js') }}"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/moment/moment-with-locales.min.js"></script>
     
-    <script src="/js/frontend.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/frontend.js"></script>
 
-    <script src="/js/plugins/popper/popper.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/popper/popper.min.js"></script>
 
-    <script src="/js/plugins/b4/js/bootstrap.min.js"></script>    
+    <script src="https://grapeking.shuo-guo.net/js/plugins/b4/js/bootstrap.min.js"></script>    
 
-    {{-- <script src="/js/cart-panel.js"></script> --}}
+    {{-- <script src="https://grapeking.shuo-guo.net/js/cart-panel.js"></script> --}}
     
-    <script src="/js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://grapeking.shuo-guo.net/js/plugins/jquery-ui/jquery-ui.min.js"></script>
 
-    <script src="/js/plugins/AOS/aos.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>
+
+    <script src="https://grapeking.shuo-guo.net/js/plugins/AOS/aos.js" charset="utf-8"></script>
 
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
