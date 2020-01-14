@@ -33,7 +33,7 @@ return [
     'flow_7_text' => 'Packaging material<br>Product<br>Delivery date<br>Schedule',
     'flow_8' => 'Manufacturer and Shipment',
     'flow_8_text' => 'Full-scale manufacturing<br>Finished packaging<br>Quality control<br>Goods submission',
-    'flow_middle_lable' => '<p>One-stop service</p>',
+    'flow_middle_lable' => '<p>One-Stop Service</p>',
 
     'material_prod_1' => 'Chinese Herbal',
     'material_prod_1_text' => 'Develop products from the perspective of Chinese side, provide all-round professional OEM services in combination with mushroom fermentation technology of grape Wang biotechnology group​.',

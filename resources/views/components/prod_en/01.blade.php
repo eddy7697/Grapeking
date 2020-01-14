@@ -52,6 +52,6 @@
         <line class="cls_1-2" x1="144.18" y1="128.87" x2="121.22" y2="114.86" />
         <line class="cls_1-1" x1="188" y1="172" x2="579" y2="172" /><text class="cls_1-3"
             transform="translate(240.56 136.93)">Solid Forms</text><text class="cls_1-4"
-            transform="translate(240.56 201.93)">200mg、1300mg Plastic Bottle</text><text class="cls_1-5"
+            transform="translate(240.56 201.93)">200mg - 1300mg Plastic Bottle</text><text class="cls_1-5"
             transform="translate(380 140)">Tablets</text>
     </svg>
