@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-3 flow-item right">
+    <div class="col-3 flow-item ">
         <div class="inner-border"></div>
         <div class="inner-box">
             <h5>{{ trans('text.flow_1') }}</h5>
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="col-3 flow-item left">
+    <div class="col-3 flow-item ">
         <div class="inner-border"></div>
         <div class="inner-box">
             <h5>{{ trans('text.flow_8') }}</h5>

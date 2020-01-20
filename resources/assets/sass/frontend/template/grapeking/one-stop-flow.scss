@@ -30,23 +30,23 @@
 }
 @mixin right-return($width, $height, $top, $size) {
     content: "";
-    background: url('/img/assets/arrow2.png') 50% 50% no-repeat;
+    background: url('/img/assets/arrow-down-long.png') 50% 50% no-repeat;
     background-size: $size;
     position: absolute;
     display: inline-block;
     width: $width;
     height: $height;
     top: $top;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    left: 97%;
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    transform: translateX(50%);
+    right: 50%;
 }
 @mixin left-return($width, $height, $top, $size) {
     content: "";
-    background: url('/img/assets/arrow.png') 50% 50% no-repeat;
+    background: url('/img/assets/arrow-down-long.png') 50% 50% no-repeat;
     background-size: $size;
     position: absolute;
     display: inline-block;
@@ -58,7 +58,7 @@
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    left: 3%;
+    left: 50%;
 }
 
 .one-stop-flow {
@@ -148,7 +148,7 @@
         .flow-item {
             &.right-return {
                 &::after {
-                    @include right-return(90px, 420px, 0, 49px);
+                    @include right-return(18px, 180px, 82%, contain);
                 }
             }
         }
@@ -164,12 +164,12 @@
         .flow-item {
             &.right-return {
                 &::after {
-                    @include right-return(90px, 420px, 0, 49px);
+                    @include right-return(20px, 180px, 80%, contain);
                 }
             }
             &.left-return {
                 &::after {
-                    @include left-return(90px, 420px, 0, 49px);
+                    @include left-return(20px, 180px, 80%, contain);
                 }
             }
         }
@@ -189,12 +189,12 @@
         .flow-item {
             &.right-return {
                 &::after {
-                    @include right-return(90px, 420px, 0, 49px);
+                    @include right-return(20px, 180px, 80%, contain);
                 }
             }
             &.left-return {
                 &::after {
-                    @include left-return(90px, 420px, 0, 49px);
+                    @include left-return(20px, 180px, 80%, contain);
                 }
             }
         }

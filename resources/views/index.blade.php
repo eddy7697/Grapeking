@@ -352,7 +352,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-1.jpg')">
                             <div class="text">
-                                <p>{{ trans('string.business_1') }}</p>
+                                <p>{!! trans('string.business_1') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -360,7 +360,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-2.jpg')">
                             <div class="text">
-                                <p>{{ trans('string.business_2') }}</p>
+                                <p>{!! trans('string.business_2') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -368,7 +368,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-3.jpg')">
                             <div class="text">
-                                <p>{{ trans('string.business_3') }}</p>
+                                <p>{!! trans('string.business_3') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -376,7 +376,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-4.jpg')">
                             <div class="text">
-                                <p>{{ trans('string.business_4') }}</p>
+                                <p>{!! trans('string.business_4') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -384,7 +384,7 @@
                     <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-5.jpg')">
                             <div class="text">
-                                <p>{{ trans('string.business_5') }}</p>
+                                <p>{!! trans('string.business_5') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>

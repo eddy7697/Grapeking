@@ -2,8 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
-<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
 <title>百度地图API自定义地图</title>
 <!--引用百度地图API-->
 <style type="text/css">
@@ -57,7 +55,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"上海葡萄王",content:"上海市松江区车墩镇车新公路518号",point:"121.314689|31.042973",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"{{trans('string.about5')}}",content:"{{trans('string.contact_inf_1')}}",point:"121.314689|31.042973",isOpen:1,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
 		 ];
     //创建marker
     function addMarker(){
