@@ -83,7 +83,7 @@
             var counted = false
             
             $(window).scroll(function(){
-                if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 400) {
+                if ($(window).scrollTop() > $('.swiper-wrapper').height() + $('.about-pro').height() - 500) {
                     if (!counted) {
                         countUpYear.start();
                         countUpProd.start();

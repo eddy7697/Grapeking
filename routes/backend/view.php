@@ -14,24 +14,24 @@ Route::get('/admin', function () {
     ]);
 });
 
-// Route::get('/admin/add', function () {
-//     return view('backend.administrator.addAdmin', [
-//         'panelTitle' => '新增管理者帳號'
-//     ]);
-// });
+Route::get('/admin/add', function () {
+    return view('backend.administrator.addAdmin', [
+        'panelTitle' => '新增管理者帳號'
+    ]);
+});
 
-// Route::get('/admin/list', function () {
-//     return view('backend.administrator.adminList', [
-//         'panelTitle' => '管理者帳號列表'
-//     ]);
-// });
+Route::get('/admin/list', function () {
+    return view('backend.administrator.adminList', [
+        'panelTitle' => '管理者帳號列表'
+    ]);
+});
 
-// Route::get('/admin/reset', function () {
-//     return view('backend.administrator.resetPassword', [
-//         'currentUser' => Auth::user(),
-//         'panelTitle' => '重設管理者密碼'
-//     ]);
-// });
+Route::get('/admin/reset', function () {
+    return view('backend.administrator.resetPassword', [
+        'currentUser' => Auth::user(),
+        'panelTitle' => '重設管理者密碼'
+    ]);
+});
 
 
 /*****************

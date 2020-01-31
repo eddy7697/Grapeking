@@ -71,7 +71,7 @@
                     </draggable>
                     <el-button type="primary" icon="el-icon-plus" plain style="color: #fff; width: 100%; margin-top: 10px;" @click="addContent">新增內容</el-button>
                 </el-tab-pane>
-                <el-tab-pane label="首頁記數管理" name="third">
+                <el-tab-pane label="首頁計數器管理" name="third">
                     <el-form :model="siteMeta" ref="siteMeta" label-width="100px" class="demo-siteMeta">
                         <el-form-item label="集团创立" prop="founded">
                             <el-input v-model="siteMeta.counting.founded"></el-input>
