@@ -39,7 +39,7 @@ return [
     'material_prod_1_text' => 'Develop products from the perspective of Chinese side, provide all-round professional OEM services in combination with mushroom fermentation technology of grape Wang biotechnology group​.',
     'material_prod_2' => 'Health Maintenance',
     'material_prod_2_text' => 'Maintain normal physiological functions, meet different requirements of nutrition supplement for different ages, genders, intestines, bones and joints, vision, cardiovascular health care, etc​.',
-    'material_prod_3' => 'Feminine Beauty​',
+    'material_prod_3' => 'Female Beauty Range​',
     'material_prod_3_text' => 'Especially for beauty loving women, you can quickly supplement the nutrition professional services you need in a simple way in a busy life​.',
     'material_prod_4' => 'Children Healthcare',
     'material_prod_4_text' => "Professional design of all kinds of nutrients for preschool children, and a variety of dosage forms for OEM choice​.",
