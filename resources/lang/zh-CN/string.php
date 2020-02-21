@@ -486,6 +486,6 @@ return [
     'timeline_7' => "通过ISO22000认证​",
     'timeline_8' => "上海业务中心正式启用​",
 
-    'cookie_definition' => "提供您最佳个人化且即时的服务，本网站透过使用Cookies记录与存取您的浏览使用消息。当您使用本网站，即表示您同意Cookies技术支持。",
+    'cookie_definition' => "本网站使用cookies以提升您的使用体验及统计网络流量相关数据。<br>继续使用本网站表示您同意我们使用cookies。我们的<a href='/about/notice'>使用条款</a>/<a href='/about/privacy'>隐私权政策</a>提供更多关于cookies使用及停用的相关信息。",
     'accept' => '同意'
 ];

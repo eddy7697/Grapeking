@@ -487,6 +487,6 @@ return [
     'timeline_7' => "ISO22000 certified.",
     'timeline_8' => "Shanghai Business Center officially opened.",
 
-    'cookie_definition' => "To provide you with the best personalized and instant service, this website records and accesses your browsing usage messages through the use of cookies. By using this website, you agree to the technical support of cookies.",
+    'cookie_definition' => "We use cookies to improve your user experience and for web traffic statistics purposes. By continuing to use this website, you agree to our use of cookies. Our <a href='/about/privacy'>Privacy & Cookies Policy</a>  / <a href='/about/notice'>Terms of Use</a> contains more information on such use and explains how to disable cookies. ",
     'accept' => 'Accept'
 ];
