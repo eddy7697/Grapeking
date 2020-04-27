@@ -350,41 +350,44 @@
             <div class="col-md-11 mx-auto cate-type">
                 <div class="row">
                     <div class="cate-type-item">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-5.jpg')">
+                            <div class="text force-center">
+                                <p>{!! trans('string.business_5') !!}</p>
+                            </div>
+                        </div>
+                        <a href=""></a>
+                    </div>
+                    
+                    <div class="cate-type-item">
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-3.jpg')">
+                            <div class="text force-center">
+                                <p>{!! trans('string.business_3') !!}</p>
+                            </div>
+                        </div>
+                        <a href=""></a>
+                    </div>
+                    
+                    
+                    <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-1.jpg')">
-                            <div class="text">
+                            <div class="text force-center">
                                 <p>{!! trans('string.business_1') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
                     </div>
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-2.jpg')">
-                            <div class="text">
-                                <p>{!! trans('string.business_2') !!}</p>
-                            </div>
-                        </div>
-                        <a href=""></a>
-                    </div>
-                    <div class="cate-type-item">
-                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-3.jpg')">
-                            <div class="text">
-                                <p>{!! trans('string.business_3') !!}</p>
-                            </div>
-                        </div>
-                        <a href=""></a>
-                    </div>
-                    <div class="cate-type-item">
                         <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-4.jpg')">
-                            <div class="text">
+                            <div class="text force-center">
                                 <p>{!! trans('string.business_4') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
                     </div>
                     <div class="cate-type-item">
-                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-5.jpg')">
-                            <div class="text">
-                                <p>{!! trans('string.business_5') !!}</p>
+                        <div class="info" style="background-image: url('https://grapeking.shuo-guo.net/img/about-2.jpg')">
+                            <div class="text force-center">
+                                <p>{!! trans('string.business_2') !!}</p>
                             </div>
                         </div>
                         <a href=""></a>
@@ -534,13 +537,13 @@
         $devices = preg_grep('~\.(jpeg|jpg|png)$~', scandir($albumPath));
         $licenses = preg_grep('~\.(jpeg|jpg|png)$~', scandir($licensePath));
     @endphp
-    <div class="device-album">
+    {{-- <div class="device-album">
         @foreach ($devices as $item)
             <a data-fancybox="devices" href="https://grapeking.shuo-guo.net/img/device/{{$item}}">
                 <img width="100%" src="https://grapeking.shuo-guo.net/img/device/{{$item}}" alt="">
             </a>
         @endforeach
-    </div>
+    </div> --}}
 
     <div class="container index-info about">
         <div class="row">

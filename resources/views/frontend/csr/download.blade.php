@@ -81,23 +81,50 @@ $(window).scroll(function () {
             {{-- {{json_encode(FeatureView::download())}} --}}
             <div class="row">
                 @foreach (FeatureView::download() as $item)
-                    <div class="col-md-4 report-item">
-                        <a href="{{$item->customField1}}">
-                            <div class="report-preview" style="background-image: url('{{$item->customField2}}')">
-                                <div class="report-mask force-center">
-                                    <div style="text-align:center;">
-                                        <span style="font-weight:700; color: #fff; text-shadow: 2px 2px 12px rgba(0,0,0,.9); text-align: center">{{$item->locale}}</span>
-                                        <br>
-                                        <br>
-                                        <img src="https://grapeking.shuo-guo.net/img/download-btn.png" alt="">
+                    <div class="col-md-4 report-item force-center">
+                        <div>
+                            <a href="{{$item->customField1}}">
+                                <div class="report-preview">
+                                    <img class="preview-image" src="{{$item->customField2}}" alt="">
+                                    <div class="report-mask force-center">
+                                        <div style="text-align:center;">
+                                            <span style="font-weight:700; color: #fff; text-shadow: 2px 2px 12px rgba(0,0,0,.9); text-align: center">{{$item->locale}}</span>
+                                            <br>
+                                            <br>
+                                            <img src="https://grapeking.shuo-guo.net/img/download-btn.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
+                            </a>
+                            <div class="report-title force-center">
+                                <span style="font-weight:700">{{$item->locale}}</span>
                             </div>
-                        </a>
-                        
-                        <div class="report-title force-center">
-                            <span style="font-weight:700">{{$item->locale}}</span>
                         </div>
+                        
+                    </div>
+                    {{-- {{base64_encode($item->customField1)}}<br> --}}
+                @endforeach
+                @foreach (FeatureView::download() as $item)
+                    <div class="col-md-4 report-item force-center">
+                        <div>
+                            <a href="{{$item->customField1}}">
+                                <div class="report-preview">
+                                    <img class="preview-image" src="{{$item->customField2}}" alt="">
+                                    <div class="report-mask force-center">
+                                        <div style="text-align:center;">
+                                            <span style="font-weight:700; color: #fff; text-shadow: 2px 2px 12px rgba(0,0,0,.9); text-align: center">{{$item->locale}}</span>
+                                            <br>
+                                            <br>
+                                            <img src="https://grapeking.shuo-guo.net/img/download-btn.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="report-title force-center">
+                                <span style="font-weight:700">{{$item->locale}}</span>
+                            </div>
+                        </div>
+                        
                     </div>
                     {{-- {{base64_encode($item->customField1)}}<br> --}}
                 @endforeach

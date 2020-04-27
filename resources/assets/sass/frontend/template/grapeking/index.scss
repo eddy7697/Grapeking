@@ -1381,9 +1381,11 @@ a.toggle-locale-btn {
                         transform: scale(1.1);
                         .text {
                             opacity: 1;
+                            height: 100%;
                         }
                         &::before {
-                            background-color: rgba($color: #5A5657, $alpha: 0.7);
+                            height: 100%;
+                            background-color: rgba(72, 63, 63, 0.8);
                         }
                     }
                 }
@@ -1397,25 +1399,26 @@ a.toggle-locale-btn {
                     .text {
                         position: absolute;
                         text-align: center;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
+                        height: 50px;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
                         transition: all .5s ease-out;
-                        opacity: 0;
+                        opacity: 1;
 
                         p {
                             margin: 0;
                             color: #EFEFEF;
-                            font-size: 15px;
+                            font-size: 18px;
                             font-weight: bold;
                         }
                     }
                     &::before {
                         content: '';
-                        background-color: rgba($color: #5A5657, $alpha: 0);
+                        background-color: rgba(72, 63, 63, 0.9);
                         display: block;
                         position: absolute;
-                        top: 0;
+                        height: 50px;
                         left: 0;
                         right: 0;
                         bottom: 0;
@@ -1426,7 +1429,7 @@ a.toggle-locale-btn {
         }
     }
     .index-count-down {
-        background: url('/img/numbers-of-banner.jpg');
+        // background: url('/img/numbers-of-banner.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -1438,7 +1441,7 @@ a.toggle-locale-btn {
             margin: 0 auto;
 
             h2 {
-                color: #EFEFEF;
+                color: #333;
                 text-align: center;
                 margin-bottom: 0;
                 margin-top: 30px;
@@ -1470,7 +1473,7 @@ a.toggle-locale-btn {
                     }
                 }
                 .flex-column {
-                    color: #fff;
+                    color: #333;
                     text-align: center;
                     padding: 0 20px;
                     -webkit-flex: 1;
@@ -1478,6 +1481,7 @@ a.toggle-locale-btn {
                     .number {
                         font-size: 50px;
                         font-weight: 600;
+                        color: $main-color;
                     }
                     .text {
                         font-weight: 700;
@@ -2578,11 +2582,17 @@ a.toggle-locale-btn {
         .report-item {
             
             .report-preview {
-                width: 90%;
-                padding-bottom: 145%;
+                width: 100%;
                 background-size: cover;
                 background-position: center;
 
+                .preview-image {
+                    max-width: 100%;
+                    max-height: 100%;
+                    width: 1024px;
+                    height: auto;
+                    display: inline-block;
+                }
                 .report-mask {
                     position: absolute;
                     top: 0;

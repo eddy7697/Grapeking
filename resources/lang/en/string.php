@@ -346,9 +346,9 @@ return [
     'product_item' => 'Product item',
     'training_team' => 'Professional training team',
 
-    'business_1' => 'Oral liquid<br>(glass bottle)',
-    'business_2' => 'Tablet / Lots',
-    'business_3' => 'Powder / Granules',
+    'business_1' => 'Glass bottle',
+    'business_2' => 'Tablet',
+    'business_3' => 'Sachet',
     'business_4' => 'Coffee Capsule',
     'business_5' => 'Aluminum foil package',
     'business_6' => '2 automatic beverage production lines / 10,000-level dust-free purification workshop in the filling area / can be put on the same day, the finished product on the same day',
@@ -360,6 +360,12 @@ return [
     'business_12' => '6 automatic 6-row filling lines / Back seal bag (aluminum foil pack)',
     'business_13' => 'Stainless steel automatic capsule filling and sealing machine / Packing speed: 120-160 capsules per minute',
     'business_14' => 'Stainless steel fully-automatic horizontal packaging machine / Easy-tear packages / Speed: ​​80-100 packages per minute',
+
+    'business_1_text' => '30、50、100、150ml',
+    'business_2_text' => '200 - 1300mg<br><table><tr><td>工　　艺：</td><td>包衣及多种造型</td></tr><tr><td>包装形式：</td><td>瓶装</td></tr></table>',
+    'business_3_text' => '1.5g - 25g<br>工艺：R角、锯齿角',
+    'business_4_text' => '15g - 31g',
+    'business_5_text' => '30、50ml',
 
     'production_d_1' => "We can provide a full range of ODM/OEM services for R&D, quality control, and production to meet our customers' needs. In addition, Grape King also provides 'health food' application consulting services, which can help customers apply for 'health food' certification, so that products can reach the 'good' products with 'efficacy' appeal. Grape King has many years of experience in producing “healthy foods” and can be a long-term partner for customers. ",
     'production_d_2' => 'Vineyard provides a full range of OEM/ODM services for R&D, quality control and production. It has accumulated the experience of producing “healthy foods” for many years to grasp the latest pulse of the global health market and create a one-stop service for one-stop service. Platform, the scope of services covers the upstream of the patented raw materials, to the innovative R & D team dedicated to tailor-made product design, combined with cross-category professional mass production capacity and back-end finished packaging, providing the most complete and highest quality under one-stop integration. Products and services. ',

@@ -13,81 +13,6 @@
 
 </head>
 <body>
-
-    @php
-        use Carbon\Carbon;
-    @endphp
-
-    @if (Carbon::now() > Carbon::parse('2020-04-03 22:00:00') && Carbon::now() < Carbon::parse('2020-04-04 23:59:59'))
-    <style>
-        body * {
-            filter: gray;
-            filter: grayscale(1) blur(5px);
-        }
-        .message-mask {
-            background-color: rgba(0, 0, 0, 0.6);
-            filter: initial;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            z-index: 9999999;
-        }
-        .message-mask .dialog {
-            filter: initial;
-            background-color: #fff;
-            width: 90%;
-            height: auto;
-            max-width: 768px;
-            max-height: 1024px;
-            border-radius: 20px;
-            overflow-x: hidden;
-            overflow-y: auto;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        .message-mask .dialog .close-button {
-            width: 25px;
-            height: 25px;
-            border-radius: 100%;
-            background-color: #000;
-            position: absolute;
-            color: #fff;
-            top: 5px;
-            right: 5px;
-            font-size: 12px;
-            cursor: pointer;
-        }
-        .message-mask * {
-            filter: grayscale(1);
-        }
-        @media screen and (max-width:  768px) {
-            .message-mask .dialog h1 {
-                font-size: 125%;
-            }
-            .message-mask .dialog .dialog-text {
-                font-size: 70%;
-            }
-        }
-    </style>
-    <div class="message-mask force-center">
-        <div class="dialog">
-            <h1 style="font-weight: 900"><br><br>为抗击新冠肺炎疫情斗争牺牲烈士<br>和逝世同胞深切哀悼<br><br><br><span style="font-size: 70%">上海葡萄王企业有限公司</span></h1>
-            <img class="icp-icon" src="/img/gongan.png" alt="" style="display: inline-block">
-            <span class="dialog-text" style="display: inline-block"><a style="color: #666" href="https://www.beian.org/website/grapeking.com.cn" target="_blank">沪ICP备13010123号-1</a></span>
-        </div>
-    </div>
-
-    <script>
-        function closeMask() { 
-            $('.message-mask').hide();
-            $('body *').css({
-                filter: 'initial'
-            });
-        }
-    </script>
-    @endif
     <div class="cookies-bar">
         <div class="container">
             <div class="row">
@@ -229,6 +154,7 @@
     @if(config('app.env') == 'local')
         <script src="http://localhost:35729/livereload.js"></script>
     @endif
+
 
 </body>
 </html>
