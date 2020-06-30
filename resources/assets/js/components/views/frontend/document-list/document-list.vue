@@ -16,7 +16,7 @@
                             <th v-if="type == 'paper'">{{i18n.col_1}}</th>
                             <th v-else>{{i18n.col_2}}</th>
                             <th v-if="type == 'paper'" style="text-align: center">{{i18n.col_3}}</th>
-                            <th v-else style="text-align: center">{{i18n.col_4}}</th>
+                            <!-- <th v-else style="text-align: center">{{i18n.col_4}}</th> -->
                             <th v-if="type == 'paper'" style="text-align: center">{{i18n.col_5}}</th>
                             <th v-else style="text-align: center">{{i18n.col_6}}</th>
                             <th v-if="type == 'paper'" width="80" style="text-align: center">{{i18n.col_7}}</th>
@@ -26,7 +26,7 @@
                     <tbody>
                         <tr v-for="(item, index) in pageData.data" :key="index">
                             <td>{{item.locale}}</td>
-                            <td style="text-align: center">{{item.customField2}}</td>
+                            <td style="text-align: center" v-if="type == 'paper'">{{item.customField2}}</td>
                             <td style="text-align: center">{{item.customField3}}</td>
                             <td v-if="type == 'paper'" style="text-align: center">
                                 <a target="_blank" :href="item.customField4">{{i18n.document_file_check}}</a>
