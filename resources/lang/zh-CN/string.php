@@ -23,7 +23,7 @@ return [
     'last_page' => '最后一页',
 
     'grapekingmuseum' => '健康活力能量馆',
-    'company_tw_short' => '葡萄王',
+    'company_tw_short' => '葡萄王生技',
     'pro_partner' => '葡众企业',
     'innovating' => '研发创新',
     'food_safty' => '食品安全',
