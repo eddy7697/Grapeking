@@ -577,6 +577,7 @@
         </div>
     </div>
     
+    @if (false)
     <a data-fancybox class="fancybox-btn" href="https://www.youtube.com/watch?v=KAFJLVrKwJQ">
         <div class="vdieo-present-section">
             <div class="info">
@@ -586,5 +587,7 @@
             </div>
         </div>
     </a>
+    @endif
+    
     
 @endsection

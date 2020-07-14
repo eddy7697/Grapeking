@@ -30,6 +30,6 @@ class FeatureView
 
     static function download()
     {
-        return CustomField::where('type', 'download')->where('customField3', App::getLocale())->paginate(12);   
+        return CustomField::where('type', 'download')->where('customField3', App::getLocale())->orderBy('id', 'desc')->paginate(12);   
     }
 }
